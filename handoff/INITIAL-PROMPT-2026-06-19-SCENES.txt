@@ -1,0 +1,100 @@
+/session-anchors
+
+## Mandatory Skill Invocation — Read FIRST
+
+- anti-sycophancy — before any response involving agreement, evaluation, recommendation, or a clarifying question (per CLAUDE.md OPERATING CONTRACT + UserPromptSubmit gate).
+- confidence — before finalizing any recommendation; lead substantive replies with `Confidence: NN%`.
+- sepakat-atau-debat — when the user proposes an idea/claim to weigh (it auto-runs anti-sycophancy + confidence).
+- research-before-dispatch — before any state claim or consequential write; verify against the actual files, not memory.
+- brave — when at risk of shortcutting, withdrawing mid-task, or rubber-stamping.
+- session-anchors — at session open (READ context.md/lessons.md/scope.md) and on each validated decision (WRITE).
+
+## Working Rules / Truth Source (Rank 1-3)
+
+Rank 1 (authoritative): the vault files themselves — `explainer-video-2/*.md`, `CLAUDE.md`, `prompt-rules-image-generation.md`. Read them; do not trust this prompt's summary over the live file.
+Rank 2: `00-WORKLOG.md` Decision Log (chronology of locked decisions) and `06-konvensi-naratif.md` (canonical conventions).
+Rank 3: conversation narration / this prompt (orientation only).
+NOT a truth source: memory of "what we decided" without re-reading; any real brand/organisation name (in-video everything is mock/generic).
+OPERATING CONTRACT (CLAUDE.md, Erik mandate 2026-06-19) binds every turn: mutation needs explicit per-action "yes"; stay in scope; `Confidence: NN%`; <95% → research+loop, ONE recommendation no menu; CONVICTION not deference — no ritual "approve/override/amend" tag on pure-discussion turns, no "bilang lanjut maka saya kerjakan"; the validation gate exists ONLY for mutation actions, asked once in natural language.
+
+## You Are in Session scenes-new-video (successor)
+
+This succeeds the 2026-06-19 scene-writing session, which closed with SEQ1+SEQ2 complete and validated, SEQ3 SC01/SC03/SC04 validated, SEQ3-SC02 pending a decision, and SEQ4+SEQ5 unwritten.
+
+Mandate:
+### Mandate A.1 — Resolve SEQ3-SC02
+Decide the pending proposal to convert `03-scene-detail.md` SEQ3-SC02 from "B2B selling" to a "digital bank room" (Ratna enters a generic bank's virtual-office branch from home, talks business capital with an officer over video). Ask the user once, naturally; on "ya", rewrite the scene and log it.
+### Mandate A.2 — Write SEQ4 then SEQ5
+Author SEQ4 (Sore) and SEQ5 (Malam) in full SEQ→SC→SH form, validated by the user sequence-by-sequence, keeping total runtime ≈300s.
+(Mandate = the task; the Goal below is the completion condition.)
+
+## Goal
+
+- **Session Goal:** In `explainer-video-2/03-scene-detail.md`, resolve the pending SEQ3-SC02 decision (convert to "digital bank room"), then write SEQ4 (Sore) and SEQ5 (Malam) in full SEQ→SC→SH form. Done when: (a) SEQ3-SC02 rewritten or explicitly kept, logged in `00-WORKLOG.md`; (b) `03-scene-detail.md` contains SEQ1–SEQ5 complete; (c) every scene obeys locked conventions (1 location+1 time, camera-bound prose, mandatory interaction, 4-beat grammar, "Bersih Saat Sakral", numbering reset per parent); (d) total runtime ≈300s (SEQ1 40 + SEQ2 55 + SEQ3 70 leaves ~135s for SEQ4+SEQ5); (e) each sequence user-validated before the next. Constraint: no real brand/organisation names in-video; single male VO explicit on meaning / silent on mechanics; word "bayangkan" banned.
+- **Ultimate Goal:** A finished 5-minute explainer film + scene assets that an ad provider watches and sees natural ad-inventory across the family's day — the sales tool that funds pre-development.
+- **Linkage:** Scene-detail (GATE A) is the source feeding image-prompt authoring (GATE B), keyframe generation (GATE C), and the storyboard; nothing downstream starts until it is locked.
+
+## Bootstrap Reading (mandatory order)
+
+0. Read this prompt in full (anticipate truncation).
+1. `CLAUDE.md` — especially the OPERATING CONTRACT block at the top.
+2. `scope.md` — active mandate = video rebuild in `explainer-video-2/`.
+3. `context.md` — entries 2026-06-18 and the 2026-06-19 end-of-session update.
+4. `lessons.md` — production-video insights (camera-bound, process≠output, narrator≠Kling, etc.).
+5. `MEMORY.md` + memory files: `semesta-operating-contract.md`, `semesta-video-concept-rebuild.md`, `semesta-kling-pricing-models.md`, `semesta-image-prompt-craft.md`.
+6. `handoff/HANDOFF-2026-06-19-SCENES.md` — full snapshot.
+7. **`explainer-video-2/06-konvensi-naratif.md`** — canonical Sequence/Scene/Shot rules (camera-bound, interaction-mandatory, numbering reset).
+8. **`explainer-video-2/00-WORKLOG.md`** — full Decision Log.
+9. **`explainer-video-2/03-scene-detail.md`** — the work file (SEQ1–SEQ3).
+10. `explainer-video-2/05-pipeline-produksi.md` — stack + 3-gate cycle + status table.
+11. `explainer-video-2/00-INDEX.md` — folder map + inheritance.
+Lazy-on-demand: `prompt-rules-image-generation.md` + `explainer-video/08-investor-deck-brief.md` (only when authoring GATE-B prompts); `explainer-video/11-adprovider-deck-content.md` (ad-inventory alignment).
+
+## Verify State via Grep
+
+```
+cd /Users/eriksupit/Desktop/superapps
+ls explainer-video-2/                                   # expect: 00-INDEX, 00-WORKLOG, 01-storyline, 02-storyboard, 03-scene-detail, 04-ad-inventory-map, 05-pipeline-produksi, 06-konvensi-naratif, scene-images/
+grep -c "^## SEQ" explainer-video-2/03-scene-detail.md  # expect: number of scenes written so far (SEQ1–SEQ3)
+grep -n "SEQ3-SC02" explainer-video-2/03-scene-detail.md # expect: current SC02 (still B2B "marketplace B2B + komunitas") = the PENDING scene
+grep -n "PENDING" explainer-video-2/00-WORKLOG.md        # expect: the SEQ3-SC02 pending-decision log line
+grep -n "OPERATING CONTRACT" CLAUDE.md                   # expect: the contract block near the top
+```
+
+## After Bootstrap — STANDBY
+
+Do not start writing scenes autonomously. After bootstrap, confirm scope in one sentence, then put Mandate A.1 (SEQ3-SC02 decision) to the user and await "ya" before any file write. Per OPERATING CONTRACT, mutation needs explicit per-action approval; discussion/recommendation does not.
+
+## Special Concerns / Pre-Execute
+
+1. SEQ3-SC02 is the immediate fork — do not write SEQ4 before it is resolved.
+2. SEQ4 contains the worship / sharia opt-in beat → "Bersih Saat Sakral" (commercial-zero from the sacred act onward) is mandatory.
+3. Keep runtime budget: ~135s remains for SEQ4+SEQ5; do not overrun ≈300s total.
+4. Reduce marketplace emphasis going forward — favour the under-shown verticals (virtual office/bank-as-tenant, education, trading) so the film does not read as "just another marketplace".
+5. Every activity scene needs interaction; favour cross-class/cross-generation; exception only for private beats (waking, worship).
+6. Brands/orgs in-video are mock/generic; VO explicit on meaning, silent on mechanics; never "bayangkan".
+
+## Communication Rules
+
+User (Erik) = decision-maker; you = author/executor. Speak to the user in informal Bahasa Indonesia; write all documents and instructions in English. Close substantive turns with ONE decision; on a mutation, ask once for "ya" in natural language; on a discussion turn, state the decision with no ritual tag. Keep replies tight; no flattery.
+
+### Output Format for executor
+Lead substantive replies with `Confidence: NN%`. When proposing a creative change, state it concretely (scene IDs, what changes), give the reasoning, then a single natural go-ask if a write follows. Log each accepted decision to `00-WORKLOG.md`.
+
+## End-of-Session Closure Deliverables
+
+Before this next session may close, it MUST produce (per the handoff skill):
+1. The next handoff `.md` (handoff skeleton, including a `## Goal` block) in `handoff/`.
+2. The next initial-prompt `.txt` (this skeleton, including a `## Goal` block and this Closure Deliverables section) in `handoff/`.
+3. Update `00-WORKLOG.md` Decision Log, and `context.md`/`scope.md`/`lessons.md` per the session-anchors pipeline.
+Without these artifacts landed, the session is NOT closed.
+
+## Anti-Flailing Reminder
+
+- If tempted to write SEQ4 before SEQ3-SC02 is resolved → STOP; resolve A.1 first.
+- If tempted to generate images or GATE-B prompts → STOP; scene-detail must be validated first.
+- If tempted to renumber scenes/shots globally → STOP; reset per parent (`06-konvensi-naratif.md`).
+- If tempted to write omniscient prose crossing locations → STOP; camera-bound only.
+- If tempted to close a discussion turn with "approve/override/amend" or act on emotion as authorization → STOP; OPERATING CONTRACT bind #5 and #1.
+
+Standby.

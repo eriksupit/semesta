@@ -1,0 +1,66 @@
+## Mandatory Skill Invocation — Read FIRST
+- anti-sycophancy — before any agreement/evaluation/recommendation/clarifying question.
+- confidence — lead substantive replies with `Confidence: NN%`; >95% on Priority 1 or run Transparent Iteration.
+- sepakat-atau-debat — when the user weighs an idea/claim (auto-runs anti-sycophancy + confidence).
+- research-before-dispatch — before any state claim or consequential write; verify against live files, not memory.
+- brave — when at risk of shortcutting/withdrawing/rubber-stamping.
+- session-anchors — READ at open (context/lessons/scope) + WRITE on each validated decision.
+
+## Truth Source (Rank 1-3)
+Rank 1: live vault files — `explainer-video-2/*.md`, `CLAUDE.md`, `prompt-rules-image-generation.md`. Read them; do not trust this prompt's summary over the file.
+Rank 2: `00-WORKLOG.md` Decision Log + `06-konvensi-naratif.md`.
+Rank 3: this prompt / narration (orientation only).
+OPERATING CONTRACT (CLAUDE.md) binds every turn: mutation needs explicit per-action "ya"; stay in scope; `Confidence: NN%`; <95% → research+loop, ONE recommendation no menu; CONVICTION not deference — no ritual approve/override/amend tag on pure-discussion turns; validation gate exists ONLY for mutation, asked once in natural language.
+
+## You Are in: GATE B Prep session (successor to GATE-A-complete)
+Predecessor closed with **GATE A LENGKAP**: `03-scene-detail.md` = SEQ1–SEQ6, 6 babak / 19 scene / 57 shot / ≈312s. Pipeline upgraded to 4 gates (GATE 0 character sheet added).
+
+### Mandate (in order)
+1. **O4 SINKRON (WAJIB pertama, sebelum GATE B):** selaraskan `04-ad-inventory-map.md`, deck `explainer-video/11-adprovider-deck-content.md`, dan **tabel status `05-pipeline §5`** dari kerangka "15-scene / 5-babak" → **19-scene / 6-babak**. Opsi: pangkas 1 shot bila ingin kunci runtime 300s (kini ~312s). Ask user once per write.
+2. **GATE 0 — Character & Wardrobe Sheet:** rancang plat identitas tetap (wajah/perawakan, multi-angle, **white background**) + katalog wardrobe per-scene per tokoh (Herman/Ratna/Lisa/Andi + figuran berulang). Format prompt ChatGPT Image v2. Simpan rencana/aset di `character-images/`. Untuk reference-locking Kling 3.0 + jangkar prompt keyframe.
+3. **GATE B — Prompt authoring:** tulis prompt 6-lapis t2i per shot (grade HANGAT video, override cool deck-standard `prompt-rules` baris 208), pakai character sheet sebagai jangkar Lapis 1–3. Pasangan start→end (1 spec tetap + 2 varian Lapis 4).
+
+## Goal
+- **Session Goal:** O4 disinkronkan (no doc still says 15-scene/5-babak), GATE 0 character sheet jadi, lalu mulai GATE B prompt authoring per shot. Done when: (a) `04`/`11`/`05§5` konsisten dgn 19-scene/6-babak; (b) character sheet plan (identitas + wardrobe per-scene, white-bg) disetujui user; (c) prompt GATE B mulai ditulis & divalidasi shot-by-shot. Constraint: brand/org generik; VO laki-laki tunggal eksplisit makna/implisit mekanik; "bayangkan" dilarang; grade hangat; 3 zona bebas-iklan (Subuh/Maghrib/coda) jangan diisi iklan.
+- **Ultimate Goal:** Film explainer 5-menit + aset scene yang ditonton ad-provider → melihat inventaris iklan alami sepanjang hari keluarga → sales tool pendanaan pre-development.
+- **Linkage:** GATE A (scene-detail, locked) → GATE 0 (character sheet) → GATE B (prompt) → GATE C (keyframe) → storyboard.
+
+## Bootstrap Reading (mandatory order)
+1. `CLAUDE.md` (OPERATING CONTRACT).
+2. `scope.md` (block NEXT 2026-06-19 successor).
+3. `context.md` (UPDATE AKHIR SESI 2026-06-19 successor).
+4. `lessons.md` (insight produksi video terbaru).
+5. `MEMORY.md` + memory files (operating-contract, video-concept-rebuild, kling-pricing, image-prompt-craft).
+6. `handoff/HANDOFF-2026-06-19-GATEA-COMPLETE.md`.
+7. `explainer-video-2/06-konvensi-naratif.md` (kanonik SEQ/SC/SH).
+8. `explainer-video-2/00-WORKLOG.md` (Decision Log penuh).
+9. `explainer-video-2/03-scene-detail.md` (GATE A final — SEQ1–SEQ6).
+10. `explainer-video-2/05-pipeline-produksi.md` (4-gerbang + STEP 0).
+11. `explainer-video-2/00-INDEX.md` (peta + folder `character-images/`).
+Lazy-on-demand: `prompt-rules-image-generation.md` + `explainer-video/08-investor-deck-brief.md` §5 (saat GATE B); `explainer-video/11` (saat O4 sinkron).
+
+## Verify State via Grep
+```
+cd /Users/eriksupit/Desktop/superapps
+grep -cE "^## SEQ[0-9]-SC" explainer-video-2/03-scene-detail.md   # expect 19
+grep -cE "\*\*SEQ[0-9]-SC[0-9]+-SH" explainer-video-2/03-scene-detail.md   # expect 57
+grep -n "GATE 0" explainer-video-2/05-pipeline-produksi.md        # expect Step 0 + gate
+grep -n "15-scene\|5-babak\|Sc15" explainer-video-2/04-ad-inventory-map.md explainer-video-2/05-pipeline-produksi.md   # stale refs to fix (O4)
+```
+
+## After Bootstrap — STANDBY
+Confirm scope in one sentence, put O4-sinkron (Mandate 1) to user, await "ya" before any write. Mutation needs explicit per-action approval; discussion/recommendation does not.
+
+## End-of-Session Closure Deliverables (before next close)
+1. Next handoff `.md` (with `## Goal` block) → `handoff/`.
+2. Next initial-prompt `.txt` (this skeleton + `## Goal` + this section) → `handoff/`.
+3. Update `00-WORKLOG.md` + `context.md`/`scope.md`/`lessons.md` per session-anchors.
+
+## Anti-Flailing
+- Jangan mulai GATE B prompt sebelum O4 sinkron + GATE 0 character sheet disepakati.
+- Jangan generate gambar sendiri (user generate eksternal; model tulis+review+approve).
+- Jangan renumber global; reset per induk.
+- Jangan isi iklan di zona bebas-iklan (Subuh/Maghrib/coda).
+- Jangan tindak emosi sebagai otorisasi; mutasi butuh "ya".
+
+Standby.

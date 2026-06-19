@@ -1,0 +1,11 @@
+Bootstrap dulu (CLAUDE.md Step 1): baca CLAUDE.md, MEMORY.md, scope.md, context.md, lessons.md, dan handoff/HANDOFF-2026-06-18-STORY-CONCEPT.md.
+
+Konteks: pekerjaan riset produksi Kling (2026-06-17) SUDAH ditutup & tersimpan — jangan dibuka ulang kecuali saya minta. RAB (03), pipeline (04), dan protokol benchmark (04-a) sudah final/approved; total $130 dibekukan sampai re-benchmark.
+
+Mandat sesi ini (lebih besar): PERUBAHAN KONSEP CERITA untuk video explainer, yang merembet ke:
+- explainer-video/06-storyline.md (beat naratif/VO)
+- explainer-video/05-storyboard-rough.md (storyboard rough shot-level)
+
+Jangan langsung edit 05/06. Mulai dengan /brainstorming untuk menggali konsep cerita baru: apa yang ingin diubah dari konsep sekarang, dan kenapa. Setelah konsep jelas, kunci scope, baru eksekusi. Tutup tiap rekomendasi dengan satu opsi + satu gerbang persetujuan.
+
+Guardrail: VO publik dilarang menyebut NU/Muhammadiyah/bank/pesantren; tone deck cool; live actor sebagai jangkar manusia di dunia AI; jangan kunci nama produk final.

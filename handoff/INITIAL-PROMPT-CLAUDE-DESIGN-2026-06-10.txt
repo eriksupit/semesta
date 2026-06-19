@@ -1,0 +1,14 @@
+Build a VISUAL scene-by-scene proposal deck for "Semesta Digital" (a working title — do not present it as final) — the explainer-video scenes presented one per slide, in order. This deck is a standalone visual appendix ONLY. Do NOT write investor narrative, financial figures, market numbers, or argument copy — that is a separate deck I will build later and merge with this manually.
+
+I have given you everything by upload — you cannot read my filesystem:
+- UPLOADED DOC "HANDOFF-CLAUDE-DESIGN-2026-06-10.md" = your full brief: scope, the scene order, the 19-image manifest with content descriptions and thin captions, and the one build task. Follow it exactly.
+- 19 ATTACHED IMAGES = the slides (photorealistic cinematic stills, each already carrying its on-image graphic/super). Match each attachment to its scene via the manifest — by filename first, by content description if filenames are stripped.
+
+Do this:
+1. One title slide ("Semesta Digital — working title · Explainer-Video Visual Proposal · Scene by Scene"), then one slide per image in the manifest order (S0 → S17b, 19 slides).
+2. Each slide: the image large/near-full-bleed with the cool cinematic grade UNTOUCHED (no recolor, no warm filter) + a THIN caption (scene ID + short title + the one-line descriptor from the manifest). Do not re-type the investor super as a big heading — it is already inside the image; the caption stays small and secondary.
+3. One consistent template across all slides; keep any new type in the existing frosted-glass / teal-cyan visual system.
+4. Composite the S6 card only: frosted-glass overlay, "Rp 340.000" + pill "Earnings · Transparent", teal-cyan, above the phone/handlebar — the S6 courier image was left clean on purpose. No other image is edited.
+5. Hard rules: BANNED words = inventory, traffic, ad placement, bayangkan, revolusi. Never name a religious organisation or "pesantren" ("Sharia Mode" as a feature name is fine).
+
+Do NOT add: data/thesis slides, an ecosystem montage, investor prose, or any numbers. Keep it a clean visual gallery. Make a deck.

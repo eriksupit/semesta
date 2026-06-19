@@ -1,0 +1,20 @@
+Revise the existing "Semesta Digital — Visual Scene Proposal" deck you already built. Do NOT rebuild it and do NOT change the scene image pages or their captions — keep them exactly as they are.
+
+The one change: AFTER each scene image page, INSERT one new detail page for that scene. Use the uploaded document "10-scene-detail-naskah.md" as the content source — it has one entry per scene, keyed by scene code (S0, S1, S2, S3, S4, S5, S6, S7, S8, S9, S10, S11, S12, S12b, S13, S14, S14b, S17, S17b), in the same order as the deck.
+
+For each scene, the new detail page (the page right after that scene's image) should present, from its matching entry:
+- Scene title + scene code (header).
+- "Adegan" — what happens in the scene.
+- "Pesan & Super" — the meaning of the on-image graphic/super.
+- "Naskah / VO" — the narration line. Keep the [LOCKED]/[draft] tags as small status labels.
+- "Poin strategis" — the strategic point.
+
+Result = a two-page rhythm: [scene image page] → [scene detail page] → next scene image → its detail, etc. The title slide stays first; nothing else is removed.
+
+Design rules:
+- Detail pages: clean, readable, text-led — same visual system as the deck (cool, restrained, frosted-glass / teal-cyan accent, clean sans-serif). Calm typographic layout, not busy.
+- Language of the detail pages: Indonesian (as written in doc 10). The image-page captions stay in their current English.
+- Do NOT invent or change any text — use doc 10 verbatim. Keep [draft] lines marked as draft.
+- Banned words: inventory, traffic, ad placement, bayangkan, revolusi. Naming NU / banks / pesantren is allowed (internal proposal).
+
+Apply this as an edit to the current deck and re-export.

@@ -1,0 +1,232 @@
+{
+  "main": {
+    "id": "853d9ad8b1084b5b",
+    "type": "split",
+    "children": [
+      {
+        "id": "4a2a35ea7c8e33e7",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "30c5778530aeef20",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "explainer-video-2/08-character-sheet/R-ratna.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "R-ratna"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "0bbef0f775e749d9",
+    "type": "split",
+    "children": [
+      {
+        "id": "5df91249fc72086d",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "6fe063f229a90e7c",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "8ab937d6c14cf813",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "87dc80d0658d0fa3",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 362.5026054382324
+  },
+  "right": {
+    "id": "658850ed5f9cc1f4",
+    "type": "split",
+    "children": [
+      {
+        "id": "16ccfb40c37f8a7f",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "3637ca624edd508c",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks"
+            }
+          },
+          {
+            "id": "0287e333f0aabb06",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links"
+            }
+          },
+          {
+            "id": "18a103f45ff389e5",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "29133ef0febb80e8",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          },
+          {
+            "id": "47bf7d4fd8c19c32",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false
+    }
+  },
+  "active": "6fe063f229a90e7c",
+  "lastOpenFiles": [
+    "handoff/INITIAL-PROMPT-2026-06-20-LISA.txt",
+    "handoff/HANDOFF-2026-06-20-LISA.md",
+    "explainer-video-2/character-images/R_ratna/R_ratna_hijab_profileA_medium.png",
+    "explainer-video-2/character-images/R_ratna/Content 1024x1536.png",
+    "explainer-video-2/character-images/R_ratna/bef5c5d1-f865-4212-804a-fb26d6005eaf.png",
+    "explainer-video-2/character-images/R_ratna/R_ratna_hijab_front_closeup.png",
+    "explainer-video-2/character-images/R_ratna/Content 1122x1402.png",
+    "explainer-video-2/character-images/R_ratna/1d57f196-0e59-45a4-88c5-17c585842554.png",
+    "explainer-video-2/character-images/R_ratna/R_ratna_hijab_front_medium.png",
+    "explainer-video-2/character-images/R_ratna/R_ratna_profileB_closeup.png",
+    "explainer-video-2/character-images/R_ratna/R_ratna_profileB_medium.png",
+    "explainer-video-2/character-images/R_ratna/Content 941x1672.png",
+    "explainer-video-2/08-character-sheet/R-ratna.md",
+    "explainer-video-2/08-character-sheet/H-herman.md",
+    "explainer-video-2/character-images/R_ratna/_rejected",
+    "explainer-video-2/character-images/R_ratna",
+    "handoff/INITIAL-PROMPT-2026-06-19-GATEB-PREP-RATNA.txt",
+    "handoff/HANDOFF-2026-06-19-GATEB-PREP-RATNA.md",
+    "explainer-video/08-investor-deck-brief.md",
+    "explainer-video-2/08-character-sheet/00-README.md.tmp.56555.ba2e34b94c36",
+    "prompt-rules-image-generation.md.tmp.56555.a4e56c448266",
+    "explainer-video/Semesta Digital — Visual Scene Proposal.pdf",
+    "explainer-video-2/character-images/README.md",
+    "explainer-video-2/character-images/H_herman/_rejected",
+    "explainer-video-2/character-images/H_herman",
+    "explainer-video-2/character-images",
+    "explainer-video-2/07-style-reference.md",
+    "explainer-video-2/00-INDEX.md.tmp.56555.5d063e73afc5",
+    "explainer-video-2/08-character-sheet.md",
+    "explainer-video-2/08-character-sheet/00-README.md",
+    "tokens-references/CREW-REFERENCE.md",
+    "tokens-references/INTERIOR-DESIGN-REFERENCE.md",
+    "tokens-references/TOKENS-REFERENCE.md",
+    "explainer-video-2/03-scene-detail.md",
+    "handoff/HANDOFF-2026-06-19-GATEA-COMPLETE.md",
+    "handoff/HANDOFF-2026-06-19-SCENES.md",
+    "explainer-video-2/06-konvensi-naratif.md",
+    "explainer-video-2/01-storyline.md",
+    "explainer-video-2/00-WORKLOG.md",
+    "explainer-video-2/02-storyboard.md",
+    "explainer-video-2/scene-images/README.md",
+    "explainer-video-2/05-pipeline-produksi.md",
+    "explainer-video/07-live-production-brief.md",
+    "explainer-video/11-adprovider-deck-content.md",
+    "explainer-video/04-pipeline-ai-production.md",
+    "explainer-video/05-storyboard-rough.md"
+  ]
+}

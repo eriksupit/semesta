@@ -1,0 +1,7 @@
+Bootstrap dulu: jalankan /session-anchors Protocol A (baca CLAUDE.md, MEMORY.md, scope.md, context.md, lessons.md, lalu handoff/HANDOFF-2026-06-09-DOCX.md). Konfirmasi bootstrap dalam satu kalimat sebelum menjawab.
+
+KONTEKS: Sesi sebelumnya (9 Juni 2026) menyelesaikan konversi 9 dokumen explainer-video ke .docx di explainer-video/docx-export/ — Hybrid: Level 2 (glosarium di depan, body verbatim) untuk 01/02/03/03-a/08; Level 1 untuk 04/05/06/07. Semua terverifikasi (nol kebocoran frontmatter, tabel ter-render, substansi tak berubah). Tidak ada pekerjaan konversi tertunda.
+
+TASK SESI INI: [belum dikunci — user tentukan]. Kandidat: (a) lanjut image generation S5–S17 untuk investor deck (true state 5/16 approved S0–S4, lihat HANDOFF-2026-06-10-S10.md); (b) bangun presentasi deck investor (sesi Claude Design).
+
+ATURAN: jangan eksekusi tool mutasi tanpa otorisasi eksplisit; tutup setiap rekomendasi dengan SATU pilihan + satu gate; simpan output dengan frontmatter Obsidian lengkap; riset sebelum klaim. Skills co-aktif: /anti-sycophancy /confidence /research-before-dispatch /brave. Tutup sesi dengan pipeline penutup + handoff baru.

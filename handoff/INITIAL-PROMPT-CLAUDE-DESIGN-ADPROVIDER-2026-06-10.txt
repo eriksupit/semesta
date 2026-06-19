@@ -1,0 +1,15 @@
+Design (lay out) an ad-provider sales deck for "Semesta Digital" (a working title — keep it labelled as such). Your job is DESIGN ONLY — do not write copy, do not compute or confirm any number, do not pull from other documents. All content is already finished.
+
+I have uploaded ONE content document: "11-adprovider-deck-content.md". It has 15 slides, each with Headline, Body, a Visual spec, and Speaker notes — all final and verbatim. Lay them out exactly, in order. Put Headline + Body + Visual on each slide and the Speaker text in speaker notes.
+
+Build each slide's visual exactly as its "Visual" line says:
+- GMV column chart with the four bars written in the doc (Year 1 Rp 0.5–1T, Year 2 Rp 3–5T, Year 3 Rp 8–12T, Year 4 Rp 20–30T).
+- Reach panel with the four stat tiles as written (~60M members, ~28,000 pesantren, 6-level structure, built-in segments).
+- The orbit/5-vertical, context grid, principle chips, etc. — as specified.
+Do not change, add, or invent any value.
+
+Slide 12 is marked "TO BE COMPLETED BY OPERATOR" — render it as the placeholder panel with the four empty labelled fields (Inventory & formats / Pricing model / Launch-partner terms / Measurement). Do NOT fill in CPM, formats, pricing, or terms.
+
+Rules: copy verbatim (no rephrasing, no new stats). The words traffic, inventory, reach, placement, audience, first-party are fine here. Do NOT use "bayangkan" or "revolusi". Naming NU, banks, pesantren is allowed. Use one consistent visual system — cool, restrained, frosted-glass / teal-cyan accent, clean sans-serif — to match the companion visual deck. Include the appendix-divider slide (15).
+
+No image attachments are required; if I attach a few scene stills, use them only as section backings (S6/S2/S8 → slide 6, S12/S14b → slide 5, S17/S17b → slide 14). Make a deck.
