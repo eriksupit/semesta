@@ -25,8 +25,13 @@ Override cool deck-standard `prompt-rules` b.208. String `color_grade` standar v
 
 ---
 
+> **ADDENDUM A1 (2026-06-21, `00-WORKLOG`):** semua elemen grafis di shot-list & prosa di seluruh dokumen ini — UI app, kartu iklan/notifikasi (`Waktu Subuh`, kartu sarung), grafik saham, super text — **TIDAK digenerate AI**. AI hanya render scene murni (device tampil, layar netral/mati, framing comp-aware); grafis digarap di After Effects oleh animator. Beat "App UI/Potensi Iklan" diwujudkan di POST.
+
 ## SEQ1-SC01 — INT. KAMAR HERMAN — 04.40 WIB *(contoh kanonik 4-beat)*
-Sepasang mata terbuka. Kelopak mata Herman, 50 tahun, mengerjap di keremangan; pandangnya menemukan langit-langit. Di nakas, layar ponselnya menyala sendiri: pengingat **`Waktu Subuh · 04.42`**, dan tepat di bawahnya sebuah kartu tipis menggeser masuk — iklan sarung tenun ("Cap Gajah"), bersahaja, seperti pas dengan momennya. Herman meraih ponsel; ibu jarinya menyentuh "matikan", kartu iklan sempat terbaca sebelum surut. Layar berganti ke ringkasan pagi yang biasa ia tengok: **grafik pergerakan saham** — garis tipis dari penutupan sore kemarin merayap sampai dini hari. Ia mengangguk kecil, menelungkupkan ponsel, lalu bangkit ke tepi ranjang dan mengenakan sarung itu — kain polos bertenun rapat, warna gelap teduh. Sisi ranjang Ratna sudah kosong dan rapi.
+1. Sepasang mata terbuka. Kelopak mata Herman, 50 tahun, mengerjap di keremangan; pandangnya menemukan langit-langit. 
+2. Di nakas, layar ponselnya menyala sendiri: pengingat **`Waktu Subuh · 04.42`**, dan tepat di bawahnya sebuah kartu tipis menggeser masuk — iklan sarung tenun ("Cap Gajah"), bersahaja, seperti pas dengan momennya. 
+3. Herman meraih ponsel; ibu jarinya menyentuh "matikan", kartu iklan sempat terbaca sebelum surut. Layar berganti ke ringkasan pagi yang biasa ia tengok: **grafik pergerakan saham** — garis tipis dari penutupan sore kemarin merayap sampai dini hari. 
+4. Ia mengangguk kecil, menelungkupkan ponsel, lalu bangkit ke tepi ranjang dan mengenakan sarung itu — kain polos bertenun rapat, warna gelap teduh. Di sisi satunya, Ratna masih tertidur lelap — ia akan bangun setelah Herman berangkat.
 
 **VO (laki-laki, tenang):** *"Satu hari dimulai. Hari yang sama — untuk semua orang."*
 
@@ -113,7 +118,7 @@ Kafe kecil dekat kampus, ramai-santai: kopi, kabel laptop, obrolan rendah. Lisa,
 ---
 
 ## SEQ3-SC01 — INT. DAPUR RUMAH RATNA — 11.00 WIB *(marketplace B2C · live-selling)*
-Dapur rumah, terang oleh siang. Ratna, celemek terpasang, menghadap ponsel yang terpasang di tripod kecil — ia sedang **siaran jualan langsung** frozen food-nya. Ia mengangkat sepiring risoles ke kamera, bicara ramah; di layar, **komentar dan pesanan pembeli** dari berbagai daerah mengalir masuk real-time, ikon "pesan" bermunculan. Di sisinya, **Tika — remaja tetangga** yang ia bayar paruh waktu — sigap mengemas pesanan yang masuk ke box berlabel, sesekali menyebut jumlah ke Ratna. Saat satu pesanan ditutup, notifikasi **pembayaran dompet digital** masuk. Dapur kecil, pasar seluas layar.
+Dapur rumah, terang oleh siang. Ratna, celemek terpasang, menghadap ponsel yang terpasang di tripod kecil — ia sedang **siaran jualan langsung** frozen food-nya. Ia mengangkat sepiring risoles ke kamera, bicara ramah; di layar, **komentar dan pesanan pembeli** dari berbagai daerah mengalir masuk real-time, ikon "pesan" bermunculan. Di sisinya, **Tika — tetangga dewasa muda** yang ia bayar paruh waktu — sigap mengemas pesanan yang masuk ke box berlabel, sesekali menyebut jumlah ke Ratna. Saat satu pesanan ditutup, notifikasi **pembayaran dompet digital** masuk. Dapur kecil, pasar seluas layar.
 
 **Shot list**
 - **SEQ3-SC01-SH01** — MS Ratna live. start: ia mengangkat piring risoles ke ponsel di tripod, bicara ke kamera. end: komentar/pesanan pembeli mengalir di layar. *(50mm · interaksi: audiens live lintas-daerah)*
@@ -121,7 +126,7 @@ Dapur rumah, terang oleh siang. Ratna, celemek terpasang, menghadap ponsel yang 
 - **SEQ3-SC01-SH03** — CU layar ponsel. start: aliran komentar + slot pesanan. end: kartu iklan pemasok kemasan lewat tipis di pojok. *(Teknik 2/2b)*
 - **SEQ3-SC01-SH04** — CU tangan/layar. start: pembayaran dompet digital masuk. end: saldo bertambah, Ratna & Tika bertukar senyum. *(payoff B2C)*
 
-**— Catatan produksi:** *Potensi iklan* — Surface: live-shopping (slot produk, pin pesanan) + kartu pemasok kemasan + dompet digital. Momen intent: detik beli saat live. Kategori: FMCG bahan/kemasan · e-wallet · live-commerce. Interaksi: audiens live (lintas-daerah/demografi) + Tika remaja (lintas-generasi). 4-beat: live → pesanan masuk → iklan kemasan → bayar. Grade hangat siang.
+**— Catatan produksi:** *Potensi iklan* — Surface: live-shopping (slot produk, pin pesanan) + kartu pemasok kemasan + dompet digital. Momen intent: detik beli saat live. Kategori: FMCG bahan/kemasan · e-wallet · live-commerce. Interaksi: audiens live (lintas-daerah/demografi) + Tika dewasa muda (lintas-generasi: Ratna 45 / Tika 20). 4-beat: live → pesanan masuk → iklan kemasan → bayar. Grade hangat siang.
 
 ---
 

@@ -44,9 +44,31 @@ Rebuild naratif penuh explainer video → konsep "Satu Keluarga, Satu Hari Penuh
 - **Kebakuan baru DIKUNCI** (semua di `lessons.md`+memory — baca, jangan putuskan ulang): sumbu modesty=paparan-non-mahram (bukan indoor/outdoor); "hijabi" di `role`=keyword-leak (dibuang dari plat uncovered); plat referensi rambut TERGERAI (styling ke GATE B); karakter bertutup = baseline uncovered + plat tertutup representatif.
 - **CATATAN GIT:** vault bukan repo; `commit` belum bisa; `git init` = keputusan user.
 
-## NEXT (sesi Lisa)
-- **GATE 0 lanjut:** `08-character-sheet/L-lisa.md` (mahasiswi+kreator 20 — **9 plat saja, tidak berhijab**, rambut tergerai; anchor Michael Wilkinson/Judy Chin/Camille Friend; makeup on-camera ready; 6 scene SEQ2-SC01/04, SEQ3-SC04, SEQ4-SC02, SEQ5-SC01, SEQ6-SC01) + folder `L_lisa/` → `A-andi.md` → `F-figurans.md` → entri WORKLOG penutup GATE 0.
-- **Render-age Lisa OPEN:** rekomendasi ~19, verifikasi pada plat pertama.
+## STATUS LANJUT (akhir sesi 2026-06-21 — GATE 0 Lisa 9/9 LENGKAP)
+- **Lisa SELESAI:** 9 plat di `character-images/L_lisa/` (Front/ProfileA/ProfileB × full/medium/closeup, uncovered, rambut tergerai, body `34C` konsisten) divalidasi+approve. `L-lisa.md` v0.2; `00-README` manifest COMPLETE; `00-WORKLOG` entri 2026-06-21.
+- **Kebakuan baru DIKUNCI** (lessons+memory — baca, jangan putuskan ulang): siluet dada feminin di t2i = **ukuran bra konkret register fashion** (`body_features: ...natural 34C bustline, defined waist and hips...` + `wardrobe: fitted crew-neck...`), BUKAN adjektiva abstrak (`slim/womanly/hourglass/curves/feminine` gagal 3× — torso rata di profil). Lolos filter via register `commercial stock photography/catalogue`; hindari kata-merah `breasts/busty/large/cup-lepas/bra`; eskalasi 34B/34D. 3 frontal awal (slim) di-regenerate `34C` agar satu-tubuh.
+- **Render-age 19 dikunci** (terverifikasi pada plat).
+
+## STATUS LANJUT (akhir sesi 2026-06-21 — GATE 0 Andi 9/9 LENGKAP)
+- **Andi SELESAI:** 9 plat di `character-images/A_andi/` (Front/ProfileA/ProfileB × full/medium/closeup, uncovered, crop pendek) divalidasi+approve. `A-andi.md` v0.1; `00-README` manifest COMPLETE. 9 plat uncovered saja (SEQ6-SC02 ngaji tanpa peci per prosa). Nol body-feminization token.
+- **Render-age 10 DIKUNCI** (terverifikasi plat pertama). **Kebakuan baru DIKUNCI** (lessons+memory): render-age di bawah usia riil HANYA untuk dewasa; anak = usia riil, nol kompensasi menua.
+- **GATE 0 tinggal figuran:** `F-figurans.md` (figuran berulang) → entri WORKLOG penutup GATE 0 → GATE B. Diskusi pilih figuran mana = agenda berikutnya.
+
+## STATUS LANJUT (sesi 2026-06-21 — GATE B dibuka + GATE 0-ENV berjalan)
+- **GATE B:** standar shot 6-lapis + token grade-hangat (`Roger Deakins … slightly warmer midtones`) + crew video (Cuarón/Lubezki/Caballero) DIKUNCI di `00-WORKLOG`. Field `identity_reference` ikat plate↔attachment.
+- **ADDENDUM A1 (kanonik `00-WORKLOG`):** seluruh grafis nol dari generate AI → digarap After Effects; **Lapis 5 dibuang**. Disebar ke `prompt-rules`/`05`/`03`/`lessons`/memory.
+- **GATE 0-ENV:** 14 environment (E01–E14), metode `09-environment-sheet/00-README-ENV.md` (empty-room, grade netral, scoped-angle, 3 anchor wajib: kelas pemilik + brand internasional + desainer internasional Caballero/Ilse Crawford + named artwork Hokusai). `environment-images/` dibuat; **E01 master v3.1 jadi** (compliant).
+- **Kebakuan/koreksi baru** (lessons + memory — baca, jangan ulang): env=scene benda-mati → `subject_anchor`; prompt env wajib token-library + positive-only (contek plate karakter approved); geo-label `scene` BANNED → lokalisasi via material+register; **multi-angle env via metode reference-image karakter** (bukan text-only/klon); jangan defeatist — multi-angle konsisten terbukti pada 53 plate karakter.
+- **NEXT:** selesaikan angle E01 (reference-image upload + spec sudut tegas) → E02–E14 → kembali ke GATE B keyframe SEQ1. Tertunda lama: runtime ≈312s vs 300s; sinkron O4 hilir.
+
+## STATUS LANJUT (akhir sesi 2026-06-21 — GATE 0 CLOSED, figuran 14/14)
+- **GATE 0 DITUTUP penuh:** figuran SELESAI 14/14 (`F_darto` 3 · `F_tika` 2 · `F_petugasbank` 3 · `F_rian` 3 · `F_pembina` 3). `F-figurans.md` v0.3 (14 prompt 6-lapis verbatim). `00-README` figuran=COMPLETE; `00-WORKLOG` entri penutup GATE 0. Karakter GATE 0 final: Herman 9 · Ratna 12 · Lisa 9 · Andi 9 · figuran 14.
+- **Kebakuan baru DIKUNCI** (semua di `lessons.md`+memory — baca, jangan putuskan ulang): minor tak boleh token-bra (re-age dulu ke dewasa, Tika 16→20); pembeda wajah figuran via `distinctive-commoner-features`+ciri konkret (render figuran cenderung jatuh ke wajah generik sama); body-shape via cup konkret+tinggi+build (Tika 34C/Lisa 34C/pembina 36D); kacamata dibuang (frame tak stabil lintas angle); panjang lengan wajib eksplisit di wardrobe; peran figuran ikut prosa `03` (Darto pedagang, bukan satpam); tiap sel = prompt 6-lapis penuh verbatim.
+- **NEXT: GATE B** prompt keyframe per shot (grade hangat). **Handoff GATE B SUDAH dibuat:** `handoff/HANDOFF-2026-06-21-GATEB.md` + `INITIAL-PROMPT-2026-06-21-GATEB.txt` (sesi baru dibuka dgn diskusi DECIDE-FIRST: token grade-hangat + urutan kerja + pairing keyframe). **`Herman Model.png` SUDAH dihapus user → `H_herman/` tepat 9 plate.** Carryover: runtime ~312s vs 300s; sinkron O4 hilir (`04-ad-inventory-map`/deck `11`/tabel `05`). Total plate GATE 0 = 53.
+
+## NEXT (sesi figuran — historis: sesi Andi)
+- **GATE 0 lanjut:** `08-character-sheet/A-andi.md` (anak 10 — bare healthy skin, anchor hair Anissa Salazar / costume Deborah Hopper; 4 scene SEQ2-SC03, SEQ4-SC04, SEQ6-SC01/02) + folder `character-images/A_andi/` → `F-figurans.md` → entri WORKLOG penutup GATE 0. **[Andi SELESAI 2026-06-21 — lihat STATUS LANJUT di atas.]**
+- **Render-age Andi OPEN:** anak 10, verifikasi pada plat pertama (pola Lisa). **[DIKUNCI 10 — terverifikasi.]**
 - **Lalu GATE B:** prompt 6-lapis t2i per shot (grade HANGAT video), pakai character sheet + `07` sebagai jangkar.
 - **Tertunda:** runtime ~312s vs 300s (opsi pangkas 1 shot); file `Herman Model.png` (ke-10, perlu klarifikasi user).
 - **Handoff:** `handoff/HANDOFF-2026-06-20-LISA.md` + `INITIAL-PROMPT-2026-06-20-LISA.txt`.
@@ -136,3 +158,11 @@ S0 → S1 → S2 → S3 → S4 → S5 → S6 → S7 → S8 → S9 → S10 → S1
 | 2026-06-09 | Expanded: graphic wajib semua scene, scene_depth wajib semua scene |
 | 2026-06-09 | Reset: generate ulang dari S0, semua prompt sudah final |
 | 2026-06-10 | Sesi 11: S3–S9 approved (10/16). Tone deck distandarkan cool, anti-dead-center, interaksi non-presenter, fix mekanis+tangan. Lanjut S10–S17 di sesi baru (HANDOFF-S11). |
+
+## UPDATE 2026-06-23 — GATE 0-ENV E03 COMPLETE → **ENV PAUSED, PILOT AKTIF**
+- **⏸ GATE 0-ENV DI-PAUSE (keputusan Erik 2026-06-23).** Aktif sekarang = **PILOT SEQ1-SC01 end-to-end** (GATE B keyframe → GATE C Kling i2v → VO + grafis AE → assemble) untuk membuktikan workflow sebelum scaling. Paket: `handoff/HANDOFF-2026-06-23-PILOT-SEQ1-SC01.md` + `INITIAL-PROMPT-2026-06-23-PILOT-SEQ1-SC01.txt`. Reference-lock: `E01_kamar/*` + `H_herman/*` (Herman satu-satunya tokoh on-screen).
+- **E04 Dapur di-HOLD** — handoff `HANDOFF-2026-06-23-ENV-E04-dapur.md` sudah jadi, dieksekusi SETELAH pilot (atau setelah pipeline-gap dari pilot diperbaiki).
+- **E01 ✅ · E02 ✅ · E03 Ruang Belajar ✅ (4/4)** locked (master/desk/tablet/doorway). GATE 0-ENV rollout berjalan (paused di E03).
+- **NEXT env = E04 Dapur Ratna (SEQ3-SC01, live-selling UMKM)** — lanjut home-room block (E04→E06 berbagi §3 house anchor), lalu luar-rumah (E07, E09–E14) + E08 kantor (3×).
+- **Kebakuan baru E03 (terkunci, lihat `context.md` TERBARU + `prompt-rules` + memory):** ornamen anak = produk bernama; DUA guardrail (token + image-similarity) → kalau prior runtuh ke karakter-IP ganti KATEGORI subjek (Schleich T-Rex), bukan de-brand kata; merek produk aman & wajib, hanya karakter-IP kena filter (swap reaktif); grep-audit token arah pra-lock.
+- Standar env terkunci di `09-README-ENV §2.6` + `E02`/`E03` (token-per-token, verifiable named products, camera-relative, master-as-anchor). Out of scope: GATE B keyframes sampai home-room block env selesai.

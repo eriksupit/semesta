@@ -14,7 +14,7 @@ aliases: [ev2-ratna-sheet, R-ratna]
 
 ## 0. Modesty axis (Ratna-specific — READ FIRST, governs §4 wardrobe)
 Ratna's head-covering is **not** a fixed look; it is governed by **non-mahram exposure**, not by indoor/outdoor. Mahram present in this film = Herman (husband), Andi (son), Lisa (daughter). Hair may be uncovered ONLY when everyone present is mahram or female. The moment a non-mahram man can see her — **physically OR through a camera/broadcast** — hijab is worn. Three states result:
-1. **Uncovered (hair visible):** family/mahram-only scenes — SEQ2-SC03, SEQ6-SC01, SEQ6-SC02.
+1. **Uncovered (hair visible):** family/mahram-only scenes — SEQ1-SC01 (asleep in the private bedroom, husband-only present), SEQ2-SC03, SEQ6-SC01, SEQ6-SC02.
 2. **Hijab covered:** public exposure, including two **at-home** scenes that broadcast/video to non-mahram — SEQ3-SC01 (live-selling to public), SEQ3-SC02 (bank video call), plus outdoors SEQ4-SC03, SEQ5-SC02.
 3. **Mukena (prayer garment):** SEQ1-SC02 sholat subuh.
 

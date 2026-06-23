@@ -20,9 +20,9 @@ aliases: [ev2-08-readme, character-sheet-index]
 |---|---|---|---|
 | `H-herman.md` | Herman (50) | SEQ1-SC01/02, SEQ2-SC02, SEQ3-SC03, SEQ4-SC01, SEQ6-SC01/03 | drafting |
 | `R-ratna.md` | Ratna (45, hijabi) | SEQ1-SC02, SEQ2-SC03, SEQ3-SC01/02, SEQ4-SC03, SEQ5-SC02, SEQ6-SC01/02 | **COMPLETE — 12/12 plates approved** (9 uncovered turnaround + 3 hijab ref) |
-| `L-lisa.md` | Lisa (20, creator) | SEQ2-SC01/04, SEQ3-SC04, SEQ4-SC02, SEQ5-SC01, SEQ6-SC01 | todo |
-| `A-andi.md` | Andi (10) | SEQ2-SC03, SEQ4-SC04, SEQ6-SC01/02 | todo |
-| `F-figurans.md` | recurring figurans | various recurrence points | todo |
+| `L-lisa.md` | Lisa (20, creator) | SEQ2-SC01/04, SEQ3-SC04, SEQ4-SC02, SEQ5-SC01, SEQ6-SC01 | **COMPLETE — 9/9 plates approved** (uncovered turnaround, hair loose, body `34C` consistent) |
+| `A-andi.md` | Andi (10) | SEQ2-SC03, SEQ4-SC04, SEQ6-SC01/02 | **COMPLETE — 9/9 plates approved** (uncovered turnaround, short crop, render-age 10) |
+| `F-figurans.md` | 5 named single-scene figurans (Pak Darto, Tika, petugas bank, Rian, pembina muda) | SEQ2-SC01, SEQ3-SC01/02/03, SEQ4-SC04 | **COMPLETE — 14/14 plates approved** (Darto 3 · Tika 2 · petugas bank 3 · Rian 3 · pembina 3; adaptive set, front+profileA only, zero Profile B) |
 
 Generated plates land in `../character-images/` (see naming §4).
 

@@ -262,6 +262,32 @@ These names go in `production_designer` field (Lapis 6) or as anchor in `product
 
 ---
 
-*Interior Design Reference v1.0 · Semesta Digital · 10 Juni 2026*
-*Sources: SampleBoard, House Beautiful, Design Pataki, Authentic Interior, Bocado Lobo*
-*Validated: S2 (Jakarta Lower-Middle Domestic), S3 (Neo-Industrial Night), S4 (Tropical Modernism)*
+## 6. BRANDED FURNITURE TOKENS (consistency lock-anchors — reusable in ANY room)
+
+*Added 2026-06-22 (GATE 0-ENV, validated on E01 Kamar master). Rationale: a named manufacturer product + exact finish gives the t2i model a strong single prior → it reproduces the SAME object across derivative angles, suppressing "creative" drift. Use the **exact product name + exact finish wording** below; do not paraphrase the finish (paraphrase = weaker prior = drift). Source = IKEA product pages (Priority 1).*
+
+**Rule:** pick ONE named product per furniture slot, name it inside `subject_anchor` (primary_subject or a supporting_objects sub-slot). Keep the finish verbatim so every room sharing that piece renders the same wood tone. International brand register per `09-environment-sheet/00-README-ENV.md §2.5` (IKEA = lower-middle / middle-class home tier).
+
+| Slot | Token (verbatim) | Finish prior | Verified |
+|---|---|---|---|
+| Double bed | `IKEA MALM bed frame high headboard, white stained oak veneer` | pale oak veneer | ✅ ikea.com |
+| Nightstand | `IKEA MALM 2-drawer chest, white stained oak veneer` (used as nightstand; matches MALM bed) | pale oak veneer | ✅ ikea.com |
+| Wooden chair | `IKEA INGOLF chair, solid wood antique stain, slatted backrest` | brown stained wood | ✅ ikea.com |
+| Wardrobe | `IKEA PAX wardrobe, oak-effect doors` | warmer oak effect | ⚠️ variant name not fetched — confirm exact PAX door (e.g. FORSAND/REPVÅG oak-effect) before deep reuse |
+| Sheer curtains | `IKEA LILL net curtains, white` | sheer white net | ✅ ikea.com |
+| Oriental rug | `IKEA PERSISK HAMADAN rug, low pile, handmade oriental wool` | red-tone handwoven persian | ✅ ikea.com |
+| Bedding | (material token) `matte cotton bedding muted slate-grey` | — | not yet branded — brand later if needed (e.g. DVALA/ÄNGSLILJA grey) |
+| Living-room sofa | `IKEA EKTORP two-seat sofa, beige linen-blend slipcover` | beige slipcovered | ✅ E02 master (2026-06-23) |
+| Open shelf | `IKEA KALLAX shelving unit, a 2x2 open square cube grid, white-stained oak effect` | iconic countable cube grid | ✅ E02 master (2026-06-23) |
+| TV bench | `IKEA BESTÅ TV bench, white-stained oak-effect, a low closed flat-door media cabinet` | low flat-door media cabinet | ✅ E02 master (2026-06-23) |
+| Desk | `IKEA MICKE desk oak-effect` (+ `a simple black swivel office chair`) | oak-effect work desk | ✅ E02 master (2026-06-23) |
+
+**Verifiability caveat (validated E02, 2026-06-23):** a weak-silhouette named product (e.g. `IKEA LACK TV bench`, or a vaguely-described `low open shelf`) lets the t2i model improvise the form — `LACK TV bench` rendered as ambiguous cubes until swapped to `BESTÅ` (flat-door cabinet), and a generic shelf rendered as a plain cabinet until pinned to `KALLAX 2x2 cube grid`. Pick named products whose silhouette is **iconic and countable** (KALLAX cubes) or **unmistakable** (BESTÅ flat-door) so consistency across angles is measurable, not just asserted. Also keep distinct silhouettes per piece in one room (KALLAX cubes vs BESTÅ flat-door) so two units never blur together.
+
+**Wood-tone caveat (validated E01):** MALM (pale white-stained oak) + PAX (warmer oak-effect) + INGOLF (brown) render as three distinct tones in one room — this is realistic mixed-furniture, not a defect. When reusing, keep the SAME three tokens so the spread reproduces consistently rather than randomly.
+
+---
+
+*Interior Design Reference v1.1 · Semesta Digital · 10 Juni 2026 (§6 added 2026-06-22)*
+*Sources: SampleBoard, House Beautiful, Design Pataki, Authentic Interior, Bocado Lobo; §6 IKEA product pages (Priority 1)*
+*Validated: S2 (Jakarta Lower-Middle Domestic), S3 (Neo-Industrial Night), S4 (Tropical Modernism), E01 Kamar (branded furniture lock)*

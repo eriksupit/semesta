@@ -25,7 +25,8 @@ aliases: [ev2-05-pipeline, pipeline-produksi-2]
 ### Koreksi arsitektur yang dikunci (4)
 1. **Narator ≠ Kling.** Audio-on Kling = audio adegan, bukan pembacaan naskah presisi. Narator adalah satu trek menerus melintasi semua scene & cut → aset lapisan-edit, bukan output per-klip. Generate terpisah, mix di edit.
 2. **Keyframe per SHOT (= setup kamera = segmen 5 detik), bukan per scene.** Hierarki SEQ/SC/SH di `06-konvensi-naratif.md`: 1 shot = 1 keyframe-pair. Scene 20 dtk = beberapa shot → set keyframe berantai. Aturan sambung bila kontinu: **end-frame SH-N = start-frame SH-(N+1)**.
-3. **Grade VIDEO hangat, bukan cool deck-standard.** `prompt-rules` baris 208 mengunci grade COOL khusus 19 still deck. Video konsep keluarga = hangat. Saat menulis prompt frame video, **override blok `color_grade`** ke standar hangat video; jangan salin cool deck-standard.
+3. **Grade VIDEO hangat, bukan cool deck-standard.** `prompt-rules` baris 208 mengunci grade COOL khusus 19 still deck. Video konsep keluarga = hangat. Token hangat DIKUNCI (terverifikasi keyframe SEQ1-SC01-SH03, lihat `00-WORKLOG` GATE B): `Roger Deakins palette, lifted blacks medium gray, neutral shadows, clean whites, Kodak 2383 emulation, slightly warmer midtones`. Hangat hanya dari `color_grade`; garmen desaturated.
+5. **Nol grafis dari AI (ADDENDUM A1, `00-WORKLOG`).** Semua grafis (UI/kartu iklan/grafik/super/motion) digarap di After Effects oleh animator manusia. Prompt keyframe **membuang Lapis 5**; device tetap muncul, framing comp-aware (ruang layar bersih), layar netral/mati. Beat "App UI/Potensi Iklan" diwujudkan di POST.
 4. **Keyframe = PASANGAN identity-konsisten, bukan still tunggal.** `08` = still diam. Untuk start→end: **1 blok spec tetap** (Lapis 1–3 & 6: identitas, wardrobe, scene, kamera dikunci sama persis) **+ 2 varian Lapis 4** (subject_state/action/pose/gesture/expression) — satu untuk start, satu untuk end. Dua gambar = dua momen dari aksi yang sama.
 
 ---
@@ -56,7 +57,7 @@ Trek **narator + audio-adegan** ditangani di jalur edit, paralel & terpisah dari
 ### Empat gerbang validasi
 - **GATE 0 — Character sheet:** plat identitas tetap (wajah/perawakan, multi-angle, **white background**) + katalog wardrobe per-scene disetujui; jadi pemandu konsistensi yang disuntikkan ke **setiap** prompt GATE B (Lapis 1–3) + reference-locking Kling 3.0. **Mendahului GATE B** (sekali di awal, dipakai ulang seluruh produksi).
 - **GATE A — Detail adegan:** Peristiwa→App UI→Potensi Iklan→Payoff jelas; segmentasi 5-dtk masuk akal; "Bersih Saat Sakral" dipatuhi.
-- **GATE B — Prompt:** compliant 6-lapis `prompt-rules`; grade hangat; spec tetap identik antar start/end; hanya Lapis 4 berbeda.
+- **GATE B — Prompt:** compliant 6-lapis `prompt-rules`; grade hangat (token dikunci, `00-WORKLOG` GATE B); spec tetap identik antar start/end; hanya Lapis 4 berbeda; **Lapis 5 grafis DIBUANG (ADDENDUM A1 — grafis di After Effects)**; tiap prompt mengikat plate GATE 0 via `character_identity.identity_reference`; crew video Cuarón/Lubezki/Caballero + costume/makeup/hair per `07 §5`.
 - **GATE C — Keyframe:** akurasi visual + konsistensi identitas/wardrobe/scene antar pasangan & antar segmen; end-N = start-(N+1) tersambung.
 
 ---
