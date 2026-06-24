@@ -19,7 +19,7 @@ updated: 2026-06-10
 **Satu token kuat melingkupi banyak hal. Percayakan ke model.**
 
 - Token strings, bukan kalimat
-- Tanpa kata sambung (and, but, with)
+- Tanpa kata sambung antar-token (Validated 2026-06-24, audit `PROMPT-AUDIT-CHECKLIST`): konjungsi koordinatif + preposisi aditif yang me-LEM dua token mandiri DIHAPUS, ganti koma — `and`, `but`, `or`, `with`, `for`, `plus`, `bearing`. Diabaikan model + menggoda model menyusun "kalimat". **PERTAHANKAN `of` dan preposisi spasial/relasional yang berada DI DALAM satu token** (`of`, `toward`, `above`, `below`, `from`, `to`, `into`, `over`, `against`, `on`) — load-bearing, bukan lem (bukti token tervalidasi: `edge of card`, `third of frame`, `toward camera`, `above crown`, `from lens`). Uji operatif: kata ini me-lem dua token mandiri (→ buang) atau bagian frasa internal satu token (→ simpan)?
 - Tanpa copula (is, are, was, be)
 - Tanpa to-be, tanpa tenses
 - **Tanpa negasi — MUTLAK. `no X`, `not X`, `not in frame`, `without X`, `un-`, `non-`. Negasi dibaca model sebagai izin berinisiatif → non-compliant. Tulis POSITIF (apa yang ADA), atau HAPUS field bila elemennya tak tampak. `tidak berkepala`→`headless`.**
