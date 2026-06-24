@@ -1,7 +1,7 @@
 > **REFERENCE MIRROR — bukan skill aktif.** Disalin dari `.claude/skills/tti-prompt-audit/SKILL.md` pada 2026-06-24.
 > Source of truth = file asli di atas (terus berevolusi). Ini snapshot; **re-sync manual** bila yang asli berubah.
-> Peran: pre-lock gate t2i prompt — 9 grep MEK + walk MATA + verdict; source of truth aturan = PROMPT-AUDIT-CHECKLIST.md.
-> Tim dengan setup Claude Code berbeda: adopsi isi di bawah ke setup masing-masing (global skill / project skill / panduan baca).
+> Peran: pre-lock gate t2i prompt — 9 grep MEK + walk MATA + verdict + confidence gate (keyakinan verdict; bila di bawah 95 persen, periksa ulang). Source of truth aturan = PROMPT-AUDIT-CHECKLIST.md.
+> Tim dengan setup Claude Code berbeda: adopsi isi di bawah ke setup masing-masing.
 
 ---
 
@@ -56,9 +56,11 @@ These cannot be grepped — they need the render or the scene prose `03`. List t
 - F1/F2 framing/angle/camera/lighting dari library + off-axis anti-cliché?
 - I-series GATE B: triad attachment (karakter+env+start/end-ref) lengkap? END anchor ke render START? orientasi dari plat cocok (nol "3/4")?
 
-## Phase 3 — Verdict
+## Phase 3 — Verdict + confidence gate (MANDATORY, `confidence`)
 
 Close with: `COMPLIANT` (semua MEK PASS + MATA dikonfirmasi user) atau `BELUM — N pelanggaran MEK + M item MATA belum dicek`, daftar pelanggaran + nomor baris, lalu ONE rekomendasi perbaikan konkret + gate validasi. Jangan kunci/generate sebelum verdict COMPLIANT.
+
+Emit `Confidence: NN%` (integer) atas **keyakinan terhadap verdict-nya sendiri** — bukan atas mutu prompt, melainkan: yakinkah saya tiap PASS/FAIL benar (nol false-positive grep — kata di prosa-komentar bukan di nilai token; nol salah-baca judgment MATA)? **Jika ≤95%:** jangan keluarkan verdict goyah — periksa ulang tiap baris yang di-flag (apakah hit grep benar di dalam VALUE token), baca ulang aturan terkait di `PROMPT-AUDIT-CHECKLIST.md`/`prompt-rules`, lalu re-assess sampai >95% (`confidence` + `loop-until-confidence`). Confidence di sini soal akurasi pengukuran, bukan jaminan render.
 
 ## Discipline
 

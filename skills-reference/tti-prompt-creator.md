@@ -1,6 +1,6 @@
 > **REFERENCE MIRROR — bukan skill aktif.** Disalin dari `.claude/skills/tti-prompt-creator/SKILL.md` pada 2026-06-24.
 > Source of truth = file asli di atas (terus berevolusi). Ini snapshot; **re-sync manual** bila yang asli berubah.
-> Peran: penulis prompt t2i 6-lapis yang loop dengan tti-prompt-audit sampai COMPLIANT; research-before-dispatch (entry) + brave (loop) + anti-sycophancy (honesty gate).
+> Peran: penulis prompt t2i 6-lapis yang loop dengan tti-prompt-audit sampai COMPLIANT; research-before-dispatch (entry) + brave (loop) + confidence (gerbang numerik exit, scoped sumbu terukur) + anti-sycophancy (honesty gate).
 > Tim dengan setup Claude Code berbeda: adopsi isi di bawah ke setup masing-masing.
 
 ---
@@ -14,7 +14,7 @@ description: Use when the user wants to author a text-to-image (t2i) generation 
 
 Authors a compliant 6-layer t2i prompt for a named shot, then self-loops with `tti-prompt-audit` until the draft passes. Pairs with [[tti-prompt-audit]] (the gate). Canonical rules live in `prompt-rules-image-generation.md` + `explainer-video-2/PROMPT-AUDIT-CHECKLIST.md` — this skill does NOT redefine them, it produces a draft that satisfies them.
 
-The three global disciplines bind at named stages (mirrored read-only in `skills-reference/` for the team): `research-before-dispatch` at the entry gate, `brave`/`loop-until-confidence` at the loop engine, `anti-sycophancy` at the honesty gate. Cite and follow them — do not skip a stage.
+The four global disciplines bind at named stages (mirrored read-only in `skills-reference/` for the team): `research-before-dispatch` at the entry gate, `brave`/`loop-until-confidence` at the loop engine, `confidence` as the mandatory numeric exit gate, `anti-sycophancy` at the honesty gate. Cite and follow them — do not skip a stage.
 
 ## Stage 1 — Entry gate (research-before-dispatch): read the bahan BEFORE writing any token
 
@@ -58,9 +58,17 @@ Run `tti-prompt-audit` on the scratchpad draft. Then:
 - Do NOT declare the draft COMPLIANT from your own reading — only the `tti-prompt-audit` verdict counts. Confidence in your own draft without the audit run is self-sycophancy (anti-sycophancy Prohibition 2).
 - Render-dependent MATA gates CANNOT close pre-generation (no render exists yet): eyeline-vs-camera, framing-drift-wider, real screen-glow, frontal-vs-profile orientation. Mark these **PENDING post-render** explicitly — spec them correctly, but never claim they passed. After the user generates, run `tti-prompt-audit` on the image for the second pass.
 
+## Stage 4b — Confidence gate (MANDATORY, `confidence` + `loop-until-confidence`)
+
+After the audit returns COMPLIANT, emit an explicit `Confidence: NN%` (integer) on the **verifiable axis only**: (a) compliance per the audit verdict + (b) spec-fidelity — does the prompt faithfully encode THIS shot per `03-scene-detail.md` (right action, framing, who/what in frame, cultural term, garment)? This is a SECOND axis above COMPLIANT: a prompt can pass every grep gate yet still be <95% certain it captures the shot (ambiguous cultural token, framing token that may land wide, an abu-abu MATA judgment).
+
+- **If ≤95%:** do NOT hand over. Invoke `loop-until-confidence` — name the specific gap (which token, which scene-prose detail unmatched), patch, re-run `tti-prompt-audit`, re-check against `03`, re-assess. Loop until >95% or a named blocker.
+- **Scope the number to the verifiable axis ONLY.** Render-dependent gates (Stage 4 list) are a DECLARED CAP, never part of the pre-render number and never a loop target — gating confidence on them would spin the loop forever (no render exists to verify against). Carry them as `PENDING post-render`. Emit e.g. `Confidence: 96% (compliance + spec-fidelity) · render-dependent gates PENDING post-render`.
+- Claiming high confidence that the IMAGE will be good is self-sycophancy about an unknowable — forbidden. Confidence is about the spec, not the render.
+
 ## Stage 5 — Handover
 
-Present the COMPLIANT prompt (start/end pair) stamped `COMPLIANT (MEK + prose-MATA)` + the list of `PENDING post-render` gates. Writing the final prompt into a vault doc (e.g. `10-gateB-keyframes/SEQ*-SC*.md`) is a mutation — propose it and wait for explicit approval (Prohibition 1). Do not auto-write to the vault.
+Present the COMPLIANT prompt (start/end pair) stamped `COMPLIANT (MEK + prose-MATA)` + `Confidence: NN%` (verifiable axis, >95% required to hand over) + the list of `PENDING post-render` gates. Writing the final prompt into a vault doc (e.g. `10-gateB-keyframes/SEQ*-SC*.md`) is a mutation — propose it and wait for explicit approval (Prohibition 1). Do not auto-write to the vault.
 
 ## Discipline
 
