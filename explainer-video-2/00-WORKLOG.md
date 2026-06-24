@@ -117,6 +117,7 @@ Peristiwa: Herman mematikan alarm pengingat sholat dari superapp. → App UI: be
 ## 9. Decision Log
 | Tgl | Keputusan |
 |---|---|
+| 2026-06-23 | **ADDENDUM A2 (keputusan Erik): keyframe-complete before motion.** Produksi + terima SELURUH GATE B image anchor (start+end) untuk seluruh film (19 scene/57 shot/≈114 keyframe) SEBELUM GATE C Kling. Pilot SC01-end-to-end di-supersede. SEQ1-SC01 ✅ 8/8 (commit bdb8654). Dependency: GATE 0-ENV E04–E14 menyusul per-scene. Kanonik di ADDENDUM A2 `00-WORKLOG`. |
 | 2026-06-18 | Struktur garis-waktu-hari cross-cut (D1) disetujui. |
 | 2026-06-18 | Cold-open algoritmik dibuang (D2); kerangka 5 babak / 15 scene (D3) disetujui. |
 | 2026-06-18 | Usaha Ratna = kuliner rumahan/frozen food disetujui. |
@@ -186,6 +187,25 @@ Peristiwa: Herman mematikan alarm pengingat sholat dari superapp. → App UI: be
 - "Bersih Saat Sakral" unaffected (zero commercial in sacred beats; now also zero baked graphics everywhere).
 
 **Scope:** GATE B keyframes + GATE C renders + GATE 0-ENV environment plates. Does NOT alter the approved GATE 0 character identity plates.
+
+---
+
+## ADDENDUM A2 — Keyframe-complete before motion (dikunci 2026-06-23, keputusan Erik) {#addendum-a2}
+
+> **Canonical home of this addendum.** Cross-link to `05-pipeline-produksi.md` (gate order), `scope.md`, `context.md`, memory. Supersedes the "pilot SC01 end-to-end through Kling first" plan in `HANDOFF-2026-06-23-PILOT-SEQ1-SC01.md`.
+
+**Decision:** Author + accept **ALL GATE B image anchors (start+end keyframe pairs) for the ENTIRE film** — every sequence → scene → shot (19 scenes / 57 shots / ≈114 keyframes) — BEFORE any GATE C (Kling i2v). GATE C, VO, After Effects compositing, and assembly are **deferred** until the complete keyframe board is locked. The pilot's "run SC01 through Kling before scaling" sequencing is **superseded**.
+
+**Rationale:** lock the full visual board across the whole film; surface environment / character / continuity gaps film-wide before spending Kling credits; keyframe authoring is the hard, learning-dense stage (proven on SEQ1-SC01-SH03/SH04) and its prompt-craft lessons compound across scenes when batched.
+
+**Logged risk (accountability, not a blocker):** producing ≈114 keyframes before a single i2v test means a systemic keyframe→i2v failure (e.g. warp on a framing class) would force broad rework. Accepted: keyframes are independently valuable as a locked storyboard, and i2v risk can be spot-checked opportunistically on one accepted pair if doubt arises.
+
+**Consequences:**
+- **Work order** = GATE B in shot-order per `03-scene-detail.md`: SEQ1 (SC01 ✅ done) → remaining SEQ1 scenes → SEQ2 → … → SEQ6. One doc per scene: `10-gateB-keyframes/SEQ<n>-SC<nn>.md`, following the SEQ1-SC01 standard (6-layer prompt, 🔒 triad attachment, orientation rules [no 3/4 plate · profile=single profile plate · facing matches object side], warm grade, ADDENDUM A1 screens-off, END-anchors-on-START, lighting/continuity reference).
+- **Hard dependency:** a scene's keyframes cannot be authored until its environment plates exist (GATE 0-ENV). Status: E01/E02/E03 ✅; **E04–E14 still pending**. So GATE 0-ENV resumes and is produced just-ahead of each scene's GATE B (env-then-keyframes, per home-room → outdoor → office block).
+- GATE C (Kling 3.0 i2v), VO TTS, AE graphics, assemble, PILOT REPORT → all deferred to after the full keyframe set is accepted.
+
+**Scope:** sequencing of GATE 0-ENV + GATE B + GATE C only. Does NOT alter ADDENDUM A1, the locked grade, the 6-layer standard, or any approved GATE 0 / GATE B asset.
 
 ---
 

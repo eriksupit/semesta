@@ -6,7 +6,17 @@ created: 2026-06-08
 updated: 2026-06-18
 ---
 
-# Scope — AKTIF (2026-06-18 · Rebuild Konsep Cerita Video → folder explainer-video-2/)
+# Scope — AKTIF (2026-06-24 · GATE B keyframe SEQ1-SC02 — menunggu render SH02-START)
+
+## STATUS TERBARU (2026-06-24)
+- **AKTIF:** GATE B keyframe SEQ1-SC02 (sholat subuh). SH01 pair ACCEPTED. **NEXT = TUNGGU render SH02-START user → review → rename → SH02-END → SH03.** YA NEVER generate.
+- **Dikunci:** SC02 3-shot (SH04 dihapus); plate sholat `E02_ruangkeluarga_reverse.png` (menghadap jendela/kamera); saf imam→Andi→(Ratna,Lisa) + 4 sajadah; **figur ditempatkan via koordinat-piksel kanvas 16:9** (teknik tervalidasi, di `prompt-rules` changelog 2026-06-24); SH02-START makmum berdiri-mengobrol-santai.
+- **OUT OF SCOPE:** generate gambar (tugas user); GATE C Kling sampai semua keyframe ADDENDUM A2 lengkap; commit hanya bila user minta.
+- Handoff: `handoff/HANDOFF-2026-06-24-GATEB-SEQ1-SC02.md` + `INITIAL-PROMPT-2026-06-24-GATEB-SEQ1-SC02.txt`.
+
+---
+
+# Scope — Riwayat: AKTIF (2026-06-18 · Rebuild Konsep Cerita Video → folder explainer-video-2/)
 
 ## STATUS PIJAKAN
 - Riset produksi Kling (2026-06-17) DITUTUP & tersimpan: `03`, `04`, `04-a` final/approved; total $130 dibekukan sampai re-benchmark. Jangan dibuka ulang kecuali user minta.

@@ -52,7 +52,7 @@ STORYLINE (clean di 01)
 ```
 Trek **narator + audio-adegan** ditangani di jalur edit, paralel & terpisah dari generate keyframe.
 
-> **Tiap shot = satu target prompt t2i.** Ke-**57 shot** (SEQ1–SEQ6) masing-masing = satu keyframe-pair (start→end) → himpunan target lengkap **~114 keyframe**. `02-storyboard.md` = **kompendium gambar utuh** dari semua shot ini.
+> **Tiap shot = satu target prompt t2i.** Ke-**56 shot** (SEQ1–SEQ6) masing-masing = satu keyframe-pair (start→end) → himpunan target lengkap **~112 keyframe** *(SEQ1-SC02-SH04 sujud dihapus 2026-06-24)*. `02-storyboard.md` = **kompendium gambar utuh** dari semua shot ini.
 
 ### Empat gerbang validasi
 - **GATE 0 — Character sheet:** plat identitas tetap (wajah/perawakan, multi-angle, **white background**) + katalog wardrobe per-scene disetujui; jadi pemandu konsistensi yang disuntikkan ke **setiap** prompt GATE B (Lapis 1–3) + reference-locking Kling 3.0. **Mendahului GATE B** (sekali di awal, dipakai ulang seluruh produksi).
@@ -78,7 +78,7 @@ Trek **narator + audio-adegan** ditangani di jalur edit, paralel & terpisah dari
 ---
 
 ## 5. Tabel Pelacakan Status Per-Scene (live)
-**Struktur GATE A LENGKAP: 6 babak / 19 scene / 57 shot / ≈312s** (sumber kanonik: `03-scene-detail.md`, SEQ1–SEQ6). Detail (A) = ✅ untuk seluruh scene.
+**Struktur GATE A LENGKAP: 6 babak / 19 scene / 56 shot / ≈307s** (sumber kanonik: `03-scene-detail.md`, SEQ1–SEQ6). Detail (A) = ✅ untuk seluruh scene.
 Status: `—` belum · `🟡` proses · `✅` lolos gate. Keyframe terpilih disimpan di `scene-images/` per scene (konvensi: `scene-images/README.md`); plat identitas + wardrobe di `character-images/` (GATE 0).
 
 | Scene | Detail (A) | Prompt (B) | Keyframe (C) | Storyboard | Catatan |

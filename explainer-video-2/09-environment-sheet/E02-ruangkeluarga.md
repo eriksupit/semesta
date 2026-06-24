@@ -242,6 +242,48 @@ Detail of the device area — SEQ1-SC02-SH01 (desktop waking) + SEQ6-SC02-SH02 (
 }
 ```
 
+### Cell R — REVERSE establishing wide (prayer master) → `E02_ruangkeluarga_reverse.png` · ✅ LOCKED (2026-06-24)
+Serves SEQ1-SC02 prayer (SH02 + SH03) — a NEW camera axis, the reverse of the master, so the scene gains a real angle change after the lamp comes on and the family can pray facing the window/camera (no makmum cramming into the TV wall).
+> **Deviasi sadar dari SOP "paste §1 verbatim":** ini sudut 180° berbalik, jadi arah camera-relatif §1 (sofa camera-LEFT, TV camera-RIGHT) **dibalik** di sel ini (sofa→camera-RIGHT, TV→camera-LEFT) supaya konsisten dengan kamera baru. Identitas objek + materi + Red Fuji tetap; konsistensi dijamin oleh upload `E02_ruangkeluarga_master.png` sebagai reference-image. Generate: upload master sebagai reference + paste sel ini.
+```json
+{
+  "environment_reference": "attached reference plate E02_ruangkeluarga_master.png, same living room, identical furniture, identical layout, identical materials, single Hokusai Red Fuji print, faithful room match, NEW reverse camera shooting back from the window-desk wall toward the front doorway side of the room, the master's camera-left and camera-right sides therefore mirrored",
+  "mood": "neutral reference clarity, calm empty domestic stillness",
+  "color_grade": "neutral true-to-life color, balanced white-point",
+  "style": "photorealistic interior reference plate, architectural photography clarity, ARRI Alexa Mini LF, clean prime spherical lens, Kodak Portra rendering",
+  "scene": "shared living room, urban middle-class family, IKEA-style flat-pack laminate furniture, matte painted plaster walls, plain desaturated textiles, open ceramic-tiled floor kept clear, floor seating, lived-in working-family",
+  "location": "indoor",
+  "time_of_day": "morning",
+  "atmosphere": "quiet lived-in domestic calm",
+  "subject_anchor": {
+    "primary_subject": "open clear ceramic-tiled floor, centre of room, the PERSISK HAMADAN oriental wool rug low pile laid flat as the central floor covering, the open prayer floor, kept clear",
+    "subject_material": "matte painted plaster walls muted off-white, oak-effect laminate furniture, plain desaturated woven textiles, ceramic-tiled floor",
+    "wall_art": "single dark-wood-framed woodblock print, Katsushika Hokusai 'Fine Wind, Clear Morning (Red Fuji)', Thirty-Six Views of Mount Fuji, above the sofa on the camera-right wall",
+    "supporting_objects": {
+      "sofa": "IKEA EKTORP two-seat sofa, beige linen-blend slipcover, camera-right wall, beneath the framed Red Fuji print",
+      "tv_bench": "IKEA BESTÅ TV bench, white-stained oak-effect, low closed flat-door media cabinet, camera-left wall, flat-screen television, screen off dark neutral, two plain floor cushions set beside the TV bench",
+      "doorway": "open doorway, light switch plate beside it, on the far front wall ahead of the camera",
+      "shelf": "IKEA KALLAX shelving unit, 2x2 open square cube grid, white-stained oak effect, against a side wall, rolled prayer mat, closed hardcover book, in the cubes",
+      "behind_camera": "the MICKE desk, all-in-one desktop screen off, the LILL-curtained window, on the wall the camera backs onto, out of frame",
+      "lighting_fixture": "plain ceiling lamp switched off"
+    },
+    "human_absence_signal": "unoccupied, still, rug laid flat, room empty, quiet"
+  },
+  "shot": {
+    "composition": "reverse establishing view across the open floor, PERSISK rug, centre, foreground, EKTORP sofa, framed Red Fuji, camera-RIGHT, BESTÅ TV bench, off-screen television, two cushions, camera-LEFT, open doorway, light switch, far front wall ahead, KALLAX cube shelf, side wall, legible",
+    "framing": "WS establishing, floor and rug prominent bottom third, ceiling line visible top, the front doorway wall across the background",
+    "angle": "eye-level slight low angle",
+    "camera_position": "near the back window-desk wall, back to the curtained window, looking across the open floor toward the front doorway wall",
+    "camera_direction": "from the window-desk wall across the open floor toward the doorway wall, sofa wall camera-right, TV wall camera-left",
+    "camera": "24mm prime spherical, deep focus front to back",
+    "lighting": "soft diffused daylight key, the curtained window wall behind the camera, soft ambient bounce fill, even matte rendering",
+    "aspect_ratio": "16:9"
+  },
+  "production_designer": "Eugenio Caballero", "production_design_style": "Roma-style middle-class domestic realism, class-accurate dressing",
+  "interior_designer": "Ilse Crawford", "interior_design_style": "warm human-centred tactile lived-in, unpretentious materiality"
+}
+```
+
 ---
 
 ## 4. Status manifest
@@ -251,6 +293,7 @@ Detail of the device area — SEQ1-SC02-SH01 (desktop waking) + SEQ6-SC02-SH02 (
 | P | prayer high-angle wide | `E02_ruangkeluarga_prayer_high.png` | ✅ LOCKED v2 (2026-06-23, soft high-angle ~45°) |
 | F | floor-seating | `E02_ruangkeluarga_floorseat.png` | ✅ LOCKED v2 (2026-06-23, tight-MS seated-height) |
 | S | screen / desktop insert | `E02_ruangkeluarga_screen.png` | ✅ LOCKED v2 (2026-06-23, keyboard+mouse verified) |
+| R | REVERSE establishing (prayer master) | `E02_ruangkeluarga_reverse.png` | ✅ LOCKED (2026-06-24, kamera membelakangi jendela → sholat menghadap kamera; sofa→camera-right, TV→camera-left, pintu+KALLAX latar, karpet PERSISK tengah — geometri terbalik terverifikasi) |
 
 Storage: `environment-images/E02_ruangkeluarga/` (+ `_rejected/`). Naming: `E02_ruangkeluarga_<angle>.png`.
 Generate M first (no reference-image). Then P / F / S via the `shot`-only-rewrite method: upload `E02_ruangkeluarga_master.png` as reference + paste §1 verbatim + the cell's `shot` block. Verify each prop against the master image before locking.

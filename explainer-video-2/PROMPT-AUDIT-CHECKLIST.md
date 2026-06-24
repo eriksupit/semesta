@@ -135,6 +135,16 @@ Aturan pakai: satu prompt belum "siap" sampai SEMUA MEK lolos `grep` **dan** sem
 
 ---
 
+## M. Keselarasan dramatik (MATA — holistik, baca 6 lapis sebagai satu scene)
+
+> Gate **gestalt**, BUKAN per-item. A–L menguji tiap token vs aturan/kehadiran; M menguji apakah SELURUH token **menarik ke arah yang sama** menuju beat dramatik scene. Sebuah prompt bisa lolos A–L (tiap token patuh, tiap elemen hadir) namun ansambelnya mengkhianati drama (mis. `lighting "bright even"` di scene keintiman subuh). *(Provisional 2026-06-24 — penambahan proses, belum render-validated; ditegakkan via /tti-prompt-creator @ authoring + /tti-prompt-audit @ gate)*
+
+- [ ] M1 Tulis SATU kalimat **beat dramatik** shot ini ditafsir dari prosa `03-scene-detail.md` (emosi/momen yang wajib mendarat di frame ini). *(03-scene-detail)*
+- [ ] M2 Uji TIAP token sumbu-suasana terhadap beat itu — `framing`, `angle`, `camera`, `lighting`, `color_grade`, `subject_state`/`action`/`pose`, `expression`, `material`, `scene_depth`: menarik ke beat (✓), netral (–), atau melawan/mengencerkan (✗)? *(03-scene-detail)*
+- [ ] M3 NOL token ✗ — tiap token yang melawan/mengencerkan beat direvisi ke token yang melayaninya (tetap patuh A–L). Pre-render judgeable: ini soal harmoni internal spec, bukan hasil render. *(03-scene-detail)*
+
+---
+
 ## L. Meta-gate (dokumen rule itu sendiri)
 
 - [ ] L1 Tiap baris rule baru punya jejak `(Validated <tgl>, <evidence>)` — provisional ditandai eksplisit. *(rules:642 · lessons:316 · semesta-prompt-rules-sop)*

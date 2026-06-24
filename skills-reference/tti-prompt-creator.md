@@ -44,6 +44,15 @@ Write the prompt as a complete 6-layer JSON unit following the template in `prom
 
 Write the draft to a scratchpad working file (`<scratchpad>/tti-creator-draft.md`) — not into the vault yet.
 
+## Stage 2b — Dramatic-coherence pass (holistic, BEFORE handing to the audit)
+
+A draft can satisfy every per-token rule yet still betray the scene: each garment correct, framing correct, action correct — while `lighting "bright even"` fights a pre-dawn-intimacy beat. Per-token compliance is necessary, not sufficient. After drafting, read the SIX layers AS ONE scene and run the coherence pass (canonical = `PROMPT-AUDIT-CHECKLIST.md` §M):
+
+1. Write ONE sentence: the **dramatic beat** of THIS shot, interpreted from `03-scene-detail.md` — the emotion/moment that MUST land in this frame.
+2. Test EVERY mood-bearing token against that beat — `framing`, `angle`, `camera`, `lighting`, `color_grade`, `subject_state`/`action`/`pose`, `expression`, `material`, `scene_depth`: does it pull toward the beat (✓), sit neutral (–), or fight/dilute it (✗)?
+3. Revise every ✗ token to one that SERVES the beat — while keeping it compliant with the per-token rules (no negation, comma-glue, etc.). The goal is the whole ensemble pulling in one direction, not a checklist of present elements.
+4. Record the beat sentence + per-token verdict in the scratchpad draft, so the audit (and the user) can see the reasoning. This pass is pre-render judgeable — it is about the spec's internal harmony, never the render.
+
 ## Stage 3 — Loop engine (brave / loop-until-confidence): create ↔ audit until COMPLIANT
 
 Run `tti-prompt-audit` on the scratchpad draft. Then:
@@ -60,10 +69,10 @@ Run `tti-prompt-audit` on the scratchpad draft. Then:
 
 ## Stage 4b — Confidence gate (MANDATORY, `confidence` + `loop-until-confidence`)
 
-After the audit returns COMPLIANT, emit an explicit `Confidence: NN%` (integer) on the **verifiable axis only**: (a) compliance per the audit verdict + (b) spec-fidelity — does the prompt faithfully encode THIS shot per `03-scene-detail.md` (right action, framing, who/what in frame, cultural term, garment)? This is a SECOND axis above COMPLIANT: a prompt can pass every grep gate yet still be <95% certain it captures the shot (ambiguous cultural token, framing token that may land wide, an abu-abu MATA judgment).
+After the audit returns COMPLIANT, emit an explicit `Confidence: NN%` (integer) on the **verifiable axis only**: (a) compliance per the audit verdict + (b) spec-fidelity — does the prompt faithfully encode THIS shot per `03-scene-detail.md` (right action, framing, who/what in frame, cultural term, garment)? + (c) **dramatic coherence** (§M / Stage 2b) — does the ENSEMBLE of mood-bearing tokens pull toward the scene's dramatic beat, with zero ✗ token fighting it? These are axes ABOVE COMPLIANT: a prompt can pass every grep gate (atomized presence) yet still be <95% certain it captures the shot (ambiguous cultural token, framing token that may land wide) OR carry a token that quietly betrays the beat (cheerful lighting on an intimate scene). Spec-fidelity tests presence of correct elements; dramatic coherence tests their harmony — both are pre-render judgeable, both count.
 
 - **If ≤95%:** do NOT hand over. Invoke `loop-until-confidence` — name the specific gap (which token, which scene-prose detail unmatched), patch, re-run `tti-prompt-audit`, re-check against `03`, re-assess. Loop until >95% or a named blocker.
-- **Scope the number to the verifiable axis ONLY.** Render-dependent gates (Stage 4 list) are a DECLARED CAP, never part of the pre-render number and never a loop target — gating confidence on them would spin the loop forever (no render exists to verify against). Carry them as `PENDING post-render`. Emit e.g. `Confidence: 96% (compliance + spec-fidelity) · render-dependent gates PENDING post-render`.
+- **Scope the number to the verifiable axis ONLY.** Render-dependent gates (Stage 4 list) are a DECLARED CAP, never part of the pre-render number and never a loop target — gating confidence on them would spin the loop forever (no render exists to verify against). Carry them as `PENDING post-render`. Emit e.g. `Confidence: 96% (compliance + spec-fidelity + dramatic coherence) · render-dependent gates PENDING post-render`.
 - Claiming high confidence that the IMAGE will be good is self-sycophancy about an unknowable — forbidden. Confidence is about the spec, not the render.
 
 ## Stage 5 — Handover

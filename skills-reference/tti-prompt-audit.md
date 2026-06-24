@@ -55,6 +55,7 @@ These cannot be grepped — they need the render or the scene prose `03`. List t
 - E5 tiap garmen terlihat dispesifikasi afirmatif (anti auto-batik)?
 - F1/F2 framing/angle/camera/lighting dari library + off-axis anti-cliché?
 - I-series GATE B: triad attachment (karakter+env+start/end-ref) lengkap? END anchor ke render START? orientasi dari plat cocok (nol "3/4")?
+- M-series keselarasan dramatik (gate HOLISTIK, wajib tiap audit): baca keenam lapis sebagai SATU scene, nyatakan eksplisit SATU kalimat **beat dramatik** shot ini ditafsir dari prosa `03-scene-detail.md`, lalu beri verdict TIAP token sumbu-suasana (`framing`/`angle`/`camera`/`lighting`/`color_grade`/`subject_state`/`expression`/`material`/`scene_depth`): menarik ke beat (✓), netral (–), atau melawan/mengencerkan (✗)? **Verdict M = BELUM bila ada token ✗** — sebutkan token mana & kenapa ia melawan beat. Ini gate pre-render judgeable (harmoni internal spec), bukan tebakan render. Sumber kanonik = `PROMPT-AUDIT-CHECKLIST.md` §M.
 
 ## Phase 3 — Verdict + confidence gate (MANDATORY, `confidence`)
 
