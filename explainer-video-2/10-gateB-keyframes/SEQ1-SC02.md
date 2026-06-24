@@ -13,7 +13,7 @@ aliases: [ev2-gateB-seq1-sc02]
 
 > **🔒 TRIAD ATTACHMENT MANDATORY (Erik mandate 2026-06-23):** SETIAP frame (START & END) WAJIB melampirkan + menyebut di prompt KETIGA kategori: **(1) KARAKTER** (plat wajah/figur tiap orang dalam frame), **(2) LINGKUNGAN** (plat env E02), **(3) START/END-REFERENCE** (render anchor). Render anchor saja TIDAK cukup untuk objek yang diberi aksi (sajadah, saklar, monitor) → tanpa plat lingkungan model halusinasi permukaan/objek. Tak ada pengecualian.
 
-> **STRUKTUR 3-SHOT (revisi 2026-06-24, Erik):** SH03 (takbir→ruku) disederhanakan jadi **berdiri bersedekap (qiyam) ditahan, START→END beda angle saja** — gerak pose multi-karakter sinkron (ruku/sujud 4 orang) risiko-tinggi i2v warp. **SH04 (sujud) DIHAPUS.** END SH03 = push-in di sumbu reverse yang sama (high-angle `prayer_high` dibatalkan). **Reblock 2026-06-24:** seluruh sholat (SH02+SH03) pindah ke plate `E02_ruangkeluarga_reverse.png`, sholat menghadap jendela/kamera (qibla=jendela), plate karakter `front`. SC02 = **3 shot / 6 keyframe**. Konsekuensi hilir: `03-scene-detail.md` hapus SH04 + shot-count film 57→56 (sync terpisah).
+> **STRUKTUR 3-SHOT (revisi 2026-06-24, Erik):** SH03 (takbir→ruku) disederhanakan jadi **berdiri bersedekap (qiyam) ditahan, START→END beda angle saja** — gerak pose multi-karakter sinkron (ruku/sujud 4 orang) risiko-tinggi i2v warp. **SH04 (sujud) DIHAPUS.** END SH03 = push-in di sumbu reverse yang sama (high-angle `prayer_high` dibatalkan). **Reblock 2026-06-24:** seluruh sholat (SH02+SH03) pindah ke plate `E02_ruangkeluarga_reverse_prayer.png`, sholat menghadap jendela/kamera (qibla=jendela), plate karakter `front`. SC02 = **3 shot / 6 keyframe**. Konsekuensi hilir: `03-scene-detail.md` hapus SH04 + shot-count film 57→56 (sync terpisah).
 
 ## Aturan keras yang dibawa
 1. **Grade hangat LOCKED:** `Roger Deakins palette, lifted blacks medium gray, neutral shadows, clean whites, Kodak 2383 emulation, slightly warmer midtones`. Hangat HANYA dari `color_grade`; garmen desaturated; negasi 0; tanpa nama organisasi.
@@ -27,8 +27,8 @@ aliases: [ev2-gateB-seq1-sc02]
 | Shot | Env plate | Character plate(s) |
 |---|---|---|
 | SH01 WS desktop | `E02_ruangkeluarga_screen.png` + `E02_ruangkeluarga_master.png` | Ratna `R_ratna_profileA_medium.png` (**UNCOVERED** + **PROFIL hadap camera-left ke dinding saklar**, tidak ke lensa — WS observasional; pra-sholat mahram-only per R-ratna §0; home wear via wardrobe) |
-| SH02 MS sajadah→saf | `E02_ruangkeluarga_reverse.png` | Herman `H_herman_front_full.png`; Ratna `R_ratna_hijab_front_medium.png`; Lisa `L_lisa_front_full.png`; Andi `A_andi_front_full.png` (menghadap kamera) |
-| SH03 WS qiyam bersedekap | START & END `E02_ruangkeluarga_reverse.png` (END push-in lebih rapat, sumbu sama) | keempat: Herman `H_herman_front_full.png`; Ratna `R_ratna_hijab_front_medium.png`; Lisa `L_lisa_front_full.png`; Andi `A_andi_front_full.png` (menghadap kamera) |
+| SH02 MS sajadah→saf | `E02_ruangkeluarga_reverse_prayer.png` | **START (berkumpul mengobrol):** Herman `H_herman_front_full.png` (imam, hadap kamera); Ratna `R_ratna_hijab_profileA_medium.png` (hadap camera-LEFT, di camera-right); Lisa `L_lisa_profileB_full.png` (hadap camera-RIGHT, di camera-left); Andi `A_andi_profileB_full.png` (hadap camera-RIGHT ke Ratna). **END (saf terbentuk):** keempat plat `front` (Herman/Lisa/Andi `front_full`, Ratna `hijab_front_medium`), menghadap kamera |
+| SH03 WS qiyam bersedekap | START & END `E02_ruangkeluarga_reverse_prayer.png` (END push-in lebih rapat, sumbu sama) | keempat: Herman `H_herman_front_full.png`; Ratna `R_ratna_hijab_front_medium.png`; Lisa `L_lisa_front_full.png`; Andi `A_andi_front_full.png` (menghadap kamera) |
 
 > **Catatan plat profil:** semua figur menghadap camera-LEFT → lampirkan plat **profileA** (konvensi A = hadap camera-left), buang front untuk figur profil. Ratna pakai plat **hijab** (kepala tertutup; mukena dirender oleh token wardrobe). Lisa & Andi tak punya plat tertutup → wajah dari plat profileA, penutup (mukena Lisa / peci Andi) dirender oleh token wardrobe (prinsip sama Ratna: token garmen penutup hadir → look tertutup dari wardrobe, bukan role).
 
@@ -139,38 +139,38 @@ aliases: [ev2-gateB-seq1-sc02]
 ---
 
 ## SEQ1-SC02-SH02 — MS Herman gelar sajadah → saf terbentuk · segmen 5 dtk
-**Attach START:** `sc02_sh01_end.png` (acuan cahaya warm-lamplit + kontinuitas grade SAJA, kamera baru) + `E02_ruangkeluarga_reverse.png` (LINGKUNGAN plate-sholat reverse: sofa camera-right, TV camera-left, pintu+KALLAX latar, karpet PERSISK tengah) + `H_herman_front_full.png` (Herman, imam, menghadap kamera) + `R_ratna_hijab_front_medium.png` (Ratna mukena) + `L_lisa_front_full.png` (Lisa mukena) + `A_andi_front_full.png` (Andi koko+peci) — KARAKTER keempat menghadap kamera/jendela-qibla, anak-anak berkumpul ke baris saf. **END:** anchor `sc02_sh02_start.png` + `E02_ruangkeluarga_reverse.png` + keempat plat front (Herman `front_full`, Ratna `hijab_front_medium`, Lisa `front_full`, Andi `front_full`). **Bersih Saat Sakral: NOL grafis; layar mati di latar.**
+**Attach START:** `sc02_sh01_end.png` (acuan cahaya warm-lamplit + kontinuitas grade SAJA, kamera baru) + `E02_ruangkeluarga_reverse_prayer.png` (LINGKUNGAN plate-sholat reverse + **4 mat warna ter-bake 1-1-2**: sage-green depan=Herman · dusty-blue tengah=Andi · terracotta belakang-kiri=Lisa · warm-taupe belakang-kanan=Ratna; sofa camera-right, TV camera-left, pintu+KALLAX latar, karpet PERSISK tengah) + `H_herman_front_full.png` (Herman, imam, di mat sage-green depan, menghadap kamera) + `R_ratna_hijab_profileA_medium.png` (Ratna mukena, **PROFIL hadap camera-LEFT**, di mat warm-taupe) + `L_lisa_profileB_full.png` (Lisa mukena, **PROFIL hadap camera-RIGHT**, di mat terracotta) + `A_andi_profileB_full.png` (Andi koko+peci, **PROFIL hadap camera-RIGHT ke Ratna**, di mat dusty-blue tengah) — momen persiapan: tiap orang **di mat warnanya**, ketiga makmum **berkumpul saling berhadapan, mengobrol santai, lengan tidak bersedekap**; mat dari plat (token mat dibuang dari teks). **END:** anchor `sc02_sh02_start.png` + `E02_ruangkeluarga_reverse_prayer.png` + keempat plat front (Herman `front_full`, Ratna `hijab_front_medium`, Lisa `front_full`, Andi `front_full`), saf terbentuk menghadap kamera (i2v START→END = badan berputar ke depan menata saf). **Bersih Saat Sakral: NOL grafis; layar mati di latar.**
 
-### SH02-START (prompt utuh — Herman menggelar sajadah, Ratna memunggungi layar)
+### SH02-START (prompt utuh — pola baru: 4 mat dari plat, tiap orang di mat warnanya, makmum mengobrol)
+> **Pola terbaru (2026-06-24):** sajadah TIDAK dibuat oleh teks — ikut dari plat `E02_ruangkeluarga_reverse_prayer.png` (4 mat polos warna-beda, 1-1-2 saf). Tiap orang dipaku ke **mat warnanya** + koordinat kanvas x/y. Compaction (dedup) + colour-anchor + canvas-pixel grammar. Mat-creation token DIBUANG.
 ```json
 {
   "mood": "quiet pre-dawn devotion gathering, the family turning toward prayer, Roma-style observational tenderness",
   "color_grade": "Roger Deakins palette, lifted blacks medium gray, neutral shadows, clean whites, Kodak 2383 emulation, slightly warmer midtones",
   "style": "photorealistic cinema still, ARRI Alexa Mini LF, clean prime spherical lens, Kodak 2383 print stock emulation",
-  "scene": "shared living room of an urban middle-class family, IKEA-style flat-pack laminate furniture, matte painted plaster walls, plain desaturated textiles, open ceramic-tiled floor kept clear for prayer, lived-in working-family",
+  "scene": "shared living room, urban middle-class family, IKEA-style flat-pack laminate furniture, matte painted plaster walls, plain desaturated textiles, open ceramic-tiled floor, lived-in working-family",
   "location": "indoor",
   "time_of_day": "pre-dawn before sunrise, interior lamp on",
   "atmosphere": "quiet lived-in domestic calm, warm lamplit devotion before fajr",
-  "lighting_reference": "attached frame sc02_sh01_end.png used only as the lighting and continuity reference, same warm interior lamplit key, same dark blue pre-dawn window, lighting and continuity role only",
-  "environment_reference": "attached reference plate E02_ruangkeluarga_reverse.png, the prayer-master reverse view, same living room shot back from the window-desk wall toward the front doorway, the PERSISK oriental rug laid flat as the central prayer surface on the open floor, four prayer mats laid in a column on the rug for the family, EKTORP sofa, framed Red Fuji print, on the camera-right wall, BESTÅ TV bench on the camera-left wall, the two floor cushions set beside the TV bench at camera-left, the open doorway, the KALLAX shelf, on the far wall ahead, the window-desk wall behind the camera, faithful room match",
+  "lighting_reference": "attached frame sc02_sh01_end.png, lighting and continuity reference only, same warm interior lamplit key, same dark blue pre-dawn window",
+  "environment_reference": "attached plate E02_ruangkeluarga_reverse_prayer.png, the prayer-master reverse view, the PERSISK rug with four coloured prayer mats already laid in a one-one-two formation, sage-green front, dusty-blue middle, terracotta back-left, warm-taupe back-right, EKTORP sofa, framed Red Fuji, on the camera-right wall, BESTÅ TV bench on the camera-left wall, open doorway, KALLAX shelf, on the far wall ahead, window-desk wall behind the camera, faithful room match",
   "character_identity_husband": {
-    "identity_reference": "attached reference plate H_herman_front_full.png, same identical face, same identity, same build, faithful frontal match, Herman the imam at the front nearest the camera, his body and face toward the camera, the window-qibla toward the camera",
+    "identity_reference": "attached plate H_herman_front_full.png, same identical face, same identity, faithful frontal match, Herman the imam kneeling on the sage-green front mat nearest the camera, facing the camera toward the window-qibla",
     "role": "Jakarta middle-class export-import office supervisor, modest mature man, dignified",
     "ethnicity": "modern Jakartan features, Javanese urban descent",
-    "beauty": "ordinary dignified mature male, unremarkable approachable, lived-in",
     "age": "man 46 years old",
-    "facial_features": "luminous healthy complexion, soft natural skin texture, fine mature lines forehead and eye corners, full uniformly grey moustache trimmed even tone, calm steady eyes",
-    "body_features": "average build slight midsection softness, 168cm frame, rounded shoulders, natural mature posture"
+    "facial_features": "luminous healthy complexion, soft natural skin texture, full uniformly grey moustache trimmed even tone, calm steady eyes",
+    "body_features": "average build, 168cm frame, natural mature posture"
   },
   "character_style_husband": {
-    "makeup": "bare mature skin, fine natural texture preserved, matte finish zero shine",
+    "makeup": "bare mature skin, matte finish zero shine",
     "wardrobe": "long-sleeve plain koko shirt stand-collar muted off-white, solid plain-weave sarong dark muted colorway wrapped waist, black velvet peci cap",
     "hair": "hair concealed under the black velvet peci cap, uniformly salt-and-pepper at the sides",
     "footwear": "barefoot"
   },
   "character_identity_wife": {
-    "identity_reference": "attached reference plate R_ratna_hijab_front_medium.png, same identical face, same identity, head covered, faithful frontal match, Ratna a makmum in the row behind the imam, facing the camera",
-    "role": "Jakarta middle-class home-culinary UMKM entrepreneur, modest mature Muslim woman, dignified maternal warmth",
+    "identity_reference": "attached plate R_ratna_hijab_profileA_medium.png, same identical face, same identity, head covered, faithful profile match, Ratna in profile facing camera-left, standing on the warm-taupe back-right mat turned toward the children",
+    "role": "modest mature Muslim woman, makmum, dignified maternal warmth",
     "ethnicity": "modern Jakartan features, Javanese urban descent",
     "age": "woman 41 years old",
     "facial_features": "luminous healthy complexion, soft natural skin texture, gentle full cheeks",
@@ -183,8 +183,8 @@ aliases: [ev2-gateB-seq1-sc02]
     "footwear": "barefoot"
   },
   "character_identity_daughter": {
-    "identity_reference": "attached reference plate L_lisa_front_full.png, same identical face, same identity, faithful frontal match, Lisa the daughter, a makmum in the row behind the imam, facing the camera",
-    "role": "young woman university student, daughter",
+    "identity_reference": "attached plate L_lisa_profileB_full.png, same identical face, same identity, faithful profile match, Lisa in profile facing camera-right, standing on the terracotta back-left mat turned toward her mother Ratna",
+    "role": "young woman university student, daughter, makmum",
     "ethnicity": "modern Jakartan features, Javanese urban descent",
     "age": "young woman 19 years old",
     "facial_features": "youthful smooth complexion, soft natural skin texture, calm eyes",
@@ -197,8 +197,8 @@ aliases: [ev2-gateB-seq1-sc02]
     "footwear": "barefoot"
   },
   "character_identity_son": {
-    "identity_reference": "attached reference plate A_andi_front_full.png, same identical face, same identity, faithful frontal match, Andi the young son, a makmum in the row behind the imam, facing the camera",
-    "role": "young boy, son",
+    "identity_reference": "attached plate A_andi_profileB_full.png, same identical face, same identity, faithful profile match, Andi the young son in profile facing camera-right toward his mother Ratna, standing on the dusty-blue middle mat",
+    "role": "young boy, son, makmum",
     "ethnicity": "modern Jakartan features, Javanese urban descent",
     "age": "boy 10 years old",
     "facial_features": "clear healthy child complexion, soft child skin texture, bright calm eyes",
@@ -211,13 +211,13 @@ aliases: [ev2-gateB-seq1-sc02]
     "footwear": "barefoot"
   },
   "subject_state": "dynamic",
-  "action": "Herman crouching to unroll his prayer mat at the front of the column on the PERSISK rug, smoothing it flat, facing the camera toward the window-qibla; the boy Andi standing upright on his own prayer mat well forward one row directly behind the imam, a clear step ahead of the women; Ratna and Lisa standing upright a full row further back behind Andi, distinctly behind him, their two mats held within the central band of the frame; Andi, Ratna and Lisa standing relaxed on their mats, arms easy at their sides, the mother and children turned slightly toward one another chatting softly and smiling, waiting warmly as Herman lays out the prayer mats",
-  "pose": "Herman the imam at the front nearest the camera, bent to lay his prayer mat on the rug, facing the camera; the boy Andi standing relaxed well forward one row directly behind the imam, a clear step ahead of the women; Ratna and Lisa standing relaxed a full row further back behind Andi, distinctly behind him, the three turned slightly toward one another in easy conversation; camera-frame layout on the 16:9 canvas at 1920px wide reference, the imam Herman centred at x 960 in the foreground, the boy Andi centred at x 960 one row back, Ratna's mat centred near x 800, Lisa's mat centred near x 1120, in the back row, all four prayer mats held within the central band from x 680 to x 1240 with a clear margin of at least 430px to each side edge, the EKTORP sofa beyond x 1500 at camera-right kept outside the figures' band, the BESTÅ TV bench before x 420 at camera-left kept outside the figures' band; the formation reading imam-front, then the boy, then the women, in depth toward the lens",
-  "expression": "Herman calm and focused laying the mat; the mother and the two children warm and relaxed with light happy smiles, sharing a soft chat, an easy joyful family moment before prayer",
-  "framing": "MS to WS across the prayer rug, Herman laying his mat in the foreground nearest the camera, Andi standing a row behind on his mat, Ratna and Lisa standing in the back row on their mats, all four prayer mats held within the central band of the 16:9 frame from x 680 to x 1240 of 1920, a clear margin of at least 430px to each side edge, the EKTORP sofa camera-right beyond the band, the BESTÅ TV bench camera-left beyond the band, the open doorway on the far wall behind the family",
-  "angle": "eye-level, the family facing the camera, imam-front and makmum-row in depth, slightly off-axis, anti-cliché",
-  "camera": "35mm prime spherical, focus on Herman at the mat, soft background falloff",
-  "lighting": "warm interior ceiling lamp key, soft warm practical fill, faint dark blue pre-dawn spill from the window-wall behind the camera, the flat-screen television on the camera-left wall dark and switched off, zero graphics, even matte rendering",
+  "action": "Herman kneeling on the sage-green front mat, smoothing it, facing the camera toward the window-qibla; behind him the mother and two children gathered each on their own coloured prayer mat before prayer, chatting softly, smiling, arms hanging loose and open at their sides, turned inward toward one another in warm conversation",
+  "pose": "Herman foreground on the sage-green front mat at x 960 y 920, kneeling, facing the camera; Andi standing on the dusty-blue middle mat at x 960 y 780 facing camera-right toward his mother; Lisa standing on the terracotta mat at x 800 y 640 facing camera-right toward Ratna; Ratna standing on the warm-taupe mat at x 1120 y 640 facing camera-left toward the children; the three makmum turned inward in a relaxed chat, the one-one-two formation reading in depth toward the lens, the EKTORP sofa beyond x 1500 at camera-right and the BESTÅ TV bench before x 420 at camera-left kept outside the figures band, 16:9 canvas at 1920x1080 reference",
+  "expression": "Herman calm focused on the mat, mother and two children warm with light happy smiles mid soft chat, an easy joyful family moment before prayer",
+  "framing": "MS to WS across the prayer rug, Herman on the sage-green front mat in the foreground, the three on their coloured mats behind in one-one-two depth, the open doorway on the far wall behind the family",
+  "angle": "eye-level, Herman facing the camera in the foreground, the makmum on their mats behind turned toward one another, slightly off-axis, anti-cliché",
+  "camera": "35mm prime spherical, focus on Herman at the front mat, soft background falloff",
+  "lighting": "warm interior ceiling lamp key, soft warm practical fill, faint dark blue pre-dawn spill from the window-wall behind the camera, the flat-screen television at camera-left dark and switched off, zero graphics, even matte rendering",
   "aspect_ratio": "16:9",
   "director": "Alfonso Cuarón", "directing_style": "observational domestic naturalism, unhurried intimate register",
   "lighting_director": "Emmanuel Lubezki", "lighting_style": "naturalistic available-light feel, soft motivated sources, gentle falloff",
@@ -229,11 +229,11 @@ aliases: [ev2-gateB-seq1-sc02]
 ```
 
 ### SH02-END (ANCHOR ke render START — keluarga berkumpul membentuk saf di belakang imam)
-**Attach:** `sc02_sh02_start.png` (komposisi/cahaya) + `E02_ruangkeluarga_reverse.png` (LINGKUNGAN plate-sholat reverse) + `H_herman_front_full.png` + `R_ratna_hijab_front_medium.png` + `L_lisa_front_full.png` + `A_andi_front_full.png` (KARAKTER keempat, menghadap kamera). Beda dari START = saf terbentuk: Herman imam berdiri di depan (terdekat kamera) menghadap kamera, tiga makmum (Andi · Ratna · Lisa) satu baris bahu-membahu di belakangnya (lebih dalam di ruang), semua menghadap kamera. **Lisa mukena, Andi koko+sarung+peci anak.**
+**Attach:** `sc02_sh02_start.png` (komposisi/cahaya) + `E02_ruangkeluarga_reverse_prayer.png` (LINGKUNGAN plate-sholat reverse) + `H_herman_front_full.png` + `R_ratna_hijab_front_medium.png` + `L_lisa_front_full.png` + `A_andi_front_full.png` (KARAKTER keempat, menghadap kamera). Beda dari START = saf terbentuk: Herman imam berdiri di depan (terdekat kamera) menghadap kamera, tiga makmum (Andi · Ratna · Lisa) satu baris bahu-membahu di belakangnya (lebih dalam di ruang), semua menghadap kamera. **Lisa mukena, Andi koko+sarung+peci anak.**
 ```json
 {
   "composition_reference": "attached frame sc02_sh02_start.png, the SH02-START render, same living room reverse view, same warm lamplit pre-dawn lighting and grade, same prayer mat on the rug; CHANGE: the family now standing in a prayer line facing the camera, Herman risen as imam at the front nearest the camera, the three makmum in one row behind him facing the camera",
-  "environment_reference": "attached reference plate E02_ruangkeluarga_reverse.png, the prayer-master reverse view, the PERSISK oriental rug laid flat as the central prayer surface with four prayer mats laid in a column on it, EKTORP sofa, framed Red Fuji print, on the camera-right wall, BESTÅ TV bench on the camera-left wall, the two floor cushions set beside the TV bench at camera-left, the open doorway, the KALLAX shelf, on the far wall ahead, the window-desk wall behind the camera, faithful room match",
+  "environment_reference": "attached reference plate E02_ruangkeluarga_reverse_prayer.png, the prayer-master reverse view, the PERSISK oriental rug laid flat as the central prayer surface with four prayer mats laid in a column on it, EKTORP sofa, framed Red Fuji print, on the camera-right wall, BESTÅ TV bench on the camera-left wall, the two floor cushions set beside the TV bench at camera-left, the open doorway, the KALLAX shelf, on the far wall ahead, the window-desk wall behind the camera, faithful room match",
   "mood": "quiet pre-dawn congregational devotion, the family standing for fajr behind the imam, Roma-style observational tenderness",
   "color_grade": "Roger Deakins palette, lifted blacks medium gray, neutral shadows, clean whites, Kodak 2383 emulation, slightly warmer midtones",
   "style": "photorealistic cinema still, ARRI Alexa Mini LF, clean prime spherical lens, Kodak 2383 print stock emulation",
@@ -322,7 +322,7 @@ aliases: [ev2-gateB-seq1-sc02]
 ## SEQ1-SC02-SH03 — WS qiyam bersedekap (ditahan, START→END beda angle) · segmen 5 dtk
 **Penyederhanaan (Erik 2026-06-24):** pose **berdiri bersedekap (qiyam, tangan kanan di atas kiri di dada/perut) DITAHAN identik** dari START ke END; yang berubah **HANYA kamera** — START eye-level menghadap kamera, END **push-in sedikit lebih rapat di sumbu reverse yang sama** (high-angle dibatalkan: plate `prayer_high` = sumbu lama, tak cocok reverse). Tidak ada gerak pose multi-karakter (ruku/sujud dibuang). Gerak i2v = push-in halus atas subjek statis, risiko warp minimal.
 
-**Attach START:** `sc02_sh02_end.png` (acuan komposisi saf + cahaya) + `E02_ruangkeluarga_reverse.png` (LINGKUNGAN plate-sholat reverse) + keempat plat (Herman `front_full`, Ratna `hijab_front_medium`, Lisa `front_full`, Andi `front_full`). **Attach END:** `sc02_sh03_start.png` (anchor identitas+pose, pose ditahan) + `E02_ruangkeluarga_reverse.png` (LINGKUNGAN, sumbu sama, framing sedikit lebih rapat) + keempat plat.
+**Attach START:** `sc02_sh02_end.png` (acuan komposisi saf + cahaya) + `E02_ruangkeluarga_reverse_prayer.png` (LINGKUNGAN plate-sholat reverse) + keempat plat (Herman `front_full`, Ratna `hijab_front_medium`, Lisa `front_full`, Andi `front_full`). **Attach END:** `sc02_sh03_start.png` (anchor identitas+pose, pose ditahan) + `E02_ruangkeluarga_reverse_prayer.png` (LINGKUNGAN, sumbu sama, framing sedikit lebih rapat) + keempat plat.
 
 ### SH03-START (prompt utuh — qiyam bersedekap, eye-level frontal-off-axis)
 ```json
@@ -335,7 +335,7 @@ aliases: [ev2-gateB-seq1-sc02]
   "time_of_day": "pre-dawn before sunrise, interior lamp on",
   "atmosphere": "quiet lived-in domestic calm, warm lamplit congregational devotion",
   "composition_reference": "attached frame sc02_sh02_end.png, the SH02-END render, continuity anchor — same imam Herman at the front nearest the camera, same boy Andi well forward one row directly behind the imam, a clear step ahead of the women, same Ratna and Lisa in the back row, all facing the camera, same warm lamplit pre-dawn lighting and grade; the family now standing in qiyam with arms folded",
-  "environment_reference": "attached reference plate E02_ruangkeluarga_reverse.png, the prayer-master reverse view, the PERSISK rug as the prayer surface with four prayer mats laid in a column on it, EKTORP sofa, framed Red Fuji print, on the camera-right wall, BESTÅ TV bench on the camera-left wall, the open doorway on the far wall ahead, the window-desk wall behind the camera, faithful room match",
+  "environment_reference": "attached reference plate E02_ruangkeluarga_reverse_prayer.png, the prayer-master reverse view, the PERSISK rug as the prayer surface with four prayer mats laid in a column on it, EKTORP sofa, framed Red Fuji print, on the camera-right wall, BESTÅ TV bench on the camera-left wall, the open doorway on the far wall ahead, the window-desk wall behind the camera, faithful room match",
   "character_identity_husband": {
     "identity_reference": "attached reference plate H_herman_front_full.png, same identical face, same identity, faithful frontal match, Herman the imam at the front nearest the camera, facing the camera toward the window-qibla",
     "role": "modest mature man, the imam leading the prayer",
@@ -411,11 +411,11 @@ aliases: [ev2-gateB-seq1-sc02]
 ```
 
 ### SH03-END (ANCHOR ke render START — pose qiyam DITAHAN identik, kamera ke soft high-angle ~45°)
-**Attach:** `sc02_sh03_start.png` (anchor identitas+pose — pose bersedekap ditahan, JANGAN ubah) + `E02_ruangkeluarga_reverse.png` (LINGKUNGAN, sumbu sama) + keempat plat front. Beda dari START = **HANYA kamera**: push-in sedikit lebih rapat di sumbu reverse yang sama. Pose, wardrobe, identitas, susunan saf identik.
+**Attach:** `sc02_sh03_start.png` (anchor identitas+pose — pose bersedekap ditahan, JANGAN ubah) + `E02_ruangkeluarga_reverse_prayer.png` (LINGKUNGAN, sumbu sama) + keempat plat front. Beda dari START = **HANYA kamera**: push-in sedikit lebih rapat di sumbu reverse yang sama. Pose, wardrobe, identitas, susunan saf identik.
 ```json
 {
   "composition_reference": "attached frame sc02_sh03_start.png, the SH03-START render, the SAME family in the SAME folded-arm qiyam posture, same imam at the front, same boy Andi one row behind, same Ratna and Lisa in the back row, all facing the camera, same wardrobe, same warm lamplit pre-dawn lighting and grade; the ONLY change is the camera pushing in slightly closer on the same reverse axis, the prayer posture itself held completely identical and unchanged",
-  "environment_reference": "attached reference plate E02_ruangkeluarga_reverse.png, the prayer-master reverse view, same axis as the start frame, slightly tighter framing pushed in on the saf, the PERSISK rug and the four prayer mats prominent, EKTORP sofa camera-right, BESTÅ TV bench camera-left, the open doorway on the far wall ahead, faithful room match",
+  "environment_reference": "attached reference plate E02_ruangkeluarga_reverse_prayer.png, the prayer-master reverse view, same axis as the start frame, slightly tighter framing pushed in on the saf, the PERSISK rug and the four prayer mats prominent, EKTORP sofa camera-right, BESTÅ TV bench camera-left, the open doorway on the far wall ahead, faithful room match",
   "mood": "quiet pre-dawn congregational prayer held in a calm settled frame, Roma-style observational tenderness",
   "color_grade": "Roger Deakins palette, lifted blacks medium gray, neutral shadows, clean whites, Kodak 2383 emulation, slightly warmer midtones",
   "style": "photorealistic cinema still, ARRI Alexa Mini LF, clean prime spherical lens, Kodak 2383 print stock emulation",
@@ -506,7 +506,7 @@ aliases: [ev2-gateB-seq1-sc02]
 |---|---|---|---|
 | SH01 WS desktop (beat iklan) | START | `scene-images/sc02/sc02_sh01_start.png` | ✅ ACCEPTED (2026-06-24) |
 | | END | `scene-images/sc02/sc02_sh01_end.png` | ✅ ACCEPTED (2026-06-24, refleks menengok ruang baru-menyala; verifikasi adversarial digeser ke shot berikutnya per Erik) |
-| SH02 MS sajadah→saf | START | `scene-images/sc02/sc02_sh02_start.png` | ⏳ |
+| SH02 MS sajadah→saf | START | `scene-images/sc02/sc02_sh02_start.png` | ✅ ACCEPTED (2026-06-24, POLA BARU: mat-dari-plat + colour-anchor + canvas x/y + compaction; one-shot, Erik "jenius") |
 | | END | `scene-images/sc02/sc02_sh02_end.png` | ⏳ |
 | SH03 WS qiyam (ditahan, beda angle) | START | `scene-images/sc02/sc02_sh03_start.png` | ⏳ |
 | | END | `scene-images/sc02/sc02_sh03_end.png` | ⏳ |

@@ -6,13 +6,14 @@ created: 2026-06-08
 updated: 2026-06-18
 ---
 
-# Scope — AKTIF (2026-06-24 · GATE B keyframe SEQ1-SC02 — menunggu render SH02-START)
+# Scope — AKTIF (2026-06-24 · GATE B keyframe SEQ1-SC02 — POLA PROMPT BARU divalidasi, SH02-START accepted)
 
-## STATUS TERBARU (2026-06-24)
-- **AKTIF:** GATE B keyframe SEQ1-SC02 (sholat subuh). SH01 pair ACCEPTED. **NEXT = TUNGGU render SH02-START user → review → rename → SH02-END → SH03.** YA NEVER generate.
-- **Dikunci:** SC02 3-shot (SH04 dihapus); plate sholat `E02_ruangkeluarga_reverse.png` (menghadap jendela/kamera); saf imam→Andi→(Ratna,Lisa) + 4 sajadah; **figur ditempatkan via koordinat-piksel kanvas 16:9** (teknik tervalidasi, di `prompt-rules` changelog 2026-06-24); SH02-START makmum berdiri-mengobrol-santai.
+## STATUS TERBARU (2026-06-24 · sesi pola-baru)
+- **AKTIF:** GATE B keyframe SEQ1-SC02. **3/6 terkunci** (SH01 pair + SH02-START). **NEXT = SH02-END + SH03 dengan POLA BARU**, lalu review render user. YA NEVER generate.
+- **POLA PROMPT BARU = WAJIB** (semua di `prompt-rules` changelog 2026-06-24): (1) build-asset-first — objek/situasi khusus di-bake ke set-plate turunan master, bukan teks; (2) colour-tagging objek = anchor posisi+kepemilikan; (3) canvas-pixel grammar DUA sumbu (x + y-depth, 1920×1080); (4) long-axis membujur/melintang eksplisit + dimensi cm; (5) compaction-by-dedup (satu fakta satu field, front-load subjek, tail crew; TANPA simbol pemrograman).
+- **Dikunci:** SC02 3-shot; plate sholat `E02_ruangkeluarga_reverse_prayer.png` (4 mat warna ter-bake, 1-1-2 saf: sage-green=Herman/dusty-blue=Andi/terracotta=Lisa/warm-taupe=Ratna); mat DARI PLAT bukan teks; `E02_ruangkeluarga_reverse.png` = base no-mats (dipulihkan dari `115609e`).
 - **OUT OF SCOPE:** generate gambar (tugas user); GATE C Kling sampai semua keyframe ADDENDUM A2 lengkap; commit hanya bila user minta.
-- Handoff: `handoff/HANDOFF-2026-06-24-GATEB-SEQ1-SC02.md` + `INITIAL-PROMPT-2026-06-24-GATEB-SEQ1-SC02.txt`.
+- Handoff terbaru: `handoff/HANDOFF-2026-06-24-GATEB-SEQ1-SC02-SH02END.md` + `INITIAL-PROMPT-2026-06-24-GATEB-SEQ1-SC02-SH02END.txt`.
 
 ---
 

@@ -286,6 +286,14 @@ Serves SEQ1-SC02 prayer (SH02 + SH03) — a NEW camera axis, the reverse of the 
 
 ---
 
+### Cell R2 — REVERSE prayer plate WITH four colour-tagged mats → `E02_ruangkeluarga_reverse_prayer.png` · ✅ LOCKED (2026-06-24)
+Derived from **Cell R** (same room, same reverse camera, upload `E02_ruangkeluarga_master.png` as reference) with four plain colour-tagged prayer mats baked onto the PERSISK rug in a 1-1-2 saf, placed by canvas coordinates + membujur (long-axis-toward-camera) orientation. Serves SEQ1-SC02 prayer (SH02 + SH03); keyframes reference the mats by colour instead of conjuring them in text. **Identical to Cell R except: (a) add the `prayer_mats` object below into `subject_anchor.supporting_objects`; (b) `primary_subject` & `shot.composition` mention "four plain prayer mats, each a different muted colour, 1-1-2 formation receding in depth"; (c) filename `…_reverse_prayer.png`.** Mat ownership for keyframe placement: **sage-green front = Herman (imam) · dusty-blue middle = Andi · terracotta back-left = Lisa · warm-taupe back-right = Ratna.** (Validated 2026-06-24, render (3), Erik — count + 1-1-2 depth + membujur all correct; basis for `prompt-rules` changelog: colour-tagging, canvas y-depth, membujur, build-asset-first.)
+```json
+"prayer_mats": "four separate plain single-person prayer mats on the PERSISK rug, each a different muted solid colour, placed by camera-frame canvas coordinates on the 16:9 frame at 1920x1080 reference, a family prayer formation receding in depth, EVERY mat a tall narrow rectangle oriented lengthwise toward the camera, its long axis running front-to-back from the foreground toward the doorway and its short axis left-to-right, each mat clearly longer front-to-back than it is wide side-to-side, about 70cm wide by 115cm long with the 115cm length pointing toward the camera, all four mats oriented the same lengthwise way, the imam's muted sage-green mat centred at x 960 y 920 in the near foreground lowest in frame, the muted dusty-blue lone middle-row mat centred at x 960 y 780 in its own row, the back row two mats highest and furthest a muted terracotta mat centred at x 800 y 640 toward camera-left and a muted warm-taupe mat centred at x 1120 y 640 toward camera-right, the blue middle mat clearly between the green front mat and the back pair, all four mats within the central horizontal band from x 680 to x 1240 of 1920 with at least 430px to each side edge, the EKTORP sofa beyond x 1500 at camera-right and the BESTÅ TV bench before x 420 at camera-left both kept outside the mats band, each mat a plain solid-colour rectangle with a smooth unpatterned surface, spaced apart with rug showing between them"
+```
+
+---
+
 ## 4. Status manifest
 | Cell | Angle | File | Status |
 |---|---|---|---|
@@ -293,7 +301,8 @@ Serves SEQ1-SC02 prayer (SH02 + SH03) — a NEW camera axis, the reverse of the 
 | P | prayer high-angle wide | `E02_ruangkeluarga_prayer_high.png` | ✅ LOCKED v2 (2026-06-23, soft high-angle ~45°) |
 | F | floor-seating | `E02_ruangkeluarga_floorseat.png` | ✅ LOCKED v2 (2026-06-23, tight-MS seated-height) |
 | S | screen / desktop insert | `E02_ruangkeluarga_screen.png` | ✅ LOCKED v2 (2026-06-23, keyboard+mouse verified) |
-| R | REVERSE establishing (prayer master) | `E02_ruangkeluarga_reverse.png` | ✅ LOCKED (2026-06-24, kamera membelakangi jendela → sholat menghadap kamera; sofa→camera-right, TV→camera-left, pintu+KALLAX latar, karpet PERSISK tengah — geometri terbalik terverifikasi) |
+| R | REVERSE establishing (prayer master, no mats) | `E02_ruangkeluarga_reverse.png` | ✅ LOCKED (2026-06-24, kamera membelakangi jendela → sholat menghadap kamera; sofa→camera-right, TV→camera-left, pintu+KALLAX latar, karpet PERSISK tengah — geometri terbalik terverifikasi) |
+| R2 | REVERSE prayer plate + 4 colour-tagged mats | `E02_ruangkeluarga_reverse_prayer.png` | ✅ LOCKED (2026-06-24, 4 mat polos warna-beda, 1-1-2 saf via canvas x/y, membujur; sage-green=Herman/dusty-blue=Andi/terracotta=Lisa/warm-taupe=Ratna) |
 
 Storage: `environment-images/E02_ruangkeluarga/` (+ `_rejected/`). Naming: `E02_ruangkeluarga_<angle>.png`.
 Generate M first (no reference-image). Then P / F / S via the `shot`-only-rewrite method: upload `E02_ruangkeluarga_master.png` as reference + paste §1 verbatim + the cell's `shot` block. Verify each prop against the master image before locking.
