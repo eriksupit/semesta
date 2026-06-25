@@ -24,16 +24,16 @@ Definitive, shot-driven generate-list for the **attachment plates** (environment
 ---
 
 ## Production order (story order — no skipping)
-1. **Attachments first, by dependency** (just-in-time per scene is fine): regen E01 master (straight) → env masters → derivatives → character plates (covered-prayer + figuran), produced as the current scene needs them.
+1. **Attachments first, by dependency** (just-in-time per scene is fine): env masters → derivatives → character plates (covered-prayer + figuran), produced as the current scene needs them. **(E01 straight-master regen DEFERRED 2026-06-26** — oblique master kept; not on SC01's critical path, and a from-scratch regen would desync the already-accepted bed3q/nightstand/wallart derivatives. Regen only if a future scene needs a straight establishing angle the oblique master cannot serve.)
 2. **Keyframes in STORY ORDER from SEQ1-SC01**, filling the 3-mode skeletons in `10-gateB-keyframes/`. Per-shot cycle: author (mode A/B/C + manifest) → user generates → review (REVIEW-CHECKLIST G0–G6 + 8 criteria) → ACCEPT → rename `scene-images/sc<NN>/sc<NN>_sh<MM>_{start,end}.png` + write the proven prompt into the scene-file slot.
 3. **The `03-scene-detail.md` scene order IS the production order.** Never jump ahead. SEQ1-SC01 (single subject) validates Mode A/B/C + camera-lock cheaply; the iterative-build (Rule 8a) test then falls naturally at SEQ1-SC02 (scene 2) — no need to jump to it.
-4. Note: SEQ1-SC01 has 8 old-method renders in `scene-images/sc01/` (archive; prompts were cleared as non-compliant) — decide reuse vs re-render with the user when authoring SC01.
+4. **SEQ1-SC01 re-rendered under the new method (2026-06-26):** SH01 + SH02 pairs ACCEPTED (`sc01_sh0{1,2}_{start,end}.png`); SH03 + SH04 pending. Old-method renders removed.
 
 ## ENVIRONMENT PLATES (14 rooms → 41-plate final set; 27 to generate)
 
 | Env | Room | Scenes (orientations driven by) | Plates | To gen |
 |---|---|---|---|---|
-| **E01** | Kamar Herman | SEQ1-SC01, SEQ6-SC03 | ♻️ master (oblique→regen straight) · ✅ bed3q · ✅ nightstand · ✅ wallart_reverse | **1** |
+| **E01** | Kamar Herman | SEQ1-SC01, SEQ6-SC03 | ✅ master (oblique, KEPT — straight-regen deferred) · ✅ bed3q · ✅ nightstand · ✅ wallart_reverse | **0** |
 | **E02** | Ruang keluarga | SEQ1-SC02, SEQ6-SC02 | ✅ master · ✅ screen · ✅ reverse · ✅ reverse_prayer · ✅ reverse_prayer_subuh · ✅ prayer_high · ✅ floorseat | **0** |
 | **E03** | Ruang belajar | SEQ2-SC03 | ✅ master · ✅ desk · ✅ doorway · ✅ tablet | **0** |
 | **E04** | Dapur Ratna | SEQ3-SC01 (live-selling) | ⬜ master (kitchen establishing) · ⬜ work-counter (MS + OTS packing) | **2** |
@@ -48,7 +48,7 @@ Definitive, shot-driven generate-list for the **attachment plates** (environment
 | **E13** | Terminal TransJakarta | SEQ5-SC01 | ⬜ master (concourse + OOH wall) · ⬜ tap-gate · ⬜ platform/peron (overhead OOH) | **3** |
 | **E14** | Warung kelontong (EXT) | SEQ5-SC02 | ⬜ master (storefront, evening) | **1** |
 
-**Env totals:** exists 14 · regen 1 · new 26 · **to generate = 27** · final set = 41.
+**Env totals:** exists 14 · regen 0 (E01 straight-master regen DEFERRED 2026-06-26 — see Production order) · new 26 · **to generate = 26** · final set = 41.
 
 **Flags:** E08 SEQ4-SC01 (sore/orange) reuses E08 geometry — warmth at keyframe, no new plate. E10 may need a per-scene re-dressed master if workshop vs masterclass dressing differs materially (resolve at authoring). E14 add 1 reverse derivative if SH03 reads as a true reverse onto the owner behind the counter.
 

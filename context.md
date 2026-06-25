@@ -8,7 +8,17 @@ updated: 2026-06-10
 
 # Context — Sesi Aktif
 
-## State AKHIR Sesi (2026-06-25 · METODE text+image→image DEFINITIF + BACKLOG PRODUKSI) — TERBARU
+## State AKHIR Sesi (2026-06-26 · GATE B SEQ1-SC01 PRODUKSI SH01–SH02 + METODE EDIT-IN-PLACE) — TERBARU
+**Fokus:** produksi pasangan keyframe SC01 dari awal + pengerasan metode lewat siklus author→user-generate→review→accept (image-only).
+**Hasil:** SH01 (Mode B START + edit-in-place END) + SH02 (Mode B START + grab END) ACCEPTED → `scene-images/sc01/sc01_sh0{1,2}_{start,end}.png` (4 final). Commit `e3e3881`.
+**Temuan kunci (render-validated):** **EDIT-IN-PLACE** (edit piksel render START, bukan resample) = camera-lock DETERMINISTIK untuk END delta-KECIL (mata SH01 piksel-identik); generate-from-attachment = fallback. ⚠️ LEMAH untuk delta-BESAR (grip tangan SH02 re-roll `1a82e744` drift framing; hipotesis PENDING: edit panjang/agresif → risiko resample). A1 refined (AE hidupkan layar + kartu terbang → occlusion OK). No-clock: waktu via lighting.
+**Aturan baru terkunci:** `prompt-rules-text-image-to-image` Rules 6a/10/11/12/13/14 + 6-lapis canon +2; auto-memory + docs disinkron.
+**Slip dikoreksi (jadi BINDING):** token-per-token reverting-to-prose ×2, pronoun redundan, motion-verb, geometri kabur, deskripsi-ulang elemen ter-bake di edit, emit rekomendasi <95%, framing "saran"/menu.
+**SH02-END = kompromi ter-log:** `09104101` (telapak menelungkup, bukan grip-tepi) dipilih krn re-roll grip merusak framing (framing = constraint keras).
+**Otomasi closure (2026-06-26):** Stop hook `.claude/hooks/closure-docsync-check.sh` + `.claude/settings.json` dipasang — enforce doc-sync tiap akhir-turn (debounce 90s, anti-loop); aktif setelah `/hooks` reload / restart (watcher belum memuat file baru saat sesi ini). Commit tetap manual.
+**NEXT:** SC01 SH03 → SH04 (framing-by-union) → SC02. Handoff `HANDOFF-2026-06-26-EV2-SC01-SH03`.
+
+## State AKHIR Sesi (2026-06-25 · METODE text+image→image DEFINITIF + BACKLOG PRODUKSI)
 **Fokus:** brainstorm metode → dua artefak definitif + keputusan produksi (multi-agent + verifikasi adversarial + /sepakat-atau-debat).
 **Artefak:** (1) `prompt-rules-text-image-to-image.md` (vault root) = doc riset **CLEAN-SLATE** (project-agnostic, **IMAGE-ONLY**, Kling DIPISAH): diagnosis drift + Part I hukum (plate-state law, subject-count ≤1+softened, koordinat≠plafon, drift-wider) + Part II grammar 3-mode (A from-scratch / B identity-anchored / C composition-anchored delta-only) + LOCKED-atau-CHANGED + **camera-lock start/end** + Part III shot-design (crowd-coverage, framing-ladder, establishing-exception PENDING, decompose-vs-build, iterative-build PENDING) + Part IV text-economy + **Part V STRUKTUR + 4 template JSON literal (manifest/A/B/C) LIVE/PROVISIONAL** + enforcement G0–G6 + ledger. (2) `explainer-video-2/ATTACHMENT-PRODUCTION-BACKLOG.md` = generate-list shot-driven: env **27 to-gen/41 final**, karakter **~14 inti**.
 **Diagnosis kunci:** drift saat reference di-attach = generate-mode **RESAMPLE (bukan edit)** + layout-imprecision (diakui OpenAI) + reference-dominance — **BUKAN token-overflow** (terfalsifikasi: pangkas teks tak hilangkan drift). Master=Mode A (anchor identitas/konsistensi, BUKAN 3D); plate=identity-anchor (siapa/benda) ≠ composition-anchor (letak; hanya dari render jadi).
