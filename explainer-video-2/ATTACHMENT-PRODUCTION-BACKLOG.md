@@ -23,6 +23,12 @@ Definitive, shot-driven generate-list for the **attachment plates** (environment
 
 ---
 
+## Production order (story order — no skipping)
+1. **Attachments first, by dependency** (just-in-time per scene is fine): regen E01 master (straight) → env masters → derivatives → character plates (covered-prayer + figuran), produced as the current scene needs them.
+2. **Keyframes in STORY ORDER from SEQ1-SC01**, filling the 3-mode skeletons in `10-gateB-keyframes/`. Per-shot cycle: author (mode A/B/C + manifest) → user generates → review (REVIEW-CHECKLIST G0–G6 + 8 criteria) → ACCEPT → rename `scene-images/sc<NN>/sc<NN>_sh<MM>_{start,end}.png` + write the proven prompt into the scene-file slot.
+3. **The `03-scene-detail.md` scene order IS the production order.** Never jump ahead. SEQ1-SC01 (single subject) validates Mode A/B/C + camera-lock cheaply; the iterative-build (Rule 8a) test then falls naturally at SEQ1-SC02 (scene 2) — no need to jump to it.
+4. Note: SEQ1-SC01 has 8 old-method renders in `scene-images/sc01/` (archive; prompts were cleared as non-compliant) — decide reuse vs re-render with the user when authoring SC01.
+
 ## ENVIRONMENT PLATES (14 rooms → 41-plate final set; 27 to generate)
 
 | Env | Room | Scenes (orientations driven by) | Plates | To gen |

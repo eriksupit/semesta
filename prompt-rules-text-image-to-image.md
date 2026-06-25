@@ -114,6 +114,13 @@ A scene's START and END images form a pair where **only the subject changes, not
 - **Camera move = explicit exception.** Any intended camera move (push-in, pan, tilt) makes L6 a **DELTA**, not a reference — which **forfeits the start/end consistency guarantee** and reintroduces drift risk. It must be a deliberate per-shot decision, never an accident of re-describing L6. If a move is wanted, treat the END as a near-fresh composition and expect to iterate.
 - **Status:** ✅ validated (Mode C END-anchors-START); this is the headline statement of that mechanic.
 
+### EDIT-IN-PLACE — the deterministic framing lock for small-delta pairs  🔒  ✅ validated 2026-06-26
+When the generator exposes an **edit mode** that operates on a loaded image (a "describe edits" box that edits THIS image in place, optionally a single localizing point/comment + an input-fidelity control), produce the END by **editing the accepted START render in place** — NOT by generating a new image from the START as an attached reference. Edit-in-place rewrites only the targeted pixels, so framing / angle / camera / crop / lighting are preserved **by construction** (the *generate = resample* vs *edit = preserves geometry* split in the Diagnosis). This is the deterministic camera-lock; **generate-from-attachment (Mode C) is the fallback** when no edit mode exists.
+- **Scope — small-delta only:** the END differs from the START by a contained subject change within the SAME framing (eyes closed→open, screen off→on, light shift, small expression/pose change). For **large-movement** beats (sit→stand, traverse) a small-region edit cannot hold the change → fall back to Rule 6a framing-by-union or decompose (Rule 8).
+- **Instruction discipline:** the edit text is **token-per-token** (comma-separated discrete descriptors, no `and/with/but` glue — same SOP as the JSON prompt), stating ONLY the delta + an explicit lock list (`framing unchanged, crop unchanged, head position unchanged, lighting unchanged, skin unchanged, hair unchanged`). Set input-fidelity to its highest setting if offered. Keep the delta minimal — an over-long edit instruction reintroduces drift.
+- **Reproducible phenomenon:** an END made by generate-from-attachment drifted framing across attempts (luck-dependent); the same END made by edit-in-place on the START render held framing pixel-faithfully first try, while a token-per-token groggy-eyes delta landed without narrowing the eyes (sleep-crust/redness tokens rendered weakly — acceptable).
+- **Status:** ✅ validated first-use (SH01 pair, 2026-06-26); principled mechanism (edit preserves geometry), adopt as preferred for small-delta pairs.
+
 ---
 
 ## PART III — SHOT-DESIGN DISCIPLINE (decide before writing the prompt)
@@ -131,6 +138,14 @@ Cover a group (congregation, family, crowd) **across a shot ladder** — e.g. a 
 - A multi-figure full-body wide is permitted only when **all** of: (a) ≤1 face-locked figure (Rule 2) **or** the establishing exception (Rule 7); (b) the plate already carries the blocking; (c) the wide is **scene-developing** (builds spatial geometry no tighter shot can), not merely "show everyone."
 - Always apply drift-wider compensation (Rule 4).
 - **Status:** ✅ validated (single-subject full-body safe; multi-figure full-body = max failure surface).
+
+### 6a. FRAMING-BY-UNION — a still camera must contain every subject state in the span  🔒
+Decide framing at the **concept stage**, from the **union of all subject positions across START→END**, never from a single state. The camera is fixed; only the subject moves.
+- **Procedure:** concept first → test whether ONE still framing can hold every state the subject passes through (start pose AND end pose). If yes, lock that framing for both frames.
+- **If the beat moves the subject through space** (sit→stand, near→far): **widen the still frame** until it contains both extremes at once — e.g. a figure seated on the bed edge in START and standing in END must BOTH sit inside the same fixed frame. Never tilt / pan / track to follow the subject; a camera that follows is a camera move that forfeits the consistency guarantee (Part II start/end camera-lock).
+- **If no single still frame can hold the union** (or holding it destroys the needed tightness): **split the beat into two shots** at a cut (Rule 8 decompose), each its own still-camera span.
+- **Corollary:** framing is chosen by the **widest moment, not the first moment**. An ECU that fits START but crops out the END action is the wrong size — the union dictates the framing.
+- **Status:** ✅ design rule (user-mandated 2026-06-26; corollary of the Part II start/end camera-lock).
 
 ### 7. STATIC MULTI-FIGURE ESTABLISHING EXCEPTION  ⚠️ PENDING
 Some beats genuinely require 3–4 **named, face-locked** people in one frame and cannot be backs-only (a family convergence, a payoff group shot). Forbidding them outright would gut such scenes. Such a frame is permitted when **all four** hold:
@@ -163,6 +178,33 @@ Trimming prose that merely restates an attached plate is **mechanical hygiene**,
 - **Un-trimmable floor (never cut):** the attachment reference lines (repeated per generate unit), the explicit attachment-pointer tokens, the per-figure subject tokens, and the affirmative wardrobe spec. Economy removes only cross-field/in-field **duplication** and filler.
 - **Relationship to Mode C:** in a composition-anchored frame, trimming is not about budget — it is about **not re-describing a locked layer** (Part II governing principle). The reason to cut is anti-resample, not anti-overflow.
 - **Status:** ✅ validated (correction of an earlier "efficiency" overclaim).
+
+### 10. NO CLOCK-TIME — carry time-of-day through lighting, not a number  [general]
+A clock time (`04.40`, `7am`) is **inert** to the model — it cannot render a numeral as a lighting condition. Stating it wastes tokens and conveys nothing. Carry time-of-day through the **lighting** layer (plus a coarse phase token in `time_of_day` such as `pre-dawn` / `dusk`) describing the actual light: direction, warmth/coolness, intensity, which source is or is not lit.
+- **Reproducible precedent:** analog clock faces / clock-time were dropped from a room's plates because numerals and clock-hands render unreliably; the time-of-day (pre-dawn subuh) is read instead from a very-low-key cool-blue ambient with no warm sun risen and no lit practical lamp.
+- **Pairs with the grade/lighting split:** the warm look stays in `color_grade`; the cool, dim pre-dawn condition lives in `lighting`.
+- **Status:** ✅ validated (user-mandated 2026-06-26; clock-removal precedent).
+
+### 11. TOKEN-PER-TOKEN IS MANDATORY ON EVERY PROMPT SURFACE — binding, not advisory  [general]  🔒
+Every prompt the model authors MUST be **token-per-token**: comma-separated discrete descriptors, zero connective glue (`and / but / or / with / for / plus / bearing` → comma), keep only load-bearing prepositions (`of` + spatial `on/onto/from/to/into/over/against/above/below/toward`). This applies to **EVERY surface** — the 6-layer JSON **AND** the edit-mode "describe edits" instruction. The edit box being natural-language-friendly does **NOT** license prose; glued clauses risk under-weighting / dropping descriptors.
+- **Redundant-pronoun ban:** drop any possessive/pronoun whose referent is already fixed — `male` already implies `his`, a single subject makes `his/her/its` informationless. State the attribute directly (`skin tone matched`, never `match his skin tone`).
+- **Pre-emit self-check (mandatory):** before sending any prompt/edit text, scan for (a) a finite or infinitive verb chain inside a clause (`reaching in to grasp it`), (b) a pronoun (`his/her/its`), (c) a banned glue word. Any hit = prose → re-tokenize before emit.
+- **Why this is a rule, not a tip:** it recurred twice in one session because it was treated as a stylistic suggestion; it is a HARD GATE. Elevated from advisory to binding.
+- **Status:** ✅ mandated 2026-06-26 (user correction, recurred twice).
+
+### 12. NO MOTION VERBS on a still frame  [general]  🔒
+A still image freezes one instant; a motion verb (`entering`, `reaching`, `rising`, `lifting`, `walking`, `grabbing`) tells the model to depict movement → blur or an ambiguous half-position. Describe the **frozen state**: where the element IS + its static pose. State-participles (`curled`, `pressed`, `seated`, `settled`) are fine; motion-participles (`entering`, `reaching`) are not.
+- **Reproducible phenomenon:** `hand entering from the bottom edge` rendered a hand splayed mid-motion, not a clean grip; `mature male hand, lower frame, fingertips curled over the left long side` describes the end-state directly.
+- **Status:** ✅ validated 2026-06-26 (SH02-END).
+
+### 13. GEOMETRY-EXPLICIT placement — map each contact to a named side, not a vague "part"  [general]  🔒
+For any contact/placement, first lock the object's **orientation + axis** (`phone upright portrait, long axis vertical`), then map **each** contact to a SPECIFIC side/edge/region (`thumb on the right long side, four fingertips over the left long side`). A loose "part" token (`grip the edges`, `the long edges`) leaves the model to guess the geometry → it fails (a hand splays flat instead of gripping). Think in plane-space like a photo editor: position, side, dimension.
+- **Reproducible phenomenon:** `fingers curling around the phone long edges` (vague, both sides, one hand) rendered a flat splay; `thumb on the right long side, fingertips over the left long side` pins a real cross-grip.
+- **Status:** ✅ validated 2026-06-26 (SH02-END).
+
+### 14. EDIT-IN-PLACE — lock baked elements with "<element> unchanged", never re-describe  [general]  🔒
+In an edit-in-place operation the base image already contains its elements; re-describing one (`phone flat in place on the nightstand`) is redundant and competes with the edit (the model may re-draw / re-place it). State only the **delta** (the added element) + lock every baked element with `<element> unchanged` (`phone unchanged, nightstand unchanged, lamp unchanged, framing unchanged`). A lock token is stronger and less ambiguous than a fresh description.
+- **Status:** ✅ validated 2026-06-26 (SH02-END).
 
 ---
 
@@ -285,12 +327,19 @@ A frame is **not ready** until G0–G6 pass. Run this before declaring readiness
 | 4 Drift-wider | ✅ validated | figure + env-reference renders wider |
 | Part II — 3-mode grammar (A/B/C, LOCKED-or-CHANGED) | ✅ A & C / ⚠️ B map | A stable; C = END-anchors-START; B full map PENDING |
 | Part II — start/end camera lock | ✅ validated | Mode C END-anchors-START; camera move = L6-DELTA exception |
+| Part II — edit-in-place END (small-delta pairs) | ✅ validated (first-use) | edit-on-START holds framing by construction; generate-from-attachment = fallback |
 | 5 Backs-of-figures (identity-free) | ✅ validated | away-facing rows carry many figures |
 | 6 Single-subject full-body safe / multi-figure gated | ✅ validated | single full-body accepted; multi full-body collapsed |
+| 6a Framing-by-union (still camera holds all states) | ✅ design rule | user-mandated; corollary of camera-lock — widen or split, never follow |
 | 7 Static establishing exception | ⚠️ PENDING | validate on first multi-figure establishing use |
 | 8 Decompose vs build (consistency burden) | ✅ design rule | image-continuity burden |
 | 8a Iterative-build (single-figure addition) | ⚠️ PENDING | validate on first build |
 | 9 Text-economy = hygiene | ✅ validated | over-trim dropped a required object |
+| 10 No clock-time (lighting carries time-of-day) | ✅ validated | clock numerals inert/unreliable; lighting + phase token carry it |
+| 11 Token-per-token mandatory on every surface | ✅ mandated | binding (not advisory); applies to edit-box too; redundant-pronoun ban; pre-emit self-check |
+| 12 No motion verbs on a still frame | ✅ validated | "entering" → splay mid-motion; describe frozen state |
+| 13 Geometry-explicit placement (named sides) | ✅ validated | vague "long edges" → splay; map thumb/fingertips to specific sides |
+| 14 Edit-in-place: lock baked elements, don't re-describe | ✅ validated | "phone flat in place" redundant/ambiguous → "phone unchanged" |
 | Part V — prompt-structure templates (manifest + Mode A/B/C) | ⚠️ live / provisional | diagnosed shape; render-validation pending, evolves with cases |
 
 ## Changelog
@@ -298,3 +347,8 @@ A frame is **not ready** until G0–G6 pass. Run this before declaring readiness
 - **2026-06-25** — Encoded the diagnosis (drift = resample-not-edit + layout-imprecision + reference-dominance; token-overflow falsified), the three-mode prompt grammar (identity-anchor vs composition-anchor; Mode A/B/C; LOCKED-or-CHANGED principle; per-layer map), and the decompose-vs-build + iterative-build method (Rule 8 / 8a).
 - **2026-06-25** — Added the explicit START/END camera-lock rule (Part II): identical framing/angle/camera, only Lapis-4 changes; camera move = explicit L6-DELTA that forfeits the consistency guarantee. Added enforcement gate G6.
 - **2026-06-25** — Added PART V — PROMPT STRUCTURE (templates), flagged **LIVE / PROVISIONAL**: ATTACHMENT MANIFEST header + Mode A (full 6-layer) / Mode B (full minus trimmed L3, composition in text) / Mode C (minimal delta JSON, locked layers not re-written). Explicitly a live document that evolves with generation cases; revision trigger defined.
+- **2026-06-26** — Added Rule 6a FRAMING-BY-UNION (Part III): framing is decided at the concept stage from the union of all subject positions across START→END so one still camera contains every state; widen the frame rather than follow the subject, and split the beat into two shots if the union cannot fit. Camera never tracks/pans/tilts to follow — subject moves, camera still. User-mandated design principle, corollary of the Part II start/end camera-lock.
+- **2026-06-26** — Added Rule 10 NO CLOCK-TIME (Part IV): a clock time is inert to the model; carry time-of-day through the lighting layer (plus a coarse phase token), never a numeral. Pairs with the warm-grade / cool-dim-lighting split. User-mandated; clock-removal precedent.
+- **2026-06-26** — Adopted EDIT-IN-PLACE as the preferred deterministic camera-lock for small-delta start/end pairs (Part II): produce the END by editing the accepted START render in place (edit-mode "describe edits" + token-per-token delta + explicit `... unchanged` lock list + high input-fidelity), NOT by generate-from-attachment (now the fallback). Validated first-use on the SH01 pair; large-movement beats still follow Rule 6a framing-by-union / decompose.
+- **2026-06-26** — Added Rule 11 TOKEN-PER-TOKEN MANDATORY ON EVERY SURFACE (Part IV), elevated from advisory to **binding** after the model twice reverted to prose (glue words + redundant `his` after `male`) in the edit-box instruction. Adds the redundant-pronoun ban + a mandatory pre-emit self-check (scan for verb-clauses / pronouns / glue before sending). Applies to the edit-mode "describe edits" text, not just the JSON.
+- **2026-06-26** — Added Rules 12 (no motion verbs on a still — `entering/reaching/lifting` → frozen-state description), 13 (geometry-explicit placement — lock orientation+axis then map each contact to a named side, not a vague "part"; "Photoshop logic"), 14 (edit-in-place — lock baked elements with `<element> unchanged`, never re-describe). All three from the SH02-END hand-grip authoring corrections; general Rules 12–13 mirrored into the 6-layer canon `prompt-rules-image-generation.md`.

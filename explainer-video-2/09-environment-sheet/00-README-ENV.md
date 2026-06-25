@@ -17,7 +17,7 @@ aliases: [ev2-09-env-readme, gate0-env-method, environment-reference]
 
 1. **Empty room, no characters.** Plates capture space + set dressing only. Characters are composited later via their own GATE 0 plates at the keyframe.
 2. **Neutral grade, not the warm video grade.** Plates render true-to-life neutral so the WARM `color_grade` + per-scene practical lighting are applied at GATE B keyframes, NOT baked into the plate. (Same discipline as character plates, `lessons` GATE 0.)
-3. **ADDENDUM A1 applies.** Zero graphics. Device screens (TV, monitor, phone) render **off/neutral** — any UI is added in After Effects.
+3. **ADDENDUM A1 applies.** Zero graphics. Device screens (TV, monitor, phone) render **off/dark/dormant** — After Effects **powers the screen on**; all UI + ad/notification cards are added in AE as **flying motion graphics** (not screen-surface textures), so a hand/object occluding the screen in-frame is acceptable (refinement 2026-06-26).
 4. **Scoped-angle, NOT literal 360.** Generate only the angles the location's shots in `03` actually use (adaptive-set logic, same as figurans). A 360 spin is wasteful and t2i-unreliable.
 5. **House architectural anchor (shared).** The 6 home rooms (E1–E6) inherit ONE architecture/material style anchor for cross-room continuity — like the family hair anchor. Defined in §3.
 6. **Direction protocol** mirrors character plates: anchor angles to visible architecture (which wall / window / doorway), generate the master first then derive coverage; reverse angle via reference-image of the master where the 180° line matters. Positive-only tokens, zero negation.

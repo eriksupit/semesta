@@ -28,6 +28,8 @@ updated: 2026-06-10
 - Tanpa redundansi dalam satu field — satu token kuat, tidak perlu diperkuat token lain yang bilang hal sama
 - Adjective-dense C2 English: precise, concrete, industry-convention terminology
 - Child style = 4–6 tokens maximum, masing-masing load-bearing
+- **Tanpa verba gerak pada gambar diam (Validated 2026-06-26, SH02-END grip).** Kata dinamis (`entering`, `reaching`, `rising`, `lifting`, `walking`, `grabbing`) menyiratkan gerak → render blur / posisi setengah-jalan ambigu. Deskripsikan KEADAAN beku: posisi + pose statis. Participle-keadaan (`curled`, `pressed`, `seated`, `settled`) boleh; participle-gerak (`entering`, `reaching`) tidak. Bukti: `hand entering from the bottom edge` → tangan splay mid-gerak; `mature male hand, lower frame, fingertips curled over the left long side` → end-state bersih.
+- **Geometri eksplisit, bukan "bagian" kabur (Validated 2026-06-26, "Photoshop logic").** Untuk tiap kontak/penempatan: kunci dulu orientasi + sumbu objek (`phone upright portrait, long axis vertical`), lalu petakan tiap kontak ke sisi/tepi/region SPESIFIK (`thumb on the right long side, fingertips over the left long side`). Token "bagian" longgar (`grip the edges`, `the long edges`) → model menebak geometri → gagal (tangan melebar/splay). Pikirkan ruang-bidang seperti di photo editor: posisi, sisi, dimensi.
 
 **WRONG:** `"natural photorealistic skin, portrait-level detail, character-appropriate contemporary finish, zero performance artifice, authentic real-person face"`
 → redundant, abstract labels, negation
@@ -604,6 +606,7 @@ Push modifier (boleh dipasangkan dengan SATU midtones token cool/neutral di atas
 | Tanggal | Perubahan |
 |---|---|
 | 2026-06-09 | File dibuat — konsolidasi sesi S0–S2 |
+| 2026-06-26 | Token discipline +2 (dari koreksi SH02-END grip): (1) **tanpa verba gerak pada gambar diam** — `entering/reaching/lifting`→deskripsi keadaan beku (bukti: "entering"→tangan splay mid-gerak); (2) **geometri eksplisit** — kunci orientasi+sumbu objek lalu petakan tiap kontak ke sisi/tepi spesifik ("Photoshop logic"); token "bagian" kabur (`the long edges`)→model menebak→gagal. |
 | 2026-06-09 | Struktur granular, on_screen_graphic, graphic_proximity CSS positioning |
 | 2026-06-09 | facial_features zero warna, wardrobe garment construction, scene design interior tokens |
 | 2026-06-09 | Urutan field mood→color_grade→style di atas character_identity |
