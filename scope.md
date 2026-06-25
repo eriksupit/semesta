@@ -6,7 +6,18 @@ created: 2026-06-08
 updated: 2026-06-18
 ---
 
-# Scope — AKTIF (2026-06-24 · GATE B keyframe SEQ1-SC02 — POLA PROMPT BARU divalidasi, SH02-START accepted)
+# Scope — AKTIF (2026-06-25 · GATE B SEQ1-SC02 — STRATEGY REBOOT: brainstorm metode text+image→image)
+
+## STATUS TERBARU (2026-06-25 · sesi reboot metode)
+- **AKTIF:** bukan lagi tambal-token SH02 — **brainstorm METODE prompting+produksi text+image→image** di sesi BARU, lalu tulis doc baru `prompt-rules-text-image-to-image.md` (vault root) yang MENDUKUNG `prompt-rules-image-generation.md`. Paket: `handoff/HANDOFF-2026-06-25-EV2-PROMPTING-METHOD-BRAINSTORM.md` + `.txt`.
+- **DOKTRIN "POLA BARU build-asset-first" (2026-06-24) DIRETRAKSI** — terbantah sesi ini. Bukti: karpet ter-bake di plate `_subuh` + aksi "Herman membentang" → DOUBLE CARPET (`26629cfc-…png`, `Content 1672x941 (2).png`); posisi 4 figur tertukar. **Pelajaran inti: image-reference MENDOMINASI teks — objek yang ter-bake di plate TAK bisa di-token-out.**
+- **Tiga hipotesis Erik (agenda brainstorm, tervalidasi vs bukti):** (1) teks berlebih meredundansi image-ref (parsial); (2) >2 subjek → akurasi anjlok (KUAT); (3) full-body WS rapuh → pakai medium/close, full-body hanya saat aman + untuk scene-developing.
+- **TERKUNCI (jangan dibuka ulang):** trilemma permukaan-sholat SOLVED di level PLATE — `E02_ruangkeluarga_reverse_prayer.png` (satu karpet hijau polos + 2 rol mepet tembok + bantal di sofa) + `E02_ruangkeluarga_reverse_prayer_subuh.png` (versi subuh). SH01 pair accepted+committed. SH02/SH03 = OPEN (re-derive di bawah metode baru).
+- **OUT OF SCOPE:** generate gambar (tugas user); buka ulang trilemma permukaan; tambal-token multi-subjek full-body turn-by-turn; commit hanya bila user minta.
+
+---
+
+# Scope — Riwayat: AKTIF (2026-06-24 · GATE B keyframe SEQ1-SC02 — POLA PROMPT BARU [DIRETRAKSI 2026-06-25], SH02-START accepted)
 
 ## STATUS TERBARU (2026-06-24 · sesi pola-baru)
 - **AKTIF:** GATE B keyframe SEQ1-SC02. **3/6 terkunci** (SH01 pair + SH02-START). **NEXT = SH02-END + SH03 dengan POLA BARU**, lalu review render user. YA NEVER generate.
