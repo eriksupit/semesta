@@ -6,14 +6,23 @@ created: 2026-06-08
 updated: 2026-06-18
 ---
 
-# Scope — AKTIF (2026-06-25 · GATE B SEQ1-SC02 — STRATEGY REBOOT: brainstorm metode text+image→image)
+# Scope — AKTIF (2026-06-25 · METODE text+image→image DEFINITIF → FASE PRODUKSI ATTACHMENT)
 
-## STATUS TERBARU (2026-06-25 · sesi reboot metode)
-- **AKTIF:** bukan lagi tambal-token SH02 — **brainstorm METODE prompting+produksi text+image→image** di sesi BARU, lalu tulis doc baru `prompt-rules-text-image-to-image.md` (vault root) yang MENDUKUNG `prompt-rules-image-generation.md`. Paket: `handoff/HANDOFF-2026-06-25-EV2-PROMPTING-METHOD-BRAINSTORM.md` + `.txt`.
-- **DOKTRIN "POLA BARU build-asset-first" (2026-06-24) DIRETRAKSI** — terbantah sesi ini. Bukti: karpet ter-bake di plate `_subuh` + aksi "Herman membentang" → DOUBLE CARPET (`26629cfc-…png`, `Content 1672x941 (2).png`); posisi 4 figur tertukar. **Pelajaran inti: image-reference MENDOMINASI teks — objek yang ter-bake di plate TAK bisa di-token-out.**
-- **Tiga hipotesis Erik (agenda brainstorm, tervalidasi vs bukti):** (1) teks berlebih meredundansi image-ref (parsial); (2) >2 subjek → akurasi anjlok (KUAT); (3) full-body WS rapuh → pakai medium/close, full-body hanya saat aman + untuk scene-developing.
-- **TERKUNCI (jangan dibuka ulang):** trilemma permukaan-sholat SOLVED di level PLATE — `E02_ruangkeluarga_reverse_prayer.png` (satu karpet hijau polos + 2 rol mepet tembok + bantal di sofa) + `E02_ruangkeluarga_reverse_prayer_subuh.png` (versi subuh). SH01 pair accepted+committed. SH02/SH03 = OPEN (re-derive di bawah metode baru).
-- **OUT OF SCOPE:** generate gambar (tugas user); buka ulang trilemma permukaan; tambal-token multi-subjek full-body turn-by-turn; commit hanya bila user minta.
+## STATUS TERBARU (2026-06-25 · sesi metode + backlog produksi)
+- **SELESAI sesi ini:** (1) doc riset CLEAN-SLATE `prompt-rules-text-image-to-image.md` (vault root) — project-agnostic, IMAGE-ONLY (Kling DIPISAH): Part I hukum + Part II grammar 3-mode + camera-lock + Part III shot-design + Part IV text + **Part V struktur + 4 template JSON literal (LIVE/PROVISIONAL)** + enforcement G0–G6 + ledger. (2) `explainer-video-2/ATTACHMENT-PRODUCTION-BACKLOG.md` — generate-list shot-driven: **env 27 to-gen / 41 final**, **karakter ~14 inti** (full+closeup, buang medium).
+- **METODE INTI (definitif):** image-reference DOMINASI teks (plate-state law); diagnosis drift = resample-bukan-edit + layout-imprecision + reference-dominance (BUKAN token-overflow — terfalsifikasi); subject-count ≤1 face-locked (+1 softened), ≥3 runtuh; grammar 3-mode (A from-scratch / B identity-anchored / C composition-anchored delta-only); LOCKED-atau-CHANGED per lapis; master=Mode A + derivative=anchored; angle SHOT-DRIVEN (bukan 360); start/end camera-LOCK (hanya L4 berubah). PENDING render-validation: Rule 7 establishing-exception, Rule 8a iterative-build, Mode B map, Part V templates.
+- **KEPUTUSAN PRODUKSI:** produksi SEMUA shot dari awal; lengkapi attachment DULU; sholat subuh SEQ1-SC02 = **WAJAH MENGHADAP KAMERA** (kunci plat peci/mukena + jadikan saf qiyam SH03 uji utama iterative-build); karakter full+closeup buang medium; E01 master regen (miring→lurus).
+- **NEXT:** validasi Rule 8a iterative-build LEBIH AWAL di saf SEQ1-SC02; lalu generate env master→derivative + plat covered-prayer per backlog; baru keyframe scene. User generate, Claude author+review.
+- **OUT OF SCOPE:** generate gambar (tugas user); Kling/i2v (urusan terpisah, dibahas kelak); commit hanya bila user minta; jangan buka ulang trilemma permukaan / premis scope-360.
+
+---
+
+# Scope — Riwayat: (2026-06-25 · reboot metode — SUPERSEDED oleh metode definitif di atas)
+
+## STATUS (sesi reboot metode)
+- **AKTIF:** brainstorm METODE prompting+produksi text+image→image, lalu tulis `prompt-rules-text-image-to-image.md`. Paket: `handoff/HANDOFF-2026-06-25-EV2-PROMPTING-METHOD-BRAINSTORM.md` + `.txt`.
+- **DOKTRIN "POLA BARU build-asset-first" (2026-06-24) DIRETRAKSI** — DOUBLE CARPET (`26629cfc-…png`, `Content 1672x941 (2).png`); image-reference MENDOMINASI teks.
+- **TERKUNCI:** trilemma permukaan-sholat SOLVED di level PLATE (`E02_…_reverse_prayer.png` + `_subuh`). SH01 pair accepted+committed.
 
 ---
 
