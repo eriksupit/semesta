@@ -63,6 +63,7 @@ Each cell below is a COMPLETE copy-paste-ready prompt (full 6-layer + `subject_a
 ### Cell M — MASTER · establishing wide → `E01_kamar_master.png` · ✅ LOCKED
 ```json
 {
+  "environment_reference": "attached reference plate E01_kamar_master.png, same bedroom, identical furniture, identical layout, identical materials, single Hokusai Great Wave print, faithful room match, new camera per shot block only",
   "mood": "neutral reference clarity, calm empty domestic stillness",
   "color_grade": "neutral true-to-life color, balanced white-point",
   "style": "photorealistic interior reference plate, architectural photography clarity, ARRI Alexa Mini LF, clean prime spherical lens, Kodak Portra rendering",
@@ -89,9 +90,9 @@ Each cell below is a COMPLETE copy-paste-ready prompt (full 6-layer + `subject_a
   "shot": {
     "composition": "full room geography in one frame, bed centred on rear wall, single framed print centered above the headboard, devotional items legible, floor spanning foreground",
     "framing": "WS establishing, floor visible bottom 15%, ceiling line visible top",
-    "angle": "eye-level slight low angle",
-    "camera_position": "room corner opposite the bed",
-    "camera_direction": "looking across the floor toward the headboard wall, off-axis, furniture edges as gentle leading lines",
+    "angle": "eye-level slight low angle, square to the headboard wall, straight-on centered",
+    "camera_position": "centered on the room's central axis at the wall opposite the bed, equidistant from both side walls",
+    "camera_direction": "facing the rear headboard wall square-on, perpendicular to the headboard wall, symmetrical left-right balance, framed Hokusai print on the central vertical axis, side furniture edges receding as symmetrical leading lines toward the centered headboard",
     "camera": "24mm prime spherical, deep focus front to back",
     "lighting": "soft diffused daylight key from the curtained window wall, soft ambient bounce fill, even matte rendering",
     "aspect_ratio": "16:9"
@@ -235,7 +236,7 @@ Detail corner for the device area — SEQ1-SC01-SH02 (CU phone on nightstand) + 
 ## 4. Status manifest
 | Cell | Angle | File | Status |
 |---|---|---|---|
-| M | establishing wide | `E01_kamar_master.png` | ✅ LOCKED (clock-free, dinding Hokusai-only, mukena stabil) — regenerated 2026-06-23 |
+| M | establishing wide | `E01_kamar_master.png` | ✅ LOCKED (clock-free, dinding Hokusai-only, mukena stabil; **straight-on center symmetric** — re-shot 2026-06-26 via env_reference + square/centered camera, ganti off-axis corner) — regenerated 2026-06-23 |
 | B | bed 3/4 | `E01_kamar_bed3q.png` | ✅ LOCKED (clock-free, tight bed-filling, dua sisi bantal jelas) — regenerated 2026-06-23 |
 | N | nightstand insert | `E01_kamar_nightstand.png` | ✅ LOCKED (clock-free, HP screen-up tepi-depan reachable) — regenerated 2026-06-23 |
 | W | wall-art reverse | `E01_kamar_wallart_reverse.png` | ⏸ DEFERRED — tidak dipakai SEQ1-SC01 (hygiene). Plat lama masih ber-jam + spec sudah dikoreksi (1 nakas, kiri kosong); regen head-on saat ada scene yang memakainya. Jangan dipakai apa adanya. |
