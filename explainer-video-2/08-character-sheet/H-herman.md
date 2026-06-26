@@ -1,14 +1,16 @@
 ---
-title: Character Sheet — Herman (50) · GATE 0
+title: Character Sheet — Herman (46) · GATE 0
 tags: [explainer-video-2, character-sheet, herman, gate-0]
 status: draft
 created: 2026-06-19
-updated: 2026-06-19
+updated: 2026-06-26
 aliases: [ev2-herman-sheet, H-herman]
 ---
 
-# Character Sheet — HERMAN (50) · tag H
+# Character Sheet — HERMAN (46) · tag H
 > Method, 9-cell template, direction protocol, naming → [[00-README]]. Style tokens + anchors → [[07-style-reference]]. Scene truth → [[03-scene-detail]].
+>
+> **PLATES STATUS: 12/12 generated + accepted 2026-06-26** (clean-shaven, age-token 41 ~46, DAG-chained from `front_closeup` master; on disk `character-images/H_herman/`).
 
 ---
 
@@ -18,32 +20,51 @@ aliases: [ev2-herman-sheet, H-herman]
   "role": "Jakarta middle-class export-import office supervisor, modest mature man",
   "ethnicity": "modern Jakartan features, Javanese urban descent",
   "beauty": "ordinary dignified mature male, unremarkable approachable, lived-in",
-  "age": "46 years old",
-  "facial_features": "luminous healthy complexion, soft natural skin texture, fine mature lines forehead and eye corners, full uniformly grey moustache trimmed even tone, calm steady eyes",
+  "age": "41 years old",
+  "facial_features": "luminous healthy complexion, smooth even skin texture, faint expression lines only at the eye corners, clean-shaven smooth bare upper lip and jaw, fully shaved, calm steady eyes",
   "body_features": "average build slight midsection softness, 168cm frame, rounded shoulders, natural mature posture"
 }
 ```
-*Never changes scene-to-scene:* uniformly salt-and-pepper hair (even grey distribution), trimmed moustache, calm eyes. Render-age `46` to land real 50 (model ages up).
+*Never changes scene-to-scene:* dark hair greying lightly at the temples, clean-shaven (no moustache, fully shaved upper lip), calm eyes. Render-age `41` to land real ~46 (TTI ages up ~5y, validated 2026-06-26 — prior `46`-token landed ~52 reading "too old"). Herman token 41 (~46 real), Ratna token 37 (~42 real) — Herman ~4y older in canon.
 
 **Fixed Lapis-6 anchors (Herman):** `makeup_artist: Eryn Krueger Mekash` · `hair_stylist: Tim Muir` · `costume_designer: Deborah Hopper` (child-style tokens in [[07-style-reference]] §2).
 
 ---
 
 ## 2. Baseline style for plates (neutral reference outfit)
-Used for ALL 9 plate cells — the consistent look the reference-lock learns. Per-scene wardrobe (§4) differs and belongs to GATE B keyframes, NOT the plates.
+Used for ALL 12 plate cells — the consistent look the reference-lock learns. Per-scene wardrobe (§4) differs and belongs to GATE B keyframes, NOT the plates.
 ```json
 "character_style": {
   "makeup": "BB cream sheer coverage, groomed brows even skin tone, matte setting powder zero shine, fine mature texture preserved",
   "wardrobe": "plain short-sleeve cotton-poplin shirt soft collar relaxed fit muted slate-grey, pressed cotton-twill trousers mid-rise straight charcoal solid",
-  "hair": "short side-part, uniformly salt-and-pepper hair, even grey distribution throughout, dry matte hair, velvety matte strands, chalky matte finish, loosely combed natural",
+  "hair": "short side-part, dark hair greying only lightly at the temples, dry matte hair, velvety matte strands, chalky matte finish, loosely combed natural",
   "footwear": "plain leather loafers soft sole muted"
 }
 ```
 
 ---
 
-## 3. Plate matrix — 9 full t2i prompts (3 view × 3 shot)
+## 3. Plate matrix — 12 full t2i prompts (4 view × 3 shot: front · profileA · profileB · rear)
 Authored on the `prompt-rules-image-generation.md` 6-layer pattern + token discipline + banned-list. Each is copy-paste ready (no placeholders, per vault standard).
+
+> **🔗 IDENTITY-PROPAGATION DAG + GENERATION ORDER (BINDING — Erik, 2026-06-26).** All 12 plates = FULL prompt each (never edit-in-place; each is a different view/shot). `CU Front` = root master (face), generated from scratch. Every other plate attaches earlier-accepted plates as identity/framing reference. **Generate in this exact order — each step needs the prior ones accepted on disk:**
+>
+> | # | Plate | File | Attach (reference images) |
+> |---|-------|------|----------------------------|
+> | 1 | CU Front | `H_herman_front_closeup.png` | — (from scratch · MASTER) |
+> | 2 | CU ProfileA | `H_herman_profileA_closeup.png` | front_closeup |
+> | 3 | CU ProfileB | `H_herman_profileB_closeup.png` | front_closeup + profileA_closeup |
+> | 4 | CU Rear | `H_herman_rear_closeup.png` | front_closeup + profileA_closeup + profileB_closeup |
+> | 5 | Medium Front | `H_herman_front_medium.png` | front_closeup |
+> | 6 | Medium ProfileA | `H_herman_profileA_medium.png` | front_medium + profileA_closeup |
+> | 7 | Medium ProfileB | `H_herman_profileB_medium.png` | profileA_medium + profileB_closeup |
+> | 8 | Medium Rear | `H_herman_rear_medium.png` | front_medium + rear_closeup |
+> | 9 | FB Front | `H_herman_front_full.png` | front_medium |
+> | 10 | FB ProfileA | `H_herman_profileA_full.png` | front_full + profileA_medium |
+> | 11 | FB ProfileB | `H_herman_profileB_full.png` | profileA_full + profileB_medium |
+> | 12 | FB Rear | `H_herman_rear_full.png` | front_full + rear_closeup |
+>
+> Per-cell `**Attach:**` line under each header repeats its row. Where a cell's JSON still carries a `reference_image` field, that field is reconciled to this map. The face baseline is clean-shaven, age-token 41 (see §1).
 
 **PLATE DEVIATIONS from prompt-rules (declared, justified — a reference plate is NOT a graded scene):**
 1. `color_grade` = neutral true-to-life, NOT the Deakins deck grade — a plate must capture accurate identity for Kling reference-locking, not a stylized look. The WARM video grade is applied later at GATE B keyframes, not here.
@@ -57,7 +78,10 @@ All OTHER rules hold: token strings, zero negation, garment specified affirmativ
 
 ---
 
-### Cell 1 — Front · Full body → `H_herman_front_full.png`
+## Row 1 — Close-up plates (4:5)
+
+### Cell 1 — Front · Close-up → `H_herman_front_closeup.png`
+**Generate order #1 · MASTER · Attach: — (from scratch, no reference)**
 ```json
 {
   "mood": "neutral reference clarity, calm relaxed presence, Peter Hurley studio headshot register",
@@ -71,33 +95,33 @@ All OTHER rules hold: token strings, zero negation, garment specified affirmativ
     "role": "Jakarta middle-class export-import office supervisor, modest mature man",
     "ethnicity": "modern Jakartan features, Javanese urban descent",
     "beauty": "ordinary dignified mature male, unremarkable approachable, lived-in",
-    "age": "man 46 years old",
-    "facial_features": "luminous healthy complexion, soft natural skin texture, fine mature lines forehead and eye corners, full uniformly grey moustache trimmed even tone, calm steady eyes",
+    "age": "man 41 years old",
+    "facial_features": "luminous healthy complexion, smooth even skin texture, faint expression lines only at the eye corners, clean-shaven smooth bare upper lip and jaw, fully shaved, calm steady eyes",
     "body_features": "average build slight midsection softness, 168cm frame, rounded shoulders, natural mature posture"
   },
   "character_style": {
     "makeup": "BB cream sheer coverage, groomed brows even skin tone, matte setting powder zero shine, fine mature texture preserved",
-    "wardrobe": "plain short-sleeve cotton-poplin shirt soft collar, relaxed fit, muted slate-grey, pressed cotton-twill trousers mid-rise straight charcoal solid",
-    "hair": "short side-part, uniformly salt-and-pepper hair, even grey distribution throughout, dry matte hair, velvety matte strands, chalky matte finish, loosely combed natural",
-    "footwear": "plain leather loafers soft sole muted, low clean profile"
+    "wardrobe": "plain short-sleeve cotton-poplin shirt soft collar, relaxed fit, muted slate-grey collar visible at neckline",
+    "hair": "short side-part, dark hair greying only lightly at the temples, dry matte hair, velvety matte strands, chalky matte finish, loosely combed natural"
   },
   "subject_state": "static",
-  "action": "standing still upright for reference, weight even both feet, arms relaxed straight at sides",
-  "pose": "neutral standing feet shoulder-width, shoulders squared to camera",
-  "gesture": "both arms relaxed straight at sides, hands open natural",
-  "expression": "neutral relaxed face, lips closed soft, calm direct gaze to lens",
-  "framing": "full body shot, crown to loafer sole visible, floor line visible, generous headroom above crown",
-  "angle": "eye-level straight-on, front view, subject squared facing camera, both ears symmetric, nose centered",
-  "camera": "50mm prime spherical, deep focus front to back",
+  "action": "head and shoulders still, facing lens",
+  "pose": "head level, shoulders squared",
+  "gesture": "shoulders relaxed level",
+  "expression": "neutral relaxed face, lips closed soft, calm direct gaze to lens, both eyes open even",
+  "framing": "CU close-up, face fills frame, head and top of shoulders",
+  "angle": "eye-level straight-on, front view, both eyes visible symmetric, nose centered",
+  "camera": "100mm portrait prime spherical, soft background separation",
   "lighting": "flat even soft diffused three-point studio key, soft shadowless fill, matte skin and hair rendering, white seamless evenly lit",
-  "aspect_ratio": "9:16",
+  "aspect_ratio": "4:5",
   "costume_designer": "Deborah Hopper", "costume_style": "character-authentic casual wear, fabric worn laundered, class-accurate daily register",
   "makeup_artist": "Eryn Krueger Mekash", "makeup_style": "naturalistic everyday beauty, lived-in skin, real-person feel",
-  "hair_stylist": "Tim Muir", "hair_style": "naturalistic mature register, uniformly grey even distribution, neat working-class grooming"
+  "hair_stylist": "Tim Muir", "hair_style": "naturalistic register, dark hair greying lightly at the temples, neat working-class grooming"
 }
 ```
 
-### Cell 2 — Front · Medium → `H_herman_front_medium.png`
+### Cell 2 — Profile A · Close-up → `H_herman_profileA_closeup.png`
+**Generate order #2 · Attach: front_closeup**
 ```json
 {
   "mood": "neutral reference clarity, calm relaxed presence, Peter Hurley studio headshot register",
@@ -107,18 +131,148 @@ All OTHER rules hold: token strings, zero negation, garment specified affirmativ
   "location": "indoor",
   "time_of_day": "studio controlled",
   "atmosphere": "clinical empty stillness",
+  "reference_image": ["H_herman_front_closeup.png — same identical man, locked face identity to rotate into this profile"],
   "character_identity": {
     "role": "Jakarta middle-class export-import office supervisor, modest mature man",
     "ethnicity": "modern Jakartan features, Javanese urban descent",
     "beauty": "ordinary dignified mature male, unremarkable approachable, lived-in",
-    "age": "man 46 years old",
-    "facial_features": "luminous healthy complexion, soft natural skin texture, fine mature lines forehead and eye corners, full uniformly grey moustache trimmed even tone, calm steady eyes",
+    "age": "man 41 years old",
+    "facial_features": "luminous healthy complexion, smooth even skin texture, faint expression lines only at the eye corners, clean-shaven smooth bare upper lip and jaw, fully shaved, calm steady eyes",
+    "body_features": "average build slight midsection softness, 168cm frame, rounded shoulders, natural mature posture"
+  },
+  "character_style": {
+    "makeup": "BB cream sheer coverage, groomed brows even skin tone, matte setting powder zero shine, fine mature texture preserved",
+    "wardrobe": "plain short-sleeve cotton-poplin shirt soft collar, muted slate-grey collar visible at neckline",
+    "hair": "short side-part, dark hair greying only lightly at the temples, dry matte hair, velvety matte strands, chalky matte finish, loosely combed natural"
+  },
+  "subject_state": "static",
+  "action": "head and shoulders still in full profile",
+  "pose": "head level, turned ninety degrees sideways",
+  "gesture": "shoulders relaxed",
+  "expression": "neutral relaxed face, calm gaze forward to horizon, lips closed soft",
+  "framing": "CU close-up, profile face fills frame, head and top of shoulder",
+  "angle": "eye-level, full profile view, subject facing camera-left frame-left audience POV, head rotated ninety degrees, single ear and single eye visible, nose and lips in clean silhouette against white, near cheek toward camera",
+  "camera": "100mm portrait prime spherical, soft background separation",
+  "lighting": "flat even soft diffused three-point studio key, soft shadowless fill, matte skin and hair rendering, white seamless evenly lit",
+  "aspect_ratio": "4:5",
+  "costume_designer": "Deborah Hopper", "costume_style": "character-authentic casual wear, fabric worn laundered, class-accurate daily register",
+  "makeup_artist": "Eryn Krueger Mekash", "makeup_style": "naturalistic everyday beauty, lived-in skin, real-person feel",
+  "hair_stylist": "Tim Muir", "hair_style": "naturalistic register, dark hair greying lightly at the temples, neat working-class grooming"
+}
+```
+
+### Cell 3 — Profile B · Close-up → `H_herman_profileB_closeup.png`
+**Generate order #3 · Attach: front_closeup + profileA_closeup**
+```json
+{
+  "mood": "neutral reference clarity, calm relaxed presence, Peter Hurley studio headshot register",
+  "color_grade": "neutral true-to-life color, balanced white-point, accurate natural skin tone, faithful natural color rendering",
+  "style": "photorealistic studio reference plate, professional photostock isolated-on-white portrait, commercial stock photography clarity, clean catalogue look, ARRI Alexa Mini LF, clean prime spherical lens, Kodak Portra natural rendering",
+  "scene": "plain solid white background, flat even white fill, subject fully isolated on clean white",
+  "location": "indoor",
+  "time_of_day": "studio controlled",
+  "atmosphere": "clinical empty stillness",
+  "reference_image": ["H_herman_front_closeup.png — same identical man, locked face", "H_herman_profileA_closeup.png — the profileA side to mirror to the opposite profile"],
+  "character_identity": {
+    "role": "Jakarta middle-class export-import office supervisor, modest mature man",
+    "ethnicity": "modern Jakartan features, Javanese urban descent",
+    "beauty": "ordinary dignified mature male, unremarkable approachable, lived-in",
+    "age": "man 41 years old",
+    "facial_features": "luminous healthy complexion, smooth even skin texture, faint expression lines only at the eye corners, clean-shaven smooth bare upper lip and jaw, fully shaved, calm steady eyes",
+    "body_features": "average build slight midsection softness, 168cm frame, rounded shoulders, natural mature posture"
+  },
+  "character_style": {
+    "makeup": "BB cream sheer coverage, groomed brows even skin tone, matte setting powder zero shine, fine mature texture preserved",
+    "wardrobe": "plain short-sleeve cotton-poplin shirt soft collar, muted slate-grey collar visible at neckline",
+    "hair": "short side-part, dark hair greying only lightly at the temples, dry matte hair, velvety matte strands, chalky matte finish, loosely combed natural"
+  },
+  "subject_state": "static",
+  "action": "head and shoulders still in opposite full profile",
+  "pose": "head level, turned ninety degrees to the opposite side",
+  "gesture": "shoulders relaxed",
+  "expression": "neutral relaxed face, calm gaze forward to horizon, lips closed soft",
+  "framing": "CU close-up, opposite profile face fills frame, head and top of shoulder",
+  "angle": "eye-level, opposite full profile view, subject facing camera-right frame-right audience POV, head rotated ninety degrees the other way, previously hidden ear and single eye now visible, nose and lips in clean silhouette pointing opposite direction against white, near cheek toward camera",
+  "camera": "100mm portrait prime spherical, soft background separation",
+  "lighting": "flat even soft diffused three-point studio key, soft shadowless fill, matte skin and hair rendering, white seamless evenly lit",
+  "aspect_ratio": "4:5",
+  "costume_designer": "Deborah Hopper", "costume_style": "character-authentic casual wear, fabric worn laundered, class-accurate daily register",
+  "makeup_artist": "Eryn Krueger Mekash", "makeup_style": "naturalistic everyday beauty, lived-in skin, real-person feel",
+  "hair_stylist": "Tim Muir", "hair_style": "naturalistic register, dark hair greying lightly at the temples, neat working-class grooming"
+}
+```
+
+---
+
+### Cell 4 — Rear · Close-up → `H_herman_rear_closeup.png`
+**Generate order #4 · Attach: front_closeup + profileA_closeup + profileB_closeup**
+```json
+{
+  "mood": "neutral reference clarity, calm relaxed presence, Peter Hurley studio headshot register",
+  "color_grade": "neutral true-to-life color, balanced white-point, accurate natural skin tone, faithful natural color rendering",
+  "style": "photorealistic studio reference plate, professional photostock isolated-on-white portrait, commercial stock photography clarity, clean catalogue look, ARRI Alexa Mini LF, clean prime spherical lens, Kodak Portra natural rendering",
+  "scene": "plain solid white background, flat even white fill, subject fully isolated on clean white",
+  "location": "indoor",
+  "time_of_day": "studio controlled",
+  "atmosphere": "clinical empty stillness",
+  "reference_image": ["H_herman_front_closeup.png — same identical man, locked face and hairline", "H_herman_profileA_closeup.png — the left head shape", "H_herman_profileB_closeup.png — the right head shape; rotate to show the back of the head, face turned fully away from camera"],
+  "character_identity": {
+    "role": "Jakarta middle-class export-import office supervisor, modest mature man",
+    "ethnicity": "modern Jakartan features, Javanese urban descent",
+    "beauty": "ordinary dignified mature male, unremarkable approachable, lived-in",
+    "age": "man 41 years old",
+    "facial_features": "luminous healthy complexion, smooth even skin texture, faint expression lines only at the eye corners, clean-shaven smooth bare upper lip and jaw, fully shaved, calm steady eyes",
+    "body_features": "average build slight midsection softness, 168cm frame, rounded shoulders, natural mature posture"
+  },
+  "character_style": {
+    "makeup": "BB cream sheer coverage, groomed brows even skin tone, matte setting powder zero shine, fine mature texture preserved",
+    "wardrobe": "plain short-sleeve cotton-poplin shirt soft collar, muted slate-grey collar visible at neckline",
+    "hair": "short side-part, dark hair greying only lightly at the temples, dry matte hair, velvety matte strands, chalky matte finish, loosely combed natural"
+  },
+  "subject_state": "static",
+  "action": "back of the head and top of shoulders still, face away from the lens",
+  "pose": "head level, back of the head squared to camera",
+  "gesture": "shoulders relaxed",
+  "expression": "face fully turned away from camera, hidden from the lens, only the back of the head and nape shown",
+  "framing": "CU close-up from behind, the back of the head fills the frame, nape and hairline and both ear edges, top of shoulders",
+  "angle": "eye-level straight-on from directly behind, rear view, occiput and nape toward the lens, hair part visible from the back, both ears at the sides, face away from the lens",
+  "camera": "100mm portrait prime spherical, soft background separation",
+  "lighting": "flat even soft diffused three-point studio key, soft shadowless fill, matte skin and hair rendering, white seamless evenly lit",
+  "aspect_ratio": "4:5",
+  "costume_designer": "Deborah Hopper", "costume_style": "character-authentic casual wear, fabric worn laundered, class-accurate daily register",
+  "makeup_artist": "Eryn Krueger Mekash", "makeup_style": "naturalistic everyday beauty, lived-in skin, real-person feel",
+  "hair_stylist": "Tim Muir", "hair_style": "naturalistic register, dark hair greying lightly at the temples, neat working-class grooming"
+}
+```
+
+---
+
+## Row 2 — Medium plates (2:3)
+
+### Cell 5 — Front · Medium → `H_herman_front_medium.png`
+**Generate order #5 · Attach: front_closeup**
+```json
+{
+  "mood": "neutral reference clarity, calm relaxed presence, Peter Hurley studio headshot register",
+  "color_grade": "neutral true-to-life color, balanced white-point, accurate natural skin tone, faithful natural color rendering",
+  "style": "photorealistic studio reference plate, professional photostock isolated-on-white portrait, commercial stock photography clarity, clean catalogue look, ARRI Alexa Mini LF, clean prime spherical lens, Kodak Portra natural rendering",
+  "scene": "plain solid white background, flat even white fill, subject fully isolated on clean white",
+  "location": "indoor",
+  "time_of_day": "studio controlled",
+  "atmosphere": "clinical empty stillness",
+  "reference_image": ["H_herman_front_closeup.png — same identical man, locked face identity"],
+  "character_identity": {
+    "role": "Jakarta middle-class export-import office supervisor, modest mature man",
+    "ethnicity": "modern Jakartan features, Javanese urban descent",
+    "beauty": "ordinary dignified mature male, unremarkable approachable, lived-in",
+    "age": "man 41 years old",
+    "facial_features": "luminous healthy complexion, smooth even skin texture, faint expression lines only at the eye corners, clean-shaven smooth bare upper lip and jaw, fully shaved, calm steady eyes",
     "body_features": "average build slight midsection softness, 168cm frame, rounded shoulders, natural mature posture"
   },
   "character_style": {
     "makeup": "BB cream sheer coverage, groomed brows even skin tone, matte setting powder zero shine, fine mature texture preserved",
     "wardrobe": "plain short-sleeve cotton-poplin shirt soft collar, relaxed fit, muted slate-grey, pressed cotton-twill trousers mid-rise straight charcoal solid",
-    "hair": "short side-part, uniformly salt-and-pepper hair, even grey distribution throughout, dry matte hair, velvety matte strands, chalky matte finish, loosely combed natural",
+    "hair": "short side-part, dark hair greying only lightly at the temples, dry matte hair, velvety matte strands, chalky matte finish, loosely combed natural",
     "footwear": "plain leather loafers soft sole muted, low clean profile"
   },
   "subject_state": "static",
@@ -133,11 +287,12 @@ All OTHER rules hold: token strings, zero negation, garment specified affirmativ
   "aspect_ratio": "2:3",
   "costume_designer": "Deborah Hopper", "costume_style": "character-authentic casual wear, fabric worn laundered, class-accurate daily register",
   "makeup_artist": "Eryn Krueger Mekash", "makeup_style": "naturalistic everyday beauty, lived-in skin, real-person feel",
-  "hair_stylist": "Tim Muir", "hair_style": "naturalistic mature register, uniformly grey even distribution, neat working-class grooming"
+  "hair_stylist": "Tim Muir", "hair_style": "naturalistic register, dark hair greying lightly at the temples, neat working-class grooming"
 }
 ```
 
-### Cell 3 — Front · Close-up → `H_herman_front_closeup.png`
+### Cell 6 — Profile A · Medium → `H_herman_profileA_medium.png`
+**Generate order #6 · Attach: front_medium + profileA_closeup**
 ```json
 {
   "mood": "neutral reference clarity, calm relaxed presence, Peter Hurley studio headshot register",
@@ -147,57 +302,186 @@ All OTHER rules hold: token strings, zero negation, garment specified affirmativ
   "location": "indoor",
   "time_of_day": "studio controlled",
   "atmosphere": "clinical empty stillness",
+  "reference_image": ["H_herman_front_medium.png — medium framing and build anchor", "H_herman_profileA_closeup.png — the profileA face identity to carry"],
   "character_identity": {
     "role": "Jakarta middle-class export-import office supervisor, modest mature man",
     "ethnicity": "modern Jakartan features, Javanese urban descent",
     "beauty": "ordinary dignified mature male, unremarkable approachable, lived-in",
-    "age": "man 46 years old",
-    "facial_features": "luminous healthy complexion, soft natural skin texture, fine mature lines forehead and eye corners, full uniformly grey moustache trimmed even tone, calm steady eyes",
-    "body_features": "average build slight midsection softness, 168cm frame, rounded shoulders, natural mature posture"
-  },
-  "character_style": {
-    "makeup": "BB cream sheer coverage, groomed brows even skin tone, matte setting powder zero shine, fine mature texture preserved",
-    "wardrobe": "plain short-sleeve cotton-poplin shirt soft collar, relaxed fit, muted slate-grey collar visible at neckline",
-    "hair": "short side-part, uniformly salt-and-pepper hair, even grey distribution throughout, dry matte hair, velvety matte strands, chalky matte finish, loosely combed natural"
-  },
-  "subject_state": "static",
-  "action": "head and shoulders still, facing lens",
-  "pose": "head level, shoulders squared",
-  "gesture": "shoulders relaxed level",
-  "expression": "neutral relaxed face, lips closed soft, calm direct gaze to lens, both eyes open even",
-  "framing": "CU close-up, face fills frame, head and top of shoulders",
-  "angle": "eye-level straight-on, front view, both eyes visible symmetric, nose centered",
-  "camera": "100mm portrait prime spherical, soft background separation",
-  "lighting": "flat even soft diffused three-point studio key, soft shadowless fill, matte skin and hair rendering, white seamless evenly lit",
-  "aspect_ratio": "4:5",
-  "costume_designer": "Deborah Hopper", "costume_style": "character-authentic casual wear, fabric worn laundered, class-accurate daily register",
-  "makeup_artist": "Eryn Krueger Mekash", "makeup_style": "naturalistic everyday beauty, lived-in skin, real-person feel",
-  "hair_stylist": "Tim Muir", "hair_style": "naturalistic mature register, uniformly grey even distribution, neat working-class grooming"
-}
-```
-
-### Cell 4 — Profile A · Full body → `H_herman_profileA_full.png`
-```json
-{
-  "mood": "neutral reference clarity, calm relaxed presence, Peter Hurley studio headshot register",
-  "color_grade": "neutral true-to-life color, balanced white-point, accurate natural skin tone, faithful natural color rendering",
-  "style": "photorealistic studio reference plate, professional photostock isolated-on-white portrait, commercial stock photography clarity, clean catalogue look, ARRI Alexa Mini LF, clean prime spherical lens, Kodak Portra natural rendering",
-  "scene": "plain solid white background, flat even white fill, subject fully isolated on clean white",
-  "location": "indoor",
-  "time_of_day": "studio controlled",
-  "atmosphere": "clinical empty stillness",
-  "character_identity": {
-    "role": "Jakarta middle-class export-import office supervisor, modest mature man",
-    "ethnicity": "modern Jakartan features, Javanese urban descent",
-    "beauty": "ordinary dignified mature male, unremarkable approachable, lived-in",
-    "age": "man 46 years old",
-    "facial_features": "luminous healthy complexion, soft natural skin texture, fine mature lines forehead and eye corners, full uniformly grey moustache trimmed even tone, calm steady eyes",
+    "age": "man 41 years old",
+    "facial_features": "luminous healthy complexion, smooth even skin texture, faint expression lines only at the eye corners, clean-shaven smooth bare upper lip and jaw, fully shaved, calm steady eyes",
     "body_features": "average build slight midsection softness, 168cm frame, rounded shoulders, natural mature posture"
   },
   "character_style": {
     "makeup": "BB cream sheer coverage, groomed brows even skin tone, matte setting powder zero shine, fine mature texture preserved",
     "wardrobe": "plain short-sleeve cotton-poplin shirt soft collar, relaxed fit, muted slate-grey, pressed cotton-twill trousers mid-rise straight charcoal solid",
-    "hair": "short side-part, uniformly salt-and-pepper hair, even grey distribution throughout, dry matte hair, velvety matte strands, chalky matte finish, loosely combed natural",
+    "hair": "short side-part, dark hair greying only lightly at the temples, dry matte hair, velvety matte strands, chalky matte finish, loosely combed natural"
+  },
+  "subject_state": "static",
+  "action": "standing still in full profile, torso turned ninety degrees, arms relaxed",
+  "pose": "upright relaxed, body sideways to camera",
+  "gesture": "arms relaxed at sides",
+  "expression": "neutral relaxed face, calm gaze forward to horizon, lips closed soft",
+  "framing": "MS medium shot, waist up, profile",
+  "angle": "eye-level, full profile view, subject facing camera-left frame-left audience POV, head rotated ninety degrees sideways, single ear visible, nose in clean silhouette, near cheek toward camera",
+  "camera": "85mm prime spherical, medium depth of field",
+  "lighting": "flat even soft diffused three-point studio key, soft shadowless fill, matte skin and hair rendering, white seamless evenly lit",
+  "aspect_ratio": "2:3",
+  "costume_designer": "Deborah Hopper", "costume_style": "character-authentic casual wear, fabric worn laundered, class-accurate daily register",
+  "makeup_artist": "Eryn Krueger Mekash", "makeup_style": "naturalistic everyday beauty, lived-in skin, real-person feel",
+  "hair_stylist": "Tim Muir", "hair_style": "naturalistic register, dark hair greying lightly at the temples, neat working-class grooming"
+}
+```
+
+### Cell 7 — Profile B · Medium → `H_herman_profileB_medium.png`
+**Generate order #7 · Attach: profileA_medium + profileB_closeup**
+```json
+{
+  "mood": "neutral reference clarity, calm relaxed presence, Peter Hurley studio headshot register",
+  "color_grade": "neutral true-to-life color, balanced white-point, accurate natural skin tone, faithful natural color rendering",
+  "style": "photorealistic studio reference plate, professional photostock isolated-on-white portrait, commercial stock photography clarity, clean catalogue look, ARRI Alexa Mini LF, clean prime spherical lens, Kodak Portra natural rendering",
+  "scene": "plain solid white background, flat even white fill, subject fully isolated on clean white",
+  "location": "indoor",
+  "time_of_day": "studio controlled",
+  "atmosphere": "clinical empty stillness",
+  "reference_image": ["H_herman_profileA_medium.png — same identical man, medium framing and build anchor, mirror to the opposite profile", "H_herman_profileB_closeup.png — the profileB face identity to carry"],
+  "character_identity": {
+    "role": "Jakarta middle-class export-import office supervisor, modest mature man",
+    "ethnicity": "modern Jakartan features, Javanese urban descent",
+    "beauty": "ordinary dignified mature male, unremarkable approachable, lived-in",
+    "age": "man 41 years old",
+    "facial_features": "luminous healthy complexion, smooth even skin texture, faint expression lines only at the eye corners, clean-shaven smooth bare upper lip and jaw, fully shaved, calm steady eyes",
+    "body_features": "average build slight midsection softness, 168cm frame, rounded shoulders, natural mature posture"
+  },
+  "character_style": {
+    "makeup": "BB cream sheer coverage, groomed brows even skin tone, matte setting powder zero shine, fine mature texture preserved",
+    "wardrobe": "plain short-sleeve cotton-poplin shirt soft collar, relaxed fit, muted slate-grey, pressed cotton-twill trousers mid-rise straight charcoal solid",
+    "hair": "short side-part, dark hair greying only lightly at the temples, dry matte hair, velvety matte strands, chalky matte finish, loosely combed natural"
+  },
+  "subject_state": "static",
+  "action": "standing still in opposite full profile, torso turned ninety degrees the other way, arms relaxed",
+  "pose": "upright relaxed, body sideways to camera opposite direction",
+  "gesture": "arms relaxed at sides",
+  "expression": "neutral relaxed face, calm gaze forward to horizon, lips closed soft",
+  "framing": "MS medium shot, waist up, opposite profile",
+  "angle": "eye-level, opposite full profile view, subject facing camera-right frame-right audience POV, head rotated ninety degrees the other way, previously hidden ear and cheek now toward camera, nose in clean silhouette pointing opposite direction",
+  "camera": "85mm prime spherical, medium depth of field",
+  "lighting": "flat even soft diffused three-point studio key, soft shadowless fill, matte skin and hair rendering, white seamless evenly lit",
+  "aspect_ratio": "2:3",
+  "costume_designer": "Deborah Hopper", "costume_style": "character-authentic casual wear, fabric worn laundered, class-accurate daily register",
+  "makeup_artist": "Eryn Krueger Mekash", "makeup_style": "naturalistic everyday beauty, lived-in skin, real-person feel",
+  "hair_stylist": "Tim Muir", "hair_style": "naturalistic register, dark hair greying lightly at the temples, neat working-class grooming"
+}
+```
+
+### Cell 8 — Rear · Medium → `H_herman_rear_medium.png`
+**Generate order #8 · Attach: front_medium + rear_closeup**
+```json
+{
+  "mood": "neutral reference clarity, calm relaxed presence, Peter Hurley studio headshot register",
+  "color_grade": "neutral true-to-life color, balanced white-point, accurate natural skin tone, faithful natural color rendering",
+  "style": "photorealistic studio reference plate, professional photostock isolated-on-white portrait, commercial stock photography clarity, clean catalogue look, ARRI Alexa Mini LF, clean prime spherical lens, Kodak Portra natural rendering",
+  "scene": "plain solid white background, flat even white fill, subject fully isolated on clean white",
+  "location": "indoor",
+  "time_of_day": "studio controlled",
+  "atmosphere": "clinical empty stillness",
+  "reference_image": ["H_herman_front_medium.png — same identical man, medium framing and build and wardrobe anchor", "H_herman_rear_closeup.png — the locked back-of-head, rotate the body to show the back, face turned fully away from camera"],
+  "character_identity": {
+    "role": "Jakarta middle-class export-import office supervisor, modest mature man",
+    "ethnicity": "modern Jakartan features, Javanese urban descent",
+    "beauty": "ordinary dignified mature male, unremarkable approachable, lived-in",
+    "age": "man 41 years old",
+    "facial_features": "luminous healthy complexion, smooth even skin texture, faint expression lines only at the eye corners, clean-shaven smooth bare upper lip and jaw, fully shaved, calm steady eyes",
+    "body_features": "average build slight midsection softness, 168cm frame, rounded shoulders, natural mature posture"
+  },
+  "character_style": {
+    "makeup": "BB cream sheer coverage, groomed brows even skin tone, matte setting powder zero shine, fine mature texture preserved",
+    "wardrobe": "plain short-sleeve cotton-poplin shirt soft collar, relaxed fit, muted slate-grey, pressed cotton-twill trousers mid-rise straight charcoal solid",
+    "hair": "short side-part, dark hair greying only lightly at the temples, dry matte hair, velvety matte strands, chalky matte finish, loosely combed natural"
+  },
+  "subject_state": "static",
+  "action": "standing still seen from directly behind, torso squared away from camera, arms relaxed at sides",
+  "pose": "upright relaxed, back squared to camera, body facing fully away",
+  "gesture": "shoulders relaxed level, arms at sides",
+  "expression": "face fully turned away from camera, hidden from the lens, only the back of the head shown",
+  "framing": "MS medium shot from behind, waist up, back of the head and shoulders centered",
+  "angle": "eye-level straight-on from directly behind, rear view, back of the head and shoulders squared to camera, the nape and hairline toward the lens, both ears just visible at the sides, face away from the lens",
+  "camera": "85mm prime spherical, medium depth of field",
+  "lighting": "flat even soft diffused three-point studio key, soft shadowless fill, matte skin and hair rendering, white seamless evenly lit",
+  "aspect_ratio": "2:3",
+  "costume_designer": "Deborah Hopper", "costume_style": "character-authentic casual wear, fabric worn laundered, class-accurate daily register",
+  "makeup_artist": "Eryn Krueger Mekash", "makeup_style": "naturalistic everyday beauty, lived-in skin, real-person feel",
+  "hair_stylist": "Tim Muir", "hair_style": "naturalistic register, dark hair greying lightly at the temples, neat working-class grooming"
+}
+```
+
+## Row 3 — Full-body plates (9:16)
+
+### Cell 9 — Front · Full body → `H_herman_front_full.png`
+**Generate order #9 · Attach: front_medium**
+```json
+{
+  "mood": "neutral reference clarity, calm relaxed presence, Peter Hurley studio headshot register",
+  "color_grade": "neutral true-to-life color, balanced white-point, accurate natural skin tone, faithful natural color rendering",
+  "style": "photorealistic studio reference plate, professional photostock isolated-on-white portrait, commercial stock photography clarity, clean catalogue look, ARRI Alexa Mini LF, clean prime spherical lens, Kodak Portra natural rendering",
+  "scene": "plain solid white background, flat even white fill, subject fully isolated on clean white",
+  "location": "indoor",
+  "time_of_day": "studio controlled",
+  "atmosphere": "clinical empty stillness",
+  "reference_image": ["H_herman_front_medium.png — same identical man, framing and build and face anchor"],
+  "character_identity": {
+    "role": "Jakarta middle-class export-import office supervisor, modest mature man",
+    "ethnicity": "modern Jakartan features, Javanese urban descent",
+    "beauty": "ordinary dignified mature male, unremarkable approachable, lived-in",
+    "age": "man 41 years old",
+    "facial_features": "luminous healthy complexion, smooth even skin texture, faint expression lines only at the eye corners, clean-shaven smooth bare upper lip and jaw, fully shaved, calm steady eyes",
+    "body_features": "average build slight midsection softness, 168cm frame, rounded shoulders, natural mature posture"
+  },
+  "character_style": {
+    "makeup": "BB cream sheer coverage, groomed brows even skin tone, matte setting powder zero shine, fine mature texture preserved",
+    "wardrobe": "plain short-sleeve cotton-poplin shirt soft collar, relaxed fit, muted slate-grey, pressed cotton-twill trousers mid-rise straight charcoal solid",
+    "hair": "short side-part, dark hair greying only lightly at the temples, dry matte hair, velvety matte strands, chalky matte finish, loosely combed natural",
+    "footwear": "plain leather loafers soft sole muted, low clean profile"
+  },
+  "subject_state": "static",
+  "action": "standing still upright for reference, weight even both feet, arms relaxed straight at sides",
+  "pose": "neutral standing feet shoulder-width, shoulders squared to camera",
+  "gesture": "both arms relaxed straight at sides, hands open natural",
+  "expression": "neutral relaxed face, lips closed soft, calm direct gaze to lens",
+  "framing": "full body shot, crown to loafer sole visible, floor line visible, generous headroom above crown",
+  "angle": "eye-level straight-on, front view, subject squared facing camera, both ears symmetric, nose centered",
+  "camera": "50mm prime spherical, deep focus front to back",
+  "lighting": "flat even soft diffused three-point studio key, soft shadowless fill, matte skin and hair rendering, white seamless evenly lit",
+  "aspect_ratio": "9:16",
+  "costume_designer": "Deborah Hopper", "costume_style": "character-authentic casual wear, fabric worn laundered, class-accurate daily register",
+  "makeup_artist": "Eryn Krueger Mekash", "makeup_style": "naturalistic everyday beauty, lived-in skin, real-person feel",
+  "hair_stylist": "Tim Muir", "hair_style": "naturalistic register, dark hair greying lightly at the temples, neat working-class grooming"
+}
+```
+
+### Cell 10 — Profile A · Full body → `H_herman_profileA_full.png`
+**Generate order #10 · Attach: front_full + profileA_medium**
+```json
+{
+  "mood": "neutral reference clarity, calm relaxed presence, Peter Hurley studio headshot register",
+  "color_grade": "neutral true-to-life color, balanced white-point, accurate natural skin tone, faithful natural color rendering",
+  "style": "photorealistic studio reference plate, professional photostock isolated-on-white portrait, commercial stock photography clarity, clean catalogue look, ARRI Alexa Mini LF, clean prime spherical lens, Kodak Portra natural rendering",
+  "scene": "plain solid white background, flat even white fill, subject fully isolated on clean white",
+  "location": "indoor",
+  "time_of_day": "studio controlled",
+  "atmosphere": "clinical empty stillness",
+  "reference_image": ["H_herman_front_full.png — full-body build and framing anchor", "H_herman_profileA_medium.png — the profileA identity at medium"],
+  "character_identity": {
+    "role": "Jakarta middle-class export-import office supervisor, modest mature man",
+    "ethnicity": "modern Jakartan features, Javanese urban descent",
+    "beauty": "ordinary dignified mature male, unremarkable approachable, lived-in",
+    "age": "man 41 years old",
+    "facial_features": "luminous healthy complexion, smooth even skin texture, faint expression lines only at the eye corners, clean-shaven smooth bare upper lip and jaw, fully shaved, calm steady eyes",
+    "body_features": "average build slight midsection softness, 168cm frame, rounded shoulders, natural mature posture"
+  },
+  "character_style": {
+    "makeup": "BB cream sheer coverage, groomed brows even skin tone, matte setting powder zero shine, fine mature texture preserved",
+    "wardrobe": "plain short-sleeve cotton-poplin shirt soft collar, relaxed fit, muted slate-grey, pressed cotton-twill trousers mid-rise straight charcoal solid",
+    "hair": "short side-part, dark hair greying only lightly at the temples, dry matte hair, velvety matte strands, chalky matte finish, loosely combed natural",
     "footwear": "plain leather loafers soft sole muted, low clean profile"
   },
   "subject_state": "static",
@@ -212,11 +496,12 @@ All OTHER rules hold: token strings, zero negation, garment specified affirmativ
   "aspect_ratio": "9:16",
   "costume_designer": "Deborah Hopper", "costume_style": "character-authentic casual wear, fabric worn laundered, class-accurate daily register",
   "makeup_artist": "Eryn Krueger Mekash", "makeup_style": "naturalistic everyday beauty, lived-in skin, real-person feel",
-  "hair_stylist": "Tim Muir", "hair_style": "naturalistic mature register, uniformly grey even distribution, neat working-class grooming"
+  "hair_stylist": "Tim Muir", "hair_style": "naturalistic register, dark hair greying lightly at the temples, neat working-class grooming"
 }
 ```
 
-### Cell 5 — Profile A · Medium → `H_herman_profileA_medium.png`
+### Cell 11 — Profile B · Full body → `H_herman_profileB_full.png`
+**Generate order #11 · Attach: profileA_full + profileB_medium**
 ```json
 {
   "mood": "neutral reference clarity, calm relaxed presence, Peter Hurley studio headshot register",
@@ -226,100 +511,19 @@ All OTHER rules hold: token strings, zero negation, garment specified affirmativ
   "location": "indoor",
   "time_of_day": "studio controlled",
   "atmosphere": "clinical empty stillness",
+  "reference_image": ["H_herman_profileA_full.png — same identical man, full-body build and framing anchor, mirror to the opposite profile", "H_herman_profileB_medium.png — the profileB identity at medium"],
   "character_identity": {
     "role": "Jakarta middle-class export-import office supervisor, modest mature man",
     "ethnicity": "modern Jakartan features, Javanese urban descent",
     "beauty": "ordinary dignified mature male, unremarkable approachable, lived-in",
-    "age": "man 46 years old",
-    "facial_features": "luminous healthy complexion, soft natural skin texture, fine mature lines forehead and eye corners, full uniformly grey moustache trimmed even tone, calm steady eyes",
+    "age": "man 41 years old",
+    "facial_features": "luminous healthy complexion, smooth even skin texture, faint expression lines only at the eye corners, clean-shaven smooth bare upper lip and jaw, fully shaved, calm steady eyes",
     "body_features": "average build slight midsection softness, 168cm frame, rounded shoulders, natural mature posture"
   },
   "character_style": {
     "makeup": "BB cream sheer coverage, groomed brows even skin tone, matte setting powder zero shine, fine mature texture preserved",
     "wardrobe": "plain short-sleeve cotton-poplin shirt soft collar, relaxed fit, muted slate-grey, pressed cotton-twill trousers mid-rise straight charcoal solid",
-    "hair": "short side-part, uniformly salt-and-pepper hair, even grey distribution throughout, dry matte hair, velvety matte strands, chalky matte finish, loosely combed natural"
-  },
-  "subject_state": "static",
-  "action": "standing still in full profile, torso turned ninety degrees, arms relaxed",
-  "pose": "upright relaxed, body sideways to camera",
-  "gesture": "arms relaxed at sides",
-  "expression": "neutral relaxed face, calm gaze forward to horizon, lips closed soft",
-  "framing": "MS medium shot, waist up, profile",
-  "angle": "eye-level, full profile view, subject facing camera-left frame-left audience POV, head rotated ninety degrees sideways, single ear visible, nose in clean silhouette, near cheek toward camera",
-  "camera": "85mm prime spherical, medium depth of field",
-  "lighting": "flat even soft diffused three-point studio key, soft shadowless fill, matte skin and hair rendering, white seamless evenly lit",
-  "aspect_ratio": "2:3",
-  "costume_designer": "Deborah Hopper", "costume_style": "character-authentic casual wear, fabric worn laundered, class-accurate daily register",
-  "makeup_artist": "Eryn Krueger Mekash", "makeup_style": "naturalistic everyday beauty, lived-in skin, real-person feel",
-  "hair_stylist": "Tim Muir", "hair_style": "naturalistic mature register, uniformly grey even distribution, neat working-class grooming"
-}
-```
-
-### Cell 6 — Profile A · Close-up → `H_herman_profileA_closeup.png`
-```json
-{
-  "mood": "neutral reference clarity, calm relaxed presence, Peter Hurley studio headshot register",
-  "color_grade": "neutral true-to-life color, balanced white-point, accurate natural skin tone, faithful natural color rendering",
-  "style": "photorealistic studio reference plate, professional photostock isolated-on-white portrait, commercial stock photography clarity, clean catalogue look, ARRI Alexa Mini LF, clean prime spherical lens, Kodak Portra natural rendering",
-  "scene": "plain solid white background, flat even white fill, subject fully isolated on clean white",
-  "location": "indoor",
-  "time_of_day": "studio controlled",
-  "atmosphere": "clinical empty stillness",
-  "character_identity": {
-    "role": "Jakarta middle-class export-import office supervisor, modest mature man",
-    "ethnicity": "modern Jakartan features, Javanese urban descent",
-    "beauty": "ordinary dignified mature male, unremarkable approachable, lived-in",
-    "age": "man 46 years old",
-    "facial_features": "luminous healthy complexion, soft natural skin texture, fine mature lines forehead and eye corners, full uniformly grey moustache trimmed even tone, calm steady eyes",
-    "body_features": "average build slight midsection softness, 168cm frame, rounded shoulders, natural mature posture"
-  },
-  "character_style": {
-    "makeup": "BB cream sheer coverage, groomed brows even skin tone, matte setting powder zero shine, fine mature texture preserved",
-    "wardrobe": "plain short-sleeve cotton-poplin shirt soft collar, muted slate-grey collar visible at neckline",
-    "hair": "short side-part, uniformly salt-and-pepper hair, even grey distribution throughout, dry matte hair, velvety matte strands, chalky matte finish, loosely combed natural"
-  },
-  "subject_state": "static",
-  "action": "head and shoulders still in full profile",
-  "pose": "head level, turned ninety degrees sideways",
-  "gesture": "shoulders relaxed",
-  "expression": "neutral relaxed face, calm gaze forward to horizon, lips closed soft",
-  "framing": "CU close-up, profile face fills frame, head and top of shoulder",
-  "angle": "eye-level, full profile view, subject facing camera-left frame-left audience POV, head rotated ninety degrees, single ear and single eye visible, nose and lips in clean silhouette against white, near cheek toward camera",
-  "camera": "100mm portrait prime spherical, soft background separation",
-  "lighting": "flat even soft diffused three-point studio key, soft shadowless fill, matte skin and hair rendering, white seamless evenly lit",
-  "aspect_ratio": "4:5",
-  "costume_designer": "Deborah Hopper", "costume_style": "character-authentic casual wear, fabric worn laundered, class-accurate daily register",
-  "makeup_artist": "Eryn Krueger Mekash", "makeup_style": "naturalistic everyday beauty, lived-in skin, real-person feel",
-  "hair_stylist": "Tim Muir", "hair_style": "naturalistic mature register, uniformly grey even distribution, neat working-class grooming"
-}
-```
-
-### Cells 7–9 — Profile B (opposite side)
-**Generate each as a MIRROR of the matching Profile-A plate: upload `H_herman_profileA_<shot>.png` as a reference image, instruct "same identical character and outfit, flip to the opposite full profile — the cheek hidden in the reference now faces camera, nose silhouette points the opposite direction."** Do NOT rely on a text "left/right" token. The JSON below describes the target by anatomy; the reference image enforces the mirror.
-
-### Cell 7 — Profile B · Full body → `H_herman_profileB_full.png`
-```json
-{
-  "mood": "neutral reference clarity, calm relaxed presence, Peter Hurley studio headshot register",
-  "color_grade": "neutral true-to-life color, balanced white-point, accurate natural skin tone, faithful natural color rendering",
-  "style": "photorealistic studio reference plate, professional photostock isolated-on-white portrait, commercial stock photography clarity, clean catalogue look, ARRI Alexa Mini LF, clean prime spherical lens, Kodak Portra natural rendering",
-  "scene": "plain solid white background, flat even white fill, subject fully isolated on clean white",
-  "location": "indoor",
-  "time_of_day": "studio controlled",
-  "atmosphere": "clinical empty stillness",
-  "reference_image": "H_herman_profileA_full.png — same identical character and outfit, mirrored to opposite profile",
-  "character_identity": {
-    "role": "Jakarta middle-class export-import office supervisor, modest mature man",
-    "ethnicity": "modern Jakartan features, Javanese urban descent",
-    "beauty": "ordinary dignified mature male, unremarkable approachable, lived-in",
-    "age": "man 46 years old",
-    "facial_features": "luminous healthy complexion, soft natural skin texture, fine mature lines forehead and eye corners, full uniformly grey moustache trimmed even tone, calm steady eyes",
-    "body_features": "average build slight midsection softness, 168cm frame, rounded shoulders, natural mature posture"
-  },
-  "character_style": {
-    "makeup": "BB cream sheer coverage, groomed brows even skin tone, matte setting powder zero shine, fine mature texture preserved",
-    "wardrobe": "plain short-sleeve cotton-poplin shirt soft collar, relaxed fit, muted slate-grey, pressed cotton-twill trousers mid-rise straight charcoal solid",
-    "hair": "short side-part, uniformly salt-and-pepper hair, even grey distribution throughout, dry matte hair, velvety matte strands, chalky matte finish, loosely combed natural",
+    "hair": "short side-part, dark hair greying only lightly at the temples, dry matte hair, velvety matte strands, chalky matte finish, loosely combed natural",
     "footwear": "plain leather loafers soft sole muted, low clean profile"
   },
   "subject_state": "static",
@@ -334,11 +538,12 @@ All OTHER rules hold: token strings, zero negation, garment specified affirmativ
   "aspect_ratio": "9:16",
   "costume_designer": "Deborah Hopper", "costume_style": "character-authentic casual wear, fabric worn laundered, class-accurate daily register",
   "makeup_artist": "Eryn Krueger Mekash", "makeup_style": "naturalistic everyday beauty, lived-in skin, real-person feel",
-  "hair_stylist": "Tim Muir", "hair_style": "naturalistic mature register, uniformly grey even distribution, neat working-class grooming"
+  "hair_stylist": "Tim Muir", "hair_style": "naturalistic register, dark hair greying lightly at the temples, neat working-class grooming"
 }
 ```
 
-### Cell 8 — Profile B · Medium → `H_herman_profileB_medium.png`
+### Cell 12 — Rear · Full body → `H_herman_rear_full.png`
+**Generate order #12 · Attach: front_full + rear_medium**
 ```json
 {
   "mood": "neutral reference clarity, calm relaxed presence, Peter Hurley studio headshot register",
@@ -348,80 +553,39 @@ All OTHER rules hold: token strings, zero negation, garment specified affirmativ
   "location": "indoor",
   "time_of_day": "studio controlled",
   "atmosphere": "clinical empty stillness",
-  "reference_image": "H_herman_profileA_medium.png — same identical character and outfit, mirrored to opposite profile",
+  "reference_image": ["H_herman_front_full.png — same identical man, full-body build and wardrobe and framing anchor", "H_herman_rear_closeup.png — the locked back-of-head, rotate the body to show the back, face turned fully away from camera"],
   "character_identity": {
     "role": "Jakarta middle-class export-import office supervisor, modest mature man",
     "ethnicity": "modern Jakartan features, Javanese urban descent",
     "beauty": "ordinary dignified mature male, unremarkable approachable, lived-in",
-    "age": "man 46 years old",
-    "facial_features": "luminous healthy complexion, soft natural skin texture, fine mature lines forehead and eye corners, full uniformly grey moustache trimmed even tone, calm steady eyes",
+    "age": "man 41 years old",
+    "facial_features": "luminous healthy complexion, smooth even skin texture, faint expression lines only at the eye corners, clean-shaven smooth bare upper lip and jaw, fully shaved, calm steady eyes",
     "body_features": "average build slight midsection softness, 168cm frame, rounded shoulders, natural mature posture"
   },
   "character_style": {
     "makeup": "BB cream sheer coverage, groomed brows even skin tone, matte setting powder zero shine, fine mature texture preserved",
     "wardrobe": "plain short-sleeve cotton-poplin shirt soft collar, relaxed fit, muted slate-grey, pressed cotton-twill trousers mid-rise straight charcoal solid",
-    "hair": "short side-part, uniformly salt-and-pepper hair, even grey distribution throughout, dry matte hair, velvety matte strands, chalky matte finish, loosely combed natural"
+    "hair": "short side-part, dark hair greying only lightly at the temples, dry matte hair, velvety matte strands, chalky matte finish, loosely combed natural",
+    "footwear": "plain leather loafers soft sole muted, low clean profile"
   },
   "subject_state": "static",
-  "action": "standing still in opposite full profile, torso turned ninety degrees the other way, arms relaxed",
-  "pose": "upright relaxed, body sideways to camera opposite direction",
-  "gesture": "arms relaxed at sides",
-  "expression": "neutral relaxed face, calm gaze forward to horizon, lips closed soft",
-  "framing": "MS medium shot, waist up, opposite profile",
-  "angle": "eye-level, opposite full profile view, subject facing camera-right frame-right audience POV, head rotated ninety degrees the other way, previously hidden ear and cheek now toward camera, nose in clean silhouette pointing opposite direction",
-  "camera": "85mm prime spherical, medium depth of field",
+  "action": "standing still seen from directly behind, back toward camera, arms relaxed at sides",
+  "pose": "neutral standing feet shoulder-width, back squared to camera, body facing fully away",
+  "gesture": "both arms relaxed straight at sides, hands open natural",
+  "expression": "face fully turned away from camera, hidden from the lens, only the back of the head shown",
+  "framing": "full body shot from behind, crown to loafer sole visible, floor line visible, generous headroom above crown",
+  "angle": "eye-level straight-on from directly behind, rear view, back of the head and shoulders and back squared to camera, the nape and hairline toward the lens, both ears just visible at the sides, face away from the lens",
+  "camera": "50mm prime spherical, deep focus front to back",
   "lighting": "flat even soft diffused three-point studio key, soft shadowless fill, matte skin and hair rendering, white seamless evenly lit",
-  "aspect_ratio": "2:3",
+  "aspect_ratio": "9:16",
   "costume_designer": "Deborah Hopper", "costume_style": "character-authentic casual wear, fabric worn laundered, class-accurate daily register",
   "makeup_artist": "Eryn Krueger Mekash", "makeup_style": "naturalistic everyday beauty, lived-in skin, real-person feel",
-  "hair_stylist": "Tim Muir", "hair_style": "naturalistic mature register, uniformly grey even distribution, neat working-class grooming"
+  "hair_stylist": "Tim Muir", "hair_style": "naturalistic register, dark hair greying lightly at the temples, neat working-class grooming"
 }
 ```
-
-### Cell 9 — Profile B · Close-up → `H_herman_profileB_closeup.png`
-```json
-{
-  "mood": "neutral reference clarity, calm relaxed presence, Peter Hurley studio headshot register",
-  "color_grade": "neutral true-to-life color, balanced white-point, accurate natural skin tone, faithful natural color rendering",
-  "style": "photorealistic studio reference plate, professional photostock isolated-on-white portrait, commercial stock photography clarity, clean catalogue look, ARRI Alexa Mini LF, clean prime spherical lens, Kodak Portra natural rendering",
-  "scene": "plain solid white background, flat even white fill, subject fully isolated on clean white",
-  "location": "indoor",
-  "time_of_day": "studio controlled",
-  "atmosphere": "clinical empty stillness",
-  "reference_image": "H_herman_profileA_closeup.png — same identical character and outfit, mirrored to opposite profile",
-  "character_identity": {
-    "role": "Jakarta middle-class export-import office supervisor, modest mature man",
-    "ethnicity": "modern Jakartan features, Javanese urban descent",
-    "beauty": "ordinary dignified mature male, unremarkable approachable, lived-in",
-    "age": "man 46 years old",
-    "facial_features": "luminous healthy complexion, soft natural skin texture, fine mature lines forehead and eye corners, full uniformly grey moustache trimmed even tone, calm steady eyes",
-    "body_features": "average build slight midsection softness, 168cm frame, rounded shoulders, natural mature posture"
-  },
-  "character_style": {
-    "makeup": "BB cream sheer coverage, groomed brows even skin tone, matte setting powder zero shine, fine mature texture preserved",
-    "wardrobe": "plain short-sleeve cotton-poplin shirt soft collar, muted slate-grey collar visible at neckline",
-    "hair": "short side-part, uniformly salt-and-pepper hair, even grey distribution throughout, dry matte hair, velvety matte strands, chalky matte finish, loosely combed natural"
-  },
-  "subject_state": "static",
-  "action": "head and shoulders still in opposite full profile",
-  "pose": "head level, turned ninety degrees to the opposite side",
-  "gesture": "shoulders relaxed",
-  "expression": "neutral relaxed face, calm gaze forward to horizon, lips closed soft",
-  "framing": "CU close-up, opposite profile face fills frame, head and top of shoulder",
-  "angle": "eye-level, opposite full profile view, subject facing camera-right frame-right audience POV, head rotated ninety degrees the other way, previously hidden ear and single eye now visible, nose and lips in clean silhouette pointing opposite direction against white, near cheek toward camera",
-  "camera": "100mm portrait prime spherical, soft background separation",
-  "lighting": "flat even soft diffused three-point studio key, soft shadowless fill, matte skin and hair rendering, white seamless evenly lit",
-  "aspect_ratio": "4:5",
-  "costume_designer": "Deborah Hopper", "costume_style": "character-authentic casual wear, fabric worn laundered, class-accurate daily register",
-  "makeup_artist": "Eryn Krueger Mekash", "makeup_style": "naturalistic everyday beauty, lived-in skin, real-person feel",
-  "hair_stylist": "Tim Muir", "hair_style": "naturalistic mature register, uniformly grey even distribution, neat working-class grooming"
-}
-```
-
----
 
 ## 4. Per-scene wardrobe (Herman in 6 scenes)
-Hair (Tim Muir uniformly salt-and-pepper side-part) + makeup (Eryn Krueger Mekash mature lived-in) FIXED throughout; covered by peci only in sholat. Only wardrobe/footwear vary.
+Hair (Tim Muir dark side-part greying lightly at the temples) + makeup (Eryn Krueger Mekash lived-in, smoother skin) FIXED throughout; covered by peci only in sholat. Only wardrobe/footwear vary.
 
 | Scene | Look | Wardrobe tokens | Footwear | Note |
 |---|---|---|---|---|
@@ -437,4 +601,4 @@ Hair (Tim Muir uniformly salt-and-pepper side-part) + makeup (Eryn Krueger Mekas
 
 ---
 
-*Herman sheet v0.3 (9 full t2i plate prompts) · Explainer Video 2 · 2026-06-19 · cites [[07-style-reference]] · method [[00-README]]*
+*Herman sheet v0.4 (12 full t2i plate prompts incl. rear view; clean-shaven, age-token 41) · Explainer Video 2 · 2026-06-26 · cites [[07-style-reference]] · method [[00-README]]*

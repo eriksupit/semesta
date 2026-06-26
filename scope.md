@@ -6,15 +6,16 @@ created: 2026-06-08
 updated: 2026-06-18
 ---
 
-# Scope — AKTIF (2026-06-26b · SEQ1-SC01 SH03 PAIR SELESAI · Rules 15–27 tervalidasi · sisa SH04)
+# Scope — AKTIF (2026-06-26c · CHARACTER-PLATE REGEN — Herman 12 plat DONE · SC01 di-restruktur 7-shot)
 
-## STATUS TERBARU (2026-06-26b · SH03 pair selesai + keyframe-pair method matang)
-- **SELESAI:** SEQ1-SC01 **SH01 + SH02 + SH03** pasangan ACCEPTED (6 PNG di `scene-images/sc01/sc01_sh0{1,2,3}_{start,end}.png`). **Sisa SC01 = SH04** (duduk-tepi → berdiri+sarung).
-- **SH03 cara (tervalidasi):** START Mode B one-shot (plat **medium** + framing **token-kanvas/Photoshop**, dijauhkan agar muat duduk). END = **edit-in-place delta-BESAR** (front-rebah → samping-duduk-tepi + taruh HP) pakai plat `H_herman_profileB_medium.png` di-attach via edit-box **"+"**.
-- **ATURAN BARU TERKUNCI sesi ini (`prompt-rules-text-image-to-image` Rules 15–27 + memory + lessons):** 15 attachment-binding-in-body · 16 attach-list-first · 17 grade-ref-non-komposisi · 18 scene-fidelity · 19 env-dual-plate (master+angle) · 20 transient-state-tokens (kucel) · 21 device-screen-cool-blue · 22 framing-from-movement-union (i2v camera-move rationale) · 23 plate-shot-size-bias-framing · 24 subject-facing-from-object-side (profileA/B) · 25 reverse-engineer-one-shot · **26 keyframe-2-frame + END-depictable (anggukan ditolak)** · **27 big-delta-edit-in-place VIABLE via plat-orientasi-"+"**. Plus Rule 13 ext (edit-box koordinat + iluminasi-tunjuk-cahaya) + EDIT-IN-PLACE END selalu (gagal→decompose, jangan generate-fresh).
+## STATUS TERBARU (2026-06-26c · pivot regen karakter + DAG 12-cell)
+- **PIVOT:** keluarga di-regen lebih muda + metode plat baru. Herman → **clean-shaven, token 41 (~46)**; Ratna → token 37 (~42); usia anak dipertahankan. Semua sheet pakai **DAG 12-cell** (closeup→medium→fullbody × front/profileA/profileB/rear; `reference_image` berantai di body+header+tabel; `front_closeup`=master; **anak CU Front = blend wajah ortu** attach H+R front_closeup; FB-profile attach medium-profile). Kanonik: `08-character-sheet/*.md` §3 + `lessons.md` + memory.
+- **SELESAI:** **Herman 12/12 plat** generated+ACCEPTED (`character-images/H_herman/`) — identitas konsisten lintas sudut, clean-shaven, usia ~mid-40s, rear wajah-tersembunyi ✓ (catatan non-blok: footwear full = sepatu-tali bukan loafer).
+- **SC01 di-restruktur 4→7 shot** (`10-gateB-keyframes/SEQ1-SC01-RESTRUCTURE-2026-06-26.md`): waking sequence (SH03 taruh HP → SH04 lampu nyala/rear → SH05 Ratna bangun duduk → SH06 Herman berdiri menengok → SH07 Ratna senyum), sholat digeser sesudahnya. Env baru `bed4q` (kiri-diagonal, mirror bed3q) = dependensi SH04–SH05. SH03-START regen medium accepted (akan di-supersede saat scene diregen dgn Herman baru).
+- **ATURAN BARU sesi ini (lessons + memory):** +5-aging→token=target−5 (dewasa); identity-propagation DAG; report lokasi+attachment tiap prompt; attach WAJIB di body JSON tiap cell; edit reference_image PER-CELL + audit set-match+JSON (regex blok serakah pernah korup Cell 6/7).
 - **KOREKSI PERILAKU (Erik):** Confidence = konviksi, jangan diulang mekanis / jangan re-gate yang sudah di-pre-authorize / jangan sebut "ceremony".
-- **NEXT:** **SH04** (duduk-tepi → berdiri+sarung) — START Mode B full+profileB, END edit-in-place delta-besar (stand) pakai teknik R27 → lalu SEQ1-SC02 (saf subuh). Paket: `handoff/HANDOFF-2026-06-26-EV2-SC01-SH04.*`.
-- **OUT OF SCOPE:** generate gambar (user); Kling/i2v; commit tanpa "ya".
+- **NEXT:** generate **Ratna 12 plat** (setengah-jalan: closeups+front_medium+rear_closeup ada; sisa medium-profiles+fullbody+rear) → **Andi 12** (CU Front attach wajah ortu; Andi=pilot risiko-tua) → **Lisa 12** → lalu regen scene SC01 dari SH01 dengan Herman/Ratna baru.
+- **OUT OF SCOPE:** generate gambar (user); Kling/i2v; commit/push tanpa "ya".
 
 ---
 
