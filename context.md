@@ -8,7 +8,16 @@ updated: 2026-06-10
 
 # Context — Sesi Aktif
 
-## State AKHIR Sesi (2026-06-26 · GATE B SEQ1-SC01 PRODUKSI SH01–SH02 + METODE EDIT-IN-PLACE) — TERBARU
+## State AKHIR Sesi (2026-06-26b · SEQ1-SC01 SH03 PAIR SELESAI + Rules 26–27) — TERBARU
+**Fokus:** produksi SH03 (rebah→duduk-samping taruh HP) end-to-end + pengerasan metode keyframe-pair.
+**Hasil:** **SH03 pair ACCEPTED** → `scene-images/sc01/sc01_sh03_{start,end}.png`. **SC01 kini SH01–SH03 lengkap (6 PNG); sisa SH04.** START = Mode B one-shot (plat **medium** + framing **token-kanvas/Photoshop**, dijauhkan agar muat duduk, `2a91a36c`). END = **edit-in-place delta-BESAR** (front-rebah→samping-duduk-tepi taruh HP) pakai plat `H_herman_profileB_medium.png` di-attach via **"+"** (`1e9f76d3`).
+**Aturan baru terkunci (`prompt-rules-text-image-to-image` Rules 26–27 + memory + lessons):** 26 keyframe SELALU 2-frame; END = state-change BISA digambar (anggukan DITOLAK — micro-gerak tak tergambar, berakhir netral). 27 big-delta edit-in-place VIABLE bila attach plat orientasi via "+" + sebut arah + lock-list penuh; tanpa plat → orientasi front bertahan; "tanpa attachment" hanya utk BASE. (Mematahkan "big-delta drifts" lama.)
+**Metode rantai SH03 (tervalidasi):** framing-from-movement-union (R22) ukur headroom sebelum kunci (94a5fcec ~15% kurang → 2a91a36c ~25% cukup); plat-shot-size mem-bias framing (R23); edit iluminasi tunjuk-cahaya bukan-objek; lokasi edit-box pakai koordinat-kanvas; cahaya-layar cool-blue (R21); jendela subuh dim-blue (R10).
+**Koreksi perilaku keras (Erik, lessons):** jangan hampakan keyakinan dgn repetisi mekanis `Confidence:NN%`; jangan re-gate aksi yang sudah di-pre-authorize; Confidence = konviksi, BUKAN "ceremony" (menyebutnya begitu = penghinaan).
+**Git:** HEAD `1529322`. UNCOMMITTED: `SEQ1-SC01.md`, `lessons.md`, `prompt-rules-text-image-to-image.md` (M) + finals `sc01_sh03_{start,end}.png` + rejects (untracked). Belum commit (tunggu "ya").
+**NEXT:** SH04 (duduk-tepi → berdiri+sarung) — START Mode B full+profileB, END edit-in-place delta-besar (stand) pakai teknik R27. Lalu SC02. Handoff: `handoff/HANDOFF-2026-06-26-EV2-SC01-SH04.*`.
+
+## State AKHIR Sesi (2026-06-26 · GATE B SEQ1-SC01 PRODUKSI SH01–SH02 + METODE EDIT-IN-PLACE)
 **Fokus:** produksi pasangan keyframe SC01 dari awal + pengerasan metode lewat siklus author→user-generate→review→accept (image-only).
 **Hasil:** SH01 (Mode B START + edit-in-place END) + SH02 (Mode B START + grab END) ACCEPTED → `scene-images/sc01/sc01_sh0{1,2}_{start,end}.png` (4 final). Commit `e3e3881`.
 **Temuan kunci (render-validated):** **EDIT-IN-PLACE** (edit piksel render START, bukan resample) = camera-lock DETERMINISTIK untuk END delta-KECIL (mata SH01 piksel-identik); generate-from-attachment = fallback. ⚠️ LEMAH untuk delta-BESAR (grip tangan SH02 re-roll `1a82e744` drift framing; hipotesis PENDING: edit panjang/agresif → risiko resample). A1 refined (AE hidupkan layar + kartu terbang → occlusion OK). No-clock: waktu via lighting.

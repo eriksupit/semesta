@@ -6,14 +6,14 @@ created: 2026-06-08
 updated: 2026-06-18
 ---
 
-# Scope — AKTIF (2026-06-26 · GATE B SEQ1-SC01 PRODUKSI SH01–SH02 + METODE EDIT-IN-PLACE tervalidasi)
+# Scope — AKTIF (2026-06-26b · SEQ1-SC01 SH03 PAIR SELESAI · Rules 15–27 tervalidasi · sisa SH04)
 
-## STATUS TERBARU (2026-06-26 · sesi produksi SC01 + pengerasan metode)
-- **SELESAI:** SEQ1-SC01 **SH01 + SH02** pasangan keyframe ACCEPTED (4 PNG di `scene-images/sc01/`); commit `e3e3881`. Metode + governance dikeraskan.
-- **TEMUAN METODE (tervalidasi render):** **EDIT-IN-PLACE** (ChatGPT "Describe edits" pada render START, fidelity High, token delta + `<x> unchanged`) = camera-lock DETERMINISTIK untuk END delta-KECIL (mata SH01 piksel-identik). Generate-from-attachment = fallback. ⚠️ Framing-lock LEMAH untuk delta-BESAR (grip tangan SH02 re-roll drift) — PENDING konfirmasi pola.
-- **ATURAN BARU TERKUNCI (`prompt-rules-text-image-to-image`):** 6a framing-by-union (kamera diam tampung semua state; lebarkan/pecah, jangan follow), 10 no-clock-time (waktu via lighting), 11 token-per-token BINDING tiap surface incl edit-box (no glue/pronoun-redundan + pre-emit self-check), 12 no-motion-verbs di still, 13 geometry-explicit (kontak ke sisi bernama), 14 edit-in-place lock-don't-redescribe. 6-lapis canon +2 (12,13).
-- **ADDENDUM A1 REFINED:** layar AI OFF; AE menghidupkan layar + kartu iklan = grafis terbang → occlusion layar oleh tangan OK; staging natural.
-- **NEXT:** SC01 **SH03** (MCU Herman+ponsel) → **SH04** (sit→stand = uji framing-by-union Rule 6a) → SEQ1-SC02 (saf subuh, uji iterative-build Rule 8a). Paket: `handoff/HANDOFF-2026-06-26-EV2-SC01-SH03.md` + `.txt`.
+## STATUS TERBARU (2026-06-26b · SH03 pair selesai + keyframe-pair method matang)
+- **SELESAI:** SEQ1-SC01 **SH01 + SH02 + SH03** pasangan ACCEPTED (6 PNG di `scene-images/sc01/sc01_sh0{1,2,3}_{start,end}.png`). **Sisa SC01 = SH04** (duduk-tepi → berdiri+sarung).
+- **SH03 cara (tervalidasi):** START Mode B one-shot (plat **medium** + framing **token-kanvas/Photoshop**, dijauhkan agar muat duduk). END = **edit-in-place delta-BESAR** (front-rebah → samping-duduk-tepi + taruh HP) pakai plat `H_herman_profileB_medium.png` di-attach via edit-box **"+"**.
+- **ATURAN BARU TERKUNCI sesi ini (`prompt-rules-text-image-to-image` Rules 15–27 + memory + lessons):** 15 attachment-binding-in-body · 16 attach-list-first · 17 grade-ref-non-komposisi · 18 scene-fidelity · 19 env-dual-plate (master+angle) · 20 transient-state-tokens (kucel) · 21 device-screen-cool-blue · 22 framing-from-movement-union (i2v camera-move rationale) · 23 plate-shot-size-bias-framing · 24 subject-facing-from-object-side (profileA/B) · 25 reverse-engineer-one-shot · **26 keyframe-2-frame + END-depictable (anggukan ditolak)** · **27 big-delta-edit-in-place VIABLE via plat-orientasi-"+"**. Plus Rule 13 ext (edit-box koordinat + iluminasi-tunjuk-cahaya) + EDIT-IN-PLACE END selalu (gagal→decompose, jangan generate-fresh).
+- **KOREKSI PERILAKU (Erik):** Confidence = konviksi, jangan diulang mekanis / jangan re-gate yang sudah di-pre-authorize / jangan sebut "ceremony".
+- **NEXT:** **SH04** (duduk-tepi → berdiri+sarung) — START Mode B full+profileB, END edit-in-place delta-besar (stand) pakai teknik R27 → lalu SEQ1-SC02 (saf subuh). Paket: `handoff/HANDOFF-2026-06-26-EV2-SC01-SH04.*`.
 - **OUT OF SCOPE:** generate gambar (user); Kling/i2v; commit tanpa "ya".
 
 ---
