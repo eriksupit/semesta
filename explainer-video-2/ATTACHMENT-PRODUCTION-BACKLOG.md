@@ -55,7 +55,7 @@ Definitive, shot-driven generate-list for the **attachment plates** (environment
 ---
 
 ## CHARACTER PLATES — ⚠️ SUPERSEDED BY 12-CELL DAG (2026-06-26)
-> **Method changed:** the family mains now use the full **12-cell identity-propagation DAG** per `08-character-sheet/*.md` §3 — 4 views (front/profileA/profileB/rear) × 3 shots (closeup/medium/full), reference_image chained, `front_closeup` = master; **children (Andi/Lisa) CU Front = blend of parent faces** (attach H+R front_closeup). MEDIUM + profileB + rear are NO LONGER archived — all 12 are produced. Family also re-aged younger (Herman clean-shaven token 41; Ratna token 37; child ages kept). **STATUS: Herman 12/12 DONE ✅ · Ratna in progress · Andi/Lisa sheets ready.** The legacy table below (full+closeup-only, mains=9) is retained for the figuran/covered-prayer plates only.
+> **Method changed:** the family mains now use the full **12-cell identity-propagation DAG** per `08-character-sheet/*.md` §3 — 4 views (front/profileA/profileB/rear) × 3 shots (closeup/medium/full), reference_image chained, `front_closeup` = master; **children (Andi/Lisa) CU Front = blend of parent faces** (attach H+R front_closeup). MEDIUM + profileB + rear are NO LONGER archived — all 12 are produced. Family also re-aged younger (Herman clean-shaven token 41; Ratna token 37; child ages kept). **STATUS: Herman 12/12 DONE ✅ · Ratna base 12/12 DONE ✅ (hijab §3.A 3 plates to-regen, old-face deleted) · Andi/Lisa sheets ready (next).** The legacy table below (full+closeup-only, mains=9) is retained for the figuran/covered-prayer plates only.
 
 ## CHARACTER PLATES (LEGACY full+closeup standard — figuran/covered-prayer reference; ~14 core)
 

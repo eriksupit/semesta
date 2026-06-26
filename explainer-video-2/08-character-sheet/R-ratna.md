@@ -9,6 +9,8 @@ aliases: [ev2-ratna-sheet, R-ratna]
 
 # Character Sheet — RATNA (42, hijabi) · tag R
 > Method, 9-cell template, direction protocol, naming → [[00-README]]. Style tokens + anchors → [[07-style-reference]]. Scene truth → [[03-scene-detail]].
+>
+> **PLATES STATUS: base 12/12 generated + accepted 2026-06-26** (age-token 37 ~42, DAG-chained from `front_closeup` master, incl. rear; on disk `character-images/R_ratna/`). **Hijab §3.A (3 plates) = TO REGENERATE** — old-face versions deleted; prompts age-synced, generate when SEQ3/4/5 needs them.
 
 ---
 
@@ -554,7 +556,7 @@ All OTHER rules hold: token strings, zero negation (positive-only), garment spec
 ```
 
 ### Cell 12 — Rear · Full body → `R_ratna_rear_full.png`
-**Generate order #12 · Attach: front_full + rear_closeup**
+**Generate order #12 · Attach: front_full + rear_medium**
 ```json
 {
   "mood": "neutral reference clarity, calm relaxed presence, Peter Hurley studio headshot register",
@@ -564,7 +566,7 @@ All OTHER rules hold: token strings, zero negation (positive-only), garment spec
   "location": "indoor",
   "time_of_day": "studio controlled",
   "atmosphere": "clinical empty stillness",
-  "reference_image": ["R_ratna_front_full.png — same identical woman, full-body build and wardrobe and framing anchor", "R_ratna_rear_closeup.png — the locked back-of-head, rotate the body to show the back, face turned fully away from camera"],
+  "reference_image": ["R_ratna_front_full.png — same identical woman, full-body build and wardrobe and framing anchor", "R_ratna_rear_medium.png — the locked back-of-head, rotate the body to show the back, face turned fully away from camera"],
   "character_identity": {
     "role": "Jakarta middle-class home-culinary UMKM entrepreneur, modest mature Muslim woman, dignified maternal warmth",
     "ethnicity": "modern Jakartan features, Javanese urban descent",

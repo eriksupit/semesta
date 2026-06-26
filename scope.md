@@ -14,7 +14,8 @@ updated: 2026-06-18
 - **SC01 di-restruktur 4→7 shot** (`10-gateB-keyframes/SEQ1-SC01-RESTRUCTURE-2026-06-26.md`): waking sequence (SH03 taruh HP → SH04 lampu nyala/rear → SH05 Ratna bangun duduk → SH06 Herman berdiri menengok → SH07 Ratna senyum), sholat digeser sesudahnya. Env baru `bed4q` (kiri-diagonal, mirror bed3q) = dependensi SH04–SH05. SH03-START regen medium accepted (akan di-supersede saat scene diregen dgn Herman baru).
 - **ATURAN BARU sesi ini (lessons + memory):** +5-aging→token=target−5 (dewasa); identity-propagation DAG; report lokasi+attachment tiap prompt; attach WAJIB di body JSON tiap cell; edit reference_image PER-CELL + audit set-match+JSON (regex blok serakah pernah korup Cell 6/7).
 - **KOREKSI PERILAKU (Erik):** Confidence = konviksi, jangan diulang mekanis / jangan re-gate yang sudah di-pre-authorize / jangan sebut "ceremony".
-- **NEXT:** generate **Ratna 12 plat** (setengah-jalan: closeups+front_medium+rear_closeup ada; sisa medium-profiles+fullbody+rear) → **Andi 12** (CU Front attach wajah ortu; Andi=pilot risiko-tua) → **Lisa 12** → lalu regen scene SC01 dari SH01 dengan Herman/Ratna baru.
+- **SELESAI (+):** **Ratna base 12/12 plat** generated+ACCEPTED (`character-images/R_ratna/`) — identitas konsisten, usia ~42, rear wajah-tersembunyi ✓. Hijab §3.A (3) = TO REGENERATE (wajah-lama dihapus).
+- **NEXT:** **Andi 12** (CU Front attach wajah ortu; Andi=pilot risiko-tua) → **Lisa 12** → Ratna hijab 3 regen → lalu regen scene SC01 dari SH01 dengan keluarga baru.
 - **OUT OF SCOPE:** generate gambar (user); Kling/i2v; commit/push tanpa "ya".
 
 ---
