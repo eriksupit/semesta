@@ -10,7 +10,7 @@ aliases: [ev2-ratna-sheet, R-ratna]
 # Character Sheet — RATNA (42, hijabi) · tag R
 > Method, 9-cell template, direction protocol, naming → [[00-README]]. Style tokens + anchors → [[07-style-reference]]. Scene truth → [[03-scene-detail]].
 >
-> **PLATES STATUS: base 12/12 generated + accepted 2026-06-26** (age-token 37 ~42, DAG-chained from `front_closeup` master, incl. rear; on disk `character-images/R_ratna/`). **Hijab §3.A (3 plates) = TO REGENERATE** — old-face versions deleted; prompts age-synced, generate when SEQ3/4/5 needs them.
+> **PLATES STATUS: base 12/12 generated + accepted 2026-06-26** (age-token 37 ~42, DAG-chained from `front_closeup` master, incl. rear; on disk `character-images/R_ratna/`). **Hijab §3.A: 5/5 generated + accepted 2026-06-26** — HA front-medium ✅ · HB front-closeup ✅ · HC profileA-medium ✅ · HD profileB-medium ✅ · HE front-full ✅ (young face inherited from uncovered base, hijab via wardrobe token, drape/direction correct).
 
 ---
 
@@ -20,7 +20,7 @@ Ratna's head-covering is **not** a fixed look; it is governed by **non-mahram ex
 2. **Hijab covered:** public exposure, including two **at-home** scenes that broadcast/video to non-mahram — SEQ3-SC01 (live-selling to public), SEQ3-SC02 (bank video call), plus outdoors SEQ4-SC03, SEQ5-SC02.
 3. **Mukena (prayer garment):** SEQ1-SC02 sholat subuh.
 
-**Plate consequence (general principle — applies to ALL characters):** every character's baseline plates are shot **uncovered (hair visible)** — a plate's job is to lock face + hair + proportion at maximum information. A character who covers their head in some scenes (Ratna's hijab; Herman's peci in sholat) ALSO gets a **few representative covered plates** as reference anchors, because the covering changes head/face framing + silhouette and the locking set needs a covered-head anchor for those scenes. For Ratna that is **12 uncovered (§3, incl. rear) + 3 hijab (§3.A) = 15 plates**.
+**Plate consequence (general principle — applies to ALL characters):** every character's baseline plates are shot **uncovered (hair visible)** — a plate's job is to lock face + hair + proportion at maximum information. A character who covers their head in some scenes (Ratna's hijab; Herman's peci in sholat) ALSO gets a **few representative covered plates** as reference anchors, because the covering changes head/face framing + silhouette and the locking set needs a covered-head anchor for those scenes. For Ratna that is **12 uncovered (§3, incl. rear) + 5 hijab (§3.A) = 17 plates**.
 
 **Keyword-leak guard (firm — `lessons.md`).** The word `hijabi` / any head-covering trigger is BANNED from `character_identity.role` on the **uncovered** plates: `character_identity` is read first by the model and a covering word there forces a headscarf even when the wardrobe field carries none. Role token on uncovered plates = `modest mature Muslim woman` (zero covering trigger). The hijab is introduced ONLY where a hijab garment token is explicitly present (§3.A + GATE B hijab scenes).
 
@@ -597,10 +597,11 @@ All OTHER rules hold: token strings, zero negation (positive-only), garment spec
 }
 ```
 
-## 3.A Supplementary hijab reference plates (3 representative angles)
+## 3.A Supplementary hijab reference plates (5 representative angles)
 Covered-head anchors for Ratna's 4 hijab scenes (SEQ3-SC01/02, SEQ4-SC03, SEQ5-SC02) + mukena scene reference. NOT a full turnaround — the uncovered §3 plates already lock the face; these add the hijab drape + covered-head framing the hijab scenes need. Everyday `square voile hijab` (the SEQ4/SEQ5 standard); jersey-snug variant (SEQ3 cooking) is a minor GATE-B adjustment. Here a hijab garment token IS present, so the covered look is rendered by the wardrobe, not by a role trigger.
 
 ### Cell HA — Hijab · Front · Medium → `R_ratna_hijab_front_medium.png`
+**Attach: front_medium + R_ratna_hijab_front_closeup** (uncovered base plates already accepted — generate in any order)
 ```json
 {
   "mood": "neutral reference clarity, calm relaxed presence, Peter Hurley studio headshot register",
@@ -610,6 +611,7 @@ Covered-head anchors for Ratna's 4 hijab scenes (SEQ3-SC01/02, SEQ4-SC03, SEQ5-S
   "location": "indoor",
   "time_of_day": "studio controlled",
   "atmosphere": "clinical empty stillness",
+  "reference_image": ["R_ratna_front_medium.png — same identical woman, medium framing and build anchor", "R_ratna_hijab_front_closeup"],
   "character_identity": {
     "role": "Jakarta middle-class home-culinary UMKM entrepreneur, modest mature Muslim woman, dignified maternal warmth",
     "ethnicity": "modern Jakartan features, Javanese urban descent",
@@ -641,6 +643,7 @@ Covered-head anchors for Ratna's 4 hijab scenes (SEQ3-SC01/02, SEQ4-SC03, SEQ5-S
 ```
 
 ### Cell HB — Hijab · Front · Close-up → `R_ratna_hijab_front_closeup.png`
+**Attach: front_closeup (uncovered base, locked face)** (uncovered base plates already accepted — generate in any order)
 ```json
 {
   "mood": "neutral reference clarity, calm relaxed presence, Peter Hurley studio headshot register",
@@ -650,6 +653,7 @@ Covered-head anchors for Ratna's 4 hijab scenes (SEQ3-SC01/02, SEQ4-SC03, SEQ5-S
   "location": "indoor",
   "time_of_day": "studio controlled",
   "atmosphere": "clinical empty stillness",
+  "reference_image": ["R_ratna_front_closeup.png — same identical woman, locked face identity; add the voile hijab per wardrobe, hair fully covered"],
   "character_identity": {
     "role": "Jakarta middle-class home-culinary UMKM entrepreneur, modest mature Muslim woman, dignified maternal warmth",
     "ethnicity": "modern Jakartan features, Javanese urban descent",
@@ -680,6 +684,7 @@ Covered-head anchors for Ratna's 4 hijab scenes (SEQ3-SC01/02, SEQ4-SC03, SEQ5-S
 ```
 
 ### Cell HC — Hijab · Profile A · Medium → `R_ratna_hijab_profileA_medium.png`
+**Attach: profileA_medium + hijab_front_closeup** 
 ```json
 {
   "mood": "neutral reference clarity, calm relaxed presence, Peter Hurley studio headshot register",
@@ -689,6 +694,7 @@ Covered-head anchors for Ratna's 4 hijab scenes (SEQ3-SC01/02, SEQ4-SC03, SEQ5-S
   "location": "indoor",
   "time_of_day": "studio controlled",
   "atmosphere": "clinical empty stillness",
+  "reference_image": ["R_ratna_profileA_medium.png — same identical woman, profile framing and build anchor (camera-left)", "R_ratna_hijab_front_closeup"],
   "character_identity": {
     "role": "Jakarta middle-class home-culinary UMKM entrepreneur, modest mature Muslim woman, dignified maternal warmth",
     "ethnicity": "modern Jakartan features, Javanese urban descent",
@@ -718,6 +724,89 @@ Covered-head anchors for Ratna's 4 hijab scenes (SEQ3-SC01/02, SEQ4-SC03, SEQ5-S
 }
 ```
 
+### Cell HD — Hijab · Profile B · Medium → `R_ratna_hijab_profileB_medium.png`
+**Attach: profileB_medium + R_ratna_hijab_profileA_medium.png**
+```json
+{
+  "mood": "neutral reference clarity, calm relaxed presence, Peter Hurley studio headshot register",
+  "color_grade": "neutral true-to-life color, balanced white-point, accurate natural skin tone, faithful natural color rendering",
+  "style": "photorealistic studio reference plate, professional photostock isolated-on-white portrait, commercial stock photography clarity, clean catalogue look, ARRI Alexa Mini LF, clean prime spherical lens, Kodak Portra natural rendering",
+  "scene": "plain solid white background, flat even white fill, subject fully isolated on clean white",
+  "location": "indoor",
+  "time_of_day": "studio controlled",
+  "atmosphere": "clinical empty stillness",
+  "reference_image": ["R_ratna_profileB_medium.png — same identical woman, profile framing and build anchor (camera-right)", "R_ratna_hijab_profileA_medium.png"],
+  "character_identity": {
+    "role": "Jakarta middle-class home-culinary UMKM entrepreneur, modest mature Muslim woman, dignified maternal warmth",
+    "ethnicity": "modern Jakartan features, Javanese urban descent",
+    "beauty": "ordinary dignified mature woman, warm approachable, lived-in, middle-class register",
+    "age": "woman 37 years old",
+    "facial_features": "luminous healthy complexion, smooth even skin texture, faint expression lines at the eye corners, full soft even-tone brows, calm warm steady eyes, gentle full cheeks",
+    "body_features": "soft maternal build, gentle midsection softness, 158cm frame, relaxed shoulders, natural mature posture"
+  },
+  "character_style": {
+    "makeup": "light tinted moisturizer natural coverage, softly defined brows clear lip balm minimal blush flush, translucent loose powder set matte finish zero shine, fine mature texture preserved",
+    "wardrobe": "square voile hijab neatly pinned, opaque matte weave, draped over shoulders, muted dusty-teal, long-sleeve tunic blouse muted slate-blue beneath",
+    "hair": "hair fully covered by neatly pinned voile hijab, smooth covered crown, hairline fully concealed, matte fabric drape over the nape and shoulder"
+  },
+  "subject_state": "static",
+  "action": "standing still in opposite full profile, torso turned ninety degrees the other way, arms relaxed",
+  "pose": "upright relaxed, body sideways to camera opposite direction",
+  "gesture": "arms relaxed at sides",
+  "expression": "neutral relaxed face, calm gaze forward to horizon, lips closed soft",
+  "framing": "MS medium shot, waist up, opposite profile, hijab drape over nape and shoulder visible",
+  "angle": "eye-level, opposite full profile view, subject facing camera-right frame-right audience POV, head rotated ninety degrees the other way, hijab edge along the face profile, near cheek toward camera, nose in clean silhouette pointing opposite direction against white",
+  "camera": "85mm prime spherical, medium depth of field",
+  "lighting": "flat even soft diffused three-point studio key, soft shadowless fill, matte skin and fabric rendering, white seamless evenly lit",
+  "aspect_ratio": "2:3",
+  "costume_designer": "Deborah Hopper", "costume_style": "character-authentic modest wear, fabric worn laundered, class-accurate daily register",
+  "makeup_artist": "Eryn Krueger Mekash", "makeup_style": "naturalistic everyday beauty, lived-in skin, real-person feel",
+  "hair_stylist": "Camille Friend", "hair_style": "hijab-framed hairline, smooth covered crown, dignified modest grooming"
+}
+```
+
+### Cell HE — Hijab · Front · Full body → `R_ratna_hijab_front_full.png`
+**Attach: front_full + R_ratna_hijab_front_closeup
+```json
+{
+  "mood": "neutral reference clarity, calm relaxed presence, Peter Hurley studio headshot register",
+  "color_grade": "neutral true-to-life color, balanced white-point, accurate natural skin tone, faithful natural color rendering",
+  "style": "photorealistic studio reference plate, professional photostock isolated-on-white portrait, commercial stock photography clarity, clean catalogue look, ARRI Alexa Mini LF, clean prime spherical lens, Kodak Portra natural rendering",
+  "scene": "plain solid white background, flat even white fill, subject fully isolated on clean white",
+  "location": "indoor",
+  "time_of_day": "studio controlled",
+  "atmosphere": "clinical empty stillness",
+  "reference_image": ["R_ratna_front_full.png — same identical woman, full-body build and framing anchor", "R_ratna_hijab_front_closeup"],
+  "character_identity": {
+    "role": "Jakarta middle-class home-culinary UMKM entrepreneur, modest mature Muslim woman, dignified maternal warmth",
+    "ethnicity": "modern Jakartan features, Javanese urban descent",
+    "beauty": "ordinary dignified mature woman, warm approachable, lived-in, middle-class register",
+    "age": "woman 37 years old",
+    "facial_features": "luminous healthy complexion, smooth even skin texture, faint expression lines at the eye corners, full soft even-tone brows, calm warm steady eyes, gentle full cheeks",
+    "body_features": "soft maternal build, gentle midsection softness, 158cm frame, relaxed shoulders, natural mature posture"
+  },
+  "character_style": {
+    "makeup": "light tinted moisturizer natural coverage, softly defined brows clear lip balm minimal blush flush, translucent loose powder set matte finish zero shine, fine mature texture preserved",
+    "wardrobe": "square voile hijab neatly pinned, opaque matte weave, draped over shoulders, muted dusty-teal, long-sleeve tunic blouse relaxed modest cut muted slate-blue beneath, wide-leg modest trousers cotton twill full-length solid charcoal",
+    "hair": "hair fully covered by neatly pinned voile hijab, smooth covered crown, hairline fully concealed, matte fabric drape framing the face and over the shoulders",
+    "footwear": "flat slip-on mules matte leather minimal muted"
+  },
+  "subject_state": "static",
+  "action": "standing still upright for reference, weight even both feet, arms relaxed straight at sides",
+  "pose": "neutral standing feet shoulder-width, shoulders squared to camera",
+  "gesture": "both arms relaxed straight at sides, hands open natural",
+  "expression": "neutral relaxed face, lips closed soft, calm direct gaze to lens",
+  "framing": "full body shot, crown to mule sole visible, floor line visible, generous headroom above crown, hijab drape over shoulders visible",
+  "angle": "eye-level straight-on, front view, subject squared facing camera, full face oval framed by headscarf, nose centered",
+  "camera": "50mm prime spherical, deep focus front to back",
+  "lighting": "flat even soft diffused three-point studio key, soft shadowless fill, matte skin and fabric rendering, white seamless evenly lit",
+  "aspect_ratio": "9:16",
+  "costume_designer": "Deborah Hopper", "costume_style": "character-authentic modest wear, fabric worn laundered, class-accurate daily register",
+  "makeup_artist": "Eryn Krueger Mekash", "makeup_style": "naturalistic everyday beauty, lived-in skin, real-person feel",
+  "hair_stylist": "Camille Friend", "hair_style": "hijab-framed hairline, smooth covered crown, dignified modest grooming"
+}
+```
+
 ---
 
 ## 4. Per-scene wardrobe (Ratna in 8 scenes) — modesty-state per §0
@@ -738,4 +827,4 @@ Makeup (Eryn Krueger Mekash natural hijabi) FIXED throughout. **Head-covering st
 
 ---
 
-*Ratna sheet v0.4 (15 t2i plate prompts: 12 uncovered baseline §3 incl. rear, DAG-ordered closeup→medium→fullbody + 3 hijab reference §3.A; age-token 37 ~42 real, mudakan 3y dari canon 45; uncovered hair worn LOOSE & down past shoulders per ref-plate; 3-state modesty axis; "hijabi" keyword-leak removed from uncovered role) · Explainer Video 2 · 2026-06-26 · cites [[07-style-reference]] · method [[00-README]]*
+*Ratna sheet v0.4 (15 t2i plate prompts: 12 uncovered baseline §3 incl. rear, DAG-ordered closeup→medium→fullbody + 5 hijab reference §3.A (front closeup/medium/full + profileA/profileB medium); age-token 37 ~42 real, mudakan 3y dari canon 45; uncovered hair worn LOOSE & down past shoulders per ref-plate; 3-state modesty axis; "hijabi" keyword-leak removed from uncovered role) · Explainer Video 2 · 2026-06-26 · cites [[07-style-reference]] · method [[00-README]]*

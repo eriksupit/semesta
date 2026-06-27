@@ -353,3 +353,15 @@ GATE 0-ENV PAUSED; jalan PILOT SEQ1-SC01 end-to-end. Doc baru `explainer-video-2
 - **Yang terjadi:** Ratna base 12/12 plat di-generate+accepted (usia ~42, clean DAG dari front_closeup master, rear wajah-tersembunyi ✓). Hijab §3.A (3 plat) wajah-lama dihapus → TO REGENERATE (prompt sudah age-synced 37).
 - **Hasil:** commit base 12 Ratna + governance. Hijab-deletion + E01 wallart-del + sc02 + sc01_sh03 tetap pending (tak di-commit).
 - **Posisi sekarang:** Herman 12 + Ratna 12 base SELESAI. NEXT = Andi 12 (pilot risiko-tua, CU Front attach H+R front_closeup) → Lisa 12 → Ratna hijab 3 → regen scene SC01.
+
+## [2026-06-26e] Ratna hijab 4/5 plat DONE
+- **Yang terjadi:** Ratna 5 plat hijab di-author (HA-HE, attach uncovered base accepted). User generate 4: HB front-closeup, HE front-full, HC profileA-med, HD profileB-med — wajah muda konsisten, kerudung dusty-teal via token, arah profil benar. **HA hijab_front_medium TIDAK ada di disk** (lama dihapus, belum diregen).
+- **Hasil:** governance di-update (R-ratna status, backlog, scope). BELUM commit (user minta Periksa→update→wait, tanpa commit). Deletion HA + plat-hijab baru masih uncommitted.
+- **Posisi sekarang:** Herman 12 + Ratna 12 base + Ratna hijab 4/5 DONE. Pending: HA front-medium (drop atau gen). NEXT = Andi 12 → Lisa 12 → regen scene SC01.
+
+## [2026-06-26f] Ratna hijab 5/5 LENGKAP
+- HA hijab_front_medium digenerate+accepted (MS waist-up, dusty-teal hijab, wajah ~42 konsisten). Ratna kini 12 base + 5 hijab = 17 plat semua DONE. Governance 5/5 synced. Belum commit (user "cek" saja). NEXT = commit Ratna-hijab set + governance (atas "ya"), lalu Andi 12 → Lisa 12.
+
+## [2026-06-26g] Lisa 12 plat DONE (parent-blend master) — tinggal Andi
+- Lisa 12/12 generated+accepted. CU Front = blend wajah ortu (H+R front_closeup) → render ~20, TIDAK menua (parent-attach aman saat anak mendekati dewasa; Andi 10 tetap pilot kritis). Identitas konsisten lintas sudut, rear wajah-tersembunyi ✓. Governance synced. Belum commit (user "wait").
+- Posisi: Herman 12 + Ratna 12 base + Ratna hijab 5 + Lisa 12 DONE. NEXT = Andi 12 (terakhir) → regen scene SC01.

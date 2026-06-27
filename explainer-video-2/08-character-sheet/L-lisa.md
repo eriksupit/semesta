@@ -9,6 +9,8 @@ aliases: [ev2-lisa-sheet, L-lisa]
 
 # Character Sheet — LISA (20, mahasiswi + content creator) · tag L
 > Method, 9-cell template, direction protocol, naming → [[00-README]]. Style tokens + anchors → [[07-style-reference]]. Scene truth → [[03-scene-detail]].
+>
+> **PLATES STATUS: 12/12 generated + accepted 2026-06-26** (age-token 19 ~20, DAG-chained; CU Front master = blend of parent faces H+R front_closeup → reads ~20, no age-up; incl. rear; identity consistent across angles; on disk `character-images/L_lisa/`).
 
 ---
 
@@ -107,8 +109,8 @@ All OTHER rules hold: token strings, zero negation (positive-only), garment spec
     "ethnicity": "modern Jakartan features, Javanese urban descent",
     "beauty": "fresh youthful attractive, contemporary middle-class register, on-camera polished, approachable",
     "age": "woman 19 years old",
-    "facial_features": "luminous youthful complexion, smooth clear skin texture, full softly defined brows, bright lively steady eyes, soft youthful cheeks, clean even jawline",
-    "body_features": "young womanly build, natural 34C bustline, defined waist and hips, 162cm frame, upright relaxed posture"
+    "facial_features": "mix parents, H_herman_front_closeup.png + R_ratna_front_closeup.png",
+    "body_features": "young womanly build, natural 38C bustline, defined waist and hips, 162cm frame, upright relaxed posture"
   },
   "character_style": {
     "makeup": "medium-coverage satin foundation poreless, softly defined brows lash mascara, nude soft-matte lip, light bronzer, baked setting powder matte finish zero shine, youthful skin texture preserved",
@@ -148,8 +150,8 @@ All OTHER rules hold: token strings, zero negation (positive-only), garment spec
     "ethnicity": "modern Jakartan features, Javanese urban descent",
     "beauty": "fresh youthful attractive, contemporary middle-class register, on-camera polished, approachable",
     "age": "woman 19 years old",
-    "facial_features": "luminous youthful complexion, smooth clear skin texture, full softly defined brows, bright lively steady eyes, soft youthful cheeks, clean even jawline",
-    "body_features": "young womanly build, natural 34C bustline, defined waist and hips, 162cm frame, upright relaxed posture"
+    "facial_features": "L_lisa_front_closeup.png",
+    "body_features": "young womanly build, natural 38C bustline, defined waist and hips, 162cm frame, upright relaxed posture"
   },
   "character_style": {
     "makeup": "medium-coverage satin foundation poreless, softly defined brows lash mascara, nude soft-matte lip, light bronzer, baked setting powder matte finish zero shine, youthful skin texture preserved",
@@ -189,8 +191,8 @@ All OTHER rules hold: token strings, zero negation (positive-only), garment spec
     "ethnicity": "modern Jakartan features, Javanese urban descent",
     "beauty": "fresh youthful attractive, contemporary middle-class register, on-camera polished, approachable",
     "age": "woman 19 years old",
-    "facial_features": "luminous youthful complexion, smooth clear skin texture, full softly defined brows, bright lively steady eyes, soft youthful cheeks, clean even jawline",
-    "body_features": "young womanly build, natural 34C bustline, defined waist and hips, 162cm frame, upright relaxed posture"
+    "facial_features": "L_lisa_front_closeup.png",
+    "body_features": "young womanly build, natural 38C bustline, defined waist and hips, 162cm frame, upright relaxed posture"
   },
   "character_style": {
     "makeup": "medium-coverage satin foundation poreless, softly defined brows lash mascara, nude soft-matte lip, light bronzer, baked setting powder matte finish zero shine, youthful skin texture preserved",
@@ -232,8 +234,8 @@ All OTHER rules hold: token strings, zero negation (positive-only), garment spec
     "ethnicity": "modern Jakartan features, Javanese urban descent",
     "beauty": "fresh youthful attractive, contemporary middle-class register, on-camera polished, approachable",
     "age": "woman 19 years old",
-    "facial_features": "luminous youthful complexion, smooth clear skin texture, full softly defined brows, bright lively steady eyes, soft youthful cheeks, clean even jawline",
-    "body_features": "young womanly build, natural 34C bustline, defined waist and hips, 162cm frame, upright relaxed posture"
+    "facial_features": "L_lisa_front_closeup.png",
+    "body_features": "young womanly build, natural 38C bustline, defined waist and hips, 162cm frame, upright relaxed posture"
   },
   "character_style": {
     "makeup": "medium-coverage satin foundation poreless, softly defined brows lash mascara, nude soft-matte lip, light bronzer, baked setting powder matte finish zero shine, youthful skin texture preserved",
@@ -275,8 +277,8 @@ All OTHER rules hold: token strings, zero negation (positive-only), garment spec
     "ethnicity": "modern Jakartan features, Javanese urban descent",
     "beauty": "fresh youthful attractive, contemporary middle-class register, on-camera polished, approachable",
     "age": "woman 19 years old",
-    "facial_features": "luminous youthful complexion, smooth clear skin texture, full softly defined brows, bright lively steady eyes, soft youthful cheeks, clean even jawline",
-    "body_features": "young womanly build, natural 34C bustline, defined waist and hips, 162cm frame, upright relaxed posture"
+    "facial_features": "L_lisa_front_closeup.png",
+    "body_features": "young womanly build, natural 38C bustline, defined waist and hips, 162cm frame, upright relaxed posture"
   },
   "character_style": {
     "makeup": "medium-coverage satin foundation poreless, softly defined brows lash mascara, nude soft-matte lip, light bronzer, baked setting powder matte finish zero shine, youthful skin texture preserved",
@@ -317,8 +319,8 @@ All OTHER rules hold: token strings, zero negation (positive-only), garment spec
     "ethnicity": "modern Jakartan features, Javanese urban descent",
     "beauty": "fresh youthful attractive, contemporary middle-class register, on-camera polished, approachable",
     "age": "woman 19 years old",
-    "facial_features": "luminous youthful complexion, smooth clear skin texture, full softly defined brows, bright lively steady eyes, soft youthful cheeks, clean even jawline",
-    "body_features": "young womanly build, natural 34C bustline, defined waist and hips, 162cm frame, upright relaxed posture"
+    "facial_features": "L_lisa_front_medium.png",
+    "body_features": "young womanly build, natural 38C bustline, defined waist and hips, 162cm frame, upright relaxed posture"
   },
   "character_style": {
     "makeup": "medium-coverage satin foundation poreless, softly defined brows lash mascara, nude soft-matte lip, light bronzer, baked setting powder matte finish zero shine, youthful skin texture preserved",
@@ -342,7 +344,7 @@ All OTHER rules hold: token strings, zero negation (positive-only), garment spec
 ```
 
 ### Cell 7 — Profile B · Medium → `L_lisa_profileB_medium.png`
-**Generate order #7 · Attach: profileA_medium + profileB_closeup**
+**Generate order #7 · Attach: profileA_medium + front_medium + profileB_closeup**
 ```json
 {
   "mood": "neutral reference clarity, calm relaxed presence, Peter Hurley studio headshot register",
@@ -358,9 +360,8 @@ All OTHER rules hold: token strings, zero negation (positive-only), garment spec
     "ethnicity": "modern Jakartan features, Javanese urban descent",
     "beauty": "fresh youthful attractive, contemporary middle-class register, on-camera polished, approachable",
     "age": "woman 19 years old",
-    "facial_features": "luminous youthful complexion, smooth clear skin texture, full softly defined brows, bright lively steady eyes, soft youthful cheeks, clean even jawline",
-    "body_features": "young womanly build, natural 34C bustline, defined waist and hips, 162cm frame, upright relaxed posture"
-  },
+    "facial_features": "L_lisa_front_medium.png",
+    "body_features": "young womanly build, natural 38C bustline, defined waist and hips, 162cm frame, upright relaxed posture"
   "character_style": {
     "makeup": "medium-coverage satin foundation poreless, softly defined brows lash mascara, nude soft-matte lip, light bronzer, baked setting powder matte finish zero shine, youthful skin texture preserved",
     "wardrobe": "fitted crew-neck cotton tee soft jersey muted sage, mid-rise straight-leg denim jeans solid washed indigo desaturated",
@@ -399,8 +400,8 @@ All OTHER rules hold: token strings, zero negation (positive-only), garment spec
     "ethnicity": "modern Jakartan features, Javanese urban descent",
     "beauty": "fresh youthful attractive, contemporary middle-class register, on-camera polished, approachable",
     "age": "woman 19 years old",
-    "facial_features": "luminous youthful complexion, smooth clear skin texture, full softly defined brows, bright lively steady eyes, soft youthful cheeks, clean even jawline",
-    "body_features": "young womanly build, natural 34C bustline, defined waist and hips, 162cm frame, upright relaxed posture"
+    "facial_features": "L_lisa_front_medium.png",
+    "body_features": "young womanly build, natural 38C bustline, defined waist and hips, 162cm frame, upright relaxed posture"
   },
   "character_style": {
     "makeup": "medium-coverage satin foundation poreless, softly defined brows lash mascara, nude soft-matte lip, light bronzer, baked setting powder matte finish zero shine, youthful skin texture preserved",
@@ -442,8 +443,8 @@ All OTHER rules hold: token strings, zero negation (positive-only), garment spec
     "ethnicity": "modern Jakartan features, Javanese urban descent",
     "beauty": "fresh youthful attractive, contemporary middle-class register, on-camera polished, approachable",
     "age": "woman 19 years old",
-    "facial_features": "luminous youthful complexion, smooth clear skin texture, full softly defined brows, bright lively steady eyes, soft youthful cheeks, clean even jawline",
-    "body_features": "young womanly build, natural 34C bustline, defined waist and hips, 162cm frame, upright relaxed posture"
+    "facial_features": "L_lisa_front_medium.png",
+    "body_features": "young womanly build, natural 38C bustline, defined waist and hips, 162cm frame, upright relaxed posture"
   },
   "character_style": {
     "makeup": "medium-coverage satin foundation poreless, softly defined brows lash mascara, nude soft-matte lip, light bronzer, baked setting powder matte finish zero shine, youthful skin texture preserved",
@@ -484,8 +485,8 @@ All OTHER rules hold: token strings, zero negation (positive-only), garment spec
     "ethnicity": "modern Jakartan features, Javanese urban descent",
     "beauty": "fresh youthful attractive, contemporary middle-class register, on-camera polished, approachable",
     "age": "woman 19 years old",
-    "facial_features": "luminous youthful complexion, smooth clear skin texture, full softly defined brows, bright lively steady eyes, soft youthful cheeks, clean even jawline",
-    "body_features": "young womanly build, natural 34C bustline, defined waist and hips, 162cm frame, upright relaxed posture"
+    "facial_features": "L_lisa_front_full.png",
+    "body_features": "young womanly build, natural 38C bustline, defined waist and hips, 162cm frame, upright relaxed posture"
   },
   "character_style": {
     "makeup": "medium-coverage satin foundation poreless, softly defined brows lash mascara, nude soft-matte lip, light bronzer, baked setting powder matte finish zero shine, youthful skin texture preserved",
@@ -526,8 +527,8 @@ All OTHER rules hold: token strings, zero negation (positive-only), garment spec
     "ethnicity": "modern Jakartan features, Javanese urban descent",
     "beauty": "fresh youthful attractive, contemporary middle-class register, on-camera polished, approachable",
     "age": "woman 19 years old",
-    "facial_features": "luminous youthful complexion, smooth clear skin texture, full softly defined brows, bright lively steady eyes, soft youthful cheeks, clean even jawline",
-    "body_features": "young womanly build, natural 34C bustline, defined waist and hips, 162cm frame, upright relaxed posture"
+    "facial_features": "L_lisa_front_full.png",
+    "body_features": "young womanly build, natural 38C bustline, defined waist and hips, 162cm frame, upright relaxed posture"
   },
   "character_style": {
     "makeup": "medium-coverage satin foundation poreless, softly defined brows lash mascara, nude soft-matte lip, light bronzer, baked setting powder matte finish zero shine, youthful skin texture preserved",
@@ -552,7 +553,7 @@ All OTHER rules hold: token strings, zero negation (positive-only), garment spec
 ```
 
 ### Cell 12 — Rear · Full body → `L_lisa_rear_full.png`
-**Generate order #12 · Attach: front_full + rear_closeup**
+**Generate order #12 · Attach: front_full + rear_medium**
 ```json
 {
   "mood": "neutral reference clarity, calm relaxed presence, Peter Hurley studio headshot register",
@@ -562,14 +563,14 @@ All OTHER rules hold: token strings, zero negation (positive-only), garment spec
   "location": "indoor",
   "time_of_day": "studio controlled",
   "atmosphere": "clinical empty stillness",
-  "reference_image": ["L_lisa_front_full.png — full-body build and framing", "L_lisa_rear_closeup.png — the locked back-of-head, face away"],
+  "reference_image": ["L_lisa_front_full.png — full-body build and framing", "L_lisa_rear_medium.png — the locked back-of-head, face away"],
   "character_identity": {
     "role": "Jakarta young urban woman, university student and content creator, contemporary bright confident presence",
     "ethnicity": "modern Jakartan features, Javanese urban descent",
     "beauty": "fresh youthful attractive, contemporary middle-class register, on-camera polished, approachable",
     "age": "woman 19 years old",
-    "facial_features": "luminous youthful complexion, smooth clear skin texture, full softly defined brows, bright lively steady eyes, soft youthful cheeks, clean even jawline",
-    "body_features": "young womanly build, natural 34C bustline, defined waist and hips, 162cm frame, upright relaxed posture"
+    "facial_features": "L_lisa_front_full.png",
+    "body_features": "young womanly build, natural 38C bustline, defined waist and hips, 162cm frame, upright relaxed posture"
   },
   "character_style": {
     "makeup": "medium-coverage satin foundation poreless, softly defined brows lash mascara, nude soft-matte lip, light bronzer, baked setting powder matte finish zero shine, youthful skin texture preserved",
