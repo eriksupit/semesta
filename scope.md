@@ -6,7 +6,19 @@ created: 2026-06-08
 updated: 2026-06-18
 ---
 
-# Scope — AKTIF (2026-06-26c · CHARACTER-PLATE REGEN — Herman 12 plat DONE · SC01 di-restruktur 7-shot)
+# Scope — AKTIF (2026-06-29 · SC01 PRODUCTION + METODE MASTER-PARENT/EDIT-IN-PLACE-ANGLE)
+
+## STATUS TERBARU (2026-06-29 · method overhaul dari eksperimen bed4q)
+- **SC01 di-rewrite 7-shot** di `03-scene-detail.md` (DONE). **Master kamar di-tokenize** (Cell M) + **bed3q tokenize** generated+accepted. **bed4q accepted** (`E01_kamar_bed4q.png`) via EDIT-IN-PLACE in-lane.
+- **⭐ HUKUM METODE BARU (validated, Erik):** tiap scene/asset = 1 MASTER (parent, full from-scratch prompt); tiap ANGLE lain = EDIT-IN-PLACE CHILD di SATU context window dgn master (master beranotasi recent-view + goal-view), BUKAN full-prompt + re-upload reference di window baru (resample→inkonsisten; ~6 render bed4q gagal). Dalam-shot: framing+angle kunci, subjek gerak START→END. Disebar ke: `prompt-rules-text-image-to-image.md` + `prompt-rules-image-generation.md` changelog 2026-06-29, `00-README-ENV §2.6` (demoted), `E01-kamar.md §2`, RESTRUCTURE §1b, 4 memory + MEMORY.md + lessons.
+- **RETRACTED:** klaim "opposite-angle = screen-swap" (salah; opposite-angle pertahankan furnitur di dinding nyata, no swap).
+- **TText-token reminder:** token left/right kamera abstrak TIDAK diobey model; pindah angle lewat edit-in-place in-lane.
+- **NEXT:** lanjut SC01 — bed4q sudah ada → SH03 START/END dst pakai metode master-parent + edit-in-place (Step 2–5 pipeline). Belum commit (kontrak).
+- **OUT OF SCOPE:** generate gambar (user); Kling; commit tanpa "ya".
+
+---
+
+# Scope — Riwayat (2026-06-26c · CHARACTER-PLATE REGEN — Herman 12 plat DONE · SC01 di-restruktur 7-shot)
 
 ## STATUS TERBARU (2026-06-26c · pivot regen karakter + DAG 12-cell)
 - **PIVOT:** keluarga di-regen lebih muda + metode plat baru. Herman → **clean-shaven, token 41 (~46)**; Ratna → token 37 (~42); usia anak dipertahankan. Semua sheet pakai **DAG 12-cell** (closeup→medium→fullbody × front/profileA/profileB/rear; `reference_image` berantai di body+header+tabel; `front_closeup`=master; **anak CU Front = blend wajah ortu** attach H+R front_closeup; FB-profile attach medium-profile). Kanonik: `08-character-sheet/*.md` §3 + `lessons.md` + memory.

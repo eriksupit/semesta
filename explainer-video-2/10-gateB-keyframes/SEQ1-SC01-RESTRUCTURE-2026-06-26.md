@@ -11,6 +11,11 @@ aliases: [ev2-sc01-restructure, sc01-7shot-changelog]
 
 > **Purpose:** context-window survival anchor. If this session's context fills, READ THIS FIRST to stay consistent on the SC01 redesign and the new multi-angle method. Authored from Erik's spec this session, validated against the 4 key renders (SH03 start/end, `E01_kamar_master.png`, `E01_kamar_bed3q.png`). **No render produced yet — design locked, prompts pending.**
 
+## 1b. METHOD OVERRIDE (2026-06-29, validated bed4q experiment) — read first
+- **Every scene/asset has ONE MASTER image (parent, full from-scratch prompt). Every other ANGLE = EDIT-IN-PLACE child of that master, in the SAME context window** (master annotated *recent camera view* + *next/goal camera view*, terse delta) — NOT a separate full-prompt with the master re-uploaded in a fresh window (resamples → inconsistent; proven across ~6 bed4q renders).
+- Within a shot, framing+angle stay LOCKED, only the subject moves START→END (the §1 principle below — UNCHANGED, still holds). Two edit-in-place uses: (a) between cuts = move angle; (b) within shot = subject moves.
+- `E01_kamar_bed4q` is therefore NOT a standalone full-prompt plate — it is an in-lane edit-in-place child of the kamar master. Full law: `prompt-rules-text-image-to-image.md` changelog 2026-06-29 "MASTER-PARENT + EDIT-IN-PLACE-ANGLE".
+
 ## 1. Method change (NEW — applies to all shots/scenes from here)
 
 **Principle (Erik, #lessons):** *"Subyek boleh berubah / asumsi bergerak, tapi framing dan angle ajeg + konsisten."*

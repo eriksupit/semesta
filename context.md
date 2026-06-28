@@ -370,3 +370,19 @@ GATE 0-ENV PAUSED; jalan PILOT SEQ1-SC01 end-to-end. Doc baru `explainer-video-2
 - Andi 12/12 generated+accepted. CU Front = blend wajah ortu (H+R front_closeup) → render ~10, TIDAK menua: **pilot risiko-tua DIFALSIFIKASI** (token usia-anak kuat menahan tarikan 2 wajah dewasa). Proporsi anak, identitas konsisten lintas sudut, rear wajah-tersembunyi ✓.
 - **Milestone:** semua plat mains keluarga SELESAI (Herman 12 · Ratna 12+5hijab · Lisa 12 · Andi 12). Belum commit (user "wait").
 - NEXT = regen scene SC01 dari SH01 (DAG plat keluarga siap) + env bed4q dependency.
+
+## [2026-06-29] SC01 Step 1 — 03-scene-detail rewritten 4→7 shot
+- SEQ1-SC01 di `03-scene-detail.md` ditulis ulang 4-beat → 7-shot multi-angle CUT grammar (Erik "ya"). Prosa+VO+shot-list+catatan-produksi disesuaikan; sarung/sholat-prep DIDEFERENSI ke scene hilir.
+- grep SH0[1-7]=9 (7 shot SC01 + 2 cross-ref bookend SEQ6-SC03); baris payoff "sarung" hilang ✓.
+- NEXT = Step 2: translate ke `10-gateB-keyframes/SEQ1-SC01.md` (7-shot + master→derivative SH03). Belum commit (kontrak: tunggu "ya").
+
+## [2026-06-29] bed4q cell authored — opposite-angle (reverse), NOT flip
+- Erik koreksi panjang soal logika kamera. KESIMPULAN tervalidasi: bed4q = opposite/reverse angle bed3q → set statis, kamera render dari sisi seberang → SCREEN-SIDES SWAP (nakas camera-LEFT, jendela camera-RIGHT). BUKAN pixel-flip (flip merusak handedness + Hokusai). Subjek tak pindah; hanya posisi-frame berubah karena vantage berlawanan.
+- Cell B4 ditulis di `09-environment-sheet/E01-kamar.md` (§3 + manifest). RESTRUCTURE §2 "nightstand camera-LEFT" sudah benar (konsisten).
+- Attachment generate: `E01_kamar_master.png`. STATUS: ⏳ TO GENERATE (Erik generate, Claude review).
+
+
+## [2026-06-29] bed4q SOLVED — screen-swap theory RETRACTED
+- Setelah ~6 render gagal, prompt ChatGPT BERHASIL (`E01_kamar_bed4q.png` accepted). KOREKSI: opposite-angle TIDAK swap sisi — furnitur tetap di dinding nyata (nakas screen-right). Teori "screen-swap" saya difalsifikasi & di-retract (prompt-rules + memory + lessons).
+- Teknik menang: attach master+bed3q + prosa `spatial_lock` + per-furnitur "actual room-left/right wall" + Hokusai "correct original orientation" + shot "true opposite foot corner, fresh parallax". Negatif dikonversi ke affirmative `spatial_integrity` (no-negation rule).
+- NEXT: tulis Cell B4 = winning prompt (versi positif), Erik re-test.

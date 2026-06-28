@@ -47,7 +47,9 @@ Every environment prompt MUST carry all three:
 | Upper (E7 affluent neighbour element, premium spaces) | `Minotti` / `Roche Bobois` register | luxury anchor (e.g. Vincent Van Duysen / Kelly Hoppen) |
 | Civic / commercial (E8 office, E11 balai, E12 school, E13 terminal, E9 kafe) | contract/institutional or hospitality register | Caballero realism + context-appropriate designer |
 
-## 2.6 Prompt structure standard (locked 2026-06-22 — validated on E01 Kamar master)
+> **⭐ METHOD OVERRIDE (2026-06-29, validated bed4q experiment) — read before §2.6.** The "derivative angle = upload master as `environment_reference` + rewrite the `shot` block (full-prompt)" method below is **DEMOTED to fragile fallback.** Re-running a full angle-prompt with the master re-uploaded in a FRESH chat window is inconsistent (resample / reference-dominance). **Canonical now:** the MASTER is the parent (one full from-scratch prompt); **every other ANGLE is an EDIT-IN-PLACE child generated in the SAME context window as the master** — attach the master annotated (1) *recent camera view* + (2) *next/goal camera view* (terse goal-delta), not a full JSON cell. Within a shot, framing+angle stay locked (only subject moves). Full law: `prompt-rules-text-image-to-image.md` changelog 2026-06-29 "MASTER-PARENT + EDIT-IN-PLACE-ANGLE". §2.6 below stays valid for the MASTER full-prompt structure + the fallback path only.
+
+## 2.6 Prompt structure standard (locked 2026-06-22; angle-derivative method SUPERSEDED 2026-06-29 — see override above)
 
 Env plate prompts use this structure (refines the 6-layer base for empty-room consistency + to suppress model "creative" drift across derivative angles):
 

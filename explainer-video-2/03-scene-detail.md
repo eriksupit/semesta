@@ -27,21 +27,27 @@ Override cool deck-standard `prompt-rules` b.208. String `color_grade` standar v
 
 > **ADDENDUM A1 (2026-06-21, `00-WORKLOG`):** semua elemen grafis di shot-list & prosa di seluruh dokumen ini — UI app, kartu iklan/notifikasi (`Waktu Subuh`, kartu sarung), grafik saham, super text — **TIDAK digenerate AI**. AI hanya render scene murni (device tampil, layar netral/mati, framing comp-aware); grafis digarap di After Effects oleh animator. Beat "App UI/Potensi Iklan" diwujudkan di POST.
 
-## SEQ1-SC01 — INT. KAMAR HERMAN — 04.40 WIB *(contoh kanonik 4-beat)*
-1. Sepasang mata terbuka. Kelopak mata Herman, 50 tahun, mengerjap di keremangan; pandangnya menemukan langit-langit. 
-2. Di nakas, layar ponselnya menyala sendiri: pengingat **`Waktu Subuh · 04.42`**, dan tepat di bawahnya sebuah kartu tipis menggeser masuk — iklan sarung tenun ("Cap Gajah"), bersahaja, seperti pas dengan momennya. 
-3. Herman meraih ponsel; ibu jarinya menyentuh "matikan", kartu iklan sempat terbaca sebelum surut. Layar berganti ke ringkasan pagi yang biasa ia tengok: **grafik pergerakan saham** — garis tipis dari penutupan sore kemarin merayap sampai dini hari. 
-4. Ia mengangguk kecil, menelungkupkan ponsel, lalu bangkit ke tepi ranjang dan mengenakan sarung itu — kain polos bertenun rapat, warna gelap teduh. Di sisi satunya, Ratna masih tertidur lelap — ia akan bangun setelah Herman berangkat.
+## SEQ1-SC01 — INT. KAMAR HERMAN — 04.40 WIB *(waking sequence · 7-shot multi-angle CUT grammar)*
+1. Sepasang mata terbuka. Kelopak mata Herman mengerjap di keremangan; pandangnya menemukan langit-langit.
+2. Di nakas, layar ponselnya menyala sendiri: pengingat **`Waktu Subuh · 04.42`**, dan tepat di bawahnya sebuah kartu tipis menggeser masuk — iklan sarung tenun ("Cap Gajah"), bersahaja, seperti pas dengan momennya. Ibu jarinya menyentuh layar.
+3. Herman meraih ponsel, lalu meletakkannya kembali di nakas — masih berbaring, tenang.
+4. Dilihat dari belakang ranjang, tangannya menjangkau saklar lampu nakas; cahaya hangat menyala, mengisi kamar yang tadinya gelap.
+5. Di sisinya Ratna terjaga oleh cahaya, perlahan bangun dan duduk, menoleh ke arah Herman.
+6. Herman bangkit berdiri di tepi ranjang, menengok kembali ke Ratna.
+7. Ratna membalas dengan senyum tenang — awal hari yang sama, untuk mereka berdua.
 
 **VO (laki-laki, tenang):** *"Satu hari dimulai. Hari yang sama — untuk semua orang."*
 
-**Shot list**
-- **SEQ1-SC01-SH01** — ECU mata Herman. start: mata terpejam di keremangan. end: mata terbuka, mengerjap, fokus ke langit-langit. *(50mm)*
-- **SEQ1-SC01-SH02** — CU ponsel di nakas. start: layar menyala, `Waktu Subuh 04.42` + kartu iklan sarung di bawahnya. end: ibu jari menyentuh "matikan", kartu iklan masih terbaca. *(50mm macro)*
-- **SEQ1-SC01-SH03** — MCU Herman + ponsel. start: layar bertransisi. end: grafik saham sore→subuh tampil, wajah Herman tersorot cahaya layar hangat, ia mengangguk. *(50mm)*
-- **SEQ1-SC01-SH04** — MS samping ranjang. start: Herman menelungkupkan ponsel, bangkit duduk. end: ia berdiri mengenakan sarung (`solid plain-weave sarong, dark muted colorway`). *(35mm · payoff diegetik dimulai: sarung yang diiklankan dipakai)*
+**Shot list** *(within-shot: angle+framing LOCKED, hanya subjek berubah START→END; between-shot: CUT shot-reverse-shot di poros ranjang, right-diag `bed3q` ↔ left-diag `bed4q`; lampu ON mulai SH04-END → SH05–SH07 lebih hangat)*
+- **SEQ1-SC01-SH01** — *overhead · ECU mata.* start: mata terpejam di keremangan. end: mata terbuka, mengerjap, fokus ke langit-langit. *(DONE — accepted)*
+- **SEQ1-SC01-SH02** — *top-down · CU macro ponsel di nakas.* start: layar menyala, `Waktu Subuh 04.42` + kartu iklan sarung di bawahnya. end: ibu jari menyentuh layar, kartu iklan masih terbaca. *(DONE — accepted)*
+- **SEQ1-SC01-SH03** — *right-diag `bed3q` · medium.* start: Herman berbaring memegang ponsel. end: ia meletakkan ponsel kembali di nakas — **tetap berbaring** (bangkit-duduk di-elide di cut). *(grade ← SH02-END)*
+- **SEQ1-SC01-SH04** — *left-diag `bed4q` · long · H+R REAR-VIEW fullbody.* start: pasangan di ranjang dilihat dari belakang, kamar masih gelap; tangan Herman menjangkau saklar lampu nakas. end: lampu nakas **menyala**, cahaya hangat mengisi kamar. *(grade ← SH03-END)*
+- **SEQ1-SC01-SH05** — *left-diag `bed4q` · long · H+R rear-view fullbody.* start: Ratna masih berbaring, Herman duduk membelakangi. end: Ratna bangun, **duduk**, menoleh ke Herman. *(grade ← SH04-END)*
+- **SEQ1-SC01-SH06** — *right-diag `bed3q` · long · wajah H+R terlihat.* start: Herman duduk di tepi ranjang, Ratna duduk di belakang. end: Herman **berdiri**, menengok kembali ke Ratna. *(grade ← SH05-END · angle berubah → fresh master, bukan edit-in-place)*
+- **SEQ1-SC01-SH07** — *right-diag `bed3q` · close · Herman blur FG / Ratna fokus BG.* start: Ratna menatap Herman, ekspresi netral. end: Ratna **tersenyum** tenang. *(grade ← SH06-END)*
 
-**— Catatan produksi:** *Potensi iklan* — Surface: kartu apparel di layar pengingat + widget grafik saham. Momen intent: persiapan ibadah (apparel) & cek posisi pasar pagi (sekuritas). Kategori: apparel muslim/sarung; sekuritas/fintech. HP menghadap subjek / kartu floating bila perlu (Teknik 2/2b `prompt-rules`). Grade hangat; identitas Herman dikunci.
+**— Catatan produksi:** *Potensi iklan* — Surface: kartu apparel + pengingat subuh di layar ponsel (SH02). Momen intent: persiapan ibadah (apparel). Kategori: apparel muslim/sarung. Sarung/berdiri-kenakan-sarung + sholat-prep **DIDEFERENSI** ke scene hilir (bukan lagi di SC01). Grade pre-dawn gelap SH01–SH04-START → hangat lampu-nyala SH04-END–SH07; identitas Herman+Ratna dikunci (plat DAG baru). `E01_kamar_bed4q.png` (mirror `bed3q`) = dependensi keras SH04–SH05.
 
 ---
 
