@@ -386,3 +386,7 @@ GATE 0-ENV PAUSED; jalan PILOT SEQ1-SC01 end-to-end. Doc baru `explainer-video-2
 - Setelah ~6 render gagal, prompt ChatGPT BERHASIL (`E01_kamar_bed4q.png` accepted). KOREKSI: opposite-angle TIDAK swap sisi — furnitur tetap di dinding nyata (nakas screen-right). Teori "screen-swap" saya difalsifikasi & di-retract (prompt-rules + memory + lessons).
 - Teknik menang: attach master+bed3q + prosa `spatial_lock` + per-furnitur "actual room-left/right wall" + Hokusai "correct original orientation" + shot "true opposite foot corner, fresh parallax". Negatif dikonversi ke affirmative `spatial_integrity` (no-negation rule).
 - NEXT: tulis Cell B4 = winning prompt (versi positif), Erik re-test.
+## [2026-06-29] SESSION CLOSE — method overhaul committed + handoff ready
+- Commit 1e667bf pushed (master-parent + edit-in-place-angle law + SC01 7-shot + tokenized master/bed3q + bed4q accepted + retract screen-swap).
+- Handoff dibuat: handoff/HANDOFF-2026-06-29-EV2-SC01-PRODUCTION.md + INITIAL-PROMPT-2026-06-29-EV2-SC01-PRODUCTION.txt.
+- NEXT SESSION: produce SC01 SH01→SH07 from scratch, one at a time, token-per-token + master(full-prompt)→edit-in-place-angle.
