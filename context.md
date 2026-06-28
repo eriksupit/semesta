@@ -365,3 +365,8 @@ GATE 0-ENV PAUSED; jalan PILOT SEQ1-SC01 end-to-end. Doc baru `explainer-video-2
 ## [2026-06-26g] Lisa 12 plat DONE (parent-blend master) — tinggal Andi
 - Lisa 12/12 generated+accepted. CU Front = blend wajah ortu (H+R front_closeup) → render ~20, TIDAK menua (parent-attach aman saat anak mendekati dewasa; Andi 10 tetap pilot kritis). Identitas konsisten lintas sudut, rear wajah-tersembunyi ✓. Governance synced. Belum commit (user "wait").
 - Posisi: Herman 12 + Ratna 12 base + Ratna hijab 5 + Lisa 12 DONE. NEXT = Andi 12 (terakhir) → regen scene SC01.
+
+## [2026-06-26h] Andi 12 plat DONE — SEMUA PLAT KELUARGA SELESAI
+- Andi 12/12 generated+accepted. CU Front = blend wajah ortu (H+R front_closeup) → render ~10, TIDAK menua: **pilot risiko-tua DIFALSIFIKASI** (token usia-anak kuat menahan tarikan 2 wajah dewasa). Proporsi anak, identitas konsisten lintas sudut, rear wajah-tersembunyi ✓.
+- **Milestone:** semua plat mains keluarga SELESAI (Herman 12 · Ratna 12+5hijab · Lisa 12 · Andi 12). Belum commit (user "wait").
+- NEXT = regen scene SC01 dari SH01 (DAG plat keluarga siap) + env bed4q dependency.

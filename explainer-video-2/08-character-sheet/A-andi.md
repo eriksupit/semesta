@@ -9,6 +9,8 @@ aliases: [ev2-andi-sheet, A-andi]
 
 # Character Sheet — ANDI (10, primary-school boy) · tag A
 > Method, 9-cell template, direction protocol, naming → [[00-README]]. Style tokens + anchors → [[07-style-reference]]. Scene truth → [[03-scene-detail]].
+>
+> **PLATES STATUS: 12/12 generated + accepted 2026-06-26** (age-token 10 KEPT, DAG-chained; CU Front master = blend of parent faces H+R front_closeup → reads ~10, NO age-up — pilot risk falsified; incl. rear; identity consistent across angles; on disk `character-images/A_andi/`).
 
 ---
 
@@ -108,7 +110,7 @@ All OTHER rules hold: token strings, zero negation (positive-only), garment spec
     "ethnicity": "modern Jakartan features, Javanese urban descent",
     "beauty": "healthy cheerful child, contemporary middle-class register, natural everyday grooming, approachable",
     "age": "boy 10 years old",
-    "facial_features": "smooth clear child complexion, soft rounded cheeks, bright lively steady eyes, full soft natural brows, small even features, smooth even skin texture",
+    "facial_features": "mix H_herman_front_closeup.png + R_ratna_front_closeup.png",
     "body_features": "slim healthy child build, age-appropriate proportions, 138cm frame, upright relaxed natural posture"
   },
   "character_style": {
@@ -148,7 +150,7 @@ All OTHER rules hold: token strings, zero negation (positive-only), garment spec
     "ethnicity": "modern Jakartan features, Javanese urban descent",
     "beauty": "healthy cheerful child, contemporary middle-class register, natural everyday grooming, approachable",
     "age": "boy 10 years old",
-    "facial_features": "smooth clear child complexion, soft rounded cheeks, bright lively steady eyes, full soft natural brows, small even features, smooth even skin texture",
+    "facial_features": "A_andi_front_closeup.png",
     "body_features": "slim healthy child build, age-appropriate proportions, 138cm frame, upright relaxed natural posture"
   },
   "character_style": {
@@ -188,7 +190,7 @@ All OTHER rules hold: token strings, zero negation (positive-only), garment spec
     "ethnicity": "modern Jakartan features, Javanese urban descent",
     "beauty": "healthy cheerful child, contemporary middle-class register, natural everyday grooming, approachable",
     "age": "boy 10 years old",
-    "facial_features": "smooth clear child complexion, soft rounded cheeks, bright lively steady eyes, full soft natural brows, small even features, smooth even skin texture",
+    "facial_features": "A_andi_front_closeup.png",
     "body_features": "slim healthy child build, age-appropriate proportions, 138cm frame, upright relaxed natural posture"
   },
   "character_style": {
@@ -230,7 +232,7 @@ All OTHER rules hold: token strings, zero negation (positive-only), garment spec
     "ethnicity": "modern Jakartan features, Javanese urban descent",
     "beauty": "healthy cheerful child, contemporary middle-class register, natural everyday grooming, approachable",
     "age": "boy 10 years old",
-    "facial_features": "smooth clear child complexion, soft rounded cheeks, bright lively steady eyes, full soft natural brows, small even features, smooth even skin texture",
+    "facial_features": "A_andi_front_closeup.png",
     "body_features": "slim healthy child build, age-appropriate proportions, 138cm frame, upright relaxed natural posture"
   },
   "character_style": {
@@ -272,7 +274,7 @@ All OTHER rules hold: token strings, zero negation (positive-only), garment spec
     "ethnicity": "modern Jakartan features, Javanese urban descent",
     "beauty": "healthy cheerful child, contemporary middle-class register, natural everyday grooming, approachable",
     "age": "boy 10 years old",
-    "facial_features": "smooth clear child complexion, soft rounded cheeks, bright lively steady eyes, full soft natural brows, small even features, smooth even skin texture",
+    "facial_features": "A_andi_front_closeup.png",
     "body_features": "slim healthy child build, age-appropriate proportions, 138cm frame, upright relaxed natural posture"
   },
   "character_style": {
@@ -313,7 +315,7 @@ All OTHER rules hold: token strings, zero negation (positive-only), garment spec
     "ethnicity": "modern Jakartan features, Javanese urban descent",
     "beauty": "healthy cheerful child, contemporary middle-class register, natural everyday grooming, approachable",
     "age": "boy 10 years old",
-    "facial_features": "smooth clear child complexion, soft rounded cheeks, bright lively steady eyes, full soft natural brows, small even features, smooth even skin texture",
+    "facial_features": "A_andi_front_medium.png",
     "body_features": "slim healthy child build, age-appropriate proportions, 138cm frame, upright relaxed natural posture"
   },
   "character_style": {
@@ -353,7 +355,7 @@ All OTHER rules hold: token strings, zero negation (positive-only), garment spec
     "ethnicity": "modern Jakartan features, Javanese urban descent",
     "beauty": "healthy cheerful child, contemporary middle-class register, natural everyday grooming, approachable",
     "age": "boy 10 years old",
-    "facial_features": "smooth clear child complexion, soft rounded cheeks, bright lively steady eyes, full soft natural brows, small even features, smooth even skin texture",
+    "facial_features": "A_andi_profileA_medium.png",
     "body_features": "slim healthy child build, age-appropriate proportions, 138cm frame, upright relaxed natural posture"
   },
   "character_style": {
@@ -393,7 +395,7 @@ All OTHER rules hold: token strings, zero negation (positive-only), garment spec
     "ethnicity": "modern Jakartan features, Javanese urban descent",
     "beauty": "healthy cheerful child, contemporary middle-class register, natural everyday grooming, approachable",
     "age": "boy 10 years old",
-    "facial_features": "smooth clear child complexion, soft rounded cheeks, bright lively steady eyes, full soft natural brows, small even features, smooth even skin texture",
+    "facial_features": "A_andi_front_medium.png",
     "body_features": "slim healthy child build, age-appropriate proportions, 138cm frame, upright relaxed natural posture"
   },
   "character_style": {
@@ -435,7 +437,7 @@ All OTHER rules hold: token strings, zero negation (positive-only), garment spec
     "ethnicity": "modern Jakartan features, Javanese urban descent",
     "beauty": "healthy cheerful child, contemporary middle-class register, natural everyday grooming, approachable",
     "age": "boy 10 years old",
-    "facial_features": "smooth clear child complexion, soft rounded cheeks, bright lively steady eyes, full soft natural brows, small even features, smooth even skin texture",
+    "facial_features": "A_andi_front_medium.png",
     "body_features": "slim healthy child build, age-appropriate proportions, 138cm frame, upright relaxed natural posture"
   },
   "character_style": {
@@ -476,7 +478,7 @@ All OTHER rules hold: token strings, zero negation (positive-only), garment spec
     "ethnicity": "modern Jakartan features, Javanese urban descent",
     "beauty": "healthy cheerful child, contemporary middle-class register, natural everyday grooming, approachable",
     "age": "boy 10 years old",
-    "facial_features": "smooth clear child complexion, soft rounded cheeks, bright lively steady eyes, full soft natural brows, small even features, smooth even skin texture",
+    "facial_features": "A_andi_front_full.png",
     "body_features": "slim healthy child build, age-appropriate proportions, 138cm frame, upright relaxed natural posture"
   },
   "character_style": {
@@ -517,7 +519,7 @@ All OTHER rules hold: token strings, zero negation (positive-only), garment spec
     "ethnicity": "modern Jakartan features, Javanese urban descent",
     "beauty": "healthy cheerful child, contemporary middle-class register, natural everyday grooming, approachable",
     "age": "boy 10 years old",
-    "facial_features": "smooth clear child complexion, soft rounded cheeks, bright lively steady eyes, full soft natural brows, small even features, smooth even skin texture",
+    "facial_features": "A_andi_front_full.png",
     "body_features": "slim healthy child build, age-appropriate proportions, 138cm frame, upright relaxed natural posture"
   },
   "character_style": {
@@ -542,7 +544,7 @@ All OTHER rules hold: token strings, zero negation (positive-only), garment spec
 ```
 
 ### Cell 12 — Rear · Full body → `A_andi_rear_full.png`
-**Generate order #12 · Attach: front_full + rear_closeup**
+**Generate order #12 · Attach: front_full + rear_medium**
 ```json
 {
   "mood": "neutral reference clarity, calm relaxed presence, Peter Hurley studio headshot register",
@@ -552,13 +554,13 @@ All OTHER rules hold: token strings, zero negation (positive-only), garment spec
   "location": "indoor",
   "time_of_day": "studio controlled",
   "atmosphere": "clinical empty stillness",
-  "reference_image": ["A_andi_front_full.png — full-body build and framing", "A_andi_rear_closeup.png — the locked back-of-head, face away"],
+  "reference_image": ["A_andi_front_full.png — full-body build and framing", "A_andi_rear_medium.png"],
   "character_identity": {
     "role": "Jakarta primary-school boy, online-learning student, bright cheerful everyday presence",
     "ethnicity": "modern Jakartan features, Javanese urban descent",
     "beauty": "healthy cheerful child, contemporary middle-class register, natural everyday grooming, approachable",
     "age": "boy 10 years old",
-    "facial_features": "smooth clear child complexion, soft rounded cheeks, bright lively steady eyes, full soft natural brows, small even features, smooth even skin texture",
+    "facial_features": "A_andi_front_full.png",
     "body_features": "slim healthy child build, age-appropriate proportions, 138cm frame, upright relaxed natural posture"
   },
   "character_style": {

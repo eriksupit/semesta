@@ -16,7 +16,9 @@ updated: 2026-06-18
 - **KOREKSI PERILAKU (Erik):** Confidence = konviksi, jangan diulang mekanis / jangan re-gate yang sudah di-pre-authorize / jangan sebut "ceremony".
 - **SELESAI (+):** **Ratna base 12/12 plat** generated+ACCEPTED (`character-images/R_ratna/`) — identitas konsisten, usia ~42, rear wajah-tersembunyi ✓. Hijab §3.A 5/5 DONE ✅ (HA front-med/HB closeup/HC profileA-med/HD profileB-med/HE full).
 - **SELESAI (+):** **Lisa 12/12 plat** generated+ACCEPTED (`character-images/L_lisa/`) — CU Front parent-blend → wajah ~20 (tak menua), identitas konsisten, rear wajah-tersembunyi ✓.
-- **NEXT:** **Andi 12** (CU Front attach wajah ortu; Andi=pilot risiko-tua — satu-satunya karakter tersisa) → lalu regen scene SC01 dari SH01 dengan keluarga baru.
+- **SELESAI (+):** **Andi 12/12 plat** generated+ACCEPTED (`character-images/A_andi/`) — CU Front parent-blend → wajah ~10 (TIDAK menua; pilot risiko-tua DIFALSIFIKASI), proporsi anak, identitas konsisten, rear oke.
+- **🎯 SEMUA PLAT KELUARGA SELESAI:** Herman 12 · Ratna 12 base + 5 hijab · Lisa 12 · Andi 12. (Sisa opsional: figuran + plat covered-prayer peci/mukena per backlog, saat scene butuh.)
+- **NEXT:** regen **scene SC01 dari SH01** dengan keluarga baru (DAG plat siap); env `bed4q` (mirror bed3q) = dependensi SH04–SH05; lalu lanjut keyframe 7-shot.
 - **OUT OF SCOPE:** generate gambar (user); Kling/i2v; commit/push tanpa "ya".
 
 ---
