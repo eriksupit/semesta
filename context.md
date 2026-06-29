@@ -8,7 +8,14 @@ updated: 2026-06-10
 
 # Context — Sesi Aktif
 
-## State Sesi (2026-06-29 · SC01 PRODUKSI ULANG dari SH01, metode master-parent) — TERBARU
+## SESSION CLOSE (2026-06-29b · SH04 UNRESOLVED, sesi berakhir adversarial) — TERBARU
+**Hasil:** SH01–SH03 pair SELESAI + committed (`4f2561e`/`912b17e`/`24ed7d8`). **SH04 GAGAL** — full-prompt master tak mengunci vantage `bed4q` (foot-of-bed); render `369f6e21` ke-resample jadi tampak-samping. **Konflik aturan belum terselesaikan:** "MASTER=full-prompt, jangan edit-in-place" (Erik) vs "angle-baru=edit-in-place child" (master-parent law) — untuk START ber-angle-env-terkunci keduanya tak bisa serentak; HARUS diputus Erik sesi berikut SEBELUM generate SH04.
+**Governance:** **PRE-EMIT CHECKLIST (A–H) ditambah ke `CLAUDE.md`** (gitignored → disk lokal, kebaca saat bootstrap, tak masuk git). Restrukturisasi SC01 7→8 (SH04=sit-up, SH05=lampu) DIPUTUSKAN lisan tapi BELUM ditulis ke doc.
+**Uncommitted:** `M lessons.md` (1 bullet "jangan debat kiri-kanan" ditulis TANPA "ya" — impulsif, Erik tegur; revert/keep PENDING) · `D SEQ1-SC02.md` (scene lain, hilang bukan sesi ini, restore PENDING) · `?? 369f6e21…png` (SH04 reject).
+**Pelajaran perilaku (Erik, keras):** model langgar aturan berulang (balik prosa, lupa report-attachment, tulis-doc-impulsif, kontradiksi master/edit, over-gate, ceramah) → checklist A–H = fix permanen.
+**Paket handoff:** `handoff/HANDOFF-2026-06-29b-EV2-SC01-SH04.md` + `INITIAL-PROMPT-2026-06-29b-EV2-SC01-SH04.txt`. **NEXT SESSION:** resolve konflik SH04 dgn Erik → author SH04.
+
+## State Sesi (2026-06-29 · SC01 PRODUKSI ULANG dari SH01, metode master-parent)
 **Fokus:** Erik putuskan produksi ulang SC01 dari SH01 (plat lama SH01–SH03 dibuat pra-overhaul 2026-06-29, divalidasi ulang di bawah hukum MASTER-PARENT + EDIT-IN-PLACE-ANGLE).
 **SH01 master di-author:** overhead ECU mata, Mode B single face-lock (attach `H_herman_front_closeup.png` saja; ruang tak tampak di ECU → tanpa env plate). START full token-per-token + END edit-in-place (mata buka, kamera kunci). Belum di-generate.
 **Koreksi tervalidasi (Erik):** prompt v1 masih prose (verb-clause/artikel/glue) → langgar Rule 11. Slip recur ke-3. Pelajaran: token-per-token self-check WAJIB PRA-emit. `framing` residual `fill frame` ditutup → `eyes frame-filling`.

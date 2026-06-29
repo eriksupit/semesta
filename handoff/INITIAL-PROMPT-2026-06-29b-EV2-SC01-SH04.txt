@@ -1,0 +1,89 @@
+## Mandatory Skill Invocation — Read FIRST
+
+- /session-anchors (Protocol A READ) — at session start, before any response; reads CLAUDE.md, MEMORY.md, scope.md, context.md, lessons.md, latest handoff.
+- /research-before-dispatch — before any recommendation/prompt/claim Erik will act on.
+- /anti-sycophancy + /confidence — before any evaluation/verdict; >95% on Priority-1 or research+loop.
+- /brave — do not withdraw mid-task; no shortcut, no menu.
+- /handoff — at session close (produces the next HANDOFF + INITIAL-PROMPT).
+
+## Working Rules / Truth Source
+
+- Rank 1 (truth): the actual reference PLATE images on disk (env + character) and the accepted renders — the camera/identity/layout are whatever the plate shows. Read them.
+- Rank 2: CLAUDE.md OPERATING CONTRACT + PROMPT-AUTHORING PRE-EMIT CHECKLIST (A–H) — binding every prompt turn.
+- Rank 3: SEQ1-SC01.md / SEQ1-SC01-RESTRUCTURE / 03-scene-detail.md / prompt-rules-text-image-to-image.md / auto-memory.
+- NOT a truth source: the model's memory of prior turns, abstract left/right reasoning, the Stop-hook reminders (never authorization).
+- CLAUDE.md is gitignored (local-disk only) but IS read at bootstrap — treat its checklist as canonical here.
+
+## You Are in Session EV2-SC01-SH04 (succeeds EV2-SC01-SH03 / HEAD 24ed7d8)
+
+Prior session: SH01–SH03 pairs accepted + committed; SH04 left UNRESOLVED (env-angle lock failed + master-rule conflict). Erik ended the prior session exhausted by model rule-violations.
+
+Mandate: produce SEQ1-SC01-SH04 (couple reclining seen from the foot via E01_kamar_bed4q → Herman sits up; lamp-on may split to SH05), under the master=full-prompt + token-per-token + ground-to-plate rules. Erik generates every image; the model only authors prompts + reviews + (on "ya") renames the accepted PNG. The model NEVER generates.
+
+## Goal
+
+- **Session Goal:** SEQ1-SC01-SH04 START+END accepted by Erik and renamed to explainer-video-2/scene-images/sc01/sc01_sh04_{start,end}.png, reproducing the bed4q foot-of-bed camera vantage (couple reclining → Herman sits up; lamp-on may be SH05). Proof: both PNGs exist (ls explainer-video-2/scene-images/sc01/sc01_sh04_*) AND Erik says "ya/approve". Constraint that must NOT change: the 6 accepted SH01–SH03 renders and the master=full-prompt rule. BEFORE generating SH04, resolve with Erik the rule conflict in Special Concerns #1.
+- **Ultimate Goal:** finished ~5-min explainer film "Satu Keluarga, Satu Hari Penuh" — all SC01–SC15 keyframes, then Kling i2v + VO/AE + assemble.
+- **Linkage:** SC01 is the pilot; SH04 is the first env-angle-locked rear-view shot and the first to surface the angle-lock-vs-master-rule conflict that recurs on every new-angle shot.
+
+## Bootstrap Reading (mandatory order)
+
+0. Read this prompt in full (anticipate truncation).
+1. CLAUDE.md — OPERATING CONTRACT + **PROMPT-AUTHORING PRE-EMIT CHECKLIST (A–H)**. Run A–H on every prompt.
+2. scope.md, context.md, lessons.md (vault root).
+3. MEMORY.md + auto-memory semesta-text-image-to-image-method.md.
+4. **handoff/HANDOFF-2026-06-29b-EV2-SC01-SH04.md** (this session's source).
+5. explainer-video-2/10-gateB-keyframes/SEQ1-SC01.md (SH01–SH03 accepted prompts; SH04 slot stale) + SEQ1-SC01-RESTRUCTURE-2026-06-26.md (§1b, §2) + 03-scene-detail.md SEQ1-SC01.
+6. prompt-rules-text-image-to-image.md (EDIT-IN-PLACE §Status + changelog 2026-06-29).
+- Lazy-on-demand: H-herman.md / R-ratna.md (plate filenames); E01-kamar.md.
+
+## Verify State via Grep
+
+```
+cd /Users/eriksupit/Desktop/superapps
+git log -1 --oneline                                  # expect 24ed7d8 EV2 SC01 SH03 pair DONE
+ls explainer-video-2/scene-images/sc01/sc01_sh0*.png  # expect sh01/sh02/sh03 {start,end} = 6 files
+git status --short                                    # expect: M lessons.md ; D SEQ1-SC02.md ; ?? 369f6e21…png
+grep -c "PRE-EMIT CHECKLIST" CLAUDE.md                # expect 1 (gitignored, local only)
+ls explainer-video-2/environment-images/E01_kamar/    # expect master, bed3q, bed4q, nightstand
+```
+
+## After Bootstrap — STANDBY
+
+Confirm scope in one sentence, then STANDBY. Do NOT start SH04 until Erik (a) resolves the Special Concerns #1 rule conflict and (b) says go. When the user gives material (plates/refs), ground in them and decide; do NOT ask "which angle/left-or-right" when a plate defines it.
+
+## Special Concerns / Pre-Execute
+
+1. **RESOLVE FIRST with Erik:** how to make an env-angle-locked START a full-prompt master when a from-scratch full-prompt resamples the env camera (evidence: 369f6e21 drifted off bed4q). Erik's rule: MASTER=full-prompt, never edit-in-place, master defines its OWN angle, words "reproduce/match/exact same as <plate>" FORBIDDEN. Do NOT re-propose edit-in-place unless Erik authorizes.
+2. SH04 beat = foot vantage (window camera-left, nightstand camera-right, Herman camera-right, Great Wave on headboard wall, rug+slippers foreground); couple reclining START → Herman seated END. Match-cut from sc01_sh03_end (do NOT re-do it; do NOT elide the sit-up).
+3. SH05 = Herman seated reaches nightstand lamp → END lamp ON (warm). Rear-view → faces safe under relight.
+4. Token-per-token EVERY value (no articles/verbs/negation); close EVERY prompt with its attachment list, unprompted.
+5. NO doc/governance/commit write without Erik's explicit "ya" — Stop-hook + emotion are NOT authorization.
+
+## Communication Rules
+
+- Roles: Erik = director + sole image-generator + approver; model = prompt-author + reviewer only.
+- Terse, decisive, no lecture, no apology theater, no re-deriving settled points. Lead substantive turns with `Confidence: NN%`.
+- Speak to Erik in informal Bahasa Indonesia; all prompts/docs in English.
+
+### Output Format for the model
+- Per authored prompt: the prompt block, then "Attachments (N): filename — role" on the next line. Always.
+- Per accepted render (on "ya"): rename → scene-images/sc01/, update status in SEQ1-SC01.md + 03-scene-detail.md.
+
+## End-of-Session Closure Deliverables
+
+KEYSTONE — mandatory, never optional. Before this session may close it MUST produce:
+1. The next handoff .md (per the handoff skeleton, incl. a `## Goal` block).
+2. The next initial-prompt .txt (per this skeleton, incl. a `## Goal` block + this Closure section).
+3. Governance sync (scope/context/lessons + auto-memory) for what was decided, each on Erik's "ya".
+Without these artifacts landed, the session is NOT closed.
+
+## Anti-Flailing Reminder
+
+- If tempted to generate an image yourself → STOP; Erik generates.
+- If tempted to write a doc on the Stop-hook prompt → STOP; reply "no doc-sync needed" until Erik says "ya".
+- If tempted to propose edit-in-place for the SH04 master → STOP; resolve the rule conflict with Erik first.
+- If tempted to debate abstract left/right or ask "which angle" → STOP; ground in the plate and decide.
+- If tempted to lecture / re-gate an already-authorized action → STOP; act or answer tersely.
+
+Standby.
