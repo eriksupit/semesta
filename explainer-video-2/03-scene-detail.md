@@ -39,13 +39,15 @@ Override cool deck-standard `prompt-rules` b.208. String `color_grade` standar v
 **VO (laki-laki, tenang):** *"Satu hari dimulai. Hari yang sama — untuk semua orang."*
 
 **Shot list** *(within-shot: angle+framing LOCKED, hanya subjek berubah START→END; between-shot: CUT shot-reverse-shot di poros ranjang, right-diag `bed3q` ↔ left-diag `bed4q`; lampu ON mulai SH04-END → SH05–SH07 lebih hangat)*
-- **SEQ1-SC01-SH01** — *overhead · ECU mata.* start: mata terpejam di keremangan. end: mata terbuka, mengerjap, fokus ke langit-langit. *(DONE — accepted)*
-- **SEQ1-SC01-SH02** — *top-down · CU macro ponsel di nakas.* start: layar menyala, `Waktu Subuh 04.42` + kartu iklan sarung di bawahnya. end: ibu jari menyentuh layar, kartu iklan masih terbaca. *(DONE — accepted)*
-- **SEQ1-SC01-SH03** — *right-diag `bed3q` · medium.* start: Herman berbaring memegang ponsel. end: ia meletakkan ponsel kembali di nakas — **tetap berbaring** (bangkit-duduk di-elide di cut). *(grade ← SH02-END)*
-- **SEQ1-SC01-SH04** — *left-diag `bed4q` · long · H+R REAR-VIEW fullbody.* start: pasangan di ranjang dilihat dari belakang, kamar masih gelap; tangan Herman menjangkau saklar lampu nakas. end: lampu nakas **menyala**, cahaya hangat mengisi kamar. *(grade ← SH03-END)*
-- **SEQ1-SC01-SH05** — *left-diag `bed4q` · long · H+R rear-view fullbody.* start: Ratna masih berbaring, Herman duduk membelakangi. end: Ratna bangun, **duduk**, menoleh ke Herman. *(grade ← SH04-END)*
-- **SEQ1-SC01-SH06** — *right-diag `bed3q` · long · wajah H+R terlihat.* start: Herman duduk di tepi ranjang, Ratna duduk di belakang. end: Herman **berdiri**, menengok kembali ke Ratna. *(grade ← SH05-END · angle berubah → fresh master, bukan edit-in-place)*
-- **SEQ1-SC01-SH07** — *right-diag `bed3q` · close · Herman blur FG / Ratna fokus BG.* start: Ratna menatap Herman, ekspresi netral. end: Ratna **tersenyum** tenang. *(grade ← SH06-END)*
+> **STATUS PRODUKSI (per 2026-06-29 · update penanda ini tiap shot selesai):** SH01 ✅ DONE (start+end). SH02 ✅ DONE (start+end). SH03–SH07 ⬜ BELUM. Penanda lama "(DONE — accepted)" = sisa sesi 2026-06-26 yang file-nya tak ada di disk → dikoreksi & diregenerasi ulang.
+
+- **SEQ1-SC01-SH01** — *overhead · ECU/CU mata · 85mm.* start: mata terpejam di keremangan. end: mata terbuka, fokus ke langit-langit. *(✅ DONE — start+end accepted 2026-06-29 · `sc01_sh01_{start,end}.png` · master-parent + edit-in-place)*
+- **SEQ1-SC01-SH02** — *top-down · CU macro ponsel di nakas.* start: layar menyala, `Waktu Subuh 04.42` + kartu iklan sarung di bawahnya (layar OFF di render, UI di AE — A1). end: tangan meraih & menggenggam HP (pre-lift, bridge ke SH03). *(✅ DONE — start+end accepted 2026-06-29 · `sc01_sh02_{start,end}.png`)*
+- **SEQ1-SC01-SH03** — *right-diag `bed3q` · medium.* start: Herman berbaring memegang ponsel. end: ia meletakkan ponsel kembali di nakas — **tetap berbaring** (bangkit-duduk di-elide di cut). *(⬜ BELUM · grade ← SH02-END)*
+- **SEQ1-SC01-SH04** — *left-diag `bed4q` · long · H+R REAR-VIEW fullbody.* start: pasangan di ranjang dilihat dari belakang, kamar masih gelap; tangan Herman menjangkau saklar lampu nakas. end: lampu nakas **menyala**, cahaya hangat mengisi kamar. *(⬜ BELUM · grade ← SH03-END · butuh `E01_kamar_bed4q.png`)*
+- **SEQ1-SC01-SH05** — *left-diag `bed4q` · long · H+R rear-view fullbody.* start: Ratna masih berbaring, Herman duduk membelakangi. end: Ratna bangun, **duduk**, menoleh ke Herman. *(⬜ BELUM · grade ← SH04-END)*
+- **SEQ1-SC01-SH06** — *right-diag `bed3q` · long · wajah H+R terlihat.* start: Herman duduk di tepi ranjang, Ratna duduk di belakang. end: Herman **berdiri**, menengok kembali ke Ratna. *(⬜ BELUM · grade ← SH05-END · angle berubah → fresh master, bukan edit-in-place)*
+- **SEQ1-SC01-SH07** — *right-diag `bed3q` · close · Herman blur FG / Ratna fokus BG.* start: Ratna menatap Herman, ekspresi netral. end: Ratna **tersenyum** tenang. *(⬜ BELUM · grade ← SH06-END)*
 
 **— Catatan produksi:** *Potensi iklan* — Surface: kartu apparel + pengingat subuh di layar ponsel (SH02). Momen intent: persiapan ibadah (apparel). Kategori: apparel muslim/sarung. Sarung/berdiri-kenakan-sarung + sholat-prep **DIDEFERENSI** ke scene hilir (bukan lagi di SC01). Grade pre-dawn gelap SH01–SH04-START → hangat lampu-nyala SH04-END–SH07; identitas Herman+Ratna dikunci (plat DAG baru). `E01_kamar_bed4q.png` (mirror `bed3q`) = dependensi keras SH04–SH05.
 

@@ -30,100 +30,104 @@ aliases: [ev2-gateB-seq1-sc01]
 
 ---
 
-## SEQ1-SC01-SH01 — ECU/CU mata Herman · overhead · 50mm
+## SEQ1-SC01-SH01 — ECU/CU mata Herman · overhead · 85mm  *(regen 2026-06-29, master-parent method)*
 - **Intent (03):** start = mata terpejam, lelap. end = mata terbuka, mengerjap, fokus ke langit-langit. Bookend ke coda SEQ6-SC03.
-- **SHOT-CONCEPT (FIX — Rule 6a framing-by-union, identik dua frame):** overhead vantage, kamera tepat di atas wajah supine menatap lurus ke bawah; pita mata–alis dominan; 50mm; 16:9. Kamera diam; HANYA mata yang berubah START→END. **Ratna TIDAK di frame** (mustahil terbaca di ECU; ia hadir di SH04).
+- **SHOT-CONCEPT (FIX — Rule 6a framing-by-union, identik dua frame):** overhead vantage, kamera di atas wajah supine; pita mata–wajah dominan; 85mm; 16:9. Kamera diam; HANYA mata yang berubah START→END. **Ratna TIDAK di frame** (mustahil terbaca di CU; ia hadir di SH04). **Render aktual:** vantage mendarat diagonal-atas hampir frontal (bukan top-down murni), framing CU wajah penuh (drift-wider Rule 4) — keduanya diterima.
 - **Attachments:** identity `H_herman_front_closeup.png` SAJA. Env TIDAK dilampirkan (ECU tak menampilkan ruang; lampiran env memicu drift-wider Rule 4).
-- **START** — mode: **B** · STATUS: ✅ **ACCEPTED 2026-06-26** → `scene-images/sc01/sc01_sh01_start.png`. Review: G0–G6 lolos; identitas Herman held (verifikasi penuh bentuk-mata tertunda ke END karena mata terpejam); render mendarat **CU** (bukan ECU ekstrem — drift-wider Rule 4, eyes tetap dominan, diterima); grade very-low-key subuh sedikit dingin (dalam toleransi). Proven prompt:
+- **START** — mode: **B** (master-parent, full from-scratch) · STATUS: ✅ **ACCEPTED 2026-06-29 (regen, supersedes prior 50mm version)** → `scene-images/sc01/sc01_sh01_start.png`. Review: identitas Herman cocok plat ✓; render mendarat **CU wajah** (lebih lebar dari ECU spec — drift-wider Rule 4 figur-berbaring, mata+wajah dominan, diterima); vantage **diagonal-atas hampir frontal** (bukan top-down murni) → END gaze diarahkan ke langit-langit bukan ke lensa; grade very-low-key subuh. Proven prompt (token-per-token, Rule 11):
 ```json
 {
   "attachment_manifest": {
-    "identity_reference": ["H_herman_front_closeup.png — same man, match face shape, grey moustache, salt-and-pepper hair, mature skin texture, calm eyes, match proportions"]
+    "identity_reference": ["H_herman_front_closeup.png — same identical man, matched face, matched brow, matched eye region, matched skin texture, clean-shaven"]
   },
-  "mood": "intimate pre-dawn stillness, the first breath before waking, hushed sacred quiet",
-  "color_grade": "warm Deakins-style grade, midtones slightly warm, gentle filmic contrast, one warm temperature",
-  "style": "photorealistic cinematic still, ARRI Alexa Mini LF, clean prime spherical lens, Kodak Portra rendering, fine film grain",
-  "scene": "private bedroom in pre-dawn dark, a mature man lying supine on his back, head resting on a matte slate-grey cotton pillow",
+  "mood": "tender intimate pre-dawn stillness, hushed private waking, quiet domestic register",
+  "color_grade": "Roger Deakins palette, lifted blacks medium gray, neutral shadows, clean whites, Kodak 2383 emulation, slightly warmer midtones",
+  "style": "photorealistic cinematic frame, ARRI Alexa Mini LF, clean prime spherical lens, Kodak 2383 film emulation, naturalistic skin rendering",
+  "scene": "soft cotton pillowcase, rumpled bed linen, intimate bedding surface around upturned sleeping face",
   "location": "indoor",
-  "time_of_day": "pre-dawn",
-  "atmosphere": "dark hushed pre-dawn dimness, barely-there ambient",
+  "time_of_day": "night",
+  "atmosphere": "hushed pre-dawn near-darkness, perfectly still",
   "scene_depth": {
-    "foreground": "the man's eyes and brow filling the frame, the focal centre",
-    "midground": "bridge of the nose and the matte slate-grey pillow beneath the head",
-    "background": "soft dark out-of-focus bedding falling away"
+    "foreground": "soft out-of-focus lash tips at lens",
+    "midground": "upturned face, closed-eye region sharp",
+    "background": "rumpled pillow, dark bed linen, deep shadow falloff"
   },
   "subjects": [
-    { "who": "Herman", "identity_reference": "H_herman_front_closeup.png", "wardrobe": "cropped out of this extreme close-up of the eyes" }
+    { "who": "Herman", "identity_reference": "H_herman_front_closeup.png" }
   ],
   "subject_state": "static",
-  "action": "lying still on his back asleep, both eyes gently closed in the dimness",
-  "pose": "supine, face turned up toward the ceiling, head centred on the pillow",
-  "gesture": "facial muscles fully relaxed in sleep",
-  "expression": "both eyes softly closed, eyelids smooth and still, lips lightly closed, deeply at rest",
-  "framing": "ECU extreme close-up, only the eyes-brow-nose-bridge band fills the frame, eyes the dominant subject",
-  "angle": "overhead vantage, camera directly above the face looking straight down, face square to the overhead lens",
-  "camera": "50mm prime spherical, shallow focus on the eyes, soft fall-off",
-  "lighting": "very-low-key pre-dawn darkness, faint cool bluish pre-sunrise glow barely seeping through the curtains, no warm sun risen yet, no practical lamp lit, deep soft shadows across the face, a soft cool wrap grazing the brow, dim near-black ambient",
+  "action": "face at rest, both eyelids closed, sleep stillness",
+  "pose": "head back on pillow, face fully upturned toward overhead lens",
+  "gesture": "facial muscles slack, full rest",
+  "expression": "both eyelids fully closed, lashes down on cheeks, brow smooth flat relaxed, lips lightly parted, sleep-calm face",
+  "framing": "extreme close-up, two closed eyes, bridge of nose, brow above, upper cheeks below, eyes frame-filling",
+  "angle": "directly overhead, top-down, straight-down onto upturned face, face square to lens",
+  "camera": "85mm prime spherical, shallow depth of field, focus on lash line",
+  "lighting": "very low-key, faint cool pre-dawn ambient from off-frame curtained window, dim soft graze across brow, dim soft graze across nose ridge, eye sockets deep shadow",
   "aspect_ratio": "16:9",
-  "director": "Alfonso Cuarón", "directing_style": "intimate naturalist realism",
-  "lighting_director": "Emmanuel Lubezki", "lighting_style": "naturalistic available-light, soft directional",
-  "production_designer": "Eugenio Caballero", "production_design_style": "Roma-style middle-class domestic realism",
-  "interior_designer": "Ilse Crawford", "interior_design_style": "warm human-centred tactile lived-in",
-  "costume_designer": "Deborah Hopper", "costume_style": "character-authentic casual wear",
-  "makeup_artist": "Eryn Krueger Mekash", "makeup_style": "naturalistic lived-in skin, real-person feel"
+  "director": "Alfonso Cuarón", "directing_style": "intimate naturalistic domestic observation, patient stillness",
+  "lighting_director": "Emmanuel Lubezki", "lighting_style": "available-light naturalism, soft wrap, deep honest shadow",
+  "production_designer": "Eugenio Caballero", "production_design_style": "lived-in middle-class Jakarta domestic authenticity",
+  "makeup_artist": "Eryn Krueger Mekash", "makeup_style": "naturalistic matte lived-in skin, real-person feel",
+  "hair_stylist": "Tim Muir", "hair_style": "naturalistic neat working-class grooming"
 }
 ```
-- **END** — method: **EDIT-IN-PLACE** pada `sc01_sh01_start.png` (BUKAN generate-from-attachment) · STATUS: ✅ **ACCEPTED 2026-06-26** → `scene-images/sc01/sc01_sh01_end.png`. Review: framing **identik START by construction** (edit-in-place — geometri di luar mata = piksel asli; camera-lock deterministik, bukan kebetulan); ekspresi grogi (mata berat/sayu, TIDAK sipit) lebih kuat dari versi generate-from-attachment. Catatan jujur: token `sleep crust`/merah ter-render lemah (akseptabel). **Cara reproduksi:** muat render START di edit-view → set input-fidelity High → (opsional) drop satu comment-point di area mata → di "Describe edits" tempel instruksi token-per-token:
+- **END** — method: **EDIT-IN-PLACE** pada canvas yang sudah memuat `sc01_sh01_start.png` (**NOL preamble nama-file** — canvas itu = render START; validated 2026-06-29) · STATUS: ✅ **ACCEPTED 2026-06-29** → `scene-images/sc01/sc01_sh01_end.png`. Review: framing + posisi-wajah **identik START by construction** (edit-in-place — geometri di luar mata = piksel asli); mata terbuka, gaze ke atas/langit-langit (cocok vantage diagonal), identitas konsisten. Fidelity dropdown → High. Proven edit-instruction (paste langsung di Describe-edits, NOL nama-file, NOL preamble):
 ```
-open both eyes, just awake, eyes open at natural relaxed rounded width, full natural aperture, gaze straight up toward the camera, faintly bloodshot, slightly red, tired, lightly puffy lower lids, small fleck of sleep crust in each inner eye corner, eyes comfortably rounded, framing unchanged, crop unchanged, head position unchanged, lighting unchanged, skin unchanged, hair unchanged
+Change only the eye state to open, awake.
+- expression: both eyelids open, alert, irises visible, pupils visible, steady awake upward gaze toward ceiling, faint cool catchlight on wet eye surface, lashes lifted
+- unchanged: framing unchanged, camera angle unchanged, face position on pillow unchanged, brow unchanged, nose unchanged, mouth unchanged, pillowcase unchanged, bed linen unchanged, lighting unchanged, color grade unchanged
 ```
-> Metode baku start/end **delta-kecil = edit-in-place** (kanonik: `prompt-rules-text-image-to-image` Part II EDIT-IN-PLACE). Generate-from-attachment (Mode C) = fallback bila tool tak punya edit mode.
+> Metode baku start/end **delta-kecil = edit-in-place** (kanonik: `prompt-rules-text-image-to-image` Part II EDIT-IN-PLACE §178: nol preamble nama-file, operasi+delta+lock-list saja). Generate-from-attachment (Mode C) = fallback bila tool tak punya edit mode.
 
 ## SEQ1-SC01-SH02 — CU ponsel di nakas · top-down insert · 50mm macro
 - **Intent (03):** start = layar menyala (`Waktu Subuh 04.42` + kartu iklan sarung — **rendered OFF, UI in After Effects**). end = ibu jari menyentuh "matikan". Insert top-down, screen OFF (A1).
 - **SHOT-CONCEPT (FIX — Rule 6a, identik dua frame):** top-down CU/macro insert HP di nakas; kamera di atas permukaan menatap ke bawah; HP dominan; 50mm macro; 16:9. Kamera diam; END hanya menambah ibu jari.
 - **Konsistensi antar-shot (BUKAN attach render shot-lain):** token-block `mood/color_grade/style/inti-lighting` disamakan **verbatim ke SH01** + env plate bersama + grade post. Attach render SH01 dilarang (reference-dominance impor komposisi wajah).
 - **Attachments:** env `E01_kamar_nightstand.png` SAJA.
-- **START** — mode: **B** · STATUS: ✅ **ACCEPTED 2026-06-26** → `scene-images/sc01/sc01_sh02_start.png`. Review: layar gelap/OFF (A1) ✓; ruang (kayu light-oak / base lampu / tepi bantal) cocok plat, nol halusinasi ✓; grade subuh konsisten SH01 ✓; top-down insert mendarat (sedikit high-angle, akseptabel). Proven prompt:
+- **START** — mode: **B** (master-parent, object shot) · STATUS: ✅ **ACCEPTED 2026-06-29** → `scene-images/sc01/sc01_sh02_start.png`. Review: layar OFF (A1) ✓; nakas+base-lampu+tepi-ranjang cocok plat, nol halusinasi ✓; lampu belum-nyala (logika SH04 aman) ✓. Menyimpang-diterima: framing **drift-wider** (ponsel ~25% frame, bukan macro-tight — beri ruang END) + angle oblique-high (bukan top-down murni) + **grade lebih hangat/terang dari SH01** (gap token-copy: resep sama, nilai-render beda → unify di grade post AE). Konsistensi: `mood/color_grade/style` verbatim SH01; UI di AE. Prompt:
 ```json
 {
   "attachment_manifest": {
     "environment_reference": "E01_kamar_nightstand.png — same nightstand, same phone, same lamp, identical light-oak wood, identical materials, identical layout, new camera only"
   },
-  "mood": "intimate pre-dawn stillness, the first breath before waking, hushed sacred quiet",
-  "color_grade": "warm Deakins-style grade, midtones slightly warm, gentle filmic contrast, one warm temperature",
-  "style": "photorealistic cinematic still, ARRI Alexa Mini LF, 50mm macro prime spherical lens, Kodak Portra rendering, fine film grain",
-  "scene": "top-down insert of a smartphone lying flat face-up on the light-oak MALM nightstand surface, dark dormant black glass screen, beside the switched-off table lamp base, headboard edge nearby",
+  "mood": "tender intimate pre-dawn stillness, hushed private waking, quiet domestic register",
+  "color_grade": "Roger Deakins palette, lifted blacks medium gray, neutral shadows, clean whites, Kodak 2383 emulation, slightly warmer midtones",
+  "style": "photorealistic cinematic frame, ARRI Alexa Mini LF, 100mm macro prime spherical lens, Kodak 2383 film emulation, naturalistic rendering",
+  "scene": "top-down insert, smartphone flat face-up on light-oak nightstand surface, dark dormant black glass screen, table lamp base camera-side edge, headboard edge nearby",
   "location": "indoor",
-  "time_of_day": "pre-dawn",
-  "atmosphere": "dark hushed pre-dawn dimness",
+  "time_of_day": "night",
+  "atmosphere": "hushed pre-dawn near-darkness, perfectly still",
   "scene_depth": {
-    "foreground": "the smartphone lying flat face-up, dark dormant black glass screen, dominant in frame",
-    "midground": "matte light-oak nightstand surface around the phone",
-    "background": "soft dark, switched-off lamp base at the frame edge"
+    "foreground": "smartphone flat face-up, dark dormant black glass screen, frame-dominant",
+    "midground": "matte light-oak nightstand surface around phone",
+    "background": "soft dark, table lamp base at frame edge"
   },
   "subject_anchor": {
-    "primary_subject": "smartphone lying flat face-up on the nightstand, dark dormant matte black glass screen",
-    "supporting_objects": { "nightstand": "matte light-oak MALM nightstand surface", "lamp": "table lamp base at frame edge, switched off" },
-    "human_absence_signal": "the phone resting alone untouched, the surface around it clear"
+    "primary_subject": "smartphone flat face-up on nightstand, dark dormant matte black glass screen",
+    "supporting_objects": { "nightstand": "matte light-oak nightstand surface", "lamp": "table lamp base at frame edge, off, dark" },
+    "human_absence_signal": "phone resting alone, surface around it clear, still"
   },
   "subject_state": "static",
-  "action": "the phone resting still on the nightstand, screen dark and dormant",
-  "framing": "ECU macro insert, the phone filling most of the frame, tight on the device",
-  "angle": "top-down, camera directly above the nightstand surface looking straight down, phone square to the overhead lens",
-  "camera": "50mm macro prime spherical, shallow focus on the phone face",
-  "lighting": "very-low-key pre-dawn darkness, faint cool bluish pre-sunrise glow barely seeping through the curtains, no warm sun risen yet, no practical lamp lit, deep soft shadows on the nightstand surface",
+  "action": "phone at rest on nightstand, screen dark dormant",
+  "framing": "macro insert close-up, phone frame-filling, tight on device",
+  "angle": "top-down, straight-down onto nightstand surface, phone square to lens",
+  "camera": "100mm macro prime spherical, shallow depth of field, focus on phone face",
+  "lighting": "very low-key pre-dawn near-darkness, faint cool ambient from off-frame curtained window, nightstand lamp dormant dark, deep soft shadow across nightstand surface",
   "aspect_ratio": "16:9",
-  "director": "Alfonso Cuarón", "directing_style": "intimate naturalist realism",
-  "lighting_director": "Emmanuel Lubezki", "lighting_style": "naturalistic available-light",
-  "production_designer": "Eugenio Caballero", "production_design_style": "Roma-style middle-class domestic realism",
+  "director": "Alfonso Cuarón", "directing_style": "intimate naturalistic domestic observation, patient stillness",
+  "lighting_director": "Emmanuel Lubezki", "lighting_style": "available-light naturalism, soft directional",
+  "production_designer": "Eugenio Caballero", "production_design_style": "lived-in middle-class Jakarta domestic authenticity",
   "interior_designer": "Ilse Crawford", "interior_design_style": "warm human-centred tactile lived-in"
 }
 ```
-- **END** — method: **EDIT-IN-PLACE** on `sc01_sh02_start.png` (delta: tangan mengambil HP) · STATUS: ✅ **ACCEPTED 2026-06-26** → `scene-images/sc01/sc01_sh02_end.png`. Review: framing **identik START by construction** (edit-in-place) ✓; skin Herman + lighting subuh konsisten ✓; layar OFF (A1) ✓. **Kompromi diterima (logged):** gestur terbaca **telapak menelungkup di atas HP**, BUKAN genggaman-tepi penuh. Re-roll geometri-grip (`1a82e744`) sempat memperbaiki genggaman TAPI **framing-nya geser** → melanggar camera-lock; karena framing = constraint keras, user memilih versi ini (framing utuh > gestur sempurna). Bridge ke SH03 (memegang) masih terbaca. Proven edit-instruction:
+- **END** — method: **EDIT-IN-PLACE** + 1 extra-ref (`H_herman_front_full.png` via `+`, skin+hand) · STATUS: ✅ **ACCEPTED 2026-06-29 (Versi A affirmative-lock — menang A/B vs negative-instructions)** → `scene-images/sc01/sc01_sh02_end.png`. Delta: tangan kanan Herman meraih-genggam HP (pre-lift cradle, bridge ke SH03 memegang). Review: framing tahan ✓, layar OFF ✓, single-hand ✓, skin tone cocok plat ✓. Edit-instruction (token-per-token, NOL preamble, attach `front_full` via `+`):
 ```
-mature male hand, entering from bottom frame edge, fingers settling onto the smartphone, palm grasping the phone, pre-lift grip, natural relaxed grip, skin tone matched, skin texture matched, skin source attached portrait sc01_sh01_end.png, dim lighting matched, phone flat in place on nightstand, screen dark dormant black glass, nightstand unchanged, lamp unchanged, framing unchanged, crop unchanged, lighting unchanged, color unchanged
+Add a mature male right hand grasping the phone, pre-lift.
+- hand: single mature male right hand, skin tone and hand from attached plate H_herman_front_full, reference for skin and hand only, in from bottom frame edge, fingers over the phone far long side, thumb on the phone near long side, relaxed pre-lift cradle grip, phone still flat on the nightstand
+- unchanged: phone position unchanged, nightstand unchanged, lamp unchanged, dark dormant screen unchanged, framing unchanged, camera angle unchanged, lighting unchanged, color grade unchanged
 ```
+> **A/B negasi (N=1, 2026-06-29):** Versi B (`negative_spatial_instructions`: "do not mirror / do not add second hand / do not lift…") **TIDAK backfire** di edit-model ChatGPT baru — tetap single-hand, layar OFF, nol mirror, framing utuh. Versi A dipilih atas dasar komposisi (lebih cocok START), bukan karena B gagal. Kesimpulan jujur: no-negation-backfire era GPT-Image-2 lama **TAK otomatis berlaku** di edit-in-place model baru; TAPI affirmative tetap default (lebih ringkas + tervalidasi panjang) — negasi belum diadopsi sbg standar (N=1). Re-test bila kasus layout-kritis (bed4q mirror). Koreksi beat: versi awal sesi ini keliru "jempol sentuh layar" → dikoreksi ke "tangan genggam" (Erik, bridge ke SH03).
 > **Observasi metode (PENDING, N=1):** instruksi edit yang lebih agresif/panjang (geometri-grip Rules 12–14) JUSTRU drift framing, sedangkan instruksi ini (lebih ringan) menahan framing. Hipotesis: makin besar/agresif delta tangan → makin tinggi risiko resample framing di edit-in-place; edit-in-place menjamin framing kuat pada delta-KECIL (mata), tak sekuat itu pada delta tangan-besar. Konfirmasi di shot lain sebelum jadi aturan.
 
 ## SEQ1-SC01-SH03 — Herman + ponsel: rebah → duduk-samping taruh HP · 50mm

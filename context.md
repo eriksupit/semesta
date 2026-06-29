@@ -8,7 +8,19 @@ updated: 2026-06-10
 
 # Context — Sesi Aktif
 
-## State AKHIR Sesi (2026-06-26b · SEQ1-SC01 SH03 PAIR SELESAI + Rules 26–27) — TERBARU
+## State Sesi (2026-06-29 · SC01 PRODUKSI ULANG dari SH01, metode master-parent) — TERBARU
+**Fokus:** Erik putuskan produksi ulang SC01 dari SH01 (plat lama SH01–SH03 dibuat pra-overhaul 2026-06-29, divalidasi ulang di bawah hukum MASTER-PARENT + EDIT-IN-PLACE-ANGLE).
+**SH01 master di-author:** overhead ECU mata, Mode B single face-lock (attach `H_herman_front_closeup.png` saja; ruang tak tampak di ECU → tanpa env plate). START full token-per-token + END edit-in-place (mata buka, kamera kunci). Belum di-generate.
+**Koreksi tervalidasi (Erik):** prompt v1 masih prose (verb-clause/artikel/glue) → langgar Rule 11. Slip recur ke-3. Pelajaran: token-per-token self-check WAJIB PRA-emit. `framing` residual `fill frame` ditutup → `eyes frame-filling`.
+**SH01 START ACCEPTED + renamed** `scene-images/sc01/sc01_sh01_start.png` (render = CU wajah, lebih lebar dari ECU spec — figur-berbaring drift-wider Rule 4; vantage diagonal-atas bukan top-down murni → END gaze "ke langit-langit" bukan "into lens").
+**Insight tervalidasi (Erik tunjuk UI edit ChatGPT):** edit-in-place = NOL preamble nama-file (canvas sudah = render START); operasi+delta+lock-list saja; `+` hanya utk referensi tambahan. Disebar ke `prompt-rules-text-image-to-image.md` §178 + lessons + auto-memory.
+**SH01 PAIR SELESAI + accepted 2026-06-29** → `sc01_sh01_{start,end}.png`; prompt 85mm token-per-token + END no-preamble ter-persist ke `SEQ1-SC01.md` (versi 50mm lama di-supersede).
+**Audit status (Erik):** `03-scene-detail.md` SEQ1-SC01 status dikoreksi — SH01 ✅ DONE, SH02–SH07 ⬜ BELUM (penanda "(DONE — accepted)" lama = sisa sesi 2026-06-26 tanpa file di disk). Aturan tetap: update `03-scene-detail.md` status BARENG `SEQ1-SC01.md` prompt tiap shot.
+**SH02 PAIR SELESAI + accepted 2026-06-29** → `sc01_sh02_{start,end}.png`. START object-shot (nightstand plate); END = tangan genggam HP pre-lift (koreksi dari "jempol" keliru), edit-in-place + `H_herman_front_full` via `+` (skin+hand ref). **A/B negasi:** Versi B `negative_spatial_instructions` TIDAK backfire di edit-model baru (N=1) — A dipilih atas komposisi; affirmative tetap default. Aturan baru ke `lessons` + akan ke `prompt-rules`.
+**Git anomaly:** `SEQ1-SC02.md` + `sc01_sh03_{start,end}.png` ter-`D` (hilang dari disk, masih tracked) — BUKAN dihapus sesi ini; commit di-stage selektif (deletions dibiarkan unstaged, repo tetap simpan). Perlu Erik putuskan restore.
+**NEXT:** SH03 (right-diag `bed3q` medium, Herman rebah pegang HP → taruh di nakas tetap rebah). Belum commit penghapusan SC02/SH03.
+
+## State AKHIR Sesi (2026-06-26b · SEQ1-SC01 SH03 PAIR SELESAI + Rules 26–27)
 **Fokus:** produksi SH03 (rebah→duduk-samping taruh HP) end-to-end + pengerasan metode keyframe-pair.
 **Hasil:** **SH03 pair ACCEPTED** → `scene-images/sc01/sc01_sh03_{start,end}.png`. **SC01 kini SH01–SH03 lengkap (6 PNG); sisa SH04.** START = Mode B one-shot (plat **medium** + framing **token-kanvas/Photoshop**, dijauhkan agar muat duduk, `2a91a36c`). END = **edit-in-place delta-BESAR** (front-rebah→samping-duduk-tepi taruh HP) pakai plat `H_herman_profileB_medium.png` di-attach via **"+"** (`1e9f76d3`).
 **Aturan baru terkunci (`prompt-rules-text-image-to-image` Rules 26–27 + memory + lessons):** 26 keyframe SELALU 2-frame; END = state-change BISA digambar (anggukan DITOLAK — micro-gerak tak tergambar, berakhir netral). 27 big-delta edit-in-place VIABLE bila attach plat orientasi via "+" + sebut arah + lock-list penuh; tanpa plat → orientasi front bertahan; "tanpa attachment" hanya utk BASE. (Mematahkan "big-delta drifts" lama.)
