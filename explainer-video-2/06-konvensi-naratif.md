@@ -3,8 +3,8 @@ title: Konvensi Naratif — Sequence / Scene / Shot (Explainer Video 2)
 tags: [explainer-video-2, konvensi, sequence, scene, shot, governance]
 status: active
 created: 2026-06-19
-updated: 2026-06-19
-aliases: [ev2-06-konvensi, konvensi-naratif, seq-sc-sh]
+updated: 2026-06-29
+aliases: [ev2-06-konvensi, konvensi-naratif, seq-sc-sh, workflow-sop]
 ---
 
 # Konvensi Naratif — Sequence / Scene / Shot
@@ -35,8 +35,54 @@ aliases: [ev2-06-konvensi, konvensi-naratif, seq-sc-sh]
 ## Penomoran
 Format: **`SEQ<n>-SC<nn>-SH<nn>`**.
 - Contoh: `SEQ1-SC01-SH02` = Sequence 1 (Subuh), Scene 01, Shot 02.
-- Sequence dinomori per babak (SEQ1..SEQ5). **Scene RESET ke `SC01` di tiap sequence** (SEQ2 mulai dari `SEQ2-SC01`, bukan melanjutkan nomor SEQ1). **Shot RESET ke `SH01` di tiap scene.** Tiap shot ditulis dengan ID penuh `SEQ<n>-SC<nn>-SH<nn>`. JANGAN menomori global/berlanjut antar induk.
+- Sequence dinomori per babak (SEQ1..SEQ6). **Scene bernomor KONTINU global lintas-sequence** ("bertumbuh": SC01, SC02, …, SC19 — SEQ2 lanjut `SC03` setelah SEQ1 berakhir di `SC02`; **TIDAK reset ke SC01 tiap sequence**). SEQ = label grup. **Shot RESET ke `SH01` di tiap scene.** ID penuh `SEQ<n>-SC<nn>-SH<nn>` (SC kontinu, SH reset). *(Ref legacy reset-style — nama file gateB `SEQ1-SC01.md`, character/env sheet — direkonsiliasi saat disentuh; belum di-rename massal.)*
 - Penyimpanan keyframe mengikuti shot: `scene-images/` (lihat konvensi file di `scene-images/README.md`, selaraskan ke `SEQ-SC-SH`).
+
+---
+
+## Workflow Produksi Gambar (SOP) — kanonik · urut · wajib
+
+> Rantai satu-arah dari **cerita** ke **gambar**. Tiap langkah selesai & terkunci sebelum langkah berikut. JANGAN melompati gerbang — membangun keyframe sebelum cerita terkunci adalah sumber churn (terbukti pada riwayat SC01: restruktur 4→7, thrash metode SH04).
+
+**Urutan garap scene = URUT / TERTIB (disiplin Erik):** kerjakan scene KETAT sesuai urutan nomor (SC01→SC02→SC03→…), JANGAN loncat. Daftar scene memang disusun agar cerita tumbuh berurutan; produksi mengikuti urutan itu apa adanya. Satu scene tuntas (locked) sebelum lanjut ke berikutnya.
+
+**Langkah 1 — `03-scene-detail.md` = CERITA (GATE A, clean-slate).**
+Tulis & kunci cerita per scene, berurutan. Scene = 1 lokasi + 1 waktu (pindah lokasi/waktu → scene baru). Isi sah: **Pesan misi (ad-provider)** + prosa scene + VO + **blok-narasi per shot** + baris **Grafis UI (AE)** (kapan muncul + copy) + Catatan produksi. **NOL addendum, NOL tag status, NOL catatan metode/revisi bertanggal, NOL prompt** (prompt = GATE B). Status produksi dan metode per-shot TIDAK hidup di sini.
+
+**Langkah 2 — satu doc per scene di `10-gateB-keyframes/SEQ<n>-SC<nn>.md` (GATE B).**
+Tiap scene yang sudah terkunci diturunkan jadi SATU dokumen. Di sinilah status produksi, metode per-shot, dan prompt hidup.
+
+**Langkah 3 — tiap shot: BLOK NARASI dulu, baru prompt.**
+Sebelum token apa pun, urai shot dalam narasi (template di bawah). Syarat shot: framing + angle **LOCKED** start→end; hanya subjek yang bergerak. Satu shot wajib mampu menggambarkan adegan AWAL (calon image START) dan adegan AKHIR (calon image END).
+
+**Langkah 4 — terjemahkan narasi → prompt.**
+START = **full prompt** (master / angle-child; hukum master-parent + edit-in-place: `prompt-rules-text-image-to-image.md`). END = **edit-in-place** pada render START yang sudah accepted.
+
+**Langkah 5 — produksi.**
+User generate; Claude menunggu (Claude tidak pernah generate). Render accepted → rename ke `scene-images/` → update status di per-scene doc (Langkah 2) → shot berikutnya.
+
+### Template scene (GATE A · di `03-scene-detail.md`)
+```
+## SEQ<n>-SC<nn> — <LOKASI> — <WAKTU>
+**Pesan misi (ad-provider):** <vertikal app yang ditunjukkan + bukti app layak jadi kanal iklan>
+**Prosa scene:** <skenario prosa camera-bound>
+**VO (bila ada):** <...>
+
+### Shot — blok narasi
+#### SH0N — <judul beat>
+- Narasi          : <kalimat deskriptif lengkap, camera-bound>
+- Kamera          : <posisi / vantage>
+- Angle + Framing : <LOCKED start→end>
+- Mood / Cahaya   : <state cahaya>
+- Adegan AWAL (→START) : <state awal subjek>
+- Adegan AKHIR (→END)  : <delta subjek yang tergambar>
+
+**Grafis UI (AE, non-AI):**
+- saat <sub-adegan>, muncul <grafis>, copy: "<teks>"
+
+**— Catatan produksi:** <kategori iklan · grade>
+```
+> Prompt START (full) / END (edit-in-place) **TIDAK di sini** — diturunkan ke `10-gateB-keyframes` per shot (Langkah 4).
 
 ---
 

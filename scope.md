@@ -3,10 +3,23 @@ title: Scope — Semesta Digital
 tags: [meta, scope, active-session]
 status: active
 created: 2026-06-08
-updated: 2026-06-18
+updated: 2026-06-29
 ---
 
-# Scope — AKTIF (2026-06-29 · SC01 PRODUCTION + METODE MASTER-PARENT/EDIT-IN-PLACE-ANGLE)
+# Scope — AKTIF (2026-06-29e · WORKFLOW RESET — SOP produksi gambar dikunci + 03 clean-slate)
+
+## MANDAT SESI INI (workflow reset, Erik)
+Rombak & bakukan workflow produksi gambar `explainer-video-2` jadi rantai tertib; rekam ke governance supaya selamat lintas-sesi. **SELESAI (file ditulis, BELUM commit — nunggu "ya"):**
+- **SOP dikunci** di `06-konvensi-naratif.md` §"Workflow Produksi Gambar (SOP)" — rantai 5-langkah: (1) `03` = CERITA clean-slate GATE A → (2) satu doc/scene di `10-gateB-keyframes` GATE B → (3) tiap shot **BLOK NARASI dulu** (template di doc) → (4) START full-prompt / END edit-in-place → (5) user generate, Claude tunggu.
+- **`03-scene-detail.md` di-clean-slate**: dibuang ADDENDUM A1 (dikonversi jadi production-constant bersih), STATUS PRODUKSI SC01, tag ✅/⬜/METODE per-shot SH01–SH07, kalimat metode REAR di Catatan produksi SC01, Catatan revisi 2026-06-24, blok STATUS GATE A (→ "Ringkasan"). Prosa cerita + VO + shot-list (beat+lensa) + Catatan produksi (iklan+grade) UTUH. Status & metode kini hidup di per-scene doc (GATE B), bukan `03`.
+- **SC01 SH01–SH04**: render accepted di disk DIBIARKAN (Erik "biarkan dulu"); carry-forward DIPARKIR ke fase GATE B. Hanya teks status-nya dibersihkan dari `03`.
+- **FLAG (kerja Langkah-3, bukan clean-slate):** count per-SEQ di header `03` stale (SEQ1 "8 shot" vs riil SC01 7 + SC02 3 = 10); total film perlu dihitung ulang saat garap scene-detail.
+- **NEXT:** fokus garap isi `03-scene-detail` sampai tertib & terkunci, scene per scene berurutan. `10-gateB-keyframes` NOL sentuhan sampai `03` beres.
+- **OUT OF SCOPE:** generate gambar (user); sentuh `10-gateB-keyframes`; commit tanpa "ya".
+
+---
+
+# Scope — Riwayat (2026-06-29 · SC01 PRODUCTION + METODE MASTER-PARENT/EDIT-IN-PLACE-ANGLE)
 
 ## STATUS TERBARU (2026-06-29 · method overhaul dari eksperimen bed4q)
 - **SC01 di-rewrite 7-shot** di `03-scene-detail.md` (DONE). **Master kamar di-tokenize** (Cell M) + **bed3q tokenize** generated+accepted. **bed4q accepted** (`E01_kamar_bed4q.png`) via EDIT-IN-PLACE in-lane.
