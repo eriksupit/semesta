@@ -8,12 +8,15 @@ updated: 2026-06-10
 
 # Context — Sesi Aktif
 
-## SESSION CLOSE (2026-06-29b · SH04 UNRESOLVED, sesi berakhir adversarial) — TERBARU
-**Hasil:** SH01–SH03 pair SELESAI + committed (`4f2561e`/`912b17e`/`24ed7d8`). **SH04 GAGAL** — full-prompt master tak mengunci vantage `bed4q` (foot-of-bed); render `369f6e21` ke-resample jadi tampak-samping. **Konflik aturan belum terselesaikan:** "MASTER=full-prompt, jangan edit-in-place" (Erik) vs "angle-baru=edit-in-place child" (master-parent law) — untuk START ber-angle-env-terkunci keduanya tak bisa serentak; HARUS diputus Erik sesi berikut SEBELUM generate SH04.
+## SESSION (2026-06-29c · SH04 METODE RESOLVED — angle-child klon-SH03) — TERBARU
+**Resolusi (Erik approve):** TIDAK ADA konflik. SH04 = **angle-child** scene kamar, BUKAN master baru → **klon prompt master SH03-START + swap env angle-ref `E01_kamar_bed3q` → `E01_kamar_bed4q`** ("match this vantage" = mekanisme angle-lock TERBUKTI di SH03, ref `SEQ1-SC01.md:143/:173`); pertahankan `E01_kamar_master` (layout, Rule 19 dual-plate). Drift `369f6e21` = from-scratch TANPA resep master+angle-ref, bukan bukti konflik. **Disinkronkan:** slot SH04 `SEQ1-SC01.md` (rewrite ke beat reclining→sit-up + metode klon), handoff+initial-prompt `2026-06-29b`, scope/context/lessons/auto-memory. Checklist A `CLAUDE.md` sudah punya klausa pengecualian "angle-child under the master-parent law" → itu yang berlaku, bukan "master=from-scratch".
+
+## SESSION CLOSE (2026-06-29b · SH04 awalnya di-frame UNRESOLVED — kini RESOLVED di atas)
+**Hasil:** SH01–SH03 pair SELESAI + committed (`4f2561e`/`912b17e`/`24ed7d8`). SH04: satu percobaan from-scratch (`369f6e21`) ke-resample tampak-samping → ditolak. Framing "konflik MASTER=full-prompt vs angle=edit-in-place" yang sempat dicatat sudah **dibatalkan** (lihat blok 2026-06-29c): SH04 angle-child = klon SH03 + swap angle-ref.
 **Governance:** **PRE-EMIT CHECKLIST (A–H) ditambah ke `CLAUDE.md`** (gitignored → disk lokal, kebaca saat bootstrap, tak masuk git). Restrukturisasi SC01 7→8 (SH04=sit-up, SH05=lampu) DIPUTUSKAN lisan tapi BELUM ditulis ke doc.
 **Uncommitted:** `M lessons.md` (1 bullet "jangan debat kiri-kanan" ditulis TANPA "ya" — impulsif, Erik tegur; revert/keep PENDING) · `D SEQ1-SC02.md` (scene lain, hilang bukan sesi ini, restore PENDING) · `?? 369f6e21…png` (SH04 reject).
 **Pelajaran perilaku (Erik, keras):** model langgar aturan berulang (balik prosa, lupa report-attachment, tulis-doc-impulsif, kontradiksi master/edit, over-gate, ceramah) → checklist A–H = fix permanen.
-**Paket handoff:** `handoff/HANDOFF-2026-06-29b-EV2-SC01-SH04.md` + `INITIAL-PROMPT-2026-06-29b-EV2-SC01-SH04.txt`. **NEXT SESSION:** resolve konflik SH04 dgn Erik → author SH04.
+**Paket handoff:** `handoff/HANDOFF-2026-06-29b-EV2-SC01-SH04.md` + `INITIAL-PROMPT-2026-06-29b-EV2-SC01-SH04.txt` (sudah disinkron ke metode klon-SH03). **NEXT SESSION:** author SH04-START (klon SH03 + swap bed3q→bed4q) → SH04-END edit-in-place (sit-up) → SH05 (lampu).
 
 ## State Sesi (2026-06-29 · SC01 PRODUKSI ULANG dari SH01, metode master-parent)
 **Fokus:** Erik putuskan produksi ulang SC01 dari SH01 (plat lama SH01–SH03 dibuat pra-overhaul 2026-06-29, divalidasi ulang di bawah hukum MASTER-PARENT + EDIT-IN-PLACE-ANGLE).

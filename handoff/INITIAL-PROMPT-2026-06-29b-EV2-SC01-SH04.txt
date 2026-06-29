@@ -16,15 +16,15 @@
 
 ## You Are in Session EV2-SC01-SH04 (succeeds EV2-SC01-SH03 / HEAD 24ed7d8)
 
-Prior session: SH01–SH03 pairs accepted + committed; SH04 left UNRESOLVED (env-angle lock failed + master-rule conflict). Erik ended the prior session exhausted by model rule-violations.
+Prior session: SH01–SH03 pairs accepted + committed; SH04 left open after one from-scratch attempt drifted off bed4q (369f6e21). Method since RESOLVED (2026-06-29, Erik): SH04 = angle-child, clone SH03-START + swap angle-ref bed3q→bed4q — no rule conflict.
 
 Mandate: produce SEQ1-SC01-SH04 (couple reclining seen from the foot via E01_kamar_bed4q → Herman sits up; lamp-on may split to SH05), under the master=full-prompt + token-per-token + ground-to-plate rules. Erik generates every image; the model only authors prompts + reviews + (on "ya") renames the accepted PNG. The model NEVER generates.
 
 ## Goal
 
-- **Session Goal:** SEQ1-SC01-SH04 START+END accepted by Erik and renamed to explainer-video-2/scene-images/sc01/sc01_sh04_{start,end}.png, reproducing the bed4q foot-of-bed camera vantage (couple reclining → Herman sits up; lamp-on may be SH05). Proof: both PNGs exist (ls explainer-video-2/scene-images/sc01/sc01_sh04_*) AND Erik says "ya/approve". Constraint that must NOT change: the 6 accepted SH01–SH03 renders and the master=full-prompt rule. BEFORE generating SH04, resolve with Erik the rule conflict in Special Concerns #1.
+- **Session Goal:** SEQ1-SC01-SH04 START+END accepted by Erik and renamed to explainer-video-2/scene-images/sc01/sc01_sh04_{start,end}.png. **Method (Erik, 2026-06-29 approve): SH04-START = clone of the accepted SH03-START full master prompt, angle moved to the bed4q foot-of-bed vantage — swap the env angle-reference E01_kamar_bed3q → E01_kamar_bed4q (manifest role: "camera angle and bed framing, match this vantage"), keep E01_kamar_master for room layout, update the angle/reference_binding/framing fields to the foot vantage + reclining-couple beat (couple reclining → Herman sits up; lamp-on may be SH05).** Proof: both PNGs exist (ls explainer-video-2/scene-images/sc01/sc01_sh04_*) AND Erik says "ya/approve". Constraint that must NOT change: the 6 accepted SH01–SH03 renders. NO rule conflict — SH04 is an angle-child of the bedroom scene (checklist A exception), authored as a full START prompt that inherits SH03 and swaps the angle reference.
 - **Ultimate Goal:** finished ~5-min explainer film "Satu Keluarga, Satu Hari Penuh" — all SC01–SC15 keyframes, then Kling i2v + VO/AE + assemble.
-- **Linkage:** SC01 is the pilot; SH04 is the first env-angle-locked rear-view shot and the first to surface the angle-lock-vs-master-rule conflict that recurs on every new-angle shot.
+- **Linkage:** SC01 is the pilot; SH04 is the first env-angle-locked rear-view shot and the template for every new-angle shot: clone the prior shot's master prompt + swap the env angle-ref to the new angle plate.
 
 ## Bootstrap Reading (mandatory order)
 
@@ -50,11 +50,11 @@ ls explainer-video-2/environment-images/E01_kamar/    # expect master, bed3q, be
 
 ## After Bootstrap — STANDBY
 
-Confirm scope in one sentence, then STANDBY. Do NOT start SH04 until Erik (a) resolves the Special Concerns #1 rule conflict and (b) says go. When the user gives material (plates/refs), ground in them and decide; do NOT ask "which angle/left-or-right" when a plate defines it.
+Confirm scope in one sentence, then STANDBY for Erik's go. SH04-START = clone of SH03-START with the env angle-reference swapped bed3q→bed4q (Special Concerns #1) — there is NO rule conflict; SH04 is an angle-child authored as a full START prompt per the proven SH03 recipe. When the user gives material (plates/refs), ground in them and decide; do NOT ask "which angle/left-or-right" when a plate defines it.
 
 ## Special Concerns / Pre-Execute
 
-1. **RESOLVE FIRST with Erik:** how to make an env-angle-locked START a full-prompt master when a from-scratch full-prompt resamples the env camera (evidence: 369f6e21 drifted off bed4q). Erik's rule: MASTER=full-prompt, never edit-in-place, master defines its OWN angle, words "reproduce/match/exact same as <plate>" FORBIDDEN. Do NOT re-propose edit-in-place unless Erik authorizes.
+1. **NO conflict — SH04 = SH03 prompt, angle-moved (Erik, 2026-06-29 approve):** SH04 is an angle-child of the bedroom scene, NOT a brand-new master. Author SH04-START by cloning the accepted SH03-START full master prompt and swapping the env angle-reference `E01_kamar_bed3q.png` → `E01_kamar_bed4q.png` (manifest role: "camera angle and bed framing for this shot, match this vantage" — the SAME proven mechanism SH03 used, ref SEQ1-SC01.md:143 + :173), keep `E01_kamar_master.png` for room layout, and update the `angle` + `reference_binding` + framing fields to the foot-of-bed vantage (window camera-left, nightstand+lamp camera-right, Herman camera-right, Great Wave on the headboard wall, rug+slippers foreground) and the reclining-couple beat. "match this vantage" on the angle-plate is REQUIRED here (proven on SH03-accepted), NOT forbidden. The 369f6e21 drift came from a from-scratch attempt WITHOUT the master+angle-ref recipe — the SH03 clone recipe is the fix.
 2. SH04 beat = foot vantage (window camera-left, nightstand camera-right, Herman camera-right, Great Wave on headboard wall, rug+slippers foreground); couple reclining START → Herman seated END. Match-cut from sc01_sh03_end (do NOT re-do it; do NOT elide the sit-up).
 3. SH05 = Herman seated reaches nightstand lamp → END lamp ON (warm). Rear-view → faces safe under relight.
 4. Token-per-token EVERY value (no articles/verbs/negation); close EVERY prompt with its attachment list, unprompted.
@@ -82,7 +82,7 @@ Without these artifacts landed, the session is NOT closed.
 
 - If tempted to generate an image yourself → STOP; Erik generates.
 - If tempted to write a doc on the Stop-hook prompt → STOP; reply "no doc-sync needed" until Erik says "ya".
-- If tempted to propose edit-in-place for the SH04 master → STOP; resolve the rule conflict with Erik first.
+- If tempted to treat SH04-START as a brand-new from-scratch master → STOP; SH04 is an angle-child = clone SH03-START + swap env angle-ref bed3q→bed4q. SH04-END = edit-in-place (Herman sits up, camera locked).
 - If tempted to debate abstract left/right or ask "which angle" → STOP; ground in the plate and decide.
 - If tempted to lecture / re-gate an already-authorized action → STOP; act or answer tersely.
 
