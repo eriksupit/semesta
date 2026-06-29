@@ -225,10 +225,111 @@ Edit: the man has set the phone down on the nightstand, screen now dark, he stay
 - unchanged: framing unchanged, crop unchanged, camera angle unchanged, Great Wave print unchanged, nightstand and table lamp unchanged camera-right, curtained window unchanged camera-left, color grade unchanged
 ```
 
-## SEQ1-SC01-SH04 — couple reclining, foot-of-bed vantage → Herman sits up · `bed4q`  *(method: clone SH03 + swap angle-ref, 2026-06-29)*
-- **Intent (03, restructured — SH04 = the sit-up):** start = couple reclining seen from the FOOT of the bed (matches `sc01_sh03_end`: Herman just lowered the phone). end = Herman **sits up** (camera locked). [Lamp-on split to a later SH05 = reach nightstand lamp → lamp ON.]
-- **SHOT-CONCEPT:** angle = **foot-of-bed `bed4q` vantage** (window camera-left, nightstand+lamp camera-right, Herman camera-right = nightstand side, Great Wave on headboard wall, patterned rug + slippers foreground; foot dolly, NOT a 180° reverse of bed3q). Couple in bed (Rule 18): Herman camera-right, Ratna camera-left. Pre-dawn dark (Rule 10).
-- **METHOD — angle-child (Erik 2026-06-29 approve):** SH04-START = **clone of the accepted SH03-START full master prompt**, env angle-reference swapped `E01_kamar_bed3q.png` → `E01_kamar_bed4q.png` (manifest role "camera angle and bed framing, match this vantage"). Keep `E01_kamar_master.png` (layout). Update `angle`/`reference_binding`/framing to the foot vantage + reclining beat. NO from-scratch master; NO rule conflict (369f6e21 drift = from-scratch WITHOUT this recipe).
-- **START attachments (5):** `E01_kamar_master.png` (layout) + `E01_kamar_bed4q.png` (angle, "match this vantage") + `H_herman_front_medium.png` + `R_ratna_front_medium.png` + `sc01_sh03_end.png` (grade).
-- **START** — mode: B (FULL MASTER, clone of SH03-START + angle-ref swap) · STATUS: ⬜ TO AUTHOR
-- **END** — method: EDIT-IN-PLACE on `sc01_sh04_start.png` (Herman sits up, camera locked, lock 2 faces via `+`) · STATUS: ⬜ TO AUTHOR
+## SEQ1-SC01-SH04 — couple from behind, near-window vantage (rear three-quarter) → Herman sits up  *(method: rear-view + prior-frame pose-anchor, ACCEPTED 2026-06-29)*
+- **Intent (03, restructured — SH04 = the sit-up):** start = couple reclining seen from BEHIND / side-back, camera near the curtained window on the room-left, shooting diagonally across the bed toward Herman + the nightstand room-right (matches `sc01_sh03_end`: Herman just set the phone down). end = Herman **sits up** (camera locked). [Lamp-on split to a later SH05 = reach nightstand lamp → lamp ON.]
+- **SHOT-CONCEPT (ACCEPTED):** true reverse — "shot dari arah sebaliknya" of the bed3q/SH03 vantage. Camera at the window (room-left), **rear three-quarter / side-back** of both figures (backs + side-backs of heads, NOT frontalized). Room handedness LOCKED from master: window+wardrobe room-left, nightstand+lamp room-right, Great Wave above headboard. Herman room-right reclining (right arm extended to nightstand, phone face-down screen-off), Ratna room-left asleep. Pre-dawn dark, no phone glow, faint cool window blue along camera-left foreground.
+- **METHOD — rear-view + prior-frame pose-anchor (Erik, ACCEPTED 2026-06-29; SUPERSEDES the earlier bed4q "clone-SH03 + foot vantage" plan, which kept frontalizing/drifting — `2feb5f55` sitting, `07abf768` mendongak/too-frontal):** what landed = (1) bind the **prior SH04 render** as `current_scene_reference` = pose/action/lighting BEAT anchor only ("do not copy previous frontal camera"); (2) `E01_kamar_master.png` = room layout + **handedness** lock only; (3) **rear identity plates** `H_herman_rear_medium.png` + `R_ratna_rear_medium.png` = back/side-back identity; (4) prior render also = grade/tonality; (5) explicit `camera_position` block + `"this is a real camera move to the window side, not a mirrored or flipped image"`. This is the reference-upload pose-anchor method (Mode C composition/pose anchor), NOT a from-scratch master, NOT the `bed4q` env plate (bed4q unused here). The two prior "front-plate + bed4q" rolls drifted because the bed4q-plate camera is foot-ward/face-visible and fought the rear intent; binding the prior render as pose anchor + rear plates + master-handedness + explicit "real camera move not mirror" is what locked it.
+- **START attachments (4 — as generated):** `current_scene_reference` = the immediately-prior SH04 roll (pose/action **and** grade anchor). ⚠ PIN (resolved 2026-06-29): that transient hash roll has since been **deleted from disk** (only canonical `sc01_sh04_*` remain). For any future re-gen, use the accepted **`sc01_sh04_start.png`** itself as the pose/action + grade carrier (it embodies the same beat). + `E01_kamar_master.png` (room layout + handedness lock) + `H_herman_rear_medium.png` (Herman rear identity) + `R_ratna_rear_medium.png` (Ratna rear identity).
+- **START** — mode: rear-view + prior-frame pose-anchor (full structured prompt below) · STATUS: ✅ **ACCEPTED 2026-06-29 (Erik: "hasilnya sudah akurat")** → `scene-images/sc01/sc01_sh04_start.png`. Review (Priority-1, render verified): near-window rear three-quarter ✓, Ratna room-left back-view asleep ✓, Herman room-right side-back with right arm to nightstand ✓, phone face-down screen-off ✓, Great Wave + nightstand+lamp room-right in frame ✓, handedness preserved (no mirror) ✓, dim pre-dawn no-glow + cool window blue foreground ✓. Verbatim accepted prompt:
+```json
+{
+"attachment_manifest": {
+"current_scene_reference": "latest generated image — pose/action reference only, Herman reclining on the room-right side, right arm extended to nightstand, phone already set down face-down, Ratna asleep beside him, preserve this action beat",
+"environment_layout_reference": "E01_kamar_master.png — big-picture room layout and handedness only, curtained window and wardrobe on room-left, nightstand and table lamp on room-right, framed Great Wave print above headboard, identical materials, identical room identity",
+"identity_back_reference": [
+"H_herman_rear_medium.png — Herman back-view identity only, match back-of-head shape, short salt-and-pepper hair from behind, ears, neck, shoulder width, upper-back silhouette",
+"R_ratna_rear_medium.png — Ratna back-view identity only, match rear silhouette, long straight dark hair from behind, shoulder line, back-of-head appearance"
+],
+"grade_reference": "latest generated image — colour grade and tonality reference only, dim pre-dawn warm-neutral shadow with faint cool window blue"
+},
+"reference_binding": "latest generated image = pose/action/lighting beat only, do not copy previous frontal camera; E01_kamar_master.png = locked room layout and handedness; H_herman_rear_medium.png and R_ratna_rear_medium.png = rear/side-back identity references only; this is a real camera move to the window side, not a mirrored or flipped image",
+"mood": "tender intimate pre-dawn stillness, hushed private waking, quiet domestic register, observed from near the window",
+"color_grade": "Roger Deakins palette, lifted blacks medium gray, neutral shadows, clean whites, Kodak 2383 emulation, slightly warmer midtones, faint cool pre-dawn blue from the curtained window, deep dim warm-neutral room shadow",
+"style": "photorealistic cinematic frame, ARRI Alexa Mini LF, clean prime spherical lens, Kodak 2383 film emulation, naturalistic skin and fabric rendering",
+"scene": "private bedroom pre-dawn dark, viewed from near the curtained window on the room-left side, camera shooting diagonally across the bed toward Herman and the nightstand on room-right, married couple seen from rear three-quarter / side-back, Herman reclining on the room-right side with his right arm extended to the nightstand after setting down the phone, phone lying flat face-down on the nightstand surface with screen off dark, Ratna asleep beside him on the room-left side, dark hair loose across the pillow and bedding, table lamp off on the nightstand, framed Great Wave print above the headboard",
+"location": "indoor",
+"time_of_day": "night",
+"atmosphere": "hushed pre-dawn near-darkness, perfectly still, intimate and observational, quiet domestic pause after the phone has been set down",
+"camera_position": {
+"placement": "near the curtained window on the room-left side, very close to the window curtain, looking diagonally across the bed toward Herman and the nightstand",
+"view": "rear three-quarter / side-back view of both figures, mostly backs and side-backs of heads and upper bodies, do not frontalize Herman or Ratna",
+"spatial_lock": "real camera move from the previous shot, not a mirror or horizontal flip; preserve room handedness from E01_kamar_master.png"
+},
+"scene_depth": {
+"foreground": "soft out-of-focus cool blue curtain edge along camera-left foreground, dark rumpled duvet rising across the lower frame, bed surface leading toward the couple",
+"midground": "Ratna asleep side-back / back view on the room-left side, long dark hair loose across pillow and bedding; Herman reclining side-back on the room-right side, messy salt-and-pepper hair, right arm extended toward the nightstand",
+"background": "light-oak headboard, framed Great Wave print above, nightstand and table lamp off on room-right, phone resting face-down on the nightstand, warm-neutral textured wall"
+},
+"subjects": [
+{
+"who": "Herman",
+"identity_reference": "H_herman_rear_medium.png",
+"wardrobe": "plain dark muted crew-neck cotton sleep t-shirt, plain dark muted pyjama trousers",
+"grooming": "just-woke bed-head visible from side-back, short salt-and-pepper hair messy, uneven, uncombed, flattened in some areas and lifted in small random clumps",
+"state": "awake but tired, reclining, seen mostly from side-back / rear three-quarter, not frontal"
+},
+{
+"who": "Ratna",
+"identity_reference": "R_ratna_rear_medium.png",
+"wardrobe": "light muted sleep clothing, dark hair uncovered loose across pillow and bedding",
+"state": "asleep, eyes not visible or mostly hidden, calm relaxed, seen from back / side-back, not the focus"
+}
+],
+"subject_state": "static",
+"action": "Herman has finished setting the phone down on the nightstand; the phone now rests face-down with the screen dark while Herman stays reclining, his right arm still extended toward it; Ratna remains asleep beside him",
+"pose": "Herman reclining back against slate-grey pillows on the room-right side, head on pillow, torso angled slightly toward the nightstand, right arm stretched out to camera-right with hand resting beside or lightly near the face-down phone; Ratna lying asleep on the room-left side, turned slightly toward Herman, head on pillow, shoulders and long hair visible from behind",
+"gesture": "Herman’s right hand rests naturally beside the phone on the nightstand after placing it down, fingers relaxed; phone is no longer held; Ratna remains motionless asleep",
+"expression": "Herman’s face is mostly side-back / partial profile only, still reading as just-woke and tired through posture, head angle, slack neck, messy hair, and slow relaxed hand; Ratna remains asleep with soft resting body language, face mostly hidden by side-back angle and hair",
+"phone": {
+"state": "same black smartphone, now lying flat face-down on the nightstand surface at room-right, screen off dark, no blue-white glow",
+"position": "on the light-oak nightstand within Herman’s reach, close to his resting right hand",
+"lighting_effect": "phone glow extinguished completely"
+},
+"framing": "medium-wide cinematic two-shot on a 1920x1080 canvas, fixed camera near the curtained window, curtain edge visible camera-left foreground, bed and dark duvet filling lower frame, Herman side-back / rear three-quarter on right half of bed, Ratna asleep side-back on left half of bed, nightstand and lamp visible at camera-right, Great Wave print cropped but recognizable above the headboard",
+"angle": "near-window side-back angle, camera slightly above mattress level, looking diagonally from room-left/window side across the couple toward the room-right nightstand, maintaining true bedroom layout",
+"camera": "50mm prime spherical, shallow-to-moderate focus, focus on Herman’s side-back silhouette and hand near the phone, Ratna softer but readable, foreground curtain softly out of focus",
+"lighting": "very low-key pre-dawn near-darkness, no phone glow, Herman’s face and chest now in dim ambient pre-dawn shadow, soft warm-neutral low ambient room light, faint cool blue from the curtained window very near camera-left, table lamp off dark, deep soft shadows across bedding and wall, subdued warm-cool contrast",
+"unchanged": "pose/action beat unchanged from latest scene reference, phone already set down, Herman remains reclining, Ratna remains asleep, Great Wave print unchanged and correctly oriented, nightstand and lamp unchanged room-right, curtained window unchanged room-left, bedding and headboard unchanged, color grade unchanged",
+"aspect_ratio": "16:9",
+"director": "Alfonso Cuarón",
+"directing_style": "intimate naturalistic domestic observation, patient stillness, camera quietly observing from the room edge",
+"lighting_director": "Emmanuel Lubezki",
+"lighting_style": "naturalistic available-light, soft directional pre-dawn ambience, deep honest shadow",
+"production_designer": "Eugenio Caballero",
+"production_design_style": "lived-in middle-class Jakarta domestic authenticity",
+"interior_designer": "Ilse Crawford",
+"interior_design_style": "warm human-centred tactile lived-in",
+"costume_designer": "Deborah Hopper",
+"costume_style": "character-authentic casual sleepwear",
+"makeup_artist": "Eryn Krueger Mekash",
+"makeup_style": "naturalistic matte lived-in skin, real-person feel, no glamour retouching"
+}
+```
+- **END** — method: **EDIT-IN-PLACE on `sc01_sh04_start.png`** (canvas = accepted START; operation + delta + lock-list, no recompose) · STATUS: ✅ **ACCEPTED 2026-06-29** → `scene-images/sc01/sc01_sh04_end.png` (renamed from hyphen-typo `sc01_sh04-end.png`). Delta: Herman shifts reclining→**sitting up**, right arm to the nightstand, **turns the bedside lamp ON** (warm practical glow now the dominant key camera-right, spilling on wall/arm/shoulder/side-back); Ratna unchanged asleep room-left; phone stays face-down dark; faint cool window blue preserved camera-left (warm-lamp vs cool-window contrast); framing/crop/camera/handedness LOCKED, both still rear/side-back (not frontalized). Review (render verified): sit-up + lamp-on ✓, rear/side-back preserved ✓, contrast ✓. (Lamp-ON here is **per spec** — `03-scene-detail:41` "lampu ON mulai SH04-END"; SH05 = Ratna wakes, no 7→8 restructure.) ⓘ Erik labelled the source "SH03-Start", but the prompt body defines the canvas as "the previous near-window rear / side-back frame" = `sc01_sh04_start.png` (sh03_start is a different bed3q frontal angle) → recorded as edit-in-place on **sh04_start**. Verbatim accepted END edit prompt:
+```
+Edit on place from previous image.
+
+Change only the action beat: Herman is now sitting up and turning on the bedside lamp; the lamp is now ON.
+
+* source image: previous near-window rear / side-back bedroom frame — same exact framing, same crop, same camera position, same camera angle, same near-window viewpoint, curtain soft in the camera-left foreground, bed and couple viewed from behind / side-back
+
+* action: Herman has shifted from reclining to sitting up more clearly on the camera-right side of the bed, torso raised, back and side-back visible, head turned toward the nightstand, right arm extended toward the lamp, hand touching or holding the lamp switch/base as he turns it on
+
+* lamp: same bedside table lamp on the camera-right nightstand, now switched ON, warm practical glow visible from the lampshade, warm light spilling onto the wall, nightstand surface, Herman’s right arm, shoulder, neck, and side-back profile
+
+* phone: same phone remains on the nightstand, lying flat face-down / screen off dark, not glowing, placed near the lamp and within Herman’s reach
+
+* Herman: same mature man, same rear / side-back identity, same short salt-and-pepper messy bed-head, same dark muted sleep t-shirt, just-woke posture, body still partly under the bedding, viewed mostly from behind and side-back, not frontalized
+
+* Ratna: same sleeping wife on the camera-left side of the bed, unchanged pose, still asleep, eyes closed, calm relaxed, long dark hair loose across the pillow and back, body under dark bedding, viewed from behind / side-back, not frontalized
+
+* lighting change: lamp glow is now the dominant warm practical light on camera-right; preserve faint cool pre-dawn blue from the curtained window at camera-left; maintain warm lamp vs cool window contrast; phone glow remains extinguished
+
+* mood: tender intimate pre-dawn stillness, hushed private waking, quiet domestic register, naturalistic patient observation
+
+* unchanged: framing unchanged, crop unchanged, camera angle unchanged, near-window camera position unchanged, curtain foreground unchanged, bed position unchanged, Herman and Ratna placement unchanged, bedding unchanged, headboard unchanged, Great Wave print unchanged, nightstand unchanged, phone placement unchanged except it remains dark, room layout unchanged, color grade unchanged
+
+* style: photorealistic cinematic frame, ARRI Alexa Mini LF, clean prime spherical lens, Kodak 2383 film emulation, Roger Deakins palette, lifted blacks medium gray, neutral shadows, clean whites, slightly warmer midtones, Emmanuel Lubezki available-light naturalism, deep soft shadows, lived-in middle-class Jakarta bedroom authenticity
+
+Important: this is an edit-on-place continuation of the previous frame. Do not recompose. Do not move the camera. Do not change the angle. Only change Herman’s posture/action and turn the bedside lamp on.
+```

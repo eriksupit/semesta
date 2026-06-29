@@ -8,7 +8,13 @@ updated: 2026-06-10
 
 # Context — Sesi Aktif
 
-## SESSION (2026-06-29c · SH04 METODE RESOLVED — angle-child klon-SH03) — TERBARU
+## SESSION (2026-06-29d · SH04 START+END ACCEPTED — rear-view + prior-frame pose-anchor) — TERBARU
+**Hasil:** SC01-SH04 **START+END accepted** → `scene-images/sc01/sc01_sh04_{start,end}.png` (END di-rename dari typo-hyphen `sc01_sh04-end.png`). START = pasangan rear three-quarter dari dekat jendela (Herman baru taruh HP, rebah). END = Herman **bangkit duduk + lampu nakas NYALA** (per `03-scene-detail:41` "lampu ON mulai SH04-END"). Doc disinkron: `SEQ1-SC01.md` SH04 (prompt START verbatim + metode + status accepted), `03-scene-detail` SH04 ✅ DONE + STATUS line, `lessons.md` (2 bullet baru), context/scope.
+**⭐ METODE TERVALIDASI (overturn metode `bed4q` klon-SH03 di blok 29c di bawah):** reverse-angle TIDAK lewat env angle-plate. `bed4q` GAGAL (foot-vantage → wajah, melawan intent rear; 2 roll drift duduk/dongak). Yang mendarat: **render sebelumnya = `current_scene_reference` (pose/action/lighting BEAT anchor) + rear plate `H/R_rear_medium` + `E01_kamar_master` handedness-lock + "real camera move, not mirror" + blok `camera_position`** (Mode C reference-upload pose-anchor). Kanonik: `lessons.md` (bullet baru) + auto-memory [[semesta-text-image-to-image-method]].
+**Koreksi perilaku (Erik keras, tercatat di lessons):** saya defeatist (deklarasi "mustahil" + menahan teknik terbukti = ulang pola b.112) DAN gagal cek `03-scene-detail:47` ("H+R REAR-VIEW" tertulis sejak awal) sebelum berdebat "wajah/no-rear-plate". Erik benar; saya keliru.
+**Open items:** (1) prompt END verbatim TAK tersedia (hanya render) — Erik beri kalau mau reproducible; (2) `current_scene_reference` anchor roll sudah terhapus → carrier = `sc01_sh04_start.png`; (3) SEQ1-SC02.md sudah di-restore (vault=commit=push, HEAD 166e41f); (4) restructure "7→8" STALE/tak perlu — `03-scene-detail` sudah 7-shot koheren (SH05=Ratna bangun, bukan lampu). NEXT: SH05 (Ratna bangun duduk, rear-view, grade←SH04-END hangat). Commit atas "ya".
+
+## SESSION (2026-06-29c · SH04 METODE RESOLVED — angle-child klon-SH03)
 **Resolusi (Erik approve):** TIDAK ADA konflik. SH04 = **angle-child** scene kamar, BUKAN master baru → **klon prompt master SH03-START + swap env angle-ref `E01_kamar_bed3q` → `E01_kamar_bed4q`** ("match this vantage" = mekanisme angle-lock TERBUKTI di SH03, ref `SEQ1-SC01.md:143/:173`); pertahankan `E01_kamar_master` (layout, Rule 19 dual-plate). Drift `369f6e21` = from-scratch TANPA resep master+angle-ref, bukan bukti konflik. **Disinkronkan:** slot SH04 `SEQ1-SC01.md` (rewrite ke beat reclining→sit-up + metode klon), handoff+initial-prompt `2026-06-29b`, scope/context/lessons/auto-memory. Checklist A `CLAUDE.md` sudah punya klausa pengecualian "angle-child under the master-parent law" → itu yang berlaku, bukan "master=from-scratch".
 
 ## SESSION CLOSE (2026-06-29b · SH04 awalnya di-frame UNRESOLVED — kini RESOLVED di atas)
