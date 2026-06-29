@@ -26,8 +26,16 @@ updated: 2026-06-10
 **SC05 (HERMAN kantor) LOCKED** — renumber SEQ2-SC02→SC05 di `03`, monitor besar (bukan laptop/HP), figuran-first (rekan→Herman), shot-list lama dihapus.
 **SC06 (ANDI ruang belajar) LOCKED** — renumber SEQ2-SC03→SC06; figuran-via-screen→Andi→Ratna; cross-cut→SC05.
 **SC07 (LISA) LOCKED — DIROMBAK TOTAL dari kafe:** kafe-kuliah-daring DIBUANG (Erik: repetitif + menabrak SEQ4-SC02 belajar / SEQ3-SC04 mengajar). Diganti **EXT. SELASAR KAMPUS — wellbeing/koneksi-nyata**: app mempertemukan Lisa dgn peer-mentor (face-match profil→orang nyata, lalu tatap muka). Non-jual-beli, on-theme "tech wasilah/mempertemukan bukan mengisolasi", figuran-first, 2 subjek. Riset Gen Z (TimelyCare/a16z) jadi dasar. Renumber SEQ2-SC04→SC07.
-**✅ SEQ2 STORY SELESAI (SC03–SC07, 5 scene), URUT.** ⚠ header SEQ2 di `03` masih "4 scene / 11 shot" stale → dibetulkan saat fase shot (count = urusan A2).
-**NEXT:** **SEQ3 — SIANG** (puncak aktivitas, Ratna bintang marketplace). Scene pertama = **SC08** (renumber dari SEQ3-SC01 dapur live-selling). Lanjut URUT + pola scene (Pesan misi/Prosa figuran-first/VO/Grafis UI/Catatan). Draft→approve→tulis `03`. Commit atas "ya".
+**✅ SEQ2 STORY SELESAI (SC03–SC07, 5 scene), URUT.** **COMMITTED+PUSHED `a7e4f2d`** (master) — SEQ1+SEQ2 story + SOP + numbering + URUT. ⚠ header SEQ2 di `03` masih "4 scene / 11 shot" stale → dibetulkan saat fase shot (count = urusan A2).
+**⭐ KEPUTUSAN STRUKTUR (Erik approve 2026-06-30) — FILM RAMPING JADI 16 SCENE (dari 19):** buang 4 scene over-represented/redundan: **trading (Herman)**, **masterclass Lisa-murid**, **edutainment-anak (dup edtech SC06)**, **PPOB warung (Ratna)**. **Pertahankan** dapur live-selling (`03:125` marketplace-penuh + sumber pesanan SC04) + terminal (`03:249` inventaris-iklan-terpadat + babak Senja). Struktur final:
+- SEQ1: SC01 kamar · SC02 sholat
+- SEQ2: SC03 gerbang · SC04 Ratna-kurir · SC05 Herman-kantor · SC06 Andi-belajar · SC07 Lisa-kampus-wellbeing
+- SEQ3: **SC08** dapur live-sell · **SC09** bank-tenant · **SC10** Lisa-mengajar
+- SEQ4: **SC11** gov-tenant · **SC12** koperasi
+- SEQ5: **SC13** terminal
+- SEQ6: **SC14** makan · **SC15** ngaji · **SC16** coda
+Beban tokoh seimbang (Ratna 5/Lisa 4/Herman 4/Andi 2). Runtime ~270s. Hilang dari ad-map: sekuritas/trading + utilitas/PPOB (minor/sensitif). **Cut dieksekusi saat rewrite URUT** (scene di-cut tinggal tak ditulis); blok lama trading/masterclass/edutainment/PPOB di `03` belum dihapus fisik — akan rontok saat SEQ3–6 ditulis ulang.
+**NEXT:** garap **SC08 — dapur live-selling Ratna** (SEQ3, renumber dari SEQ3-SC01) pakai pola scene (Pesan misi/Prosa figuran-first/VO/Grafis UI/Catatan), shot-free. Draft→approve→tulis `03`. Commit atas "ya".
 
 ## SESSION (2026-06-29d · SH04 START+END ACCEPTED — rear-view + prior-frame pose-anchor)
 **Hasil:** SC01-SH04 **START+END accepted** → `scene-images/sc01/sc01_sh04_{start,end}.png` (END di-rename dari typo-hyphen `sc01_sh04-end.png`). START = pasangan rear three-quarter dari dekat jendela (Herman baru taruh HP, rebah). END = Herman **bangkit duduk + lampu nakas NYALA** (per `03-scene-detail:41` "lampu ON mulai SH04-END"). Doc disinkron: `SEQ1-SC01.md` SH04 (prompt START verbatim + metode + status accepted), `03-scene-detail` SH04 ✅ DONE + STATUS line, `lessons.md` (2 bullet baru), context/scope.

@@ -15,6 +15,7 @@ Rombak & bakukan workflow produksi gambar `explainer-video-2` jadi rantai tertib
 - **SC01 SH01–SH04**: render accepted di disk DIBIARKAN (Erik "biarkan dulu"); carry-forward DIPARKIR ke fase GATE B. Hanya teks status-nya dibersihkan dari `03`.
 - **FLAG (kerja Langkah-3, bukan clean-slate):** count per-SEQ di header `03` stale (SEQ1 "8 shot" vs riil SC01 7 + SC02 3 = 10); total film perlu dihitung ulang saat garap scene-detail.
 - **NEXT:** fokus garap isi `03-scene-detail` sampai tertib & terkunci, scene per scene berurutan. `10-gateB-keyframes` NOL sentuhan sampai `03` beres.
+- **PROGRES (2026-06-30):** SOP workflow dikunci di `06` (5-langkah, GATE A1 story/A2 shots, penomoran KONTINU, disiplin URUT). **SEQ1+SEQ2 story LOCKED + committed+pushed `a7e4f2d`.** **Film dirampingkan 19→16 scene** (cut: trading, masterclass, edutainment-anak, PPOB; keep live-sell+terminal). NEXT garap URUT **SC08** (dapur live-selling) dst sampai SC16. Detail struktur final + cut → `context.md` blok TERBARU.
 - **OUT OF SCOPE:** generate gambar (user); sentuh `10-gateB-keyframes`; commit tanpa "ya".
 
 ---
