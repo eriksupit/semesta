@@ -135,58 +135,64 @@ Edit: the phone is now grasped by a hand and turned landscape.
 - **Intent (03, restructured 2026-06-26 — 7-shot · lihat [[SEQ1-SC01-RESTRUCTURE-2026-06-26]]):** start = Herman **rebah** nyandar bantal lihat layar (grafik saham; UI di After Effects, layar = slab **cool blue-white** Rule 21). end = Herman **TETAP rebah, menurunkan/menaruh HP face-down ke nakas di sisi kanannya** (delta-KECIL, reach-and-place). Beat **bangkit-duduk DIELIPSIS di cut SH03→SH04** (SH04 menangkapnya sudah duduk, tampak belakang).
 - **SHOT-CONCEPT (FIX — Rule 22 + metode multi-angle CUT):** framing **MEDIUM** (diketatkan dari medium-wide lama; sit-up tak lagi perlu ditampung, hanya reach-and-place). Angle = **kanan-diagonal `bed3q`**. Satu frame DIAM menampung rebah-lihat-HP (START) DAN rebah-taruh-HP-ke-nakas (END) — nakas WAJIB in-frame camera-right. Pasangan di ranjang (Rule 18): Herman camera-right, Ratna camera-left uncovered (R-ratna §0). Layout (Rule 19): jendela camera-left redup biru-pekat (Rule 10), nakas+lampu-OFF camera-right, Great Wave tengah. Herman bangun-tidur (Rule 20).
 - **START attachments (5):** `E01_kamar_master.png` (layout) + `E01_kamar_bed3q.png` (angle) + `H_herman_front_medium.png` + `R_ratna_front_medium.png` + `sc01_sh02_end.png` (grade). Plat **medium** (Rule 23: plat lebih lebar → frame lebih jauh).
-- **START** — mode: **B (one-shot)** · STATUS: ✅ **ACCEPTED (regen) 2026-06-26** → `scene-images/sc01/sc01_sh03_start.png` (supersedes prior `2a91a36c`). Review: framing MEDIUM mendarat (pasangan rebah dominan, lebih ketat dari long lama); **nakas+lampu in-frame camera-right** (syarat END reach-and-place ✓); angle `bed3q` ✓; Rule 21 layar slab biru-dingin under-light wajah, nol UI ✓; identitas Herman+Ratna cocok plat ✓; grade hangat+cool-screen konsisten SH02-END ✓; nol halusinasi. Watch utk END: permukaan nakas di tepi-kanan → taruh-HP harus mendarat di permukaan terlihat, tangan tak keluar frame. Proven prompt:
+- **START** — mode: **B (FULL MASTER, one-shot — START selalu full prompt, bukan edit; konsistensi doc, Erik 2026-06-29b)** · STATUS: ✅ **ACCEPTED 2026-06-29b (re-roll #3, glow-fix)** → `scene-images/sc01/sc01_sh03_start.png`. Review adversarial: wajah under-light cool-blue dari HP ✓, HP portrait ✓, blocking H-right/R-left ✓, Great Wave + nakas in-frame ✓, clean-shaven ✓, nol halusinasi. Jalan re-roll: `50c9e403`(HP-landscape)✗ → `24f3e4aa`(glow-hilang)✗ → `287017d4` ACCEPTED. Perbaikan dari render `50c9e403` (DITOLAK: HP landscape): **HP portrait-explicit** (4 field) + **grade Deakins-lock** (verbatim SH01/SH02) + **clean-shaven** (Herman regen, buang `grey moustache` stale) + **negasi dibuang** (reference_binding/scene/lighting) + **Kodak 2383** + `time_of_day: night`. Master prompt:
 ```json
 {
   "attachment_manifest": {
-    "environment_layout_reference": "E01_kamar_master.png — big-picture room layout, the curtained window and wardrobe on the camera-left, the nightstand and table lamp on the camera-right, the framed Great Wave print above the headboard, identical materials, identical layout",
-    "environment_angle_reference": "E01_kamar_bed3q.png — the camera angle and bed framing for this shot, three-quarter view of the bed, match this vantage",
+    "environment_layout_reference": "E01_kamar_master.png — big-picture room layout, curtained window and wardrobe camera-left, nightstand and table lamp camera-right, framed Great Wave print above headboard, identical materials, identical layout",
+    "environment_angle_reference": "E01_kamar_bed3q.png — camera angle and bed framing for this shot, three-quarter view of the bed, match this vantage",
     "identity_reference": [
-      "H_herman_front_medium.png — Herman, same man, match face shape, grey moustache, salt-and-pepper hair, mature skin, match proportions",
-      "R_ratna_front_medium.png — Ratna, same woman, match face shape, dark hair, soft full brows, match proportions"
+      "H_herman_front_medium.png — Herman, same man, match face, salt-and-pepper hair, clean-shaven, match proportions",
+      "R_ratna_front_medium.png — Ratna, same woman, match face, dark hair, soft full brows, match proportions"
     ],
-    "mood_color_lighting_reference": "sc01_sh02_end.png — previous shot of this scene, warm room grade and tonality reference only"
+    "grade_reference": "sc01_sh02_end.png — colour grade and tonality reference only, warm room grade"
   },
-  "reference_binding": "E01_kamar_master.png sets the big-picture room layout ONLY, the curtained window at camera-left, the nightstand and lamp at camera-right; E01_kamar_bed3q.png sets the camera angle ONLY; sc01_sh02_end.png sets the warm room colour grade and tonality ONLY, do not reproduce its composition, do not reproduce its top-down angle, do not reproduce its objects",
-  "mood": "intimate pre-dawn stillness, the first breath after waking, hushed sacred quiet",
-  "color_grade": "warm Deakins-style grade on the room, midtones slightly warm, gentle filmic contrast, one warm temperature, matched to the attached mood_color_lighting_reference sc01_sh02_end.png",
-  "style": "photorealistic cinematic still, ARRI Alexa Mini LF, 50mm prime spherical lens, Kodak Portra rendering, fine film grain",
-  "scene": "private bedroom in pre-dawn dark, a married couple in their shared bed, a mature man on the right side of the bed propped against a matte slate-grey cotton pillow holding a smartphone aloft at his chest, the smartphone screen a cool blue-white luminous slab with no legible interface, his wife asleep on the left side beside him hair uncovered and loose, a curtained window on the wife's side at camera-left dim and deep pre-dawn blue near-dark, a nightstand with a switched-off unlit table lamp on the man's side at camera-right, the framed Great Wave print centred on the wall above the headboard",
+  "reference_binding": "E01_kamar_master.png = room layout only, window camera-left, nightstand and lamp camera-right; E01_kamar_bed3q.png = camera angle only; sc01_sh02_end.png = warm room colour grade and tonality only",
+  "mood": "tender intimate pre-dawn stillness, hushed private waking, quiet domestic register",
+  "color_grade": "Roger Deakins palette, lifted blacks medium gray, neutral shadows, clean whites, Kodak 2383 emulation, slightly warmer midtones",
+  "style": "photorealistic cinematic frame, ARRI Alexa Mini LF, 50mm prime spherical lens, Kodak 2383 film emulation, naturalistic skin rendering",
+  "scene": "private bedroom pre-dawn dark, married couple in shared bed, mature man on the camera-right side propped against a slate-grey pillow holding a smartphone aloft at his chest, smartphone held upright in portrait orientation, long axis vertical, screen facing the man, screen a bright uniform cool blue-white luminous slab casting cool blue-white light up onto his face, wife asleep on the camera-left side, hair uncovered loose across the pillow, curtained window on the wife's side camera-left dim deep pre-dawn blue, nightstand with table lamp off on the man's side camera-right, framed Great Wave print centred above the headboard",
   "location": "indoor",
-  "time_of_day": "pre-dawn",
-  "atmosphere": "dark hushed pre-dawn dimness, barely-there ambient",
+  "time_of_day": "night",
+  "atmosphere": "hushed pre-dawn near-darkness, perfectly still",
   "scene_depth": {
-    "foreground": "the smartphone aloft at the man's chest, a cool blue-white luminous slab, the man's right hand wrapped around its lower edge",
-    "midground": "the man's face and upper chest, the focal centre, lit cool blue-white from the phone below",
-    "background": "the wife asleep on the pillow at camera-left, dark hair loose uncovered, face relaxed; the dim deep pre-dawn blue curtained window near-dark further to camera-left; the framed Great Wave print centred above the headboard; the switched-off lamp and nightstand at camera-right"
+    "foreground": "smartphone held upright portrait at the man's chest, long axis vertical, cool blue-white luminous slab, his hand around its lower edge",
+    "midground": "the man's face and upper chest, focal centre, lit cool blue-white from the phone below",
+    "background": "the wife asleep on the pillow camera-left, dark hair loose, face relaxed, dim deep pre-dawn blue curtained window further camera-left, framed Great Wave print above the headboard, lamp off and nightstand camera-right"
   },
   "subjects": [
-    { "who": "Herman", "identity_reference": "H_herman_front_medium.png", "wardrobe": "plain dark muted crew-neck cotton sleep t-shirt, plain dark muted pyjama trousers", "grooming": "hair tousled and messy from sleep, dishevelled" },
-    { "who": "Ratna", "identity_reference": "R_ratna_front_medium.png", "wardrobe": "light muted sleep clothing, dark hair uncovered, worn loose and down across the pillow", "state": "asleep, eyes closed, lying turned slightly toward him, not the focus" }
+    { "who": "Herman", "identity_reference": "H_herman_front_medium.png", "wardrobe": "plain dark muted crew-neck cotton sleep t-shirt, plain dark muted pyjama trousers", "grooming": "hair tousled sleep-messy, just-woke" },
+    { "who": "Ratna", "identity_reference": "R_ratna_front_medium.png", "wardrobe": "light muted sleep clothing, dark hair uncovered loose across the pillow", "state": "asleep, eyes closed, turned slightly toward him, not the focus" }
   ],
   "subject_state": "static",
-  "action": "the man watching the phone screen aloft at his chest, his wife lying still asleep beside him",
-  "pose": "the man propped against the pillow, head and shoulders raised, leaning back, right arm raised holding the phone at his chest, the wife supine beside him turned slightly toward him head on the pillow",
-  "gesture": "the man's right hand wrapped around the lower edge of the phone, fingers along the right long side, thumb along the left long side, the screen face angled up toward his face",
-  "expression": "the man just woken, eyes open but heavy and tired, lower lids slightly puffy, gaze down on the screen, face creased and sleep-rumpled, brows relaxed, mouth slightly slack, sleep-worn; the wife's eyes closed, features soft at rest",
-  "framing": "medium two-shot measured on a 1920 by 1080 canvas, fixed camera, the reclining man's head centred around x 1150 with his head-top near y 250 and his torso filling down toward the lower frame, the phone he holds aloft at his chest around x 980 to 1140 and y 430 to 590, the nightstand at camera-right spanning about x 1500 to 1840 with its surface near y 640 to 840 fully in frame within his reach so he can lower the phone onto it without the camera moving, the sleeping wife's head at camera-left around x 320 to 560 and y 360 to 540, framing tight on the reclining couple, no sit-up to contain since the man stays reclining and only lowers the phone",
-  "angle": "three-quarter vantage from the man's camera-right side of the bed matching the camera angle of the attached environment_angle_reference E01_kamar_bed3q.png, camera slightly above eye level, both heads on the pillows held in frame",
-  "camera": "50mm prime spherical, shallow focus on the man's face, the wife softer in the same plane",
-  "lighting": "very-low-key pre-dawn darkness, the only key light a cool blue-white glow rising from the smartphone screen below the man's face, cool blue-white under-light grazing his chin, lower cheeks, nose-tip, brow, and his hands, a dim deep pre-dawn blue light barely passing through the curtained window at camera-left, near-dark window, the table lamp switched off and unlit, no warm sun risen yet, the rest of the room in dim soft warm-neutral ambient, strong warm-cool contrast, shadows soft not crushed",
+  "action": "the man watching the upright phone held portrait at his chest, his wife still asleep beside him",
+  "pose": "man propped against the pillow, head and shoulders raised, leaning back, arm raised holding the phone upright at his chest, wife supine beside him turned slightly toward him, head on the pillow",
+  "gesture": "the man's hand gripping the lower portion of the upright portrait phone, fingers along its vertical right side, thumb along its vertical left side, screen facing his face",
+  "expression": "man just-woke, eyes open heavy tired, lower lids slightly puffy, gaze down on the screen, face creased sleep-rumpled, brows relaxed, mouth slightly slack; wife eyes closed, features soft at rest",
+  "framing": "medium two-shot on a 1920x1080 canvas, fixed camera, reclining man's head centred near x1150 head-top near y250 torso toward lower frame, upright portrait phone held near x1010-1110 y400-620 taller than wide, nightstand camera-right spanning x1500-1840 surface near y640-840 fully in frame within his reach, sleeping wife's head camera-left near x320-560 y360-540, tight on the reclining couple",
+  "angle": "three-quarter vantage from the man's camera-right side of the bed, matching environment_angle_reference E01_kamar_bed3q.png, camera slightly above eye level, both heads on the pillows in frame",
+  "camera": "50mm prime spherical, shallow focus on the man's face, wife softer in the same plane",
+  "lighting": "very low-key pre-dawn near-darkness, the man's face lit ONLY by a strong cool blue-white glow from the upright phone screen held below his face, his chin lower cheeks nose-tip and brow clearly under-lit cool blue, cool-blue catchlights in his eyes, the sleeping wife and the rest of the room falling to deep dim warm-neutral shadow, dim deep pre-dawn blue at the curtained window camera-left, table lamp off dark base, strong warm-cool contrast, shadows deep soft",
   "aspect_ratio": "16:9",
-  "director": "Alfonso Cuarón", "directing_style": "intimate naturalist realism",
+  "director": "Alfonso Cuarón", "directing_style": "intimate naturalistic domestic observation, patient stillness",
   "lighting_director": "Emmanuel Lubezki", "lighting_style": "naturalistic available-light, soft directional",
-  "production_designer": "Eugenio Caballero", "production_design_style": "Roma-style middle-class domestic realism",
+  "production_designer": "Eugenio Caballero", "production_design_style": "lived-in middle-class Jakarta domestic authenticity",
   "interior_designer": "Ilse Crawford", "interior_design_style": "warm human-centred tactile lived-in",
-  "costume_designer": "Deborah Hopper", "costume_style": "character-authentic casual wear",
-  "makeup_artist": "Eryn Krueger Mekash", "makeup_style": "naturalistic lived-in skin, real-person feel"
+  "costume_designer": "Deborah Hopper", "costume_style": "character-authentic casual sleepwear",
+  "makeup_artist": "Eryn Krueger Mekash", "makeup_style": "naturalistic matte lived-in skin, real-person feel"
 }
 ```
 > **Catatan grade (validated):** cool-screen + dim-blue-window + warm-room dari grade-ref `sc01_sh02_end.png` + token Rule 21/10. (Look ini di-reverse-engineer jadi prompt one-shot — Rule 25.) Framing kini **MEDIUM** (tighter) karena END tak lagi memuat sit-up.
-- **END** — method: **EDIT-IN-PLACE delta-KECIL** pada render `sc01_sh03_start.png` (reach-and-place HP ke nakas, Herman **tetap rebah**) · STATUS: 🟨 **PROMPT READY — awaiting generate**. Prior sit-up END (`1e9f76d3`) di-retire — beat bangkit-duduk pindah ke cut SH04 (tampak belakang). Lihat [[SEQ1-SC01-RESTRUCTURE-2026-06-26]].
-  - **Attachment:** TANPA lampiran baru — edit dilakukan di atas render `sc01_sh03_start.png` yang dimuat di edit-view (nakas sudah ada in-frame pada sudut benar; melampirkan plat top-down `E01_kamar_nightstand.png` justru memicu konflik-sudut, jadi tidak dipakai). Set input-fidelity **High**. Edit-instruction (token-per-token, nol pronoun redundan, lock-list penuh — Rules 11/12/13/14):
+- **END** — method: **EDIT-IN-PLACE single-pass** pada `sc01_sh03_start.png` (place-phone + relight + lock 2 wajah via `+`) · STATUS: ✅ **ACCEPTED 2026-06-29b** → `scene-images/sc01/sc01_sh03_end.png`. Delta: Herman taruh HP face-down ke nakas camera-right (tetap rebah), glow biru padam → wajah ke ambient dim. Review adversarial: **kedua wajah UTUH** ✓, framing identik START ✓, HP di nakas ✓, nol halusinasi. Jalan: `8f307f68`(Ratna-rusak relight)✗ → `781ae3f3`(repair two-pass)✓ → `63c79ab9`(single-pass, kedua wajah lock-plat) ACCEPTED.
+  - **Attachments (2 via `+`):** `H_herman_front_medium.png` + `R_ratna_front_medium.png` (face locks). Canvas = `sc01_sh03_start.png`. Fidelity High. NOL preamble.
+  - **⭐ PELAJARAN (validated 2026-06-29b):** relight di edit-in-place **MERUSAK wajah-sekunder di shadow** → lock TIAP wajah dgn **plat via `+`** (token `the sleeping wife unchanged` GAGAL; identity-anchor plat berhasil). END big-relight = jalankan instruksi asli di START bersih + attach SEMUA wajah hadir → **single-pass > place-then-repair**. Edit-instruction final:
 ```
-the smartphone now resting face-down flat on the visible nightstand surface at camera-right near the lamp base, dark screen, screen off, no screen glow, the man's right arm extended toward the nightstand, the man's right hand resting flat beside the face-down phone, the cool blue-white glow gone from the face and chest, the man still reclining propped against the pillow, the man's head turned down toward the nightstand, the face now lit only by dim cool deep pre-dawn ambient, the sleeping wife unchanged, the headboard unchanged, the curtained window unchanged, the table lamp unchanged, the nightstand unchanged, the framed Great Wave artwork unchanged, the bed unchanged, framing unchanged, crop unchanged, camera unchanged, colour grade unchanged, composition unchanged
+Edit: the man has set the phone down on the nightstand, screen now dark, he stays reclining.
+- phone: the same phone, now lying flat face-down on the nightstand surface at camera-right, screen off dark
+- man: his right arm extended to the nightstand at camera-right having set the phone down, hand resting beside it, still reclining back against the pillow, head on the pillow, his face matching attached plate H_herman_front_medium, clear features, clean-shaven
+- woman: the sleeping wife at camera-left, eyes closed asleep, calm relaxed, her face matching attached plate R_ratna_front_medium, clear natural features, dark hair loose across the pillow
+- lighting: the cool blue-white phone glow extinguished, his face and chest now in dim ambient pre-dawn shadow, soft warm-neutral low ambient, room deep dim
+- unchanged: framing unchanged, crop unchanged, camera angle unchanged, Great Wave print unchanged, nightstand and table lamp unchanged camera-right, curtained window unchanged camera-left, color grade unchanged
 ```
 
 ## SEQ1-SC01-SH04 — MS samping ranjang · 35mm
