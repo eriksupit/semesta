@@ -15,7 +15,7 @@ updated: 2026-06-29
 1. **Generate plate PENDING dulu** (plate-before-keyframe): env E07/E08/E09/E13/E15/E16 + figuran F6 ojek/F7 kurir/F8 mentor/F9 ibu-petugas/F10 bapak-desa. (Done: E01/E02/E03/E05/E06 + plat karakter inti.)
 2. **Generate 65 keyframe pair** dari `Prompt-…` (START full → accept → END edit-in-place) → `scene-images/sc<NN>/sc<NN>_sh<NN>_{start,end}.png`.
 3. Lalu image-to-video → After Effects (SEMUA UI/grafis) → audio/VO mix → assemble. *(Detail i2v = urusan team; lihat `README_TEAM.md`.)*
-- **Scene siap-shoot-sekarang (plate lengkap):** SC01, SC02, SC06, SC08, SC13.
+- **⚠ URUTAN KERAS (bukan titik mulai):** generate **SEMUA env-plate dulu → SEMUA figuran-plate → keyframe BELAKANGAN**; nol parallel, nol "mulai dari scene yang siap". Scene yang plate-nya sudah lengkap (SC01/SC02/SC06/SC08/SC13) **tetap TIDAK boleh di-keyframe** sebelum SEMUA env+figuran plate jadi di disk — daftar itu info STEP-keyframe, BUKAN titik mulai. (Pelajaran 2026-07-01: handoff lama menaruh "shootable-now" sbg first-action → agent loncat ke shotlist; lihat `lessons.md` + handoff terkoreksi.)
 - **Constraint tetap:** A1 layar OFF/polos (UI=AE); grade keyframe-START netral→warm GATE-B; no-coal; modesty mahram-axis (covering=GATE B, cross-gender non-mahram = gestur non-sentuh); camera-lock START/END; F9/F10 aged-verify; crowd-ambient soft; Hokusai hanya E01/E02/E03.
 
 ## ⚠ DEBT / CARRY-FORWARD (catatan utang — bereskan saat fase generate / sesi lanjut)
