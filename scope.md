@@ -20,11 +20,11 @@ updated: 2026-06-29
 
 ## ⚠ DEBT / CARRY-FORWARD (catatan utang — bereskan saat fase generate / sesi lanjut)
 1. **Image belum dibuat:** 6 env plate (E07/E08/E09/E13/E15/E16, ~16 cell) + 5 figuran (F6–F10, 10 plate) + **65 keyframe pair (~130 still) NOL ter-generate.**
-2. **Stale narasi vs prompt (reconcile saat disentuh):** (a) `SEQ3-SC08.md` masih "all-in-one" — kanon final = tablet (benar di `03` SC08 + `Prompt-SEQ3-SC08.md`); (b) `SEQ6-SC13.md` SH02/SH04 acu `E06_ruangmakan_meja` yang DROPPED — prompt sudah pakai master.
+2. ~~Stale narasi vs prompt~~ **✅ CLEARED 2026-07-01c:** `SEQ3-SC08.md` (device→tablet + frozen-food-room) + `SEQ6-SC13.md` (SH02/SH04→master, MEJA-dropped) dapat top-note ⚠ RECONCILE → `Prompt-…` doc = OTORITATIF. (Tak mass-replace tiap mention; top-note cukup utk doc-truth.)
 3. **Render lama superseded:** `scene-images/sc01/`, `sc02/` = 4-shot lama → JANGAN dipakai; regen dari Prompt docs.
 4. **F9 (~55) + F10 (~62) verify aged** plate-pertama (risiko de-aged).
 5. **Belum dilakukan:** i2v, AE graphics, audio/VO mix, assembly (semua 🔴 — `README_TEAM.md §8`).
-6. **handoff/ ternyata TIDAK gitignored** (kontra catatan lama lessons/memory) — commit penutup ini stage EKSPLISIT exclude handoff/; perlu keputusan: track handoff/ atau tambah `handoff/` ke `.gitignore`.
+6. ~~handoff/ tak gitignored~~ **✅ KOREKSI 2026-07-01c:** handoff/ SUDAH gitignored (`.gitignore:16`); anomali `git check-ignore` tadi krn beberapa handoff LAMA ter-track historis — file handoff BARU tetap lokal (tak ke-commit). Residu = handoff lama ter-track (harmless; biarkan kecuali Erik mau untrack).
 
 **OUT OF SCOPE:** generate image (fase terpisah); commit/push tanpa "ya".
 

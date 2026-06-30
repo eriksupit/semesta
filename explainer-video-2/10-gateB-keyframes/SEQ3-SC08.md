@@ -11,6 +11,8 @@ aliases: [ev2-seq3-sc08-narrative]
 ## INT. SUDUT KERJA RUMAH RATNA — 11.00 WIB
 
 > **Konvensi dua-doc (`06` Langkah 2):** NARASI saja. Prompt GATE B + status → `Prompt-SEQ3-SC08.md` (Fase 3). Env baru = `09-environment-sheet/E05-sudutkerja.md` (keterangan; plat Fase 2). Petugas = `F3 petugasbank` (plat ada; dipakai sbg feed video di AE). Sumber: `03-scene-detail.md` SEQ3-SC08. **Pembuka SEQ3.**
+>
+> **⚠ RECONCILE (2026-07-01c) — narasi di bawah masih sebut "all-in-one" + ruang generik; SUPERSEDED.** Kanon final (sudah benar di `03` SC08 + **`Prompt-SEQ3-SC08.md` = OTORITATIF**): device = **tablet di stand** (komputer fixed Ratna ada di E02), ruang E05 = **pojok-kerja frozen-food kitchen-adjacent** (chest freezer + meja prep stainless + vacuum sealer). Saat baca shot di bawah, baca "all-in-one" sebagai **tablet-on-stand**.
 
 **Pesan misi (ad-provider):** Diferensiator inti — *virtual office / bank-as-tenant*: cabang bank hadir sebagai penyewa **di dalam** app yang sama dengan lapak Ratna. UMKM akses modal tanpa antre tanpa keluar rumah; riwayat transaksi = data penilaian kredit. Inventaris: bank / fintech-lending · e-wallet.
 

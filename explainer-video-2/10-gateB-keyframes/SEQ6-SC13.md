@@ -11,6 +11,8 @@ aliases: [ev2-seq6-sc13-narrative]
 ## INT. RUANG MAKAN — 19.00 WIB
 
 > **Konvensi dua-doc (`06` Langkah 2):** NARASI saja. Prompt GATE B + status → `Prompt-SEQ6-SC13.md` (Fase 3). Env baru = `09-environment-sheet/E06-ruangmakan.md` (keterangan; plat Fase 2). Sumber: `03-scene-detail.md` SEQ6-SC13. **SCENE TERAKHIR film.**
+>
+> **⚠ RECONCILE (2026-07-01c) — SH02/SH04 di bawah acu `E06_ruangmakan_meja`; cell itu DROPPED** (reference-dominance, lihat `E06-ruangmakan.md` §4 + `Prompt-SEQ6-SC13.md`). Kanon final: SH02/SH04 (M Herman) di-frame **off `E06_ruangmakan_master`** (env-lock master + Herman, framing M di keyframe). **`Prompt-SEQ6-SC13.md` = OTORITATIF.** E06 = master-only.
 
 **Pesan misi (ad-provider):** **Finale + app-beat komersial TERAKHIR.** Menjelang Isya, Herman mengaktifkan **opt-in mode syariah** lalu app diam total → **"Bersih Saat Sakral"**; film menutup pada kehangatan keluarga (manusia & keluarga di atas komersial; tech tahu kapan berhenti = puncak bukti brand-safe). Inventaris: layanan/konten syariah (opt-in) — permukaan komersial terakhir film.
 
