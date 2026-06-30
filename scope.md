@@ -6,7 +6,29 @@ created: 2026-06-08
 updated: 2026-06-29
 ---
 
-# Scope — AKTIF (2026-06-29e · WORKFLOW RESET — SOP produksi gambar dikunci + 03 clean-slate)
+# Scope — AKTIF (2026-06-30c · GATE A1 SELESAI → next GATE A2 shot-breakdown)
+
+## MANDAT SESI BERIKUTNYA (A2)
+Cerita seluruh film (GATE A1) TUNTAS: **13 scene SC01–SC13** di `03-scene-detail.md`, format baru. **NEXT = GATE A2:** breakdown shot per scene URUT (SC01→SC13) — tiap shot **blok-narasi dulu** (`06` Langkah 3: Narasi/Kamera/Angle+Framing LOCKED/Mood/AWAL→START/AKHIR→END), output ke `10-gateB-keyframes/` per scene; lalu GATE B prompts (START full / END edit-in-place). Tiap scene: draft → approve → tulis → next. Commit hanya atas "ya".
+- **Reconcile 3 flag saat A2:** header/Pesan-sequence stale di `03`; penomoran legacy file luar (NO mass-rename); konfirmasi runtime (13 scene).
+- **Constraint tetap:** no-coal (sektor tambang = info-data saja); **SHOW+RINGKAS** prosa; TTI-simplicity (≤2–3 subjek/shot, 1 aksi); modesty mahram-axis; figuran-first.
+**OUT OF SCOPE:** membuka ulang cerita A1 (terkunci); generate gambar; commit/push tanpa "ya".
+
+---
+
+# Scope — Riwayat (2026-06-30b · SCENE-STORY A1 lanjut — SC08–SC11)
+
+## MANDAT SESI
+Lanjut GATE A1 (story-only, NOL shot/kamera/prompt): tulis cerita scene URUT ke `03-scene-detail.md`. **SC01–SC11 SELESAI** (format baru). **NEXT = SC12** (terminal TransJakarta, eks-SEQ5-SC01) → cut warung PPOB (SEQ5-SC02) → SC13 makan / SC14 ngaji / SC15 coda. Target akhir **15 scene**.
+- Tiap scene: draft di chat → Erik review/approve → tulis `03` → next. Commit hanya atas "ya".
+- **Constraint:** komoditas ekstraktif/**batubara TERLARANG** (NU + brand-safe + anti-extractive); sektor tambang = layanan info-data saja (lihat `context.md` TERBARU + lessons).
+- **Craft:** show-not-tell · TTI-simplicity (≤2–3 subjek/1 aksi/UI minimal) · figuran-first · modesty (mahram axis) · tiap scene 1 vertikal + ad-surface.
+**OUT OF SCOPE:** shot breakdown (A2); sentuh `10-gateB`; generate gambar; commit tanpa "ya".
+**Belum:** SC08–SC11 + sync governance ini belum di-commit (nunggu "ya"); header/penomoran `03` stale (defer ke A2).
+
+---
+
+# Scope — Riwayat (2026-06-29e · WORKFLOW RESET — SOP produksi gambar dikunci + 03 clean-slate)
 
 ## MANDAT SESI INI (workflow reset, Erik)
 Rombak & bakukan workflow produksi gambar `explainer-video-2` jadi rantai tertib; rekam ke governance supaya selamat lintas-sesi. **SELESAI (file ditulis, BELUM commit — nunggu "ya"):**

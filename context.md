@@ -8,7 +8,30 @@ updated: 2026-06-10
 
 # Context — Sesi Aktif
 
-## SESSION (2026-06-29e · WORKFLOW RESET — SOP produksi gambar dikunci + 03 clean-slate) — TERBARU
+## SESSION CLOSE (2026-06-30c · GATE A1 SELESAI — cerita seluruh film 13 scene) — TERBARU
+**Hasil:** GATE A1 (cerita, story-only) TUNTAS untuk SELURUH film — **13 scene SC01–SC13**, semua format baru template `06` (nol shot-list lama; grep `^## SEQ` = 13). Sesi ini menulis SC08–SC13 + merestruktur 16→13.
+**Struktur final 13 scene:** SEQ1 SC01-02 · SEQ2 SC03-07 · SEQ3 SC08(bank)-SC09(kesehatan) · SEQ4 SC10(gov+data-komoditas)-SC11(taman-wasilah) · SEQ5 SC12(terminal) · SEQ6 SC13(makan FINALE: opt-in syariah + kehangatan keluarga, azan Isya).
+**Cut total proyek:** trading · masterclass-Lisa · edutainment-anak · PPOB warung · live-selling · koperasi · ngaji · coda.
+**Keputusan finale (sesi ini):** SC13 makan = scene TERAKHIR (tutup pada kehangatan keluarga); ngaji + coda DI-CUT; VO penutup direlokasi ke SC13; hidangan tak dilabeli frozen-food.
+**NEXT = GATE A2:** breakdown shot per scene URUT (SC01→SC13) pakai template blok-narasi `06` Langkah 3 → output `10-gateB-keyframes/` per scene → GATE B prompts. **3 flag reconcile saat A2:** (1) header per-SEQ + Pesan-sequence stale di `03` (count/durasi/teks — SEQ3 "marketplace penuhnya", SEQ5 "urusan rutin", SEQ6 "ngaji+coda"); (2) penomoran legacy file luar (gateB filename, char/env sheet) — selaraskan saat disentuh, NO mass-rename; (3) runtime turun (13 scene) — konfirmasi target.
+**Git:** di-commit pada close ini (context/scope/lessons/03/06); HEAD sebelumnya `bc93ba9`. Push = nunggu "ya" terpisah.
+**Handoff:** `handoff/HANDOFF-2026-06-30b-EV2-GATE-A1-COMPLETE.md` + `INITIAL-PROMPT-2026-06-30b-EV2-GATE-A1-COMPLETE.txt`.
+
+## SESSION (2026-06-30b · SCENE-STORY A1 — SC08–SC11 ditulis; film 16→15; swap koperasi→taman; constraint batubara)
+**Mandat:** lanjut GATE A1 tulis cerita scene URUT ke `03-scene-detail.md`, story-only (NOL shot/kamera/prompt).
+**Progres (DITULIS ke `03`, BELUM commit — nunggu "ya"):** SC08–SC11 selesai, format baru, URUT:
+- **SC08** (eks-SEQ3-SC01) — INT. sudut kerja Ratna, **bank-as-tenant** (virtual office). **live-selling lama DI-CUT** (klise + redundan dgn SC04 fulfillment) → film 16→15; blok bank-lama (SEQ3-SC02) + trading-lama (SEQ3-SC03) ikut terserap/terbuang.
+- **SC09** (eks-SEQ3-SC04) — EXT. selasar kampus, **kesehatan/telemedicine** (Lisa bantu ibu petugas pesan dokter). coworking-jualan lama DIBUANG (anti over-rep motif jualan).
+- **SC10** (eks-SEQ4-SC01) — INT. kantor, **government-as-tenant** (izin ekspor via **tablet**) + **layar besar = dasbor data komoditas/sektor tambang** (bukti SCOPE). Gawai tablet = pembeda dari SC05 monitor / SC08 all-in-one.
+- **SC11** (ganti koperasi eks-SEQ4-SC03) — EXT. taman, **app sebagai wasilah yang membebaskan** (Ratna+Andi santai, orang lain tertunduk layar; fitur langkah/kebugaran, tech-as-tool). Masterclass (SEQ4-SC02) + edutainment (SEQ4-SC04) DI-CUT.
+**Keputusan struktural:** (1) cut live-sell → 16→15 scene. (2) swap koperasi→taman (hilang vertikal keuangan-inklusif; fairness terbawa SC10 + recast taman).
+**Constraint BARU (penting — lihat lessons + auto-memory [[semesta-commodity-brand-safety]]):** komoditas **ekstraktif/batubara TERLARANG** (NU co-founder lagi konflik konsesi batubara Kaltim 2024–25 + pitch brand-safe + anti-extractive). Sektor tambang boleh hadir **hanya sebagai layanan informasi-data** (dasbor harga/berita = vertikal iklan B2B sah); default level-sektor/mineral atau nikel-hilirisasi, BUKAN batubara. Info-service ≠ beat trading/spekulasi (yang di-cut).
+**Pelajaran craft (tervalidasi):** show-not-tell (label emosi → aksi terlihat); **TTI-simplicity NYETIR pilihan konsep** (tolak UI-berat: edit-video, dasbor koperasi → pilih 2-subjek/1-aksi/≤1-kartu); scene "wasilah/freedom" = tesis humane-tech via kontras.
+**State film:** **SC01–SC11 selesai** (format baru, URUT). Target akhir **15 scene** (SC01–SC15). **NEXT URUT = SC12** (terminal TransJakarta, eks-SEQ5-SC01) → cut warung PPOB (SEQ5-SC02) → SC13 makan / SC14 ngaji / SC15 coda (eks-SEQ6-SC01/02/03).
+**FLAG:** header per-SEQ + "Pesan sequence" di `03` stale (SEQ3 "marketplace penuhnya", SEQ4/5/6 count + numbering SEQ5/SEQ6 masih legacy) → reconcile saat fase shot/A2.
+**Git:** SC08–SC11 + sync governance ini BELUM commit (nunggu "ya"); HEAD a7e4f2d.
+
+## SESSION (2026-06-29e · WORKFLOW RESET — SOP produksi gambar dikunci + 03 clean-slate)
 **Mandat:** Erik reset workflow produksi gambar `explainer-video-2` jadi rantai tertib + rekam ke governance (anti-lupa lintas-sesi).
 **Hasil (file ditulis, belum commit):** (1) SOP 5-langkah dikunci di `06-konvensi-naratif.md` §Workflow Produksi Gambar — `03` CERITA clean-slate (GATE A) → satu doc/scene `10-gateB` (GATE B) → tiap shot BLOK NARASI dulu (template di doc) → START full-prompt / END edit-in-place → user generate Claude tunggu. (2) `03-scene-detail.md` di-clean-slate: ADDENDUM A1→production-constant bersih; dibuang STATUS PRODUKSI SC01 + tag ✅/⬜/METODE SH01–07 + kalimat REAR Catatan produksi + Catatan revisi 2026-06-24 + blok STATUS GATE A (→Ringkasan). Prosa/VO/shot-list(beat+lensa)/Catatan produksi utuh.
 **Keputusan (validated /sepakat-atau-debat):** scene-detail tertib DULU sebelum `10-gateB` (urutan gerbang `03:12`+`05-pipeline`; riwayat SC01-thrash buktikan lompat-gerbang mahal). SC01 SH01–04 renders dibiarkan, carry-forward diparkir ke GATE B.

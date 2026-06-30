@@ -65,7 +65,7 @@ User generate; Claude menunggu (Claude tidak pernah generate). Render accepted �
 ```
 ## SEQ<n>-SC<nn> — <LOKASI> — <WAKTU>
 **Pesan misi (ad-provider):** <vertikal app yang ditunjukkan + bukti app layak jadi kanal iklan>
-**Prosa scene:** <skenario prosa camera-bound>
+**Prosa scene:** <prosa camera-bound — SHOW bukan TELL (aksi/keadaan tertangkap kamera, bukan label emosi/kesimpulan tema) + RINGKAS (sedikit beat & elemen, satu aksi foreground, ≤2–3 subjek, latar = ambient → wajib bisa jadi SATU gambar yang mudah di-generate)>
 **VO (bila ada):** <...>
 
 ### Shot — blok narasi
@@ -83,6 +83,7 @@ User generate; Claude menunggu (Claude tidak pernah generate). Render accepted �
 **— Catatan produksi:** <kategori iklan · grade>
 ```
 > Prompt START (full) / END (edit-in-place) **TIDAK di sini** — diturunkan ke `10-gateB-keyframes` per shot (Langkah 4).
+> **Pola prosa scene (dikunci Erik 2026-06-30):** SHOW + RINGKAS. (a) SHOW — perlihatkan lewat aksi/keadaan yang tertangkap kamera, jangan menyebut emosi ("ragu", "sumringah") atau menyimpulkan tema ("ilmu berputar"); biarkan aksi yang bicara. (b) RINGKAS — sedikit elemen, satu aksi foreground jelas, ≤2–3 subjek, sisanya latar ambient, supaya tiap scene mudah jadi satu gambar (prosa kepadatan → susah generate). Acuan: SC09, SC11, SC12 di `03-scene-detail.md`.
 
 ---
 

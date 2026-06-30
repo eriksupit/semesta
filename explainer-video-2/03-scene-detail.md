@@ -146,53 +146,36 @@ Override cool deck-standard `prompt-rules` b.208. String `color_grade` standar v
 
 ---
 
-## SEQ3-SC01 — INT. DAPUR RUMAH RATNA — 11.00 WIB *(marketplace B2C · live-selling)*
-Dapur rumah, terang oleh siang. Ratna, celemek terpasang, menghadap ponsel yang terpasang di tripod kecil — ia sedang **siaran jualan langsung** frozen food-nya. Ia mengangkat sepiring risoles ke kamera, bicara ramah; di layar, **komentar dan pesanan pembeli** dari berbagai daerah mengalir masuk real-time, ikon "pesan" bermunculan. Di sisinya, **Tika — tetangga dewasa muda** yang ia bayar paruh waktu — sigap mengemas pesanan yang masuk ke box berlabel, sesekali menyebut jumlah ke Ratna. Saat satu pesanan ditutup, notifikasi **pembayaran dompet digital** masuk. Dapur kecil, pasar seluas layar.
+## SEQ3-SC08 — INT. SUDUT KERJA RUMAH RATNA — 11.00 WIB
 
-**Shot list**
-- **SEQ3-SC01-SH01** — MS Ratna live. start: ia mengangkat piring risoles ke ponsel di tripod, bicara ke kamera. end: komentar/pesanan pembeli mengalir di layar. *(50mm · interaksi: audiens live lintas-daerah)*
-- **SEQ3-SC01-SH02** — OTS Ratna & Tika. start: Tika membaca pesanan masuk di layar. end: ia mengemas ke box, menyebut jumlah ke Ratna (interaksi lintas-generasi). *(50mm)*
-- **SEQ3-SC01-SH03** — CU layar ponsel. start: aliran komentar + slot pesanan. end: kartu iklan pemasok kemasan lewat tipis di pojok. *(Teknik 2/2b)*
-- **SEQ3-SC01-SH04** — CU tangan/layar. start: pembayaran dompet digital masuk. end: saldo bertambah, Ratna & Tika bertukar senyum. *(payoff B2C)*
+**Pesan misi (ad-provider):** Inilah **diferensiator inti** superapp — *virtual office / bank-as-tenant*: kantor cabang bank hadir sebagai penyewa **di dalam** aplikasi yang sama dengan lapak Ratna, bukan sekadar tempelan iklan. UMKM dapat akses modal tanpa antre tanpa keluar rumah, dan riwayat transaksi lapak jadi data penilaian kredit otomatis. Untuk ad-provider: konteks keputusan finansial membuka inventaris premium **fintech-lending / layanan keuangan UMKM**. Inventaris: bank / fintech-lending · e-wallet.
 
-**— Catatan produksi:** *Potensi iklan* — Surface: live-shopping (slot produk, pin pesanan) + kartu pemasok kemasan + dompet digital. Momen intent: detik beli saat live. Kategori: FMCG bahan/kemasan · e-wallet · live-commerce. Interaksi: audiens live (lintas-daerah/demografi) + Tika dewasa muda (lintas-generasi: Ratna 45 / Tika 20). 4-beat: live → pesanan masuk → iklan kemasan → bayar. Grade hangat siang.
+**Prosa scene:** Sudut kerja di rumah Ratna, terang oleh siang. Di depan layar *all-in-one*, Ratna — berhijab, celemek masih terpasang — membuka cabang virtual sebuah bank di dalam aplikasi dan menekan "bicara dengan petugas"; panggilan video tersambung: seorang petugas bank berpakaian rapi menyapa ramah dari mejanya di cabang. Ratna menjelaskan usahanya; riwayat transaksi lapaknya tertarik otomatis ke layar, dan petugas menatap data yang sama dari sisinya. Di pojok layar, kartu produk pembiayaan UMKM tergeser masuk halus. Ratna mengangguk, menekan "ajukan"; statusnya berubah "diproses". Tanpa antre, tanpa keluar rumah — bank datang ke ruang kerjanya.
 
----
+**VO:** — *(tanpa VO).*
 
-## SEQ3-SC02 — INT. SUDUT KERJA RUMAH RATNA — 13.00 WIB *(virtual office · bank-as-tenant)*
-Sudut kerja di rumah Ratna, siang terang. Siaran jualan sudah usai; box pesanan tertumpuk rapi di belakang. Ratna duduk menghadap layar all-in-one, mengusap dahi — pesanan membludak, ia perlu modal menaikkan kapasitas produksi. Ia membuka **cabang virtual sebuah bank di dalam aplikasi** — kantor bank yang hadir sebagai tenant di ruang yang sama dengan lapaknya tadi, lengkap dengan ruang tunggu digital dan tombol "bicara dengan petugas". Ia menekan, dan **panggilan video dengan petugas bank** tersambung: di layar, seorang petugas berpakaian rapi menyapa ramah dari mejanya di cabang. Ratna menjelaskan usahanya, menunjukkan riwayat transaksi yang otomatis tertarik dari lapaknya; petugas menatap data yang sama di sisinya, menjelaskan opsi modal usaha. Di pojok layar, kartu produk pembiayaan UMKM tergeser masuk halus. Ratna mengangguk, menekan "ajukan"; status berubah jadi "diproses". Tanpa antre, tanpa keluar rumah — bank datang ke ruang kerjanya.
+**Grafis UI (AE, non-AI):**
+- saat Ratna membuka cabang virtual + menekan tombol: ruang tunggu digital + tombol tenant · copy: **"Bicara dengan petugas"**
+- saat panggilan tersambung: riwayat transaksi lapak tertarik otomatis · copy: ringkasan transaksi (data penilaian kredit)
+- saat Ratna mengajukan: kartu pembiayaan UMKM tergeser masuk, lalu status berubah · copy: **"Pembiayaan UMKM"** → **"Diproses"**
 
-**Shot list**
-- **SEQ3-SC02-SH01** — MS Ratna di meja kerja. start: ia mengusap dahi di samping tumpukan box, membuka aplikasi. end: layar menampilkan pintu cabang virtual bank (tenant) + tombol "bicara dengan petugas". *(50mm · layar besar aman dari melt)*
-- **SEQ3-SC02-SH02** — OTS Ratna ke layar. start: panggilan video tersambung, petugas bank menyapa dari mejanya. end: Ratna menjelaskan usaha, riwayat transaksi lapak tertarik otomatis di layar (interaksi lintas-kelas via video). *(50mm)*
-- **SEQ3-SC02-SH03** — CU layar. start: petugas memaparkan opsi modal, kartu produk pembiayaan UMKM tergeser masuk di pojok. end: Ratna menekan "ajukan", status berubah "diproses". *(payoff: akses modal dari rumah · Teknik 3 embedded UI)*
-- **SEQ3-SC02-SH04** — MS Ratna. start: panggilan ditutup, ia bersandar lega menatap layar. end: ia berbalik ke tumpukan box, siap produksi lebih besar. *(35mm · payoff diegetik: modal → kapasitas naik)*
-
-**— Catatan produksi:** *Potensi iklan* — Surface: ruang cabang virtual bank (tenant) + kartu produk pembiayaan UMKM + riwayat transaksi sebagai data underwriting. Momen intent: butuh modal usaha, keputusan finansial. Kategori: bank / fintech-lending / layanan keuangan UMKM. **Diferensiator bank-as-tenant / virtual office** ditampilkan konkret pertama kali di sini (mengimbangi berat-marketplace SEQ3). Interaksi: Ratna (UMKM) ↔ petugas bank (profesional) via video — lintas-kelas. Nama bank generik/mock. 4-beat: butuh modal → buka cabang virtual di app → kartu produk pembiayaan → pengajuan diproses. Layar besar aman. Grade hangat siang.
+**— Catatan produksi:** *Potensi iklan* — Surface: ruang cabang virtual bank (tenant) + kartu pembiayaan UMKM + riwayat transaksi lapak sebagai data penilaian kredit. Momen intent: butuh modal usaha, keputusan finansial. Kategori: bank / fintech-lending / layanan keuangan UMKM. **Diferensiator bank-as-tenant / virtual office** — ditampilkan konkret pertama kali di sini (inti konsep superapp). Interaksi: Ratna (UMKM) ↔ petugas bank (profesional) via video — lintas-kelas. **Ratna BERHIJAB** (petugas non-mahram lewat kamera). 2 subjek (Ratna on-set + petugas via layar; lean). Buka pada Ratna (bukan figuran-first — petugas baru hadir lewat panggilan yang Ratna mulai). Nama bank generik/mock. Layar besar *all-in-one* (aman dari melt). Grade hangat siang. *(Eks-SEQ3-SC02; live-selling lama di-cut → film 16→15, SC09–SC16 geser turun.)*
 
 ---
 
-## SEQ3-SC03 — INT. KANTOR EKSPOR-IMPOR — 12.30 WIB *(financial trading, sela kerja)*
-Jam istirahat di kantor. Herman membuka **modul trading di aplikasi** — grafik saham bergerak pelan, posisi miliknya tampil rapi. **Rian, kolega muda**, lewat membawa kopi, melongok penasaran ke layar dan bertanya pelan. Herman menunjuk grafik, menjelaskan singkat caranya menahan diri — bukan mengejar, hanya keputusan terukur; ia menekan satu order kecil, konfirmasi muncul. Rian mengangguk, mencatat di benaknya. Herman menutup modul, keduanya kembali bekerja. Ilmu yang ditularkan di sela tugas.
+## SEQ3-SC09 — EXT. SELASAR KAMPUS — 13.00 WIB
 
-**Shot list**
-- **SEQ3-SC03-SH01** — MCU Herman + layar. start: ia membuka modul trading, grafik + posisinya tampil. end: Rian melongok dari sisi, bertanya. *(50mm · interaksi lintas-generasi)*
-- **SEQ3-SC03-SH02** — OTS Rian ke layar. start: Herman menunjuk grafik, menjelaskan disiplin (anti-judi). end: ia menekan satu order, konfirmasi + kartu iklan sekuritas/fintech muncul. *(payoff: keputusan investasi terukur)*
-- **SEQ3-SC03-SH03** — MS dua orang. start: Rian mengangguk paham. end: keduanya kembali ke pekerjaan masing-masing. *(35mm)*
+**Pesan misi (ad-provider):** Vertikal **kesehatan / telemedicine** — app mendekatkan akses layanan kesehatan: janji dokter yang biasanya menuntut antre panjang kini beres dari satu bangku, oleh siapa saja untuk siapa saja. Untuk ad-provider: konteks layanan kesehatan membuka inventaris premium **klinik/telemedicine · farmasi · asuransi/jaminan kesehatan** (brand-safe). Inventaris: kesehatan/telemedicine · asuransi · e-wallet.
 
-**— Catatan produksi:** *Potensi iklan* — Surface: placement di modul trading. Momen intent: keputusan investasi. Kategori: sekuritas / fintech. Nada: terkelola & tenang (anti-judi). Interaksi: Herman menularkan ke kolega muda Rian (lintas-generasi). Layar besar aman. Grade hangat.
+**Prosa scene:** Selasar kampus yang teduh, lewat tengah hari. Seorang petugas kebersihan kampus — perempuan paruh baya — duduk di bangku, memijit lututnya, sesekali meringis. Lisa yang lewat memperlambat langkah, lalu duduk di sampingnya. Ia membuka aplikasi di ponselnya dan memiringkan layar ke ibu itu: memilih dokter, memilih jam, satu ketukan — janji temu terjadwal. Ibu itu membaca layar, menghela napas panjang, lalu menepuk punggung tangan Lisa. Antrean puskesmas berhari-hari, beres di satu bangku.
 
----
+**VO:** — *(tanpa VO).*
 
-## SEQ3-SC04 — INT. RUANG KERJA BERSAMA (COWORKING) — 14.00 WIB *(Lisa MENGAJAR jadi kreator)*
-Ruang kerja bersama dekat kampus, terang dan rapi. Lisa berdiri di depan layar besar, **memandu workshop kecil: "Jadi Kreator & Jualan Lewat Konten"**. Di hadapannya peserta campur — **dua ibu-ibu pelaku UMKM berjilbab dan beberapa anak muda** — menyimak sambil membuka aplikasi di gawai masing-masing. Lisa mendemonstrasikan di layar: cara membuat etalase, merekam konten singkat, dan menautkannya ke marketplace. Salah satu ibu mengangkat tangan bertanya; Lisa menghampiri, menunjukkan langsung di ponsel ibu itu hingga etalase pertamanya tayang. Yang muda mengajari yang lebih senior; ilmu berputar.
+**Grafis UI (AE, non-AI):**
+- saat Lisa memiringkan layar ke ibu itu: pilih dokter + pilih jam · copy: **"Pilih jadwal dokter"**
+- saat ketukan terakhir: konfirmasi janji temu · copy: **"Janji dokter — terjadwal"**
 
-**Shot list**
-- **SEQ3-SC04-SH01** — WS ruang. start: Lisa memandu di depan layar besar, peserta campur menyimak. end: layar menampilkan langkah membuat etalase + konten. *(35mm · interaksi: kelas lintas-usia/kelas)*
-- **SEQ3-SC04-SH02** — MS Lisa & peserta. start: seorang ibu UMKM mengangkat tangan bertanya. end: Lisa menghampiri, menunjuk langsung di ponsel ibu itu. *(50mm)*
-- **SEQ3-SC04-SH03** — OTS ke ponsel ibu. start: etalase/konten ibu itu disusun bersama Lisa. end: etalase pertamanya tayang + tertaut marketplace; ibu itu sumringah. *(payoff: ilmu Lisa jadi usaha orang lain)*
-
-**— Catatan produksi:** *Potensi iklan* — Surface: sponsor workshop/masterclass + alat kreator + etalase marketplace. Momen intent: skill→usaha (milik peserta). Kategori: edu-fintech · marketplace · gadget/alat kreator. Interaksi: Lisa (muda) mengajar ibu-ibu UMKM + anak muda (lintas-usia, lintas-kelas). Lisa naik dari murid → guru. Grade hangat; coworking hidup di latar.
+**— Catatan produksi:** *Potensi iklan* — Surface: alur janji dokter/telemedicine + kartu klinik/dokter + (opsi) asuransi/jaminan kesehatan. Momen intent: butuh akses layanan kesehatan. Kategori: kesehatan/telemedicine · farmasi · asuransi (brand-safe premium). Interaksi: Lisa (muda) ↔ ibu petugas kebersihan (senior) — tatap muka, lintas-generasi/lintas-kelas. **Lisa uncovered** (sesuai karakternya). 2 subjek (lean); satu kartu UI saja (TTI-simpel). Buka figuran-first (ibu petugas → Lisa). Non-jualan; vertikal kesehatan segar (belum ada scene kesehatan di film). Grade hangat siang. ⚠ **Lokasi sama dengan SC07 (selasar kampus)** — beda waktu + aksi; bedakan spot/komposisi saat GATE B agar tak kembar. *(Eks-SEQ3-SC04 coworking → diganti total jadi SC09 kesehatan; penutup SEQ3.)*
 
 ---
 
@@ -201,53 +184,35 @@ Ruang kerja bersama dekat kampus, terang dan rapi. Lisa berdiri di depan layar b
 
 ---
 
-## SEQ4-SC01 — INT. KANTOR EKSPOR-IMPOR — 16.00 WIB *(virtual office · government-as-tenant)*
-Sore di kantor, cahaya jingga miring lewat jendela. Herman di mejanya membuka **loket virtual sebuah kantor layanan publik yang hadir sebagai tenant di aplikasi** — bukan menjual apa pun, melainkan mengurus dokumen izin ekspor yang biasanya menuntut antre berjam-jam. Ia menekan "ajukan dokumen", dan **panggilan video dengan petugas instansi** tersambung: petugas berseragam rapi memeriksa berkas yang sudah tertarik otomatis di layarnya, mengangguk, membubuhkan verifikasi. Di samping Herman, rekan kerjanya mencondong, menunjuk satu baris status di papan yang sama; keduanya membaca layar yang identik. Status berubah jadi "terverifikasi". Urusan negara, selesai dari meja sendiri.
+## SEQ4-SC10 — INT. KANTOR EKSPOR-IMPOR — 16.00 WIB
 
-**VO (laki-laki, tenang):** *"Sore menjelang. Yang dulu menuntut antre dan perantara — kini cukup dari satu meja, dengan aturan yang sama untuk siapa pun."*
+**Pesan misi (ad-provider):** Dua bukti sekaligus. (1) Diferensiator **government-as-tenant** — izin ekspor yang biasanya menuntut antre + perantara beres dari telapak tangan, aturan sama untuk siapa pun (*fairness*). (2) Bukti **scope**: app juga melayani **informasi pasar komoditas + perkembangan sektor tambang/industri** sebagai layanan data — sinyal bahwa inventaris app menjangkau dunia B2B berat. Untuk ad-provider: membuka inventaris premium **kampanye layanan publik · data komoditas/industri · alat berat & jasa tambang · logistik ekspor**. Inventaris: kampanye publik · data komoditas/industri · logistik.
 
-**Shot list**
-- **SEQ4-SC01-SH01** — MS Herman di meja. start: cahaya sore, ia membuka aplikasi. end: layar menampilkan loket virtual instansi layanan publik (tenant) + tombol "ajukan dokumen". *(50mm · layar besar aman dari melt)*
-- **SEQ4-SC01-SH02** — OTS Herman ke layar. start: panggilan video tersambung, petugas instansi menyapa, berkas tertarik otomatis. end: petugas membubuhkan verifikasi, status bergerak. *(50mm · interaksi lintas-kelas: warga ↔ aparat via layar)*
-- **SEQ4-SC01-SH03** — MS Herman + rekan. start: rekan mencondong menunjuk baris status di papan yang sama. end: status "terverifikasi", keduanya mengangguk. *(35mm · payoff: layanan publik tanpa antre)*
+**Prosa scene:** Kantor ekspor-impor, cahaya jingga sore miring lewat jendela. Di dinding, layar besar menyala — dasbor pasar komoditas: angka harga mineral hari ini bergerak, judul-judul perkembangan sektor tambang berganti. Seorang rekan kerja berhenti di sisi Herman, menunjuk dengan ujung pena ke satu baris yang menggantung di tablet yang Herman pegang — satu kontainer ekspor siap berangkat sore ini, tinggal izinnya. Herman mengangkat pandang sejenak ke layar besar, lalu kembali ke tablet: ia membuka loket virtual sebuah kantor layanan publik di dalam aplikasi, berkas izin ekspornya sudah tertarik otomatis ke sana. Ia mengetuk "ajukan". Di kolom status, label "diperiksa" berubah jadi "terverifikasi". Rekan itu menegakkan badan, menepuk bahu Herman. Kontainer aman berangkat — urusan negara beres dari telapak tangan.
 
-**— Catatan produksi:** *Potensi iklan* — Surface: ruang loket instansi (tenant) + kartu layanan/kampanye publik di papan. Momen intent: urusan administrasi/legal. Kategori: kampanye layanan publik · B2B legal/compliance · logistik ekspor. **Diferensiator lembaga-pemerintah-as-tenant** ditampilkan pertama kali di sini. Interaksi: Herman ↔ petugas (via layar) + rekan (tatap muka). Nama instansi generik/mock. Grade hangat sore (jingga miring).
+**VO (laki-laki, tenang):** *"Sore menjelang. Yang dulu menuntut antre dan perantara — kini cukup dari telapak tangan, dengan aturan yang sama untuk siapa pun."*
 
----
+**Grafis UI (AE, non-AI):**
+- di layar besar (ambient): dasbor pasar komoditas + perkembangan sektor tambang/industri · copy: **"Pasar komoditas hari ini"** + headline sektor
+- di tablet, saat membuka loket: loket virtual instansi (tenant) + tombol · copy: **"Ajukan dokumen"**
+- di tablet, saat verifikasi: status berkas berubah · copy: **"Diperiksa"** → **"Terverifikasi"**
 
-## SEQ4-SC02 — INT. RUANG KOMUNITAS KREATOR — 16.30 WIB *(edukasi · masterclass, Lisa kembali jadi murid)*
-Ruang komunitas kreator dekat kampus, terang sore. Lisa duduk di antara sederet anak muda menghadap layar besar — **kelas masterclass langsung** sedang berjalan, seorang mentor memandu dari layar, memaparkan teknik bercerita untuk konten. Lisa menyimak serius, sesekali mencoba langkah di gawainya mengikuti instruksi; di SEQ3 ia yang mengajar, di sini ia kembali jadi murid pada tingkat lebih tinggi. Seorang peserta di sebelahnya bertanya, Lisa menoleh, mereka berdiskusi pelan membandingkan catatan. Ilmu tidak berhenti — ia berputar naik.
-
-**Shot list**
-- **SEQ4-SC02-SH01** — WS ruang komunitas. start: mentor memandu di layar besar, peserta kreator menyimak. end: kamera menemukan Lisa di antara mereka, menyimak serius. *(35mm · interaksi: kelas + mentor via layar)*
-- **SEQ4-SC02-SH02** — MS Lisa + peserta sebelah. start: peserta bertanya, Lisa menoleh. end: keduanya berdiskusi membandingkan catatan (lintas-peer). *(50mm)*
-- **SEQ4-SC02-SH03** — OTS ke gawai Lisa. start: ia mencoba langkah mengikuti modul masterclass. end: tanda progres modul muncul + sponsor modul tipis di sisi. *(50mm · payoff: murid→guru→murid lagi, ilmu berputar)*
-
-**— Catatan produksi:** *Potensi iklan* — Surface: sponsor modul masterclass + alat kreator + venue komunitas. Momen intent: pengembangan skill. Kategori: edtech/masterclass · gawai-kreator · lifestyle. Bukan jual-beli — konsumsi ilmu. Interaksi lintas-peer + mentor via layar. Lisa = simpul "ilmu berputar". Grade hangat sore.
+**— Catatan produksi:** *Potensi iklan* — Surface: loket instansi (tenant) di tablet + **dasbor data komoditas/industri di layar besar** + kartu layanan/kampanye publik. Momen intent: urusan izin/legal + pantau pasar sektor. Kategori: kampanye publik · data komoditas/industri (B2B) · alat berat/jasa tambang · logistik ekspor. **Diferensiator pemerintah-as-tenant** (first-reveal layanan negara) **+ sinyal scope** ke sektor berat. Komoditas di dasbor = **level sektor/mineral (nuansa tambang), BUKAN batubara** (hindari skandal NU + jaga brand-safe + selaras anti-extractive). Ini layanan **informasi-data**, bukan beat trading/spekulasi yang di-cut. Interaksi: Herman ↔ rekan kerja (tatap muka). **Gawai = tablet** (aksi) + **layar besar = ambient** (dasbor info). 2 subjek (lean). Buka figuran-first (layar+rekan → Herman). Instansi generik/mock. Grade hangat sore (jingga miring). VO = beat tema fairness. ⚠ vs SC05 (kantor sama, dibedakan: pagi/papan-tugas vs sore/izin+dasbor); vs SC08 (tanpa video petugas — beda tekstur).
 
 ---
 
-## SEQ4-SC03 — INT. BALAI WARGA — 16.45 WIB *(komunitas · koperasi & inklusi finansial)*
-Balai warga sederhana, kursi plastik melingkar, sore teduh. Ratna duduk bersama ibu-ibu tetangga — **pertemuan komunitas/koperasi warga**. Bukan menjual: mereka mengelola **iuran dan tabungan bersama lewat fitur komunitas di aplikasi**, dasbor transparan menampilkan saldo kelompok yang bisa dilihat semua anggota. Ratna menunjukkan layarnya ke seorang ibu yang lebih senior, menjelaskan cara menyetor; ibu itu manggut-manggut, mencoba sendiri di gawainya. Modal usaha Ratna sudah cair siang tadi — kini ia mendorong tetangga ikut tumbuh. Kebersamaan yang tercatat rapi, terbuka untuk semua.
+## SEQ4-SC11 — EXT. TAMAN KOTA — 16.45 WIB
 
-**Shot list**
-- **SEQ4-SC03-SH01** — WS balai warga. start: ibu-ibu melingkar, gawai di tangan masing-masing. end: Ratna di tengah membuka dasbor komunitas di layarnya. *(35mm · interaksi lintas-generasi/kelas)*
-- **SEQ4-SC03-SH02** — MS Ratna & ibu senior. start: Ratna menunjukkan cara menyetor iuran. end: ibu senior mencoba sendiri, berhasil, tersenyum. *(50mm)*
-- **SEQ4-SC03-SH03** — CU layar. start: dasbor koperasi — saldo kelompok + indikator transparansi terbuka. end: kartu layanan keuangan inklusif tergeser tipis di sisi. *(payoff: komunitas tumbuh bersama, transparan)*
+**Pesan misi (ad-provider):** Bukti tesis paling jujur: **teknologi sebagai *wasilah*, manusia pegang kendali** — usaha Ratna berjalan sendiri di dalam app, jadi sorenya ia bebas, hadir untuk anaknya, bukan terpaku layar. Untuk ad-provider, dua nilai: (1) vertikal **kebugaran/wellness** (pelacak langkah/olahraga) = inventaris sportswear/wearable/gaya hidup; (2) sinyal **platform yang menghormati waktu penggunanya** = lingkungan iklan yang tepercaya & brand-safe. Inventaris: kebugaran/wellness · sportswear/wearable · gaya hidup sehat.
 
-**— Catatan produksi:** *Potensi iklan* — Surface: dasbor koperasi/komunitas + kartu layanan keuangan inklusif + venue balai warga. Momen intent: keuangan kolektif, inklusi. Kategori: layanan keuangan inklusif · kampanye sosial · kesehatan komunitas. Menampilkan **fairness/transparansi** (dasbor terbuka) — bukan transaksi dagang. Menutup benang SEQ3-SC02 (modal Ratna cair → ia dorong tetangga). Interaksi lintas-generasi. Grade hangat sore.
+**Prosa scene:** Taman kota di sore hari, cahaya keemasan menyaring lewat pepohonan. Di sebuah bangku, beberapa orang duduk berjajar, masing-masing tertunduk ke layar ponsel, jempol menggulir tanpa henti. Di jalur setapak melewati mereka, Ratna — berhijab, menjinjing satu tas belanja — berjalan santai bersama Andi, tertawa kecil mendengar cerita anaknya; ponselnya tinggal di dalam tas. Andi mengeluarkan ponsel sebentar, menengok angka langkah hari ini di aplikasi, nyengir bangga menunjukkannya ke ibunya, lalu menyelipkannya kembali ke saku — dan kembali bercerita. Mereka berjalan terus, tidak terburu, tidak menoleh layar lagi. Usahanya menjaga dirinya sendiri di dalam aplikasi; sore ini, ia milik anaknya.
 
----
+**VO:** — *(tanpa VO; kontras visual yang berbicara — hindari VO beruntun dengan SC10).*
 
-## SEQ4-SC04 — INT. RUANG EKSKUL SEKOLAH — 16.00 WIB *(edutainment · literasi anak, cross-cut dengan SC01)*
-Ruang ekstrakurikuler sekolah seusai jam pelajaran, ceria dan rapi. Andi bersama beberapa teman mengelilingi satu tablet — **klub belajar interaktif**: modul edukasi yang dikemas seperti permainan, plus sudut **literasi keuangan anak** (celengan digital yang diawasi orang tua). Mereka bergiliran menjawab tantangan di layar; tiap jawaban tepat memunculkan tanda apresiasi. Seorang pembina muda mendekat, memberi petunjuk, ikut bertepuk saat satu tim menyelesaikan tantangan. Belajar yang terasa seperti bermain — dan dilakukan bersama.
+**Grafis UI (AE, non-AI):**
+- saat Andi menengok ponsel: ringkasan langkah harian (fitur kebugaran) · copy: **"8.000 langkah hari ini"** *(angka contoh — final di AE)* + ikon target
 
-**Shot list**
-- **SEQ4-SC04-SH01** — MS Andi + teman. start: mereka mengelilingi tablet, modul edukasi-permainan di layar. end: Andi menjawab tantangan, teman-temannya menyimak (lintas-peer). *(50mm)*
-- **SEQ4-SC04-SH02** — CU layar tablet. start: tantangan kuis + sudut celengan digital anak. end: tanda apresiasi muncul + sponsor edukasi anak tipis di sisi. *(Teknik 2/2b `prompt-rules`)*
-- **SEQ4-SC04-SH03** — MWS. start: pembina muda mendekat memberi petunjuk. end: satu tim menyelesaikan tantangan, semua bertepuk semringah. *(35mm · payoff: belajar = bermain, bersama)*
-
-**— Catatan produksi:** *Potensi iklan* — Surface: sponsor modul edukasi anak + tanda apresiasi + sudut literasi keuangan anak. Momen intent: keluarga + edukasi anak. Kategori: edtech anak · nutrisi · konten ramah-anak (brand-safe premium). Cross-cut dengan SC01 (ayah urus layanan publik / anak belajar, sore sama, lokasi beda). Bukan jual-beli. Interaksi lintas-peer + pembina. Grade hangat sore.
+**— Catatan produksi:** *Potensi iklan* — Surface: fitur kebugaran/pelacak langkah + (latar) konteks gaya hidup sehat; meta-signal platform humane = brand-safe. Momen intent: waktu luang & kesehatan keluarga. Kategori: kebugaran/wellness · sportswear/wearable · gaya hidup. Interaksi: Ratna ↔ Andi (mahram, tatap muka) + orang-orang sekitar (figuran latar = kontras "tertunduk ke layar"). **Ratna BERHIJAB** (taman publik, ada non-mahram); Andi uncovered. 2 subjek foreground (lean); orang-orang latar tak face-locked. Buka figuran-first (orang tertunduk-layar → Ratna+Andi). **Bingkai = tech-as-tool**: Andi pakai app sebentar lalu kantongi ponsel — *bukan* anti-ponsel, melainkan "app mengembalikan waktu". **Outdoor pertama yang lega** (variasi visual dari scene indoor/layar). Grade hangat keemasan sore. *(Ganti koperasi eks-SEQ4-SC03; masterclass + edutainment di-cut bersamaan; vertikal koperasi/keuangan-inklusif dilepas — fairness terbawa SC10 + recast di sini.)*
 
 ---
 
@@ -256,29 +221,19 @@ Ruang ekstrakurikuler sekolah seusai jam pelajaran, ceria dan rapi. Andi bersama
 
 ---
 
-## SEQ5-SC01 — INT. TERMINAL TRANSJAKARTA — 17.30 WIB *(mobilitas · transit hub)*
-Senja turun, lampu terminal bus rapid-transit mulai menyala dan arus komuter memadat. Lisa berada di antara antrean, ransel di punggung; ia membuka aplikasi, memesan dan membayar tiket perjalanan, lalu menempelkan gawainya di gerbang tap — palang terbuka, ia melangkah ke peron. Di dinding peron, layar luar-ruang digital besar menyalakan iklan bergerak silih berganti di atas kepala para penumpang. Seorang ibu lanjut usia di sebelahnya tampak ragu membaca papan jadwal; Lisa menoleh, menunjukkan jadwal kedatangan di layar gawainya, ibu itu mengangguk berterima kasih. Pulang pun punya jalannya — sama mudahnya untuk siapa saja.
+## SEQ5-SC12 — INT. TERMINAL TRANSJAKARTA — 17.30 WIB
+
+**Pesan misi (ad-provider):** Hub transit senja = **inventaris paling padat di film** — layar luar-ruang (OOH) digital raksasa di peron jadi permukaan utama, ditambah sponsor transport/tiket di app. Audiens menunggu = atensi tinggi; mobilitas pun mudah & setara lewat app. Inventaris: OOH digital · transport · e-wallet · kampanye publik.
+
+**Prosa scene:** Senja di terminal bus rapid-transit, lampu peron menyala. Seorang perempuan lanjut usia memicingkan mata ke papan jadwal. Lisa menghampiri, memiringkan layar ponselnya menunjukkan jadwal kedatangan; ibu itu mengangguk dan menepuk lengan Lisa. Di dinding peron, layar digital raksasa menyalakan iklan bergerak di atas arus penumpang.
 
 **VO (laki-laki, tenang):** *"Senja turun di kota. Pulang pun punya jalannya — semudah itu, dan sama untuk siapa saja."*
 
-**Shot list**
-- **SEQ5-SC01-SH01** — WS terminal senja. start: arus komuter padat, layar OOH digital menyala di latar, Lisa masuk antrean membuka aplikasi. end: ia memilih tiket perjalanan di gawai. *(24mm · keramaian transit hidup)*
-- **SEQ5-SC01-SH02** — CU gawai + gerbang tap. start: tiket terbayar di layar, ia menempelkan gawai di gerbang. end: palang terbuka + kartu sponsor transport lewat tipis di layar. *(50mm macro · Teknik 2/2b)*
-- **SEQ5-SC01-SH03** — MS peron. start: Lisa menunggu, layar OOH digital besar menyala iklan di atasnya. end: ia menunjukkan jadwal di gawainya ke ibu lanjut usia di sebelah (interaksi lintas-generasi). *(35mm · payoff: transit setara & mudah)*
+**Grafis UI (AE, non-AI):**
+- layar OOH digital raksasa di peron (ambient, *hero surface*): iklan bergerak silih berganti · copy: slot sponsor OOH
+- saat Lisa bantu ibu: jadwal kedatangan di ponsel · copy: **"Kedatangan [jam]"**
 
-**— Catatan produksi:** *Potensi iklan* — Surface: layar OOH digital peron + kartu sponsor transport di app + tiket/tap-gerbang + kios di latar. Momen intent: mobilitas pulang, captive audience di transit. Kategori: transport · telco · e-wallet · F&B/ritel · kampanye publik. **Hub transit = inventaris terpadat di seluruh film** (banyak permukaan sekaligus). Interaksi lintas-generasi (Lisa ↔ ibu lanjut usia). Bookend dengan ojek-pagi SEQ2-SC01 (berangkat/pulang) — mode massal + setting terminal sengaja beda. Grade hangat senja (lampu terminal mulai menyala).
-
----
-
-## SEQ5-SC02 — INT. WARUNG KELONTONG TETANGGA — 17.30 WIB *(utilitas finansial · bayar-tagihan, cross-cut dengan SC01)*
-Warung kelontong kecil di gang dekat rumah, lampu kuning hangat menyala saat langit meredup. Ratna mampir dalam perjalanan pulang dari balai warga; ia berdiri di depan etalase, membuka aplikasi pada menu pembayaran. Bukan berbelanja barang — ia **melunasi aneka tagihan rumah sekaligus**: listrik, iuran jaminan kesehatan, pulsa, lalu mengisi ulang celengan digital Andi. Pemilik warung, seorang bapak paruh baya, menyapanya sambil menata rokok di rak; mereka mengobrol ringan soal harga-harga. Satu per satu tagihan berubah "lunas" di layar. Urusan rumah yang dulu berserak di banyak loket, kini beres dari depan warung.
-
-**Shot list**
-- **SEQ5-SC02-SH01** — MS warung senja. start: Ratna di depan etalase, lampu warung kuning, pemilik warung menyapa. end: ia membuka menu pembayaran tagihan di gawai. *(35mm · interaksi lintas-tetangga)*
-- **SEQ5-SC02-SH02** — CU gawai. start: daftar tagihan (listrik / jaminan kesehatan / pulsa) + isi ulang celengan digital Andi. end: status berubah "lunas" satu per satu + kartu iklan utilitas/telco tipis di sisi. *(50mm · Teknik 2/2b)*
-- **SEQ5-SC02-SH03** — MS Ratna & pemilik warung. start: keduanya mengobrol ringan. end: Ratna pamit, melangkah pulang, warung hangat di latar. *(35mm · payoff: semua urusan rumah beres dari satu tempat)*
-
-**— Catatan produksi:** *Potensi iklan* — Surface: menu bayar-tagihan/PPOB + kartu utilitas/telco + isi-ulang celengan anak + rak warung di latar. Momen intent: rutinitas finansial rumah tangga senja. Kategori: utilitas (listrik) · asuransi/jaminan kesehatan · telco · e-wallet. **Bukan jual-beli barang** — fitur utilitas finansial, kategori iklan baru. Interaksi lintas-tetangga (Ratna ↔ pemilik warung). Cross-cut dengan SC01 (Lisa transit / Ratna urus tagihan, senja sama, lokasi beda). Grade hangat senja (lampu warung kuning).
+**— Catatan produksi:** *Potensi iklan* — Surface: **layar OOH digital peron** (hero) + sponsor transport/tiket di app (tersedia di hub, tak perlu di-foreground). Momen intent: mobilitas pulang, captive audience. Kategori: OOH digital · transport · e-wallet · kampanye publik. **Hub transit = inventaris terpadat** (kepadatan surface = nilai jual; tetap di-frame sebagai latar). Interaksi: Lisa ↔ ibu lanjut usia (tatap muka, lintas-generasi; tema "setara untuk siapa saja" di-*show*). **Lisa uncovered**. TTI: **1 aksi foreground (Lisa tunjuk jadwal ke ibu) + 2 subjek**; OOH & kerumunan = latar ambient. Buka figuran-first (ibu di papan jadwal → Lisa). Bookend dengan transport-pagi SC03. Grade hangat senja. *(Eks-SEQ5-SC01 → SC12; warung PPOB SEQ5-SC02 di-cut bersamaan.)*
 
 ---
 
@@ -287,42 +242,20 @@ Warung kelontong kecil di gang dekat rumah, lampu kuning hangat menyala saat lan
 
 ---
 
-## SEQ6-SC01 — INT. RUANG MAKAN — 18.30 WIB *(konvergensi keluarga · app-beat komersial terakhir)*
-Malam turun, ruang makan benderang oleh lampu hangat. Keluarga lengkap akhirnya berkumpul: Herman sudah pulang, tasnya tersampir di kursi; Ratna menata lauk — sebagian hidangan malam ini adalah frozen food buatannya sendiri yang tadi siang ia siarkan (payoff diegetik menutup hari); Lisa baru tiba, meletakkan ransel; Andi sudah lebih dulu duduk menunggu. Mereka makan bersama, mengobrolkan hari masing-masing. Menjelang azan Maghrib, Herman meraih ponselnya dan di aplikasi **mengaktifkan opt-in mode syariah** — sebuah pilihan, bukan paksaan; tampilan menyesuaikan tenang. Ia menelungkupkan ponsel di meja. Sejak itu, layar berhenti menawarkan apa pun.
+## SEQ6-SC13 — INT. RUANG MAKAN — 19.00 WIB
 
-**Shot list**
-- **SEQ6-SC01-SH01** — WS ruang makan. start: keluarga lengkap duduk satu meja, lampu hangat, hidangan (termasuk frozen food Ratna) tersaji. end: mereka makan bersama, mengobrol (interaksi lintas-generasi penuh — empat tokoh satu frame). *(35mm · payoff: produk Ratna jadi hidangan keluarga)*
-- **SEQ6-SC01-SH02** — CU ponsel di tangan Herman. start: ia mengaktifkan toggle opt-in mode syariah, tampilan app menyesuaikan tenang. end: ia menelungkupkan ponsel di meja — app-beat komersial terakhir film. *(50mm · transisi menuju zona sakral)*
+**Pesan misi (ad-provider):** **Finale + app-beat komersial TERAKHIR.** Menjelang Isya, Herman mengaktifkan **opt-in mode syariah** lalu app diam total → **"Bersih Saat Sakral"**; film menutup pada kehangatan keluarga (manusia & keluarga di atas komersial; tech tahu kapan berhenti = puncak bukti brand-safe). Inventaris: layanan/konten syariah (opt-in) — permukaan komersial terakhir film.
 
-**— Catatan produksi:** *Potensi iklan* (SH02 saja, pra-sakral) — Surface: pilihan mode syariah di app (opt-in pengguna). Momen intent: penyelarasan nilai/keyakinan. Kategori: layanan/konten syariah (halal, keuangan syariah) — opt-in, bukan default. **Ini permukaan komersial terakhir**; sejak SC02 nol grafis. Opt-in syariah ditampilkan sebagai pilihan, tanpa nama organisasi keagamaan. Interaksi keluarga penuh. Grade hangat malam (lampu interior).
+**Prosa scene:** Malam, ruang makan benderang lampu hangat. Keluarga berkumpul di satu meja — Herman, Ratna, Lisa, Andi — piring berpindah tangan, hidangan hangat mengepul di tengah. Saat azan Isya terdengar, Herman mengetuk satu pilihan di ponselnya; tampilan app meredup, lalu ia menelungkupkan ponsel di meja. Mereka kembali ke obrolan dan tawa kecil — satu keluarga, satu meja, lampu hangat.
 
----
+**VO penutup (laki-laki, tenang):** *"Satu keluarga, satu hari penuh. Teknologi yang tahu kapan melayani dan kapan diam — dan manusia yang memegang kendali."*
 
-## SEQ6-SC02 — INT. RUANG KELUARGA — 18.50 WIB *(ngaji ba'da Maghrib · kitab digital sebagai wasilah)*
-Ba'da Maghrib, ruang keluarga teduh oleh lampu hangat. Ratna duduk berdampingan dengan Andi di lantai beralas. Di hadapan Andi terbuka sebuah **kitab hardcopy** — halaman bertajwid, dibaca pelan. Di samping mereka, **satu monitor menampilkan versi digital kitab yang sama**: baris yang sedang dibaca tersorot lembut, penanda tajwid mengikut. Ratna menuntun sambil menengok layar itu, ujung jarinya menunjuk pulang-balik antara kitab fisik Andi dan panduan di monitor; Andi melafalkan, sesekali Ratna membetulkan dengan sabar. Tak ada satu pun iklan atau kartu komersial dalam frame — layar di sini hanya melayani yang sakral. Tradisi tidak digantikan; ia ditemani.
+**Grafis UI (AE, non-AI):**
+- saat Herman mengaktifkan: pilihan **mode syariah** menyala, tampilan menyesuaikan tenang · copy: **"Mode Syariah · aktif"** (opt-in) — *grafis komersial terakhir film*
 
-*(Zona sakral — VO senyap. VO penutup dipindah ke coda SEQ6-SC03.)*
-
-**Shot list**
-- **SEQ6-SC02-SH01** — MS Ratna & Andi. start: Andi menghadap kitab hardcopy terbuka, Ratna di sampingnya. end: Ratna menengok monitor kitab digital, jarinya menuntun baris (interaksi lintas-generasi). *(50mm · zona sakral — layar hanya konten ibadah, nol iklan)*
-- **SEQ6-SC02-SH02** — CU bergantian kitab ↔ monitor. start: baris yang dilafalkan Andi di kitab hardcopy. end: baris sama tersorot di monitor (penanda tajwid), tanpa kartu iklan apa pun. *(50mm macro · bukti brand-safe: wasilah sakral, nol komersial)*
-
-**— Catatan produksi:** **Bersih Saat Sakral = NOL KOMERSIAL (bukan nol layar):** monitor hadir tetapi hanya menampilkan kitab digital, NOL kartu iklan/grafis komersial. Scene bebas-iklan kedua (melengkapi SEQ1-SC02 Subuh). Tema: **teknologi sebagai wasilah** untuk ibadah — payoff diegetik opt-in syariah (SC01). Hardcopy + digital berdampingan = tradisi ditemani, bukan digantikan; ngaji ba'da Maghrib (praktik keluarga Muslim Indonesia). Sholat Maghrib berjamaah dilepas (sholat Subuh SEQ1-SC02 tetap jangkar ibadah; bookend utama film = coda SC03). Interaksi Ratna↔Andi lintas-generasi. VO senyap. Identitas + wardrobe dikunci. Grade hangat malam.
-
----
-
-## SEQ6-SC03 — INT. KAMAR HERMAN — 20.30 WIB *(coda · bookend pembuka SEQ1-SC01)*
-Malam larut, kamar yang sama tempat hari ini bermula. Herman berbaring di ranjang, lampu nyaris padam. Ia melirik ponsel di tangannya sekilas — **grafik pergerakan saham**, kini garis penutupan hari ini, gema persis dari sorotan dini hari tadi; tak ada kartu iklan, ia tak mengejar apa pun, hanya menengok lalu melepas. Ibu jarinya menyentuh tombol; layar **padam**. Ia meletakkan ponsel telungkup di nakas, menarik selimut, dan **memejamkan mata**. Hari yang penuh menutup persis di tempat ia dibuka — mata yang tadi terbuka, kini terpejam.
-
-**VO (laki-laki, tenang, penutup):** *"Satu hari penuh. Teknologi yang adil tahu kapan menemani — dan kapan diam. Manusia yang memegang kendali; teknologi sekadar jalannya."*
-
-**Shot list**
-- **SEQ6-SC03-SH01** — MCU Herman + ponsel di ranjang (cermin SEQ1-SC01-SH03). start: ia melirik grafik saham penutupan hari, wajah tersorot cahaya layar redup. end: ibu jari menekan, layar padam; cahaya hilang dari wajahnya. *(50mm · echo pembuka — tanpa kartu iklan, layar dipadamkan = "tahu kapan diam")*
-- **SEQ6-SC03-SH02** — ECU mata Herman (cermin terbalik SEQ1-SC01-SH01). start: ia meletakkan ponsel telungkup, mata masih terbuka di keremangan. end: kelopak mata menutup perlahan; frame meredup ke penutup. *(50mm · bookend: hari buka dengan mata terbuka, tutup dengan mata terpejam)*
-
-**— Catatan produksi:** **Coda bebas-iklan** — layar muncul hanya untuk dipadamkan (grafik saham penutupan, NOL kartu iklan), memperkuat tema VO "tahu kapan diam". Bukan pelanggaran Bersih Saat Sakral: ini wind-down privat **setelah** ibadah selesai (preseden Subuh: ibadah dikurung, hidup berlanjut). Bookend ketat ke SEQ1-SC01: ranjang yang sama, motif HP+grafik-saham, ECU mata dibalik (buka→tutup). VO penutup mendarat di sini agar kata + gambar-akhir berpadu. Identitas Herman + kamar dikunci (konsisten SEQ1-SC01). Grade hangat malam, nyaris gelap.
+**— Catatan produksi:** *Potensi iklan* (gestur opt-in saja, pra-sakral) — Surface: pilihan mode syariah (opt-in pengguna), tanpa nama organisasi. **Permukaan komersial TERAKHIR**; film menutup sesudahnya. **FINALE** — gambar terakhir = kehangatan keluarga (bukan ponsel). Interaksi: keluarga lengkap (**4 subjek — konvergensi sengaja, payoff**; aksi foreground = gestur opt-in Herman). **Ratna uncovered** (mahram-only). Hidangan **tak dilabeli** (frozen food tetap ada di dunia cerita lewat SC04/SC08, cukup disiratkan). Azan = **Isya**. Grade hangat malam. *(Eks-SEQ6-SC01 → SC13 = scene terakhir; SC14 ngaji + SC15 coda DI-CUT; film 15→13.)*
 
 ---
 
 ## Ringkasan
-Struktur hari: Subuh → Pagi → Siang → Sore → Senja/Pra-Pulang → Malam, ditutup coda kamar (bookend ke pembuka SEQ1-SC01). Dua scene bebas-iklan (Subuh sholat · ba'da-Maghrib ngaji — yang kedua "nol komersial, bukan nol layar": kitab digital sebagai wasilah) + coda layar-dipadamkan membingkai hari. Hierarki & workflow produksi: `06-konvensi-naratif.md`.
+Struktur hari: Subuh → Pagi → Siang → Sore → Senja → Malam, ditutup pada **kehangatan keluarga di meja makan (SC13)** — app diam menjelang Isya ("Bersih Saat Sakral"), film menutup pada keluarga, bukan komersial. Scene bebas-iklan: Subuh sholat (SEQ1-SC02). **Total 13 scene (SC01–SC13);** coda kamar + ngaji ba'da-Maghrib di-cut, finale dipindah ke meja makan. Hierarki & workflow produksi: `06-konvensi-naratif.md`.
