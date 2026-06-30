@@ -8,7 +8,18 @@ updated: 2026-06-10
 
 # Context — Sesi Aktif
 
-## SESSION CLOSE (2026-06-30c · GATE A1 SELESAI — cerita seluruh film 13 scene) — TERBARU
+## SESSION (2026-06-30d · GATE A2 DIBUKA — SC01 shot-breakdown + konvensi DUA-DOC) — TERBARU
+**Mandat:** mulai GATE A2 (breakdown shot URUT SC01→SC13, blok-narasi dulu). Sesi ini: SC01.
+**Keputusan struktural (Erik approve via /sepakat-atau-debat):** konvensi **DUA-DOC** per scene di `10-gateB-keyframes/` — `SEQ<n>-SC<nn>.md` = narasi A2 saja; `Prompt-SEQ<n>-SC<nn>.md` = prompt GATE B + status. Pemicu: `SEQ1-SC01.md` lama menumpuk 335 baris/42 KB. **Reset doc = tulis prompt BARU (jangan pindah prompt lama)** supaya seluruh shot selaras+berpola sama; render lama SC01 (4-shot) **superseded** oleh breakdown baru (5-shot). PENGECUALIAN: konsep shot identik → port prompt accepted lama sbg master-pola.
+**Ditulis (uncommitted, nunggu "ya" commit):**
+- `06-konvensi-naratif.md` Langkah 2/4/5 → konvensi dua-doc + pola seragam START-master→END-edit.
+- `10-gateB-keyframes/SEQ1-SC01.md` → **RESET ke narasi-saja** (5-shot blok-narasi: SH01 bangun · SH02 HP-nakas-nyala · SH03 menimang-HP · SH04 lampu-nyala-wide-2subjek · SH05 Ratna-bangun) + Grafis UI + Catatan. (Breakdown 4→5: pisah lampu/Ratna; buang rear-view bespoke lama.)
+- `10-gateB-keyframes/Prompt-SEQ1-SC01.md` (BARU) → header + render-lama-superseded + manifest attachment + scaffold 5 shot (concept+attachments). **SH01 START+END = PROVEN** (port prompt accepted 2026-06-29, konsep identik). **SH02–SH05 START/END = PENDING author.**
+- `lessons.md` → 2 bullet (konvensi dua-doc; reset=tulis-baru-jangan-pindah).
+**Plat tersedia (verified disk):** E01 `master/bed3q/bed4q/nightstand`; Herman + Ratna full set incl. rear (hijab Ratna ADA tapi tak dipakai SC01 — mahram-only uncovered).
+**NEXT:** author prompt SH02→SH05 (pola seragam, lewat audit) → Erik generate → rename → SC02 narasi. **A2 = narasi-only kecuali Erik naikkan scene ke GATE B (SC01 sudah dinaikkan).** Commit hanya atas "ya".
+
+## SESSION CLOSE (2026-06-30c · GATE A1 SELESAI — cerita seluruh film 13 scene)
 **Hasil:** GATE A1 (cerita, story-only) TUNTAS untuk SELURUH film — **13 scene SC01–SC13**, semua format baru template `06` (nol shot-list lama; grep `^## SEQ` = 13). Sesi ini menulis SC08–SC13 + merestruktur 16→13.
 **Struktur final 13 scene:** SEQ1 SC01-02 · SEQ2 SC03-07 · SEQ3 SC08(bank)-SC09(kesehatan) · SEQ4 SC10(gov+data-komoditas)-SC11(taman-wasilah) · SEQ5 SC12(terminal) · SEQ6 SC13(makan FINALE: opt-in syariah + kehangatan keluarga, azan Isya).
 **Cut total proyek:** trading · masterclass-Lisa · edutainment-anak · PPOB warung · live-selling · koperasi · ngaji · coda.

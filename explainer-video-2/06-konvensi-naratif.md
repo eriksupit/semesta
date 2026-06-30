@@ -49,17 +49,19 @@ Format: **`SEQ<n>-SC<nn>-SH<nn>`**.
 **Langkah 1 — `03-scene-detail.md` = CERITA (GATE A, clean-slate).**
 Tulis & kunci cerita per scene, berurutan. Scene = 1 lokasi + 1 waktu (pindah lokasi/waktu → scene baru). Isi sah: **Pesan misi (ad-provider)** + prosa scene + VO + **blok-narasi per shot** + baris **Grafis UI (AE)** (kapan muncul + copy) + Catatan produksi. **NOL addendum, NOL tag status, NOL catatan metode/revisi bertanggal, NOL prompt** (prompt = GATE B). Status produksi dan metode per-shot TIDAK hidup di sini.
 
-**Langkah 2 — satu doc per scene di `10-gateB-keyframes/SEQ<n>-SC<nn>.md` (GATE B).**
-Tiap scene yang sudah terkunci diturunkan jadi SATU dokumen. Di sinilah status produksi, metode per-shot, dan prompt hidup.
+**Langkah 2 — DUA doc per scene di `10-gateB-keyframes/` (GATE B).** *(konvensi dua-doc, dikunci 2026-06-30 — SUPERSEDES "satu doc"; alasan: satu-doc bertumpuk narasi+prompt+status jadi tak reviewable, mis. `SEQ1-SC01.md` lama 335 baris/42 KB.)*
+Tiap scene yang sudah terkunci diturunkan jadi DUA dokumen terpisah:
+- **`SEQ<n>-SC<nn>.md` = NARASI saja** — blok-narasi per shot (Langkah 3) + Grafis UI (AE) + Catatan produksi. Ringkas, reviewable; **NOL prompt, NOL status render**.
+- **`Prompt-SEQ<n>-SC<nn>.md` = PROMPT + STATUS** — di sinilah prompt GATE B, metode per-shot, dan status produksi per-shot hidup.
 
 **Langkah 3 — tiap shot: BLOK NARASI dulu, baru prompt.**
 Sebelum token apa pun, urai shot dalam narasi (template di bawah). Syarat shot: framing + angle **LOCKED** start→end; hanya subjek yang bergerak. Satu shot wajib mampu menggambarkan adegan AWAL (calon image START) dan adegan AKHIR (calon image END).
 
-**Langkah 4 — terjemahkan narasi → prompt.**
-START = **full prompt** (master / angle-child; hukum master-parent + edit-in-place: `prompt-rules-text-image-to-image.md`). END = **edit-in-place** pada render START yang sudah accepted.
+**Langkah 4 — terjemahkan narasi → prompt (di `Prompt-SEQ<n>-SC<nn>.md`).**
+Pola seragam tiap shot: **START = master full-prompt + attachment → END = derivative edit-in-place (+ attachment bila perlu)** (hukum master-parent + edit-in-place: `prompt-rules-text-image-to-image.md`). START = full prompt (master / angle-child); END = edit-in-place pada render START yang sudah accepted.
 
 **Langkah 5 — produksi.**
-User generate; Claude menunggu (Claude tidak pernah generate). Render accepted → rename ke `scene-images/` → update status di per-scene doc (Langkah 2) → shot berikutnya.
+User generate; Claude menunggu (Claude tidak pernah generate). Render accepted → rename ke `scene-images/` → update status di `Prompt-SEQ<n>-SC<nn>.md` (status hidup di sana, Langkah 2) → shot berikutnya.
 
 ### Template scene (GATE A · di `03-scene-detail.md`)
 ```

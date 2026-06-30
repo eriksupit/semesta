@@ -6,13 +6,15 @@ created: 2026-06-08
 updated: 2026-06-29
 ---
 
-# Scope — AKTIF (2026-06-30c · GATE A1 SELESAI → next GATE A2 shot-breakdown)
+# Scope — AKTIF (2026-06-30d · GATE A2 BERJALAN — SC01 + konvensi DUA-DOC)
 
-## MANDAT SESI BERIKUTNYA (A2)
-Cerita seluruh film (GATE A1) TUNTAS: **13 scene SC01–SC13** di `03-scene-detail.md`, format baru. **NEXT = GATE A2:** breakdown shot per scene URUT (SC01→SC13) — tiap shot **blok-narasi dulu** (`06` Langkah 3: Narasi/Kamera/Angle+Framing LOCKED/Mood/AWAL→START/AKHIR→END), output ke `10-gateB-keyframes/` per scene; lalu GATE B prompts (START full / END edit-in-place). Tiap scene: draft → approve → tulis → next. Commit hanya atas "ya".
-- **Reconcile 3 flag saat A2:** header/Pesan-sequence stale di `03`; penomoran legacy file luar (NO mass-rename); konfirmasi runtime (13 scene).
-- **Constraint tetap:** no-coal (sektor tambang = info-data saja); **SHOW+RINGKAS** prosa; TTI-simplicity (≤2–3 subjek/shot, 1 aksi); modesty mahram-axis; figuran-first.
-**OUT OF SCOPE:** membuka ulang cerita A1 (terkunci); generate gambar; commit/push tanpa "ya".
+## MANDAT SESI (A2)
+Breakdown shot per scene URUT (SC01→SC13), blok-narasi dulu (`06` Langkah 3). **Konvensi DUA-DOC (Erik approve 2026-06-30, kanonik `06` Langkah 2):** `SEQ<n>-SC<nn>.md` = narasi A2 saja; `Prompt-SEQ<n>-SC<nn>.md` = prompt GATE B + status. **Reset doc = tulis prompt BARU, jangan pindah prompt lama** (kecuali konsep shot identik → port sbg master-pola); render lama yang breakdown-nya berubah = superseded.
+- **SC01 SELESAI narasi (5-shot) + dinaikkan ke GATE B:** `SEQ1-SC01.md` reset; `Prompt-SEQ1-SC01.md` dibuat (SH01 PROVEN, SH02–SH05 PENDING author). **NEXT = author SH02→SH05** (pola START-master→END-edit) → Erik generate → rename → SC02 narasi.
+- **A2 = narasi-only kecuali Erik naikkan scene ke GATE B** (SC01 sudah dinaikkan).
+- **Reconcile 3 flag saat A2:** header/Pesan-sequence stale di `03` (betulkan sekali per-SEQ setelah shot diketahui); penomoran legacy file luar (NO mass-rename); konfirmasi runtime (13 scene).
+- **Constraint tetap:** no-coal; **SHOW+RINGKAS**; TTI-simplicity (≤2–3 subjek/shot, 1 aksi); modesty mahram-axis; figuran-first.
+**OUT OF SCOPE:** membuka ulang cerita A1 (terkunci); generate gambar (Claude tunggu); commit/push tanpa "ya".
 
 ---
 
