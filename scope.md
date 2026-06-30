@@ -6,18 +6,25 @@ created: 2026-06-08
 updated: 2026-06-29
 ---
 
-# Scope — AKTIF (2026-06-30e · ★ GATE A2 Fase-1 SELESAI — shotlist SELURUH film SC01–SC13)
+# Scope — AKTIF (2026-07-01 · ★ GATE A2 Fase-2 SELESAI — semua prompt plat env+figuran LOCKED)
+
+## STATUS
+**GATE A2 Fase-2 (author semua prompt plat) TUNTAS + committed `f96fefd`:** 29 prompt plat audit-COMPLIANT — 8 env-sheet di-restruktur ke format E03 (E05/E06/E07/E08/E09/E13/E15/E16; §1 JSON identity-lock + §3 cell + §4 status) + 5 figuran §3 (F6 ojek/F7 kurir/F8 mentor/F9 ibu-petugas/F10 bapak-desa, front_full+front_medium). Semua status sheet = "prompt LOCKED · generate PENDING (sesi baru)". **Reference-plate PROMPT library = LENGKAP.** Workflow **author-all→generate-in-SESI-BARU** kanonik (lessons + auto-memory SOP). Fase-1 (shotlist seluruh film SC01–SC13) tetap tuntas. Handoff generate-session = `handoff/HANDOFF-2026-07-01-EV2-FASE2-GENERATE.*`.
+
+## MANDAT BERIKUTNYA (urut pipeline `06` §Fase makro)
+1. **GENERATE plat (SESI BARU)** — Erik generate semua plat dari prompt terkunci; **master-dulu per env → derivative upload-master**; figuran studio-isolated. Claude order queue + present prompt+attachment → Erik generate → Claude rename + flip status ✅. Env → `environment-images/E<nn>_<nama>/`, figuran → `character-images/F_<nama>/`. **Claude TIDAK generate.**
+2. **Fase 3 = SHOT→PROMPT** per `Prompt-SEQ*-SC*.md` (START full / END edit-in-place) — SETELAH plat-image library lengkap.
+- **Constraint tetap:** A1 semua layar OFF/polos (E08 dasbor + E13 OOH = OFF, konten=AE); grade plat NETRAL (warm/senja/golden=GATE B); no-coal; modesty mahram-axis (uncovered baseline, covering=GATE B); F9/F10 verify aged-not-deaged plat-pertama; Hokusai allocation final (E01 GreatWave·E02 RedFuji·E03 Kajikazawa·E05 Ejiri·E06 BlackFuji); ambient-crowd E13/E16 soft tak-face-locked.
+**OUT OF SCOPE:** generate gambar sendiri (Claude tunggu, Erik generate); buka-ulang prompt plat terkunci tanpa reject-render; Fase-3 keyframe sebelum plat-image lengkap; commit/push tanpa "ya".
+
+---
+
+# Scope — Riwayat (2026-06-30e · GATE A2 Fase-1 SELESAI — shotlist SELURUH film SC01–SC13)
 
 ## STATUS
 **GATE A2 Fase-1 (shotlist narasi seluruh film) TUNTAS:** 13 doc `SEQ*-SC*.md` di `10-gateB-keyframes/` (SC01–SC13), tiap scene blok-narasi + Teknis shot-spec + ladder selang-seling + camera-lock audit. Konvensi DUA-DOC + pipeline 3-FASE kanonik di `06`.
 - **Env keterangan Fase-1 ditulis** (9): E03(plat-ada)·E05·E06·E07·E08·E09·E13·E15·E16. **Figuran keterangan Fase-1** (5 baru): F6 ojek·F7 kurir·F8 mentor·F9 ibu-petugas·F10 bapak-desa. (Prompt 6-lapis + generate = Fase 2.)
-
-## MANDAT BERIKUTNYA (urut pipeline `06` §Fase makro)
-1. **Reconcile 3 flag** (boleh sekarang): header/Pesan-sequence stale `03` per-SEQ (SEQ3–SEQ6 count/teks); penomoran legacy file luar (NO mass-rename, selaraskan saat disentuh); **runtime DITERIMA Erik 2026-06-30e** (±65 shot ≈ 3,5–5,5 mnt; lebih panjang dari target lama ~270–300 dtk — Erik terima apa adanya, tak pangkas).
-2. **Fase 2 = PROMPT ENV** — elaborasi 9 env-sheet keterangan → prompt plat (user generate → `environment-images/`) + prompt figuran F6–F10.
-3. **Fase 3 = SHOT→PROMPT** per `Prompt-SEQ*-SC*.md` (START full / END edit-in-place).
-- **Constraint tetap:** no-coal; SHOW+RINGKAS; TTI-simplicity; modesty mahram-axis; camera-lock START/END; selang-seling; establish-before-insert.
-**OUT OF SCOPE:** membuka ulang cerita A1/shotlist terkunci tanpa alasan; generate gambar (Claude tunggu); commit/push tanpa "ya".
+- **Fase-2 (prompt plat) kini SELESAI** — lihat blok AKTIF di atas.
 
 ---
 
