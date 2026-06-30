@@ -6,16 +6,18 @@ created: 2026-06-08
 updated: 2026-06-29
 ---
 
-# Scope — AKTIF (2026-06-30d · GATE A2 BERJALAN — SC01 + konvensi DUA-DOC)
+# Scope — AKTIF (2026-06-30e · ★ GATE A2 Fase-1 SELESAI — shotlist SELURUH film SC01–SC13)
 
-## MANDAT SESI (A2)
-Breakdown shot per scene URUT (SC01→SC13), blok-narasi dulu (`06` Langkah 3). **Konvensi DUA-DOC (Erik approve 2026-06-30, kanonik `06` Langkah 2):** `SEQ<n>-SC<nn>.md` = narasi A2 saja; `Prompt-SEQ<n>-SC<nn>.md` = prompt GATE B + status. **Reset doc = tulis prompt BARU, jangan pindah prompt lama** (kecuali konsep shot identik → port sbg master-pola); render lama yang breakdown-nya berubah = superseded.
-- **URUTAN A2 (Erik koreksi 2026-06-30):** tulis **shotlist (narasi) SEMUA scene SC01→SC13 DULU**; prompt GATE B (`Prompt-SEQ<n>-SC<nn>.md`) diurus **SETELAH** semua shotlist kelar. JANGAN lompat ke prompt di tengah fase shotlist.
-- **SC01 narasi SELESAI** (`SEQ1-SC01.md`, 5-shot). `Prompt-SEQ1-SC01.md` + SH01 ter-port = **DIPARKIR** (proven, nol kerja prompt lagi sampai SC13 shotlist kelar). **NEXT = draft shotlist SC02** → approve → tulis `SEQ1-SC02.md` → SC03 … SC13.
-- **A2 = narasi-only** (no prompt sampai shotlist seluruh film kelar).
-- **Reconcile 3 flag saat A2:** header/Pesan-sequence stale di `03` (betulkan sekali per-SEQ setelah shot diketahui); penomoran legacy file luar (NO mass-rename); konfirmasi runtime (13 scene).
-- **Constraint tetap:** no-coal; **SHOW+RINGKAS**; TTI-simplicity (≤2–3 subjek/shot, 1 aksi); modesty mahram-axis; figuran-first.
-**OUT OF SCOPE:** membuka ulang cerita A1 (terkunci); generate gambar (Claude tunggu); commit/push tanpa "ya".
+## STATUS
+**GATE A2 Fase-1 (shotlist narasi seluruh film) TUNTAS:** 13 doc `SEQ*-SC*.md` di `10-gateB-keyframes/` (SC01–SC13), tiap scene blok-narasi + Teknis shot-spec + ladder selang-seling + camera-lock audit. Konvensi DUA-DOC + pipeline 3-FASE kanonik di `06`.
+- **Env keterangan Fase-1 ditulis** (9): E03(plat-ada)·E05·E06·E07·E08·E09·E13·E15·E16. **Figuran keterangan Fase-1** (5 baru): F6 ojek·F7 kurir·F8 mentor·F9 ibu-petugas·F10 bapak-desa. (Prompt 6-lapis + generate = Fase 2.)
+
+## MANDAT BERIKUTNYA (urut pipeline `06` §Fase makro)
+1. **Reconcile 3 flag** (boleh sekarang): header/Pesan-sequence stale `03` per-SEQ (SEQ3–SEQ6 count/teks); penomoran legacy file luar (NO mass-rename, selaraskan saat disentuh); **runtime DITERIMA Erik 2026-06-30e** (±65 shot ≈ 3,5–5,5 mnt; lebih panjang dari target lama ~270–300 dtk — Erik terima apa adanya, tak pangkas).
+2. **Fase 2 = PROMPT ENV** — elaborasi 9 env-sheet keterangan → prompt plat (user generate → `environment-images/`) + prompt figuran F6–F10.
+3. **Fase 3 = SHOT→PROMPT** per `Prompt-SEQ*-SC*.md` (START full / END edit-in-place).
+- **Constraint tetap:** no-coal; SHOW+RINGKAS; TTI-simplicity; modesty mahram-axis; camera-lock START/END; selang-seling; establish-before-insert.
+**OUT OF SCOPE:** membuka ulang cerita A1/shotlist terkunci tanpa alasan; generate gambar (Claude tunggu); commit/push tanpa "ya".
 
 ---
 

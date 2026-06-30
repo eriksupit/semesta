@@ -182,7 +182,67 @@ For audit only — every §3 prompt already contains these verbatim. Constant ac
 ```
 > Plat dibutuhkan (shot-driven SC04 SH01/SH02/SH05): `F_kurir_front_full` (utama, WIDE memuat+payoff) + `F_kurir_front_medium` (MS memuat kardus). Zero Profile B. Generate → `character-images/F_kurir/` (Fase plat). Kurir-2 = secondary soft pakai plat sama.
 
-*Scene wardrobe (GATE B), all figurans:* Darto SEQ2-SC01 vendor at stall, baseline, no head covering. Tika SEQ3-SC01 packing helper — religious identity unestablished → neutral modest wear, head covering not imposed (hijab added as GATE B layer only if director establishes her muslimah, broadcast-exposure axis). petugas SEQ3-SC02 video-call from bank desk, neat corporate shirt, front webcam. Rian SEQ3-SC03 office colleague carrying coffee, office-smart casual. pembina SEQ4-SC04 school club mentor, modest contemporary, head covering not imposed (GATE B layer only if established muslimah). Ojek SC03 waiting at gate on a motorcycle, generic colored windbreaker + open-face helmet, no brand, head covering not religious.
+### F8 — Peer-mentor (mahasiswi senior, ~22) · SC07 (eks-SEQ2-SC07) · cells: front_full, front_medium · ⬜ KETERANGAN Fase-1 (prompt 6-lapis = Fase-2)
+> Ditambahkan 2026-06-30. SC07 = Lisa↔peer-mentor di selasar kampus. Plat baseline UNCOVERED; faith NOT imposed (identitas religi tak ditetapkan → modest contemporary, kerudung TIDAK dipaksakan). Pembeda dari Lisa (mahasiswi 20): mentor sedikit lebih senior/matang, gaya berbeda.
+```json
+"character_identity": {
+  "role": "Jakarta senior university student, peer mentor, warm approachable confident presence",
+  "ethnicity": "modern Jakartan features, Javanese urban descent",
+  "beauty": "fresh young-adult appearance, friendly mature-student register",
+  "age": "woman 22 years old",
+  "facial_features": "distinctive-commoner-features, oval face shape, defined cheekbones, warm wide smile, medium-thick natural brows, bright attentive eyes, clear complexion, a small beauty mark near the jaw",
+  "body_features": "slim-average young-adult build, natural 34B bustline, 165cm frame, relaxed confident posture"
+}
+"character_style": {
+  "makeup": "light natural foundation even coverage, soft groomed brows, soft rose tinted lip, baked setting powder matte finish zero shine, fresh skin texture preserved",
+  "wardrobe": "modest contemporary casual — relaxed soft button cardigan muted mustard over plain crew-neck tee, comfortable straight trousers desaturated navy, campus-casual, head covering not imposed",
+  "hair": "medium-length dark hair, soft natural wave, half-tied, uniformly dark even tone, dry matte hair, chalky matte finish",
+  "footwear": "clean flat loafers, plain muted"
+}
+```
+> Plat dibutuhkan (shot-driven SC07 SH01/SH04/SH05): `F_mentor_front_full` (WIDE + 2-shot duduk) + `F_mentor_front_medium` (2-shot rapat). Zero Profile B. Generate → `character-images/F_mentor/` (Fase plat).
+
+### F9 — Ibu petugas kebersihan (campus cleaner, perempuan paruh baya ~55) · SC09 (eks-SEQ3-SC09) · cells: front_full, front_medium · ⬜ KETERANGAN Fase-1 (prompt 6-lapis = Fase-2)
+> Ditambahkan 2026-06-30. SC09 = Lisa bantu ibu pesan dokter (telemedicine). Plat baseline UNCOVERED; faith NOT imposed (modest paruh-baya; kerudung TIDAK dipaksakan kecuali director menetapkan). Seragam kebersihan kampus = wardrobe GATE B (bukan di plat). Render-age: paruh baya nyata (~55, tak diturunkan; verifikasi guratan usia di plat pertama).
+```json
+"character_identity": {
+  "role": "Jakarta middle-aged campus cleaning staff woman, weathered hardworking gentle presence",
+  "ethnicity": "modern Jakartan features, Javanese urban descent",
+  "beauty": "humble working-class middle-aged appearance, kind tired warmth",
+  "age": "woman 55 years old",
+  "facial_features": "distinctive-commoner-features, round softened face shape, fine age lines around eyes and mouth, slightly hollow cheeks, broad gentle nose, thinning natural brows, warm tired eyes, sun-aged complexion, a few age spots",
+  "body_features": "stout sturdy middle-aged build, slightly stooped tired posture, 156cm frame"
+}
+"character_style": {
+  "makeup": "bare weathered mature skin, fine wrinkles preserved, matte finish zero shine, real-person texture",
+  "wardrobe": "plate baseline neutral — plain modest short-sleeve blouse desaturated grey-green, relaxed dark trousers; SCENE wardrobe (GATE B) = campus cleaning-staff uniform vest/apron, no brand",
+  "hair": "greying dark hair, low neat bun, uniformly salt-and-pepper even distribution, dry matte hair, chalky matte finish",
+  "footwear": "simple worn flat shoes, plain"
+}
+```
+> Plat dibutuhkan (shot-driven SC09 SH01/SH02/SH04/SH05): `F_ibupetugas_front_full` (MWS + 2-shot) + `F_ibupetugas_front_medium` (2-shot + tangan detail). Zero Profile B. Generate → `character-images/F_ibupetugas/` (Fase plat).
+
+### F10 — Bapak desa lanjut usia (village elder, laki-laki ~62) · SC12 (eks-SEQ5-SC12) · cells: front_full, front_medium · ⬜ KETERANGAN Fase-1 (prompt 6-lapis = Fase-2)
+> Ditambahkan 2026-06-30 (Erik: ganti dari "ibu lansia" → variasi demografi + lintas-demografi). SC12 = Lisa bantu bapak desa baca jadwal di terminal. Plat baseline UNCOVERED (wajah dikunci); **peci/kopiah hitam + tongkat = wardrobe/prop GATE B** (bukan di plat). Interaksi Lisa↔bapak NON-MAHRAM → gestur syukur non-sentuh (di scene). Render-age: lansia nyata (~62, tak diturunkan; verifikasi guratan usia di plat pertama).
+```json
+"character_identity": {
+  "role": "Indonesian rural elder man visiting the city, humble devout gentle village presence",
+  "ethnicity": "modern Indonesian features, Javanese rural descent",
+  "beauty": "weathered humble elderly appearance, kind dignified",
+  "age": "man 62 years old",
+  "facial_features": "distinctive-commoner-features, lean weathered face shape, deep age lines across forehead and around eyes, sunken cheeks, prominent cheekbones, broad flat nose, thin greying brows, kind tired eyes, dark sun-aged complexion, sparse short grey moustache, a few age spots",
+  "body_features": "slight stooped frail elderly build, thin, 162cm frame, leaning posture as if on a cane"
+}
+"character_style": {
+  "makeup": "bare weathered aged male skin, deep wrinkles preserved, matte finish zero shine, real-person texture",
+  "wardrobe": "plate baseline neutral — plain modest long-sleeve batik-free button shirt desaturated brown, loose dark trousers; SCENE wardrobe (GATE B) = black peci/kopiah cap + simple shirt + holds a wooden walking cane (tongkat), village-elder modest",
+  "hair": "short thinning grey hair, uniformly grey even distribution, dry matte hair, chalky matte finish",
+  "footwear": "simple worn sandals, plain"
+}
+```
+> Plat dibutuhkan (shot-driven SC12 SH01/SH02/SH04/SH05): `F_bapakdesa_front_full` (WIDE + 2-shot, bersandar tongkat) + `F_bapakdesa_front_medium` (MS + 2-shot). Zero Profile B. Generate → `character-images/F_bapakdesa/` (Fase plat).
+
+*Scene wardrobe (GATE B), all figurans:* Darto SEQ2-SC01 vendor at stall, baseline, no head covering. Tika SEQ3-SC01 packing helper — religious identity unestablished → neutral modest wear, head covering not imposed (hijab added as GATE B layer only if director establishes her muslimah, broadcast-exposure axis). petugas SEQ3-SC02 video-call from bank desk, neat corporate shirt, front webcam. Rian SEQ3-SC03 office colleague carrying coffee, office-smart casual. pembina SEQ4-SC04 school club mentor, modest contemporary, head covering not imposed (GATE B layer only if established muslimah). Ojek SC03 waiting at gate on a motorcycle, generic colored windbreaker + open-face helmet, no brand, head covering not religious. Kurir SC04 loading boxes, plain courier vest/polo + cap, no brand. Peer-mentor SC07 seated on campus bench, modest campus-casual cardigan, head covering not imposed. Ibu petugas kebersihan SC09 seated on campus bench, campus cleaning-staff uniform vest/apron, head covering not imposed. Bapak desa SC12 at the transit platform, black peci/kopiah cap + simple shirt + wooden cane (tongkat), village-elder modest, non-mahram polite distance from Lisa.
 
 ---
 
