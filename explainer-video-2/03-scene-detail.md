@@ -18,7 +18,7 @@ Override cool deck-standard `prompt-rules` b.208. String `color_grade` standar v
 
 ---
 
-# SEQ1 — SUBUH (≈40 detik · 2 scene / 8 shot)
+# SEQ1 — SUBUH (≈50 detik · 2 scene / 10 shot)
 **Pesan sequence:** hari dimulai sama untuk semua orang; sistem yang adil tahu kapan menawarkan dan kapan diam. *(Konvensi SEQ/SC/SH: `06-konvensi-naratif.md`.)*
 
 > Tiap **scene** = 1 lokasi + 1 waktu, ditulis sebagai **skenario prosa** (waktu, lokasi, aksi, dinamika, isi ruang). Di bawahnya **daftar shot** (1 shot = 1 setup kamera = 1 keyframe-pair/segmen 5dtk) + **Catatan produksi**.
@@ -57,7 +57,7 @@ Override cool deck-standard `prompt-rules` b.208. String `color_grade` standar v
 
 ---
 
-# SEQ2 — PAGI / BERANGKAT (≈55 detik · 4 scene / 11 shot)
+# SEQ2 — PAGI / BERANGKAT (≈125 detik · 5 scene / 25 shot)
 **Pesan sequence:** satu kompleks, banyak kelas dan profesi, semua bergerak di aplikasi yang sama dengan aturan yang sama. *(Konvensi: `06-konvensi-naratif.md`.)*
 
 ---
@@ -141,8 +141,8 @@ Override cool deck-standard `prompt-rules` b.208. String `color_grade` standar v
 
 ---
 
-# SEQ3 — SIANG / PUNCAK AKTIVITAS (≈70 detik · 4 scene / 14 shot)
-**Pesan sequence:** aktivitas ekonomi keluarga memuncak — jual-beli, kerja, investasi, belajar — semua tertampung satu aplikasi dengan aturan main yang sama. *(Konvensi: `06-konvensi-naratif.md`.)* Ratna jadi bintang sequence ini (vertikal marketplace penuhnya).
+# SEQ3 — SIANG / LAYANAN MENDALAM (≈50 detik · 2 scene / 10 shot)
+**Pesan sequence:** siang hari, app menampung **layanan yang lebih dalam dari jual-beli** — akses **modal/keuangan** (bank hadir sebagai penyewa di app) dan **kesehatan** (telemedicine) — dengan aturan main yang sama untuk siapa pun. *(Konvensi: `06-konvensi-naratif.md`.)* SC08 (bank-as-tenant, Ratna) + SC09 (telemedicine, Lisa).
 
 ---
 
@@ -179,8 +179,8 @@ Override cool deck-standard `prompt-rules` b.208. String `color_grade` standar v
 
 ---
 
-# SEQ4 — SORE / DUNIA MELEBAR (≈65 detik · 4 scene / 12 shot)
-**Pesan sequence:** hari melandai dan aktivitas bergeser dari dagang ke **layanan publik, ilmu, dan komunitas** — superapp menampung jauh lebih dari jual-beli, dan aturannya tetap satu untuk semua. *(Konvensi: `06-konvensi-naratif.md`.)* SEQ4 sengaja **nol transaksi dagang** (marketplace sudah penuh di SEQ3); tiap scene mengangkat satu vertikal non-dagang di lingkaran sosial masing-masing tokoh.
+# SEQ4 — SORE / DUNIA MELEBAR (≈50 detik · 2 scene / 10 shot)
+**Pesan sequence:** sore hari, app melebar ke **layanan publik/pemerintah** (izin via gov-as-tenant + data komoditas) dan **wellbeing/kebugaran sebagai wasilah** (teknologi mengembalikan waktu untuk keluarga) — jauh lebih dari jual-beli, aturannya tetap satu untuk semua. *(Konvensi: `06-konvensi-naratif.md`.)* SC10 (gov-as-tenant + dasbor komoditas, Herman) + SC11 (taman wasilah/kebugaran, Ratna+Andi).
 
 ---
 
@@ -216,8 +216,8 @@ Override cool deck-standard `prompt-rules` b.208. String `color_grade` standar v
 
 ---
 
-# SEQ5 — SENJA / PRA-PULANG (≈38 detik · 2 scene / 6 shot)
-**Pesan sequence:** hari mereda dan kota bergerak pulang; perjalanan dan urusan rutin senja pun tertampung satu aplikasi — mudah dan setara untuk siapa saja. *(Konvensi: `06-konvensi-naratif.md`.)* Herman dikecualikan dari babak ini (penghindaran over-exposure bapak); Andi sudah di rumah, muncul di SEQ6.
+# SEQ5 — SENJA / PRA-PULANG (≈25 detik · 1 scene / 5 shot)
+**Pesan sequence:** hari mereda dan kota bergerak pulang; mobilitas pulang pun tertampung satu aplikasi — mudah dan setara untuk siapa saja — di hub transit dengan inventaris OOH paling padat. *(Konvensi: `06-konvensi-naratif.md`.)* SC12 (terminal TransJakarta, Lisa↔bapak desa). Warung PPOB di-cut; babak ini kini satu scene terminal.
 
 ---
 
@@ -237,8 +237,8 @@ Override cool deck-standard `prompt-rules` b.208. String `color_grade` standar v
 
 ---
 
-# SEQ6 — MALAM / PULANG & SAKRAL (≈43 detik · 3 scene / 6 shot)
-**Pesan sequence:** hari yang penuh menutup di tempat ia dimulai — rumah; sistem yang adil tahu kapan menemani dan kapan diam, dan manusia yang memegang kendali. *(Konvensi: `06-konvensi-naratif.md`.)* Penutup film: app-beat komersial terakhir (opt-in syariah) → **"Bersih Saat Sakral"** (ngaji ba'da Maghrib, nol komersial, melengkapi Subuh) → coda kamar (bookend ke pembuka).
+# SEQ6 — MALAM / PULANG & SAKRAL (≈25 detik · 1 scene / 5 shot)
+**Pesan sequence:** hari yang penuh menutup di tempat ia dimulai — rumah; sistem yang adil tahu kapan menemani dan kapan diam, dan manusia yang memegang kendali. *(Konvensi: `06-konvensi-naratif.md`.)* Penutup film **= satu scene** (SC13 ruang makan): app-beat komersial terakhir (opt-in syariah) → **"Bersih Saat Sakral"** (app diam menjelang Isya) → film menutup pada **kehangatan keluarga di meja makan**. *(Ngaji ba'da-Maghrib + coda kamar DI-CUT.)*
 
 ---
 
