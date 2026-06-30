@@ -142,7 +142,47 @@ For audit only — every §3 prompt already contains these verbatim. Constant ac
 }
 ```
 
-*Scene wardrobe (GATE B), all figurans:* Darto SEQ2-SC01 vendor at stall, baseline, no head covering. Tika SEQ3-SC01 packing helper — religious identity unestablished → neutral modest wear, head covering not imposed (hijab added as GATE B layer only if director establishes her muslimah, broadcast-exposure axis). petugas SEQ3-SC02 video-call from bank desk, neat corporate shirt, front webcam. Rian SEQ3-SC03 office colleague carrying coffee, office-smart casual. pembina SEQ4-SC04 school club mentor, modest contemporary, head covering not imposed (GATE B layer only if established muslimah).
+### F6 — Ojek (app motorcycle-taxi driver, ~30) · SC03 (eks-SEQ2-SC03) · cells: front_full, front_medium · ⬜ KETERANGAN Fase-1 (prompt 6-lapis = Fase-2)
+> Ditambahkan 2026-06-30 (Erik): figuran muncul di shotlist tapi plat belum ada → catat identitas di sini saat Fase-1; prompt plat + generate menyusul di Fase-2. Plat baseline UNCOVERED (wajah dikunci); jaket+helm ojek = lapisan wardrobe GATE B (bukan di plat). Tanpa merek (brand-safe, bukan Gojek/Grab).
+```json
+"character_identity": {
+  "role": "Jakarta app motorcycle-taxi driver, working-class, steady patient service presence",
+  "ethnicity": "modern Jakartan features, Javanese Sundanese urban descent",
+  "beauty": "plain working-class everyman appearance, weathered friendly",
+  "age": "man 30 years old",
+  "facial_features": "distinctive-commoner-features, lean angular face shape, short flat nose, light stubble shadow, thick straight brows, calm friendly almond eyes, sun-touched complexion, a small mole on the cheek",
+  "body_features": "lean wiry working-class build, 168cm frame, upright ready posture"
+}
+"character_style": {
+  "makeup": "bare healthy male skin, matte finish zero shine, real-person texture preserved",
+  "wardrobe": "plate baseline neutral — short-sleeve plain crew-neck tee desaturated grey, relaxed cotton trousers muted charcoal; SCENE wardrobe (GATE B) = generic colored windbreaker jacket plain solid + open-face helmet, no brand, on a motorcycle",
+  "hair": "short dark hair, low neat crop, uniformly dark even tone, dry matte hair, chalky matte finish",
+  "footwear": "casual low sneakers, plain muted"
+}
+```
+> Plat dibutuhkan (shot-driven SC03-SH05 WIDE Lisa+ojek di gerbang): `F_ojek_front_full` (utama) + `F_ojek_front_medium` (cadangan coverage). Zero Profile B (standar figuran). Generate → `character-images/F_ojek/` (Fase plat).
+
+### F7 — Kurir (last-mile courier, ~28) · SC04 (eks-SEQ2-SC04) · cells: front_full, front_medium · ⬜ KETERANGAN Fase-1 (prompt 6-lapis = Fase-2)
+> Ditambahkan 2026-06-30. SC04 = 2 kurir; **1 plat figuran dipakai untuk kurir-1 (foreground); kurir-2 di-stage soft/secondary** (belakang/blur) pakai plat sama atau rear — hindari 2 wajah-kurir ter-lock rapat. Plat baseline UNCOVERED; rompi/seragam kurir = lapisan wardrobe GATE B (tanpa merek, brand-safe).
+```json
+"character_identity": {
+  "role": "Jakarta last-mile delivery courier, working-class, brisk efficient service presence",
+  "ethnicity": "modern Jakartan features, Javanese Sundanese urban descent",
+  "beauty": "plain working-class everyman appearance, fit practical",
+  "age": "man 28 years old",
+  "facial_features": "distinctive-commoner-features, square jaw face shape, straight nose, light stubble, thick brows, alert friendly eyes, sun-touched complexion, a small scar on the brow",
+  "body_features": "fit sturdy working-class build, broad shoulders, 170cm frame, upright active posture"
+}
+"character_style": {
+  "makeup": "bare healthy male skin, matte finish zero shine, real-person texture preserved",
+  "wardrobe": "plate baseline neutral — short-sleeve plain crew-neck tee desaturated steel-blue, relaxed work trousers muted charcoal; SCENE wardrobe (GATE B) = plain solid courier vest/polo + cap, no brand, handling boxes",
+  "hair": "short dark hair, low practical crop, uniformly dark even tone, dry matte hair, chalky matte finish",
+  "footwear": "sturdy low work shoes, plain muted"
+}
+```
+> Plat dibutuhkan (shot-driven SC04 SH01/SH02/SH05): `F_kurir_front_full` (utama, WIDE memuat+payoff) + `F_kurir_front_medium` (MS memuat kardus). Zero Profile B. Generate → `character-images/F_kurir/` (Fase plat). Kurir-2 = secondary soft pakai plat sama.
+
+*Scene wardrobe (GATE B), all figurans:* Darto SEQ2-SC01 vendor at stall, baseline, no head covering. Tika SEQ3-SC01 packing helper — religious identity unestablished → neutral modest wear, head covering not imposed (hijab added as GATE B layer only if director establishes her muslimah, broadcast-exposure axis). petugas SEQ3-SC02 video-call from bank desk, neat corporate shirt, front webcam. Rian SEQ3-SC03 office colleague carrying coffee, office-smart casual. pembina SEQ4-SC04 school club mentor, modest contemporary, head covering not imposed (GATE B layer only if established muslimah). Ojek SC03 waiting at gate on a motorcycle, generic colored windbreaker + open-face helmet, no brand, head covering not religious.
 
 ---
 

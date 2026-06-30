@@ -46,6 +46,14 @@ Format: **`SEQ<n>-SC<nn>-SH<nn>`**.
 
 **Urutan garap scene = URUT / TERTIB (disiplin Erik):** kerjakan scene KETAT sesuai urutan nomor (SC01→SC02→SC03→…), JANGAN loncat. Daftar scene memang disusun agar cerita tumbuh berurutan; produksi mengikuti urutan itu apa adanya. Satu scene tuntas (locked) sebelum lanjut ke berikutnya.
 
+### Fase makro (urutan gerbang SELURUH film — Erik tegaskan 2026-06-30)
+Murah dulu (narasi + deskripsi env seluruh film), baru mahal (prompt). JANGAN lompat fase.
+- **Fase 1 — SHOTLIST semua scene (URUT SC01→SC13).** Tiap scene → narasi `SEQ<n>-SC<nn>.md` (blok-narasi + Teknis shot-spec). **Untuk scene yang plat env-nya BELUM ada: sekaligus tulis KETERANGAN env (deskripsi, BUKAN prompt) di `09-environment-sheet/E<nn>-<nama>.md`** — identitas/layout/dressing/anchor/daftar plat yang dibutuhkan. Baris Teknis shotlist menamai plat env itu. Env-sheet di-Fase-1 = deskripsi saja; prompt plat = Fase 2.
+- **Fase 2 — PROMPT ENV (setelah SEMUA shotlist kelar).** Elaborasi tiap env-sheet `09-` jadi prompt generate plat env sampai semua plat env tuntas (user generate → rename ke `environment-images/`).
+- **Fase 3 — SHOT→PROMPT (setelah plat env kelar).** Konversi tiap shot jadi prompt GATE B di doc per-scene `Prompt-SEQ<n>-SC<nn>.md` di `10-gateB-keyframes/` (START full / END edit-in-place). Lalu user generate (Langkah 5).
+> Langkah 1–5 di bawah = mekanik per-shot di dalam Fase 1/3. Fase makro = urutan antar-gerbang seluruh film.
+> **Aset hilang saat Fase 1 (Erik 2026-06-30):** kalau shotlist butuh aset yang plat-nya belum ada, catat KETERANGAN-nya saat Fase 1 (prompt+generate menyusul di Fase 2) — **env** → `09-environment-sheet/E<nn>-<nama>.md`; **figuran** → entri di `08-character-sheet/F-figurans.md` (identitas + plat dibutuhkan, prompt 6-lapis ditunda). Gambar hasil generate → `environment-images/` atau `character-images/`.
+
 **Langkah 1 — `03-scene-detail.md` = CERITA (GATE A, clean-slate).**
 Tulis & kunci cerita per scene, berurutan. Scene = 1 lokasi + 1 waktu (pindah lokasi/waktu → scene baru). Isi sah: **Pesan misi (ad-provider)** + prosa scene + VO + **blok-narasi per shot** + baris **Grafis UI (AE)** (kapan muncul + copy) + Catatan produksi. **NOL addendum, NOL tag status, NOL catatan metode/revisi bertanggal, NOL prompt** (prompt = GATE B). Status produksi dan metode per-shot TIDAK hidup di sini.
 
@@ -78,13 +86,18 @@ User generate; Claude menunggu (Claude tidak pernah generate). Render accepted �
 - Mood / Cahaya   : <state cahaya>
 - Adegan AWAL (→START) : <state awal subjek>
 - Adegan AKHIR (→END)  : <delta subjek yang tergambar>
+- Teknis (shot-spec)  : <attach plat + lensa(mm) + rasio + camera-move(none/…) + jumlah-subjek + arah/warna key-light + catatan exposure bila low-key>
 
 **Grafis UI (AE, non-AI):**
 - saat <sub-adegan>, muncul <grafis>, copy: "<teks>"
 
 **— Catatan produksi:** <kategori iklan · grade>
 ```
-> Prompt START (full) / END (edit-in-place) **TIDAK di sini** — diturunkan ke `10-gateB-keyframes` per shot (Langkah 4).
+> Prompt START (full) / END (edit-in-place) **TIDAK di sini** — diturunkan ke `Prompt-SEQ<n>-SC<nn>.md` per shot (Langkah 4).
+> **Baris Teknis (shot-spec)** = ringkas, hanya KEPUTUSAN shot (attach/lensa/rasio/camera-move/jumlah-subjek/key-light/exposure) yang memudahkan prompting. Skeleton 6-lapis PENUH (mood/color_grade/style/scene/crew dst.) BUKAN di sini — ia diisi di `Prompt-SEQ<n>-SC<nn>.md` saat fase prompt. **Catatan exposure WAJIB di shot low-key** (frame very-low-key cool-blue rawan black-crush/noise → token "exposure bersih low-ISO, shadow detail diangkat secukupnya").
+> **Ladder selang-seling (WAJIB, audit tiap scene):** tiap cut beda ukuran dari tetangganya (selang-seling W/M/CU), span CU+M+W per scene → rangkaian dinamis walau kamera diam. Tolak klaster (mis. tiga medium beruntun). Ritme dari kontras-cut + gerak subjek, bukan gerak lensa.
+> **Establish/anchor sebelum insert:** objek/permukaan yang muncul sekali sebagai CU-insert WAJIB di-anchor lebih dulu oleh shot lebih lebar yang MEMUATNYA (verifikasi vantage ke plat — jangan dari ingatan). Insert tanpa anchor = potongan yatim.
+> **Audit START/END (WAJIB tiap shot — camera-lock untuk Kling i2v):** START & END = **angle/framing IDENTIK** (`camera-move = none`); delta = **subjek-saja** (gerak/pose/gaze), atau SATU praktis termotivasi (mis. lampu off→on). DILARANG: subjek pop-in (lahir di tengah klip → hadirkan di START), subjek exit / kendaraan melaju keluar (butuh follow → langgar lock), **lokomosi/transit menyeberang frame** (subjek berjalan-melintas / menghampiri / mendekati menyeberangi ruang = perpindahan besar → subjek hadirkan STASIONER di START, delta = gestur/pose/gaze in-frame, aksi berjalan disiratkan bukan di-frame), perubahan angle. 3+ subjek hanya di shot WIDE (wajah kecil). Audit ini dijalankan sebelum tulis tiap shot.
 > **Pola prosa scene (dikunci Erik 2026-06-30):** SHOW + RINGKAS. (a) SHOW — perlihatkan lewat aksi/keadaan yang tertangkap kamera, jangan menyebut emosi ("ragu", "sumringah") atau menyimpulkan tema ("ilmu berputar"); biarkan aksi yang bicara. (b) RINGKAS — sedikit elemen, satu aksi foreground jelas, ≤2–3 subjek, sisanya latar ambient, supaya tiap scene mudah jadi satu gambar (prosa kepadatan → susah generate). Acuan: SC09, SC11, SC12 di `03-scene-detail.md`.
 
 ---

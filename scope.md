@@ -10,8 +10,9 @@ updated: 2026-06-29
 
 ## MANDAT SESI (A2)
 Breakdown shot per scene URUT (SC01→SC13), blok-narasi dulu (`06` Langkah 3). **Konvensi DUA-DOC (Erik approve 2026-06-30, kanonik `06` Langkah 2):** `SEQ<n>-SC<nn>.md` = narasi A2 saja; `Prompt-SEQ<n>-SC<nn>.md` = prompt GATE B + status. **Reset doc = tulis prompt BARU, jangan pindah prompt lama** (kecuali konsep shot identik → port sbg master-pola); render lama yang breakdown-nya berubah = superseded.
-- **SC01 SELESAI narasi (5-shot) + dinaikkan ke GATE B:** `SEQ1-SC01.md` reset; `Prompt-SEQ1-SC01.md` dibuat (SH01 PROVEN, SH02–SH05 PENDING author). **NEXT = author SH02→SH05** (pola START-master→END-edit) → Erik generate → rename → SC02 narasi.
-- **A2 = narasi-only kecuali Erik naikkan scene ke GATE B** (SC01 sudah dinaikkan).
+- **URUTAN A2 (Erik koreksi 2026-06-30):** tulis **shotlist (narasi) SEMUA scene SC01→SC13 DULU**; prompt GATE B (`Prompt-SEQ<n>-SC<nn>.md`) diurus **SETELAH** semua shotlist kelar. JANGAN lompat ke prompt di tengah fase shotlist.
+- **SC01 narasi SELESAI** (`SEQ1-SC01.md`, 5-shot). `Prompt-SEQ1-SC01.md` + SH01 ter-port = **DIPARKIR** (proven, nol kerja prompt lagi sampai SC13 shotlist kelar). **NEXT = draft shotlist SC02** → approve → tulis `SEQ1-SC02.md` → SC03 … SC13.
+- **A2 = narasi-only** (no prompt sampai shotlist seluruh film kelar).
 - **Reconcile 3 flag saat A2:** header/Pesan-sequence stale di `03` (betulkan sekali per-SEQ setelah shot diketahui); penomoran legacy file luar (NO mass-rename); konfirmasi runtime (13 scene).
 - **Constraint tetap:** no-coal; **SHOW+RINGKAS**; TTI-simplicity (≤2–3 subjek/shot, 1 aksi); modesty mahram-axis; figuran-first.
 **OUT OF SCOPE:** membuka ulang cerita A1 (terkunci); generate gambar (Claude tunggu); commit/push tanpa "ya".
