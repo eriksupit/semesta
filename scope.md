@@ -6,16 +6,34 @@ created: 2026-06-08
 updated: 2026-06-29
 ---
 
-# Scope — AKTIF (2026-07-01 · ★ GATE A2 Fase-2 SELESAI — semua prompt plat env+figuran LOCKED)
+# Scope — AKTIF (2026-07-01c · ★ FASE-3 PROMPTING COMPLETE — semua keyframe prompt SC01–SC13 LOCKED; NEXT = final generate batch)
 
 ## STATUS
-**GATE A2 Fase-2 (author semua prompt plat) TUNTAS + committed `f96fefd`:** 29 prompt plat audit-COMPLIANT — 8 env-sheet di-restruktur ke format E03 (E05/E06/E07/E08/E09/E13/E15/E16; §1 JSON identity-lock + §3 cell + §4 status) + 5 figuran §3 (F6 ojek/F7 kurir/F8 mentor/F9 ibu-petugas/F10 bapak-desa, front_full+front_medium). Semua status sheet = "prompt LOCKED · generate PENDING (sesi baru)". **Reference-plate PROMPT library = LENGKAP.** Workflow **author-all→generate-in-SESI-BARU** kanonik (lessons + auto-memory SOP). Fase-1 (shotlist seluruh film SC01–SC13) tetap tuntas. Handoff generate-session = `handoff/HANDOFF-2026-07-01-EV2-FASE2-GENERATE.*`.
+**Fase-3 (author SEMUA keyframe prompt) TUNTAS:** 13 doc `Prompt-SEQ<n>-SC<nn>.md` di `10-gateB-keyframes/` (SC01–SC13), 65 shot × START full + END edit-in-place ≈ 130 keyframe-prompt, semua **MEK-clean** (A2 glue / A7 motion / A1 negation nol di token-value). Pola SC01 konsisten: master-parent · camera-lock START/END · token-per-token · A1 screen-OFF (UI=AE) · grade-GATE-B · ladder W/M/CU · edit-in-place END + lock-list. Di-author via autonomous `/loop` (Erik "loop until /goal"). **Prompt library SELURUH FILM = LENGKAP** (story → shotlist → plate-prompt → keyframe-prompt). **`README_TEAM.md` dibuat di root** (handover team). Pivot 2026-07-01b tetap berlaku: **generate SEMUANYA di AKHIR** (plate sisa + keyframe, satu batch).
 
-## MANDAT BERIKUTNYA (urut pipeline `06` §Fase makro)
-1. **GENERATE plat (SESI BARU)** — Erik generate semua plat dari prompt terkunci; **master-dulu per env → derivative upload-master**; figuran studio-isolated. Claude order queue + present prompt+attachment → Erik generate → Claude rename + flip status ✅. Env → `environment-images/E<nn>_<nama>/`, figuran → `character-images/F_<nama>/`. **Claude TIDAK generate.**
-2. **Fase 3 = SHOT→PROMPT** per `Prompt-SEQ*-SC*.md` (START full / END edit-in-place) — SETELAH plat-image library lengkap.
-- **Constraint tetap:** A1 semua layar OFF/polos (E08 dasbor + E13 OOH = OFF, konten=AE); grade plat NETRAL (warm/senja/golden=GATE B); no-coal; modesty mahram-axis (uncovered baseline, covering=GATE B); F9/F10 verify aged-not-deaged plat-pertama; Hokusai allocation final (E01 GreatWave·E02 RedFuji·E03 Kajikazawa·E05 Ejiri·E06 BlackFuji); ambient-crowd E13/E16 soft tak-face-locked.
-**OUT OF SCOPE:** generate gambar sendiri (Claude tunggu, Erik generate); buka-ulang prompt plat terkunci tanpa reject-render; Fase-3 keyframe sebelum plat-image lengkap; commit/push tanpa "ya".
+## MANDAT BERIKUTNYA = FINAL GENERATE BATCH (fase/sesi terpisah)
+1. **Generate plate PENDING dulu** (plate-before-keyframe): env E07/E08/E09/E13/E15/E16 + figuran F6 ojek/F7 kurir/F8 mentor/F9 ibu-petugas/F10 bapak-desa. (Done: E01/E02/E03/E05/E06 + plat karakter inti.)
+2. **Generate 65 keyframe pair** dari `Prompt-…` (START full → accept → END edit-in-place) → `scene-images/sc<NN>/sc<NN>_sh<NN>_{start,end}.png`.
+3. Lalu image-to-video → After Effects (SEMUA UI/grafis) → audio/VO mix → assemble. *(Detail i2v = urusan team; lihat `README_TEAM.md`.)*
+- **Scene siap-shoot-sekarang (plate lengkap):** SC01, SC02, SC06, SC08, SC13.
+- **Constraint tetap:** A1 layar OFF/polos (UI=AE); grade keyframe-START netral→warm GATE-B; no-coal; modesty mahram-axis (covering=GATE B, cross-gender non-mahram = gestur non-sentuh); camera-lock START/END; F9/F10 aged-verify; crowd-ambient soft; Hokusai hanya E01/E02/E03.
+
+## ⚠ DEBT / CARRY-FORWARD (catatan utang — bereskan saat fase generate / sesi lanjut)
+1. **Image belum dibuat:** 6 env plate (E07/E08/E09/E13/E15/E16, ~16 cell) + 5 figuran (F6–F10, 10 plate) + **65 keyframe pair (~130 still) NOL ter-generate.**
+2. **Stale narasi vs prompt (reconcile saat disentuh):** (a) `SEQ3-SC08.md` masih "all-in-one" — kanon final = tablet (benar di `03` SC08 + `Prompt-SEQ3-SC08.md`); (b) `SEQ6-SC13.md` SH02/SH04 acu `E06_ruangmakan_meja` yang DROPPED — prompt sudah pakai master.
+3. **Render lama superseded:** `scene-images/sc01/`, `sc02/` = 4-shot lama → JANGAN dipakai; regen dari Prompt docs.
+4. **F9 (~55) + F10 (~62) verify aged** plate-pertama (risiko de-aged).
+5. **Belum dilakukan:** i2v, AE graphics, audio/VO mix, assembly (semua 🔴 — `README_TEAM.md §8`).
+6. **handoff/ ternyata TIDAK gitignored** (kontra catatan lama lessons/memory) — commit penutup ini stage EKSPLISIT exclude handoff/; perlu keputusan: track handoff/ atau tambah `handoff/` ke `.gitignore`.
+
+**OUT OF SCOPE:** generate image (fase terpisah); commit/push tanpa "ya".
+
+---
+
+# Scope — Riwayat (2026-07-01 · GATE A2 Fase-2 SELESAI — semua prompt plat env+figuran LOCKED)
+
+## STATUS
+**GATE A2 Fase-2 (author semua prompt plat) TUNTAS + committed `f96fefd`:** 29 prompt plat audit-COMPLIANT — 8 env-sheet format E03 (E05/E06/E07/E08/E09/E13/E15/E16) + 5 figuran §3 (F6–F10). Reference-plate PROMPT library = LENGKAP. Lalu sesi generate dimulai (E05/E06 done) → **di-HOLD oleh pivot 2026-07-01b di atas.** Handoff generate-session = `handoff/HANDOFF-2026-07-01-EV2-FASE2-GENERATE.*`.
 
 ---
 
