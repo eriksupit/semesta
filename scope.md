@@ -6,7 +6,19 @@ created: 2026-06-08
 updated: 2026-06-29
 ---
 
-# Scope — AKTIF (2026-07-01c · ★ FASE-3 PROMPTING COMPLETE — semua keyframe prompt SC01–SC13 LOCKED; NEXT = final generate batch)
+# Scope — AKTIF (2026-07-01d · ★ ENV METHOD OVERHAUL + RESET MANDATE — regenerate ALL environments from scratch)
+
+## ★ MISI BERIKUTNYA (sesi baru) = ENV RESET (Erik 2026-07-01d)
+**RESET dokumen + image SELURUH environment (E01–E16), ulang dari awal** dengan metode baru tervalidasi (E15 PTU):
+1. **MASTER = full-prompt from-scratch, WAJIB bake `mood`+`lighting`+`style`+`color_grade` scene-final (BUKAN netral)** — karena **Kling image-to-video mengendalikan mood/lighting/style/color-grade dari GAMBAR ENVIRONMENT**. ⛔ SUPERSEDES hukum lama "plate netral, grade di keyframe".
+2. **DERIVATIVE = edit-in-place DI ATAS render master** (bukan reference-upload; itu drift → 4 drop: GTE/BGK2/E06-MEJA/E13-PRN), dan **HARUS sesuai ANGLE tiap shot** — derivative = **driver/pengendali angle untuk Kling i2v** (env-plate angle X → i2v kamera angle X). Tiap shot-angle = satu derivative edit-in-place.
+3. A1 tetap (layar OFF, UI=AE); token-dignity tetap (modern/well-maintained, no weathered/class-coded).
+4. Progress sesi 2026-07-01d (akan di-supersede reset): E07(2)/E08(3)/E09(2)/E13(1)/E15(2) accepted di disk + sheet — TETAP di disk sebagai referensi, tapi akan diregen ulang bergrade. Handoff = `handoff/HANDOFF-2026-07-01d-EV2-ENV-RESET.*`.
+**OUT OF SCOPE sesi reset:** keyframe/figuran sampai env-reset selesai; commit tanpa "ya".
+
+---
+
+# Scope — Riwayat (2026-07-01c · ★ FASE-3 PROMPTING COMPLETE — semua keyframe prompt SC01–SC13 LOCKED; NEXT = final generate batch)
 
 ## STATUS
 **Fase-3 (author SEMUA keyframe prompt) TUNTAS:** 13 doc `Prompt-SEQ<n>-SC<nn>.md` di `10-gateB-keyframes/` (SC01–SC13), 65 shot × START full + END edit-in-place ≈ 130 keyframe-prompt, semua **MEK-clean** (A2 glue / A7 motion / A1 negation nol di token-value). Pola SC01 konsisten: master-parent · camera-lock START/END · token-per-token · A1 screen-OFF (UI=AE) · grade-GATE-B · ladder W/M/CU · edit-in-place END + lock-list. Di-author via autonomous `/loop` (Erik "loop until /goal"). **Prompt library SELURUH FILM = LENGKAP** (story → shotlist → plate-prompt → keyframe-prompt). **`README_TEAM.md` dibuat di root** (handover team). Pivot 2026-07-01b tetap berlaku: **generate SEMUANYA di AKHIR** (plate sisa + keyframe, satu batch).

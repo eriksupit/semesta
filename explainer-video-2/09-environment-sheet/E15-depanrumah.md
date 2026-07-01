@@ -25,29 +25,31 @@ This block stays identical across ALL E15 angles. Derivatives rewrite ONLY the `
   "mood": "neutral reference clarity, calm empty yard stillness",
   "color_grade": "neutral true-to-life color, balanced white-point",
   "style": "photorealistic exterior reference plate, architectural photography clarity, ARRI Alexa Mini LF, clean prime spherical lens, Kodak Portra rendering",
-  "scene": "middle-class house front yard, Indonesian residential home exterior, morning, matte plaster facade, open wooden front door, clay-tile roof, paved yard, low boundary fence, lived-in working-family",
+  "scene": "well-kept middle-class house front yard, tidy Indonesian residential home exterior, morning, clean plaster facade, open wooden front door, clay-tile roof, neat paved yard, low garden fence, carport canopy, well-maintained family home",
   "location": "outdoor",
   "time_of_day": "morning",
-  "atmosphere": "quiet lived-in yard calm",
+  "atmosphere": "quiet tidy yard calm",
   "subject_anchor": {
-    "primary_subject": "middle-class house front facade, matte plaster wall, simple barred window, open wooden front door, clay-tile roof, camera centre, paved front yard, clear open parking space, low boundary fence",
-    "subject_material": "matte plaster facade muted off-white, clay-tile roof, weathered wood door, grey paving, real lived-in house surfaces",
+    "primary_subject": "well-kept middle-class house front facade, clean freshly-painted plaster wall, simple framed window, open panelled wood front door, clay-tile roof, camera centre, neat paved front yard, clear open parking space under a carport canopy, low garden fence",
+    "subject_material": "clean plaster facade soft warm-white, clay-tile roof, panelled wood door, neat grey paving, well-maintained house surfaces",
     "supporting_objects": {
-      "door": "open wooden front door, centre facade, a glimpse of the kitchen interior beyond, metal storage rack, stacked plain-labelled cardboard frozen-food boxes, shadier interior",
-      "facade": "matte plaster house facade, simple barred window, small porch step, plain house-number plate beside the door",
-      "fence": "low boundary fence, small gate, camera-RIGHT, potted plants along the base",
-      "yard": "paved front yard, grey paving, clear open parking space, foreground",
-      "doormat": "plain doormat, plain sandals, at the door step",
-      "plants": "potted leafy plants, on the porch, beside the door",
-      "pole": "plain utility pole, power cabling, camera-LEFT edge",
-      "floor": "grey paving yard, thin grass strip along the edges"
+      "door": "open panelled wood front door, centre facade, a glimpse of the kitchen interior beyond, metal storage rack, stacked plain-labelled cardboard frozen-food boxes, softly lit interior",
+      "facade": "clean plaster house facade, simple framed window, small tidy porch step, plain house-number plate beside the door, wall-mounted porch lamp",
+      "carport": "simple carport canopy, slim steel posts, over the clear parking space, foreground",
+      "fence": "low garden fence, small gate, camera-RIGHT, neat potted plants along the base, small manicured garden strip",
+      "mailbox": "plain modern mailbox, on a post, camera-RIGHT near the gate",
+      "yard": "neat paved front yard, clean grey paving, clear open parking space, foreground",
+      "doormat": "plain doormat, tidy sandals, at the door step",
+      "plants": "neat potted leafy plants, on the porch, beside the door",
+      "lamp": "plain street lamp post, camera-LEFT edge",
+      "floor": "clean grey paving yard, trimmed grass strip along the edges"
     },
     "human_absence_signal": "unoccupied, still, door open, yard clear, parking space empty, quiet"
   },
-  "production_designer": "Eugenio Caballero", "production_design_style": "Indonesian middle-class house exterior realism, same family home, class-accurate, lived-in"
+  "production_designer": "Eugenio Caballero", "production_design_style": "tidy Indonesian middle-class house exterior, well-maintained family home, clean contemporary"
 }
 ```
-**Canonical layout (defined by master, directions FROM THE MASTER CAMERA's POV, camera from the street facing the house):** the middle-class house facade at centre-back (matte plaster wall, barred window, OPEN wooden front door — through it a glimpse of the kitchen interior: a metal storage rack + stacked plain-labelled cardboard frozen-food boxes, shadier than outside) · a paved front yard with a CLEAR open parking space in the foreground (the box van parks here at GATE B) · a low boundary fence + small gate camera-RIGHT with potted plants, a utility pole camera-LEFT, a doormat + sandals + potted plants on the porch step. **Perimeter framed by the facade + fence; the front yard stays open for the van + courier crew at GATE B.**
+**Canonical layout (defined by master, directions FROM THE MASTER CAMERA's POV, camera from the street facing the house):** the well-kept middle-class house facade at centre-back (clean plaster wall, framed window, OPEN panelled wood front door — through it a glimpse of the kitchen interior: a metal storage rack + stacked plain-labelled cardboard frozen-food boxes, softly lit) · a carport canopy over a neat paved front yard with a CLEAR open parking space in the foreground (the box van parks here at GATE B) · a low garden fence + small gate + mailbox camera-RIGHT with neat potted plants + a manicured garden strip, a street lamp camera-LEFT, a wall-mounted porch lamp, a doormat + sandals + neat potted plants on the porch step. **Perimeter framed by the facade + fence; the front yard stays open for the van + courier crew at GATE B.**
 
 **ADDENDUM A1:** NO device in the empty plate — Ratna's tablet arrives with her at GATE B; its screen renders OFF/neutral, the order-list UI ("Dijemput" / "Pembayaran diterima") = After Effects. No vehicles in the plate (the box van = GATE B). Any house signage / box labels render plain (text = AE).
 
@@ -66,34 +68,36 @@ This block stays identical across ALL E15 angles. Derivatives rewrite ONLY the `
 ## 3. Plate matrix — full prompts per angle (scoped-angle, per `03` SEQ2-SC04 shot-list)
 Each cell is a COMPLETE copy-paste-ready prompt, zero scaffold. §1 is the canonical identity-lock. Scoped to E15's two plates: MASTER (establishing WIDE, serves SH01/SH02/SH05) · PTU (doorway MS with kitchen glimpse, serves SH04). PTU uploads `E15_depanrumah_master.png` as reference-image at generate time.
 
-### Cell M — MASTER · establishing WIDE → `E15_depanrumah_master.png` · ✅ prompt LOCKED · generate PENDING (sesi baru)
-Full front-of-house geography — the anchor plate. Establishes the facade + open door centre, fence camera-RIGHT, utility pole camera-LEFT, clear parking space foreground.
+### Cell M — MASTER · establishing WIDE → `E15_depanrumah_master.png` · ✅ GENERATED + ACCEPTED (2026-07-01, dignified)
+Full front-of-house geography — the anchor plate. Establishes the well-kept facade + open door centre + carport, garden fence + mailbox camera-RIGHT, street lamp camera-LEFT, clear parking space foreground. **Register dignified preemptively per token-dignity (lessons 2026-07-01): well-kept middle-class home, dropped "weathered / muted / lived-in / class-accurate" + the slum-reading utility-pole cabling; added carport + mailbox + porch lamp + neat garden. Full-prompt from-scratch master.**
 ```json
 {
   "mood": "neutral reference clarity, calm empty yard stillness",
   "color_grade": "neutral true-to-life color, balanced white-point",
   "style": "photorealistic exterior reference plate, architectural photography clarity, ARRI Alexa Mini LF, clean prime spherical lens, Kodak Portra rendering",
-  "scene": "middle-class house front yard, Indonesian residential home exterior, morning, matte plaster facade, open wooden front door, clay-tile roof, paved yard, low boundary fence, lived-in working-family",
+  "scene": "well-kept middle-class house front yard, tidy Indonesian residential home exterior, morning, clean plaster facade, open wooden front door, clay-tile roof, neat paved yard, low garden fence, carport canopy, well-maintained family home",
   "location": "outdoor",
   "time_of_day": "morning",
-  "atmosphere": "quiet lived-in yard calm",
+  "atmosphere": "quiet tidy yard calm",
   "subject_anchor": {
-    "primary_subject": "middle-class house front facade, matte plaster wall, simple barred window, open wooden front door, clay-tile roof, camera centre, paved front yard, clear open parking space, low boundary fence",
-    "subject_material": "matte plaster facade muted off-white, clay-tile roof, weathered wood door, grey paving, real lived-in house surfaces",
+    "primary_subject": "well-kept middle-class house front facade, clean freshly-painted plaster wall, simple framed window, open panelled wood front door, clay-tile roof, camera centre, neat paved front yard, clear open parking space under a carport canopy, low garden fence",
+    "subject_material": "clean plaster facade soft warm-white, clay-tile roof, panelled wood door, neat grey paving, well-maintained house surfaces",
     "supporting_objects": {
-      "door": "open wooden front door, centre facade, a glimpse of the kitchen interior beyond, metal storage rack, stacked plain-labelled cardboard frozen-food boxes, shadier interior",
-      "facade": "matte plaster house facade, simple barred window, small porch step, plain house-number plate beside the door",
-      "fence": "low boundary fence, small gate, camera-RIGHT, potted plants along the base",
-      "yard": "paved front yard, grey paving, clear open parking space, foreground",
-      "doormat": "plain doormat, plain sandals, at the door step",
-      "plants": "potted leafy plants, on the porch, beside the door",
-      "pole": "plain utility pole, power cabling, camera-LEFT edge",
-      "floor": "grey paving yard, thin grass strip along the edges"
+      "door": "open panelled wood front door, centre facade, a glimpse of the kitchen interior beyond, metal storage rack, stacked plain-labelled cardboard frozen-food boxes, softly lit interior",
+      "facade": "clean plaster house facade, simple framed window, small tidy porch step, plain house-number plate beside the door, wall-mounted porch lamp",
+      "carport": "simple carport canopy, slim steel posts, over the clear parking space, foreground",
+      "fence": "low garden fence, small gate, camera-RIGHT, neat potted plants along the base, small manicured garden strip",
+      "mailbox": "plain modern mailbox, on a post, camera-RIGHT near the gate",
+      "yard": "neat paved front yard, clean grey paving, clear open parking space, foreground",
+      "doormat": "plain doormat, tidy sandals, at the door step",
+      "plants": "neat potted leafy plants, on the porch, beside the door",
+      "lamp": "plain street lamp post, camera-LEFT edge",
+      "floor": "clean grey paving yard, trimmed grass strip along the edges"
     },
     "human_absence_signal": "unoccupied, still, door open, yard clear, parking space empty, quiet"
   },
   "shot": {
-    "composition": "full front-of-house geography, one frame, middle-class house facade, open front door centre, kitchen glimpse beyond the door, paved front yard, clear parking space foreground, low boundary fence camera-RIGHT, potted plants, utility pole camera-LEFT, clay-tile roof, legible",
+    "composition": "full front-of-house geography, one frame, well-kept middle-class house facade, open front door centre, kitchen glimpse beyond the door, neat paved front yard, clear parking space under a carport canopy foreground, low garden fence and mailbox camera-RIGHT, neat potted plants, street lamp camera-LEFT, clay-tile roof, legible",
     "framing": "WS establishing, yard foreground, roofline visible top",
     "angle": "eye-level slight low angle",
     "camera_position": "from the street side, facing the house front, fence side camera-right, utility-pole side camera-left",
@@ -102,36 +106,36 @@ Full front-of-house geography — the anchor plate. Establishes the facade + ope
     "lighting": "soft even neutral daylight, flat diffused key, even matte rendering",
     "aspect_ratio": "16:9"
   },
-  "production_designer": "Eugenio Caballero", "production_design_style": "Indonesian middle-class house exterior realism, same family home, class-accurate, lived-in"
+  "production_designer": "Eugenio Caballero", "production_design_style": "tidy Indonesian middle-class house exterior, well-maintained family home, clean contemporary"
 }
 ```
 
-### Cell PTU — DOORWAY MS (kitchen glimpse) → `E15_depanrumah_pintu.png` · ✅ prompt LOCKED · generate PENDING (sesi baru)
-Serves SEQ2-SC04-SH04 (Ratna at the threshold, the kitchen glimpse behind, 50mm). The open doorway at standing height, the kitchen glimpse (stacked frozen-food boxes) the shaded mid-ground.
+### Cell PTU — DOORWAY MS (kitchen glimpse) → `E15_depanrumah_pintu.png` · ✅ prompt LOCKED (dignified) · generate PENDING
+Serves SEQ2-SC04-SH04 (Ratna at the threshold, the kitchen glimpse behind, 50mm). The open doorway at standing height, the kitchen glimpse (stacked frozen-food boxes) the softly-lit mid-ground. ⚠ Same-angle push-in risk (cf. PRN/GTE); if the render recomposes, drop and SC04-SH04 attaches the master.
 ```json
 {
-  "environment_reference": "attached reference plate E15_depanrumah_master.png, same house front, identical facade, identical open door, identical layout, identical materials, faithful house match, new camera per shot block only",
+  "environment_reference": "attached reference plate E15_depanrumah_master.png, same well-kept house front, identical clean plaster facade, identical open panelled door, identical layout, identical materials, faithful house match, new camera per shot block only",
   "mood": "neutral reference clarity, calm empty yard stillness",
   "color_grade": "neutral true-to-life color, balanced white-point",
   "style": "photorealistic exterior reference plate, architectural photography clarity, ARRI Alexa Mini LF, clean prime spherical lens, Kodak Portra rendering",
-  "scene": "middle-class house front yard, Indonesian residential home exterior, morning, matte plaster facade, open wooden front door, clay-tile roof, paved yard, low boundary fence, lived-in working-family",
+  "scene": "well-kept middle-class house front yard, tidy Indonesian residential home exterior, morning, clean plaster facade, open wooden front door, clay-tile roof, neat paved yard, low garden fence, carport canopy, well-maintained family home",
   "location": "outdoor",
   "time_of_day": "morning",
-  "atmosphere": "quiet lived-in yard calm",
+  "atmosphere": "quiet tidy yard calm",
   "subject_anchor": {
-    "primary_subject": "open wooden front door, doorway threshold, centre facade, a glimpse of the kitchen interior beyond, metal storage rack, stacked plain-labelled cardboard frozen-food boxes, shadier interior",
-    "subject_material": "matte plaster facade muted off-white, weathered wood door, grey paving, real lived-in house surfaces",
+    "primary_subject": "open panelled wood front door, doorway threshold, centre facade, a glimpse of the kitchen interior beyond, metal storage rack, stacked plain-labelled cardboard frozen-food boxes, softly lit interior",
+    "subject_material": "clean plaster facade soft warm-white, panelled wood door, neat grey paving, well-maintained house surfaces",
     "supporting_objects": {
-      "facade": "matte plaster house facade around the door, simple barred window camera-RIGHT, plain house-number plate beside the door",
-      "kitchen_glimpse": "kitchen interior beyond the doorway, metal storage rack, stacked plain-labelled cardboard frozen-food boxes, a work table, shadier interior",
-      "doormat": "plain doormat, plain sandals, at the door step",
-      "plants": "potted leafy plants, on the porch, beside the door",
-      "floor": "grey paving porch step, threshold"
+      "facade": "clean plaster house facade around the door, simple framed window camera-RIGHT, plain house-number plate beside the door, wall-mounted porch lamp",
+      "kitchen_glimpse": "kitchen interior beyond the doorway, metal storage rack, stacked plain-labelled cardboard frozen-food boxes, a work table, softly lit interior",
+      "doormat": "plain doormat, tidy sandals, at the door step",
+      "plants": "neat potted leafy plants, on the porch, beside the door",
+      "floor": "clean grey paving porch step, threshold"
     },
     "human_absence_signal": "unoccupied, still, door open, threshold clear, quiet"
   },
   "shot": {
-    "composition": "medium framing on the open front doorway, weathered wood door, doorway threshold, dominant centre, a glimpse of the kitchen interior beyond, metal storage rack, stacked plain-labelled cardboard frozen-food boxes, shadier interior, plaster facade around the door",
+    "composition": "medium framing on the open front doorway, panelled wood door, doorway threshold, dominant centre, a glimpse of the kitchen interior beyond, metal storage rack, stacked plain-labelled cardboard frozen-food boxes, softly lit interior, clean plaster facade around the door",
     "framing": "MS, doorway fills frame, standing eye-level, interior glimpse behind",
     "angle": "eye-level, standing height",
     "camera_position": "in front of the open doorway, pushed in from establishing wide, standing eye-level",
@@ -140,7 +144,7 @@ Serves SEQ2-SC04-SH04 (Ratna at the threshold, the kitchen glimpse behind, 50mm)
     "lighting": "soft even neutral daylight outside, slightly shaded interior beyond the door, even matte rendering",
     "aspect_ratio": "16:9"
   },
-  "production_designer": "Eugenio Caballero", "production_design_style": "Indonesian middle-class house exterior realism, same family home, class-accurate, lived-in"
+  "production_designer": "Eugenio Caballero", "production_design_style": "tidy Indonesian middle-class house exterior, well-maintained family home, clean contemporary"
 }
 ```
 
@@ -149,8 +153,10 @@ Serves SEQ2-SC04-SH04 (Ratna at the threshold, the kitchen glimpse behind, 50mm)
 ## 4. Status manifest
 | Cell | Angle | File | Serves | Status |
 |---|---|---|---|---|
-| M | establishing WIDE | `E15_depanrumah_master.png` | SC04-SH01/SH02/SH05 | ✅ prompt LOCKED · generate PENDING (sesi baru) |
-| PTU | doorway MS (kitchen glimpse) | `E15_depanrumah_pintu.png` | SC04-SH04 | ✅ prompt LOCKED · generate PENDING (sesi baru) |
+| M | establishing WIDE | `E15_depanrumah_master.png` | SC04-SH01/SH02/SH05 | ✅ **GENERATED + ACCEPTED (2026-07-01, dignified)** |
+| PTU | doorway MS (kitchen glimpse) | `E15_depanrumah_pintu.png` | SC04-SH04 | ✅ **GENERATED + ACCEPTED (2026-07-01, EDIT-IN-PLACE reframe on master — consistent)** |
+
+**E15 COMPLETE (2 plates: M full-prompt + PTU edit-in-place reframe).** ⭐ PTU validated the **edit-in-place reframe** derivative method (pixel-consistent with master; overturns "reframe ≠ edit-in-place"). ⚠ NOTE: this whole sheet will be redone under the ENV-RESET method (master bakes mood/lighting/grade; derivatives = edit-in-place at each shot angle) — see handoff 2026-07-01d.
 
 Storage: `environment-images/E15_depanrumah/` (+ `_rejected/`). Naming: `E15_depanrumah_<angle>.png`.
 Generate M first (no reference-image). Then PTU via the `shot`-only-rewrite method: upload `E15_depanrumah_master.png` as reference + paste §1 verbatim + the cell's `shot` block. Empty-EXT (no figures, no van, no device in plate); figures + box van + tablet UI + warm-morning grade = GATE B / After Effects.
