@@ -14,6 +14,7 @@ updated: 2026-06-29
 2. **DERIVATIVE = edit-in-place DI ATAS render master** (bukan reference-upload; itu drift → 4 drop: GTE/BGK2/E06-MEJA/E13-PRN), dan **HARUS sesuai ANGLE tiap shot** — derivative = **driver/pengendali angle untuk Kling i2v** (env-plate angle X → i2v kamera angle X). Tiap shot-angle = satu derivative edit-in-place.
 3. A1 tetap (layar OFF, UI=AE); token-dignity tetap (modern/well-maintained, no weathered/class-coded).
 4. Progress sesi 2026-07-01d (akan di-supersede reset): E07(2)/E08(3)/E09(2)/E13(1)/E15(2) accepted di disk + sheet — TETAP di disk sebagai referensi, tapi akan diregen ulang bergrade. Handoff = `handoff/HANDOFF-2026-07-01d-EV2-ENV-RESET.*`.
+**PROGRES 2026-07-02:** **E01 kamar TUNTAS — 7 plat ACCEPTED** (`master` warm + `master_lampoff` cool + `nightstand`/`bed3q`/`bed4q`/`bed4q_warm`/`ratna_med`). **⭐ METODE DIKOREKSI (Erik):** derivatif = **edit-in-place DARI RENDER MASTER** di sesi ter-anchor-master (canvas=master); **plat disk lama = LEGACY, bukan canvas**; re-angle in-session tak drift; angle-delta via anchor-furnitur+kunci-tinggi; simpan prompt accepted VERBATIM ke cell. Entry lama "regrade-plat-lama/reference-dominance" DIRETRAKSI. **NEXT = E02 ruang keluarga.** Belum commit (E01 + governance, nunggu "ya").
 **OUT OF SCOPE sesi reset:** keyframe/figuran sampai env-reset selesai; commit tanpa "ya".
 
 ---
