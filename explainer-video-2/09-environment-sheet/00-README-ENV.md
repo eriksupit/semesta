@@ -77,9 +77,9 @@ TAG = `E<NN>_<slug>`. Storage: `environment-images/E<NN>_<slug>/` (+ `_rejected/
 |---|---|---|---|---|
 | E01_kamar | Kamar Herman | SEQ1-SC01 + SEQ6-SC03 | 2× | **Bookend — coda must match opener exactly** |
 | E02_ruangkeluarga | Ruang keluarga | SEQ1-SC02 + SEQ6-SC02 | 2× | sholat + ngaji |
-| E03_kamarandi | Kamar Andi (bedroom + study corner) | SEQ2-SC06 | 1× | **CONCEPT RESET 2026-07-02** (was "ruang belajar" — read too close to E02 living room; merged into Andi's bedroom+study to differentiate + save space). Master GRADED ✅ (day warm-cool); desk/tablet/doorway derivatives PENDING. Kajikazawa + Schleich T-Rex hero |
+| E03_kamarandi | Kamar Andi (bedroom + study corner) | SEQ2-SC06 | 1× | **GRADED RESET 2026-07-02** — 4/4 ✅ (master/desk/tablet/doorway), day warm-cool; concept reset from "ruang belajar" (bed = room-definer to differentiate from E02). Kajikazawa + Schleich T-Rex hero |
 | E04_dapur | Dapur Ratna | SEQ3-SC01 | 1× | live-selling UMKM |
-| E05_sudutkerja | Sudut kerja Ratna | SEQ3-SC02 | 1× | home work corner |
+| E05_sudutkerja | Sudut kerja Ratna (frozen-food kitchen-adjacent) | SEQ3-SC08 | 1× | **GRADED RESET 2026-07-02** — 3/3 ✅ (master MW + meja M + tablet CU), day 11.00 warm-cool separation, tablet-on-stand (no computer), print-free (exits Hokusai) |
 | E06_ruangmakan | Ruang makan | SEQ6-SC01 | 1× | family convergence |
 | E07_gerbangwarung | Gerbang kompleks + warung Darto (EXT) | SEQ2-SC01 | 1× | exterior; pos satpam, paving, mango tree |
 | E08_kantor | Kantor ekspor-impor | SEQ2-SC02 + SEQ3-SC03 + SEQ4-SC01 | **3×** | highest-ROI; fullest angle set |
