@@ -67,47 +67,81 @@ This block stays identical across ALL E02 angles. Derivatives rewrite ONLY the `
 ## 3. Plate matrix — full prompts per angle (scoped-angle, per `03` shot-list)
 Each cell below is a COMPLETE copy-paste-ready prompt, per SOP — zero scaffold. §1 is the canonical identity-lock; the cells are what you paste. Scoped to E02's shots: SEQ1-SC02 (WS room + dark window + desktop, MS sajadah, WS saf takbir, WS/high-angle sujud) + SEQ6-SC02 (MS Ratna+Andi floor seating + monitor, CU kitab↔monitor). Derivatives upload `E02_ruangkeluarga_master.png` as reference-image.
 
-### Cell M — MASTER · establishing wide → `E02_ruangkeluarga_master.png` · ✅ LOCKED (v2, token-ified + keyboard/mouse)
-Serves SEQ1-SC02-SH01 (WS room, window, desktop) + SH03 (WS saf takbir).
+### Cell M — MASTER · establishing wide (GRADED, subuh lamp-ON) → `E02_ruangkeluarga_master.png` · ✅ ACCEPTED 2026-07-02
+> **RESET method (2026-07-01d, corrected 2026-07-02):** master = full-prompt from-scratch, **grade BAKED** for the scene time-of-day (subuh 04.43: warm ceiling-lamp ON + cool-blue dark window), **attachment: NONE**. Single grade state — E02 needs only ONE master (no lamp-off variant) because SC02 plays entirely with the room already lit ("lampu sudah menyala terang", `SEQ1-SC02.md:21`). This is the accepted prompt (Erik-authored, first roll). Key wins baked: restrained localized-falloff grade (no global yellow-wash, neutral plaster preserved, warm-cool separation) · window fully visible between KALLAX + desk · desk pushed flush camera-right, square to wall · all screens OFF (A1) · handedness locked. Serves SEQ1-SC02-SH01 (MW establishing) + SH03 (M, same vantage). ⚠ minor non-blocking: KALLAX rendered ~1×2 low rather than 2×2 (background only, no shot features it closely — accepted).
 ```json
 {
-  "mood": "neutral reference clarity, calm empty domestic stillness",
-  "color_grade": "neutral true-to-life color, balanced white-point",
-  "style": "photorealistic interior reference plate, architectural photography clarity, ARRI Alexa Mini LF, clean prime spherical lens, Kodak Portra rendering",
-  "scene": "shared living room, urban middle-class family, IKEA-style flat-pack laminate furniture, matte painted plaster walls, plain desaturated textiles, open ceramic-tiled floor kept clear, floor seating, lived-in working-family",
+  "mood": "pre-dawn subuh domestic calm, quiet intimate stillness, room already lit by a warm ceiling lamp against a dark blue dawn window, cinematic but natural, restrained practical warmth, gentle warm-cool separation, unoccupied and still",
+  "color_grade": "cinematic restrained practical grade, warm amber ceiling-lamp highlights only where the light naturally falls, neutral off-white plaster walls preserved, no beige-yellow wall wash, no caramel ceiling, natural oak laminate furniture tones, subtle cool blue-gray dawn ambient bleeding from the window onto the back wall, desk side, floor near the curtains, under-sofa shadows, TV-bench side, and room corners, controlled warm-cool separation, gentle contrast, lifted but shaped blacks, clean exposure, soft matte falloff, slightly warmer Deakins midtones, Lubezki-style observational naturalism, no overall yellow wash, no orange cast, no sepia, no catalog-style even warmth, no exaggerated teal-orange look",
+  "style": "photorealistic cinematic interior, architectural clarity, ARRI Alexa Mini LF, 24mm prime spherical lens, deep focus front to back, Kodak Portra natural rendering, Roger Deakins-inspired restrained practical-light naturalism, Emmanuel Lubezki-style observational domestic realism",
+  "scene": "shared living room of a modern urban middle-class family, clean well-maintained contemporary IKEA flat-pack laminate furniture, matte painted plaster walls, tidy plain textiles, open ceramic-tiled floor kept clear, floor seating, warm domestic realism",
   "location": "indoor",
-  "time_of_day": "morning",
-  "atmosphere": "quiet lived-in domestic calm",
+  "time_of_day": "pre-dawn subuh around 04.43",
+  "atmosphere": "quiet intimate domestic calm, interior gently warmed by the ceiling lamp while cool dawn remains visible and active through the window, tender and natural, unoccupied and still",
+
   "subject_anchor": {
-    "primary_subject": "open clear ceramic-tiled floor, centre of room, kept free, floor seating, low flat-weave floor mat unrolled, two flat floor cushions, one edge",
-    "subject_material": "matte painted plaster walls muted off-white, oak-effect laminate furniture, plain desaturated woven textiles, ceramic-tiled floor",
-    "wall_art": "single dark-wood-framed woodblock print, Katsushika Hokusai 'Fine Wind, Clear Morning (Red Fuji)', Thirty-Six Views of Mount Fuji, centered camera-left wall, above the sofa",
+    "primary_subject": "open clear ceramic-tiled floor, centre of room, kept free, floor seating, low flat-weave floor mat unrolled, two flat floor cushions along the near edge",
+    "subject_material": "neutral muted off-white matte painted plaster walls, natural oak-effect laminate furniture, plain desaturated woven textiles, clean ceramic-tiled floor with subtle warm and cool reflections",
+    "wall_art": "single dark-wood-framed woodblock print, Katsushika Hokusai 'Fine Wind, Clear Morning (Red Fuji)', centered on the camera-left wall above the sofa, correct orientation",
     "supporting_objects": {
-      "desk": "IKEA MICKE desk oak-effect, far back wall, beside curtained window, generic unbranded all-in-one desktop, screen off dark neutral, slim wireless keyboard, mouse, before the monitor, black swivel office chair tucked at desk, otherwise uncluttered",
-      "shelf": "IKEA KALLAX shelving unit, 2x2 open square cube grid, white-stained oak effect, against the wall, rolled prayer mat, closed hardcover book, in the cubes, otherwise tidy",
-      "sofa": "IKEA EKTORP two-seat sofa, beige linen-blend slipcover, camera-left wall, beneath the framed Red Fuji print, facing the television on the camera-right wall, open floor between",
-      "tv_bench": "IKEA BESTÅ TV bench, white-stained oak-effect, low closed flat-door media cabinet, camera-right wall, directly facing the sofa, open floor between, flat-screen television, screen off dark neutral",
-      "seating_zone": "low flat-weave floor mat, two plain floor cushions, on the open floor, seating use",
-      "window_dressing": "IKEA LILL white sheer net curtains, far back-wall window",
-      "rug": "IKEA PERSISK HAMADAN handmade oriental wool rug, low pile, one side of the open floor",
-      "openings": "open doorway, one wall, light switch plate beside it",
-      "lighting_fixture": "plain ceiling lamp switched off, modest wall hook, folded plain headscarf"
+      "desk": "IKEA MICKE desk oak-effect, placed on the far back wall and pushed fully to the camera-right side, square to the wall, not angled, generic unbranded all-in-one desktop on top facing directly toward the camera, screen off dark neutral, slim wireless keyboard and mouse before the monitor, black swivel office chair tucked at the desk",
+      "shelf": "IKEA KALLAX shelving unit, 2x2 open square cube grid, white-stained oak effect, placed on the far back wall to the camera-left of the window, with a rolled prayer mat and a closed hardcover book in the cubes, otherwise tidy",
+      "sofa": "IKEA EKTORP two-seat sofa, beige linen-blend slipcover, on the camera-left wall beneath the framed Red Fuji print, facing the television on the camera-right wall, open floor between",
+      "tv_bench": "IKEA BESTÅ TV bench, white-stained oak-effect, low closed flat-door media cabinet, on the camera-right wall, directly facing the sofa, flat-screen television on top, screen off dark neutral",
+      "seating_zone": "low flat-weave floor mat on the open floor, two plain flat floor cushions along the near edge, arranged for quiet domestic floor seating",
+      "window_dressing": "one normal-proportioned rectangular window set into the far back wall between the KALLAX shelf and the desk, fully visible, not cropped, fitted with IKEA LILL sheer net curtains, cool deep blue pre-dawn light beyond, no daylight",
+      "rug": "IKEA PERSISK HAMADAN handmade oriental wool rug, low pile, placed on one side of the open floor toward the TV-bench side",
+      "openings": "open doorway on the far back wall toward the camera-left side, light switch plate beside it",
+      "lighting_fixture": "plain ceiling lamp switched ON, warm glow visible overhead, modest wall hook near the doorway, folded plain headscarf hanging from it"
     },
-    "human_absence_signal": "unoccupied, still, floor mat unrolled, cushions waiting, room empty, quiet"
+    "human_absence_signal": "unoccupied, still, floor mat unrolled, cushions waiting, room empty, quiet before morning prayer"
   },
+
   "shot": {
-    "composition": "full room geography, one frame, EKTORP sofa, framed Red Fuji above it, camera-LEFT side, BESTÅ TV bench, off-screen television, camera-RIGHT side, directly facing the sofa, open floor, unrolled mat, centred between, MICKE desk, off-screen all-in-one desktop, keyboard, mouse, swivel chair, curtained window, far back wall, KALLAX cube shelf, open doorway, legible",
+    "composition": "full room geography in one frame: EKTORP sofa and framed Red Fuji on the camera-left wall, BESTÅ TV bench and off-screen television on the camera-right wall directly facing the sofa, open floor and unrolled flat-weave mat centred between, PERSISK HAMADAN rug on one side, MICKE desk pushed to the far back camera-right side with the all-in-one desktop facing camera, normal-proportioned sheer-curtained window fully visible between the KALLAX shelf and the desk, KALLAX cube shelf to the left of the window, open doorway on the left side of the back wall, all legible",
     "framing": "WS establishing, floor visible bottom 20%, ceiling line visible top",
     "angle": "eye-level slight low angle",
-    "camera_position": "front of room, looking toward far back curtained-window wall, sofa wall camera-left, TV wall camera-right",
-    "camera_direction": "straight down the room, sofa, Red Fuji, camera-left, facing TV bench, camera-right, open floor, mat, centred between, desk, window, far back wall",
+    "camera_position": "front of room, looking toward the far back wall",
+    "camera_direction": "straight down the room toward the far back wall, sofa and Red Fuji on camera-left, TV bench on camera-right, open floor and mat centred between",
     "camera": "24mm prime spherical, deep focus front to back",
-    "lighting": "soft diffused daylight key, curtained window wall, soft ambient bounce fill, even matte rendering",
+    "lighting": "ceiling lamp ON as a warm motivated practical, but with localized falloff rather than a global yellow wash; sofa wall, Red Fuji wall, and central floor receive soft amber warmth; plaster walls remain neutral off-white; the far back wall around the window, desk side, curtains, floor near the window, under-sofa shadows, TV-bench side, and room corners retain cool blue-gray pre-dawn ambient; clean exposure, gently lit not low-key, soft cinematic shadow shape, lifted blacks, no black crush, restrained saturation",
     "aspect_ratio": "16:9"
   },
-  "production_designer": "Eugenio Caballero", "production_design_style": "Roma-style middle-class domestic realism, class-accurate dressing",
-  "interior_designer": "Ilse Crawford", "interior_design_style": "warm human-centred tactile lived-in, unpretentious materiality"
+
+  "layout_continuity": {
+    "do_not_change": "do not alter sofa position, Red Fuji print position or orientation, TV bench, desk, KALLAX shelf, doorway, rug, floor mat, cushions, ceramic floor, or straight-down-the-room framing; keep the desk flush to the far back wall and fully pushed to the camera-right side; keep the window fully visible between the KALLAX shelf and the desk",
+    "do_not_mirror": "do not mirror or flip the room, preserve room handedness: sofa camera-left, TV bench camera-right, back wall with doorway at left side, KALLAX shelf left of window, window between shelf and desk, desk at far back camera-right"
+  },
+
+  "negative_prompt": {
+    "screen_errors": "no glowing screens, no lit television, no lit desktop monitor, all screens off dark neutral",
+    "grade_errors": "no daylight through the window, no bright daytime sky, window stays deep dark blue pre-dawn, no overall yellow wash, no beige-yellow wall cast, no caramel ceiling, no orange cast, no sepia, no overly saturated amber, no catalog-style even warmth, no flat interior showroom lighting, no exaggerated teal-orange blockbuster grading, no crushed blacks",
+    "layout_errors": "do not mirror the room, do not move the sofa or TV bench, do not move the KALLAX shelf or doorway, do not angle the desk, do not place the desk in front of the window, do not crop or block the window, do not make the window a narrow vertical slit, do not add extra wall art, do not add people"
+  },
+
+  "production_designer": "Eugenio Caballero, modern middle-class domestic realism, clean well-maintained dressing",
+  "interior_designer": "Ilse Crawford, warm human-centred tactile, unpretentious contemporary materiality"
 }
+```
+
+### Cell M2 — SCREEN insert (SH02, edit-in-place) → `E02_ruangkeluarga_screen.png` · ✅ ACCEPTED 2026-07-02
+Serves SEQ1-SC02-SH02 (desktop insert, screen OFF slab; lapak Ratna UI = AE). **Method = edit-in-place on the accepted `E02_ruangkeluarga_master.png` render** (canvas = master render; old disk plates legacy, NOT the canvas). Consistency vs master verified at pixel level (grade, handedness, oak desk, blue-window continuity, keyboard/mouse/chair). Accepted prompt verbatim:
+```text
+Edit-in-place (canvas = render E02_ruangkeluarga_master):
+Reframe into a close insert of the camera-right-back corner desktop. Fill the frame with the MICKE oak-effect desk and the all-in-one desktop monitor centred, its screen OFF as a dark neutral slab — no UI, no icons, no glow. Show the slim wireless keyboard and mouse on the desk before the monitor, the black swivel office chair, and behind them a sliver of the far back wall with the edge of the sheer-curtained deep-blue pre-dawn window. Camera at sitting height, a slight angle onto the screen, 50mm feel.
+Keep the same subuh grade exactly: warm ceiling-lamp ambient with localized falloff, cool blue-gray dawn bleed from the window, neutral off-white plaster, lifted blacks, no yellow wash, no glowing screen. Everything else unchanged — same desk, same all-in-one, same keyboard and mouse, same wall, same window, same room identity and handedness. Do not turn the screen on, do not add UI, do not add people, do not mirror. Keep 16:9.
+```
+> Render reads as a desk-wide insert (monitor + keyboard + mouse + chair + window edge) rather than a pure screen-CU — accepted: screen stays clearly visible/large for AE UI, plus work-desk context. Device reads as a standalone monitor vs "all-in-one" — immaterial for a standalone insert shot (no i2v morph from master).
+
+### Cell M3 — SAF / prayer floor (SH04 + SH05, edit-in-place) → `E02_ruangkeluarga_saf.png` · ✅ ACCEPTED 2026-07-02
+Serves SEQ1-SC02-SH04 (WIDE rear-view saf, 4 subjects) + SH05 (CU takbir, crop at keyframe). **Method = edit-in-place on the accepted `E02_ruangkeluarga_master.png` render** (canvas = master render; old disk plates legacy, NOT the canvas). Empty room — the 4 rear-view figures are composited at keyframe. Set-change: central floor becomes ONE contiguous muted-green prayer carpet (per old R2 lesson — a single contiguous textile renders reliably; 4 separate mats were disproven), enlarged toward camera-right; PERSISK rug rolled beside the TV bench; cushions to sofa. Pixel-verified vs master: carpet single/contiguous, rolled rug placed camera-right, grade + handedness + screens-OFF held. Accepted prompt verbatim (Erik-authored):
+```text
+Edit-in-place (canvas = render E02_ruangkeluarga_master):
+Replace the centre floor arrangement so that the main prayer surface becomes one single plain solid muted-green prayer carpet, smooth and unpatterned, laid flat across the central ceramic-tiled floor. Enlarge this green prayer carpet further toward camera-right so it occupies most of the open centre floor and extends close to the TV-bench side, while still reading as one clean contiguous textile. Its long edge runs left-to-right, parallel to the back window-desk wall, forming a broad prayer floor facing the window.
+Remove the patterned PERSISK oriental rug from its flat position on the floor. Roll it up tightly and place the rolled rug on the floor directly beside the BESTÅ TV bench on the camera-right side, pushed close against the TV bench, aligned lengthwise in the same front-to-back direction it currently occupies. The roll should sit neatly along the edge of the green carpet, with the rug's patterned outer layer still visible.
+Move the two flat floor cushions off the floor and place them neatly on the EKTORP sofa seat. Keep the same establishing wide shot and the same room layout exactly: sofa and framed Red Fuji on camera-left, BESTÅ TV bench and off television on camera-right, MICKE desk and off desktop pushed to the far back camera-right wall, KALLAX shelf to the left of the back window, open doorway on the back-left side, all room handedness preserved.
+Keep the same subuh grade exactly: warm ceiling-lamp ambient with localized falloff, cool blue-gray dawn bleed from the sheer-curtained back window, neutral off-white plaster walls, natural oak laminate furniture tones, lifted blacks, restrained contrast, no yellow wash, no orange cast, no sepia, all screens OFF dark neutral. The room remains empty and still, with no people.
+Everything else unchanged. Do not mirror the room, do not move the furniture, do not add objects beyond the enlarged green prayer carpet and the rolled patterned rug repositioning. Keep 16:9.
 ```
 
 ### Cell P — PRAYER high-angle wide → `E02_ruangkeluarga_prayer_high.png` · ✅ LOCKED v2
@@ -298,15 +332,21 @@ Serves SEQ1-SC02 prayer (SH02 + SH03) — a NEW camera axis, the reverse of the 
 ## 4. Status manifest
 | Cell | Angle | File | Status |
 |---|---|---|---|
-| M | establishing wide | `E02_ruangkeluarga_master.png` | ✅ LOCKED v2 (2026-06-23, token-ified + keyboard/mouse) |
-| P | prayer high-angle wide | `E02_ruangkeluarga_prayer_high.png` | ✅ LOCKED v2 (2026-06-23, soft high-angle ~45°) |
-| F | floor-seating | `E02_ruangkeluarga_floorseat.png` | ✅ LOCKED v2 (2026-06-23, tight-MS seated-height) |
-| S | screen / desktop insert | `E02_ruangkeluarga_screen.png` | ✅ LOCKED v2 (2026-06-23, keyboard+mouse verified) |
-| R | REVERSE establishing (prayer master, no mats) | `E02_ruangkeluarga_reverse.png` | ✅ LOCKED (2026-06-24, kamera membelakangi jendela → sholat menghadap kamera; sofa→camera-right, TV→camera-left, pintu+KALLAX latar, karpet PERSISK tengah — geometri terbalik terverifikasi) |
-| R2 | REVERSE prayer plate, single plain green carpet + 2 stored rug rolls | `E02_ruangkeluarga_reverse_prayer.png` | ✅ LOCKED (2026-06-25, REPLACES disproven 4-mat plate: 1 karpet sholat hijau polos `tanpa corak` digelar tengah; PERSISK + tikar flat-weave digulung mepet tembok depan (rol kanan flat-weave tan tinggi-tebal, rol kiri persisk pendek); 2 bantal di sofa) |
+| M | establishing wide (GRADED subuh lamp-ON) | `E02_ruangkeluarga_master.png` | ✅ ACCEPTED 2026-07-02 · **RESET graded** (warm ceiling-lamp ON + cool-blue dark window, attachment NONE) · restrained localized-falloff grade (no yellow-wash) · window fully visible between KALLAX+desk · desk pushed flush camera-right · screens OFF · single-grade (no lamp-off variant) · supersedes neutral master · ⚠ KALLAX rendered ~1×2 (background, accepted) |
+| M2 screen insert | SH02 desktop CU | `E02_ruangkeluarga_screen.png` | ✅ ACCEPTED 2026-07-02 — edit-in-place from master render; screen OFF slab (UI=AE), grade+handedness consistent, keyboard+mouse+chair, blue-window continuity; supersedes legacy `_screen.png` |
+| M3 saf / prayer floor | SH04 WIDE rear-saf + SH05 CU takbir | `E02_ruangkeluarga_saf.png` | ✅ ACCEPTED 2026-07-02 — edit-in-place from master render; ONE contiguous muted-green prayer carpet enlarged camera-right, PERSISK rolled beside TV bench, cushions to sofa, grade+handedness held, screens OFF, empty room; = **rear-view (facing window) prayer angle, canon** per SEQ1-SC02 SH04/SH05. On-disk renamed 2026-07-02 (matches doc). ⚠ keyframe attach-ref (`SEQ1-SC02.md` SH04/SH05 Teknis) still names `_reverse_prayer_subuh` → repoint to `_saf` at Fase-3 keyframe. |
+
+> **⚠ E02 reset status — CORRECTED 2026-07-02 (my earlier "3 plates / done" claim was premature = careless; retracted).** E02 needs **5 graded plates**, all edit-in-place from the master render: `master` ✅ · `screen` ✅ · `saf` rear-view ✅ · **`prayer_high`** high-angle (⬜ PENDING regen) · **`reverse_prayer`** facing-camera (⬜ PENDING regen). **Kiblat decision (Erik 2026-07-02): BOTH prayer angles are canon — rear-view facing the window (`saf`) stays, AND a facing-camera reverse prayer (`reverse_prayer`) is added** (distinct shots use each). The legacy neutral plates below are **NOT superseded** except `screen`/`floorseat` — they mark angles still to be regenerated under the graded method. **Do NOT move/rename/delete any legacy plate until its graded replacement lands (Erik 2026-07-02, "jangan pindah dulu").** E02 serves SEQ1-SC02 subuh only (ngaji SEQ6-SC02 cut; SC13 finale uses `E06_ruangmakan`). ⚠ current 5-shot narrative uses only master/screen/saf — `prayer_high` + `reverse_prayer` imply added prayer shots to be slotted at Fase-3 shotlist.
+
+| Cell | Angle | File | Status |
+|---|---|---|---|
+| P → regen | prayer high-angle (~45° down, sujud beat) | `E02_ruangkeluarga_prayer_high.png` | ⬜ PENDING regen graded — edit-in-place from master (high-angle onto green prayer floor, subuh grade); legacy neutral plate INTACT on disk until replaced, do not move |
+| R/R2 → regen | REVERSE facing-camera prayer (green carpet) | `E02_ruangkeluarga_reverse_prayer.png` | ⬜ PENDING regen graded — 180° reverse (camera at back window-desk wall → doorway; sofa→camera-right, TV→camera-left; green carpet; subuh); collapses legacy `_reverse`/`_reverse_prayer`/`_reverse_prayer_subuh` into ONE graded plate; legacy plates INTACT, do not move |
+| F | floor-seating | `E02_ruangkeluarga_floorseat.png` | 🗄 OBSOLETE — ngaji scene (SEQ6-SC02) cut, not reused; leave on disk, do not move |
+| S | screen insert (old) | `E02_ruangkeluarga_screen.png` | superseded by reset M2 (same filename overwritten on accept) |
 
 Storage: `environment-images/E02_ruangkeluarga/` (+ `_rejected/`). Naming: `E02_ruangkeluarga_<angle>.png`.
-Generate M first (no reference-image). Then P / F / S via the `shot`-only-rewrite method: upload `E02_ruangkeluarga_master.png` as reference + paste §1 verbatim + the cell's `shot` block. Verify each prop against the master image before locking.
+**Reset workflow:** master accepted (graded, attachment NONE) → each derivative = **edit-in-place on the accepted master render** (canvas = master render; old disk plates are legacy, NOT the canvas) + the angle/grade delta.
 
 ---
 
