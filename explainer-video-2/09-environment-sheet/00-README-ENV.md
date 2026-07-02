@@ -77,7 +77,7 @@ TAG = `E<NN>_<slug>`. Storage: `environment-images/E<NN>_<slug>/` (+ `_rejected/
 |---|---|---|---|---|
 | E01_kamar | Kamar Herman | SEQ1-SC01 + SEQ6-SC03 | 2× | **Bookend — coda must match opener exactly** |
 | E02_ruangkeluarga | Ruang keluarga | SEQ1-SC02 + SEQ6-SC02 | 2× | sholat + ngaji |
-| E03_ruangbelajar | Ruang belajar (Andi) | SEQ2-SC03 | 1× | **✅ DONE 4/4** (2026-06-23) home room; Kajikazawa + Schleich T-Rex hero |
+| E03_kamarandi | Kamar Andi (bedroom + study corner) | SEQ2-SC06 | 1× | **CONCEPT RESET 2026-07-02** (was "ruang belajar" — read too close to E02 living room; merged into Andi's bedroom+study to differentiate + save space). Master GRADED ✅ (day warm-cool); desk/tablet/doorway derivatives PENDING. Kajikazawa + Schleich T-Rex hero |
 | E04_dapur | Dapur Ratna | SEQ3-SC01 | 1× | live-selling UMKM |
 | E05_sudutkerja | Sudut kerja Ratna | SEQ3-SC02 | 1× | home work corner |
 | E06_ruangmakan | Ruang makan | SEQ6-SC01 | 1× | family convergence |
