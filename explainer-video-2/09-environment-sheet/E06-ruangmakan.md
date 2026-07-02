@@ -1,171 +1,278 @@
 ---
-title: Environment Sheet — E06 Ruang Makan / Eat-in Kitchen Keluarga · GATE 0-ENV
+title: Environment Sheet — E06 Ruang Makan / Eat-in Kitchen Keluarga · GATE 0-ENV (RESET 2026-07-03)
 tags: [explainer-video-2, environment-sheet, e06-ruangmakan, gate-0-env, interior, eat-in-kitchen]
 status: active
 created: 2026-06-30
-updated: 2026-07-02
+updated: 2026-07-03
 aliases: [ev2-e06-ruangmakan, E06-ruangmakan, ruang-makan-env, dapur-makan-keluarga]
 ---
 
 # Environment Sheet — E06 RUANG MAKAN / EAT-IN KITCHEN · tag E06
-> Method → [[00-README-ENV]] + [[semesta-env-method-kling]] (RESET graded master + edit-in-place derivatives). Scene truth → [[10-gateB-keyframes/SEQ6-SC13]] (INT. RUANG MAKAN — 19.00, **FINALE**). Master render → `environment-images/E06_ruangmakan/E06_ruangmakan_master.png`.
-> **Room:** the family **eat-in kitchen** (dining area joined to a domestic kitchen — *dapur-makan menyatu*), the FINALE convergence room. **Multi-angle env** (Erik: E06 = the film's payoff scene, richest coverage). Same house as E01/E02/E03. Empty-room reference plates, warm-night grade BAKED; the four family (Ratna **uncovered**, mahram-only night) + food + phone at GATE B.
+> Method → [[00-README-ENV]] + [[semesta-env-method-kling]] (RESET 2026-07-03: 4 CARDINAL one-point flat-wall angles first, THEN per-seat medium-close; NO high-entropy framed content). Scene truth → [[10-gateB-keyframes/SEQ6-SC13]] (INT. RUANG MAKAN — 19.00, **FINALE**). Master render → `environment-images/E06_ruangmakan/E06_ruangmakan_master.png`.
+> **Room:** the family **eat-in kitchen** (dining area joined to a domestic kitchen — *dapur-makan menyatu*), the FINALE convergence room. Same house as E01/E02/E03. Empty-room reference plates, warm-night grade BAKED; the four family (Ratna **uncovered**, mahram-only night) + food + phone at GATE B.
 
-> **★ CONCEPT + GRADED + FULL-ROOM RESET 2026-07-02 (Erik, iterative).** Roll history:
-> - v1 = standalone formal dining room → REJECTED (culturally implausible for Indonesia; the norm is dining **joined with the kitchen**, *dapur-makan menyatu*). `_rejected/`.
-> - v2 = eat-in kitchen but too catalog-clean → REJECTED (a middle-class-*mampu* UMKM family kitchen is busy/full, not showroom).
-> - v3 = busy lived-in eat-in kitchen (down-room, kitchen back wall) → accepted then SUPERSEDED (side walls bare → contradicted the reverse angle's dressing). `_rejected/`.
-> - **v4 = FULL-ROOM master (ACCEPTED)** — all walls dressed (kitchen back wall + window-wall sideboard + doorway-wall fan/calendar/hooks), so every derivative angle is consistent from the master. `E06_ruangmakan_master.png`.
-> **⭐ Lesson (multi-angle env):** the master must be the FULL-ROOM bible (all walls dressed) from the start — dressing must NOT grow from a derivative (the reverse drove new walls → the old master lagged → contradiction). Master = full room bible; derivatives only reframe/re-angle.
+> **★★ RESET 2026-07-03 (Erik) — supersedes the aborted 2026-07-02 build (4/4 multi-angle, all images deleted by Erik, old sheet v3.0 discarded).** Two corrections became the reset method:
+> 1. **NO high-entropy framed content as dressing** — family photos, wall calendar, text posters, child's drawing, detailed art all get re-hallucinated every generation → never identical across angles → cross-angle inconsistency. Use only **low-entropy stable-form dressing** (plain shelves, plants, hooks, generic cookware/appliances, plain fridge). (The aborted build's family-photo frames + wall calendar were the inconsistency source.)
+> 2. **Build 4 CARDINAL angles first, THEN zoom per seat.** A rectangular room can't have two walls flat at once — a wide two-wall frame forces one wall oblique (two-point/diagonal). So each cardinal camera is PERPENDICULAR to ONE wall (that wall flat/parallel to the image plane = symmetric one-point); the perpendicular walls appear only as receding slivers at the edges. Per-seat zooms = medium-close derived from the relevant cardinal (wall behind the seat flat + filling the background). Symmetry tokens (every cardinal): *one-point perspective, wall parallel to the image plane, table edge parallel to the frame bottom, all lines horizontal or vertical*; negative: *no two-point/oblique/diagonal/three-quarter/receding side wall dominating, table not rotated*.
 
-> **★ Consistency vs E04/E05:** E04 dapur = a CUT scene (no live env). E05 = the frozen-food WORK corner "kitchen-adjacent". E06 = the family eat-in kitchen — completes the house geography (one kitchen hub). E06's kitchen = **domestic family** (fitted oak cabinets + hob + hood + sink + everyday appliances), NOT frozen-food business equipment (chest freezer/prep-stainless/parcels = E05 only).
+> **★ GRADE — warm night 19.00.** NIGHT warm-cool engine: **warm amber pendant over the dining table = the key** + a warm under-cabinet strip over the counter, cool deep-blue night from the LILL-curtained camera-LEFT window + cool corner shadows = the counter-anchor. **Warm-dominant is intentional for the FINALE** (thesis = family warmth / kehangatan; a strong cool window would read cold and undercut the payoff) — kept from flat/single-temp by a subtle cool window + shaped falloff. Single grade state.
 
-> **★ GRADE — warm night 19.00 (validated).** NIGHT warm-cool engine: **warm amber pendant over the dining table = the key** + a warm under-cabinet strip over the counter, cool deep-blue night from the LILL-curtained camera-LEFT window + cool corner shadows = the counter-anchor. **Warm-dominant is intentional for the FINALE** (thesis = family warmth / kehangatan; a strong cool window would read cold and undercut the payoff) — kept from flat/single-temp by a subtle cool window + shaped falloff. Single grade state.
+> **★ CULTURAL DENSITY (validated, Erik + web research), lived-in menengah-mampu — low-entropy items only.** rice cooker, water dispenser + 19L gallon, wall spice rack + storage jars, a hanging rail of wok/pans/utensils, stacked pots + basin, dish rack, LPG gas cylinder, a plain fridge (few plain magnets), kettle, hanging cloth, a plain low sideboard (fruit bowl + potted plant), a standing floor fan, wall hooks with a tote/jacket. **Dignity floor:** full & lived-in but clean, functional, well-maintained — NOT grimy/kumuh. **NO framed photos, NO wall calendar, NO art print, NO wall clock, NO child's drawing, NO text/lettering on walls.**
 
-> **★ CULTURAL DENSITY (validated, Erik + web research).** A middle-class-*mampu* UMKM family kitchen is busy & full: rice cooker, water dispenser + 19L gallon, wall spice rack + storage jars, a hanging rail of wok/pans/utensils, stacked pots + basin, dish rack, LPG gas cylinder, a fridge with magnets + child's drawing, kettle, hanging cloth, a sideboard with framed family photos, a wall calendar, a standing floor fan, wall hooks with a bag/jacket. **Dignity floor:** full & lived-in but clean, functional, well-maintained (menengah-mampu) — NOT grimy/kumuh. Private-home realism ≠ the token-dignity ban (that governs public/institutional EXT).
-
-> **A1 (screens OFF, UI=AE)** + house gestalt hold. **NO decorative art print** (E06 exits Hokusai; family photographs ARE allowed — personal/lived-in, not the banned art-print) · **NO wall clock**. Empty plate, **no device** (phone at GATE B; screen OFF, "Mode Syariah" opt-in UI = the film's LAST commercial graphic in AE).
+> **A1 (screens OFF, UI=AE)** + house gestalt hold. Empty plate, **no device** (phone at GATE B; screen OFF, "Mode Syariah" opt-in UI = the film's LAST commercial graphic in AE). **Eat-in kitchen = domestic family** (fitted cabinets + hob + hood + sink), NOT frozen-food business equipment (that's E05).
 
 ---
 
-## 1. Room identity lock (canonical FULL ROOM, from the master v4 RENDER = Rank-1 truth)
-Camera POV = end of room looking down toward the far back kitchen-counter wall.
-- **Foreground centre:** EKEDALEN oak dining table + **four chairs, two per long side, none at the short ends** (Erik canon), four clean place settings + runner + empty serving ware (food = GATE B); warm pendant ON directly above = hero warm pool.
-- **Far BACK wall (kitchen):** fitted domestic kitchen counter — white-stained oak lower + upper cabinets, white-ceramic splashback, built-in gas hob + wok + range hood, sink + dish rack, rice cooker, kettle, spice rack, storage jars, a hanging utensil rail (wok/pans/ladle/spatula), stacked stainless pots + basin, potted plant, warm under-cabinet strip light; a water dispenser + 19L gallon at the camera-LEFT counter end; LPG gas cylinder near the counter.
-- **camera-LEFT wall (window):** LILL-curtained window (cool deep-blue night) + a low wood-effect sideboard buffet beneath it with framed family photographs + a fruit bowl + a potted plant.
-- **camera-RIGHT wall (entry):** open doorway + light switch, a domestic refrigerator (magnets + child's drawing), a wall calendar near the doorway, a standing electric floor fan in the corner, a wall hook with a tote bag + light jacket.
-- **NO decorative art print, NO wall clock, NO device.** Ceramic-tiled floor.
-> **HANDEDNESS (render-confirmed):** kitchen counter far back wall · window + sideboard + water-dispenser camera-LEFT · refrigerator + doorway + fan + hooks camera-RIGHT. Reverse angle flips these (window camera-right, doorway camera-left). Ground all derivatives on the master render.
-
-**ADDENDUM A1:** NO device in the empty plate — Herman's phone at GATE B (screen OFF; "Mode Syariah · aktif" opt-in + app-dimming = the film's LAST commercial graphic, composited in AE). Warm pendant + night grade BAKED into the plate; family + food = GATE B.
+## 1. Room identity lock (canonical, from the master FRONT-cardinal RENDER = Rank-1 truth)
+Camera POV (master/FRONT) = end of room, on the central long axis, square to the far kitchen-counter wall.
+- **Foreground centre:** EKEDALEN oak dining table + **four chairs, two per long side, none at the short ends** (Erik canon; render-confirmed 4), four clean place settings + runner + empty serving ware (food = GATE B); warm pendant ON directly above = hero warm pool.
+- **Far BACK wall (kitchen, flat in FRONT):** fitted domestic kitchen counter — white-stained oak lower + upper cabinets, white-ceramic splashback, built-in gas hob + wok + range hood, sink + dish rack, rice cooker, kettle, spice rack, storage jars, hanging utensil rail (wok/pans/ladle/spatula), stacked stainless pots + basin, potted plant, warm under-cabinet strip light; water dispenser + 19L gallon at the camera-LEFT counter end; LPG cylinder near the counter.
+- **camera-LEFT wall (window):** LILL-curtained window (cool deep-blue night) + a low plain wood-effect sideboard buffet beneath it with a fruit bowl + a potted plant. **NO framed photos.**
+- **camera-RIGHT wall (entry):** open doorway + light switch, a plain domestic refrigerator (few plain magnets), a standing floor fan in the corner, a wall hook with a tote bag + light jacket. **NO wall calendar.**
+- **NO decorative art print, NO wall clock, NO framed content, NO device.** Ceramic-tiled floor.
+> **HANDEDNESS (render-confirmed, FRONT):** kitchen counter far back wall · window + sideboard + water-dispenser camera-LEFT · refrigerator + doorway + fan + hooks camera-RIGHT. BACK (reverse) flips these (window+sideboard camera-RIGHT, doorway+fridge camera-LEFT). Ground all derivatives on the accepted cardinal renders.
 
 **Modesty:** Ratna **uncovered** (mahram-only, night); plates are empty-room, modesty staged at GATE B.
 
 ---
 
-## 2. Method
-- **Master = full-prompt from-scratch, FULL-ROOM, grade BAKED** (warm night 19.00), attachment NONE. Accepted v4 (Erik-generated; v1 standalone → v2 too-clean → v3 side-walls-bare → v4 full-room accepted). Prompt verbatim in Cell M.
-- **Derivatives = edit-in-place on the accepted master render** (canvas = `E06_ruangmakan_master.png`), one per distinct shot-angle. Reverse (180° novel-view) = reference-upload the master render + reverse-camera prompt (edit-in-place under-shoots a full reverse).
-- **Multi-angle set (Erik, finale = richest coverage):** `master` WIDE down-room (SH01/SH05) · `meja` table-end MW (SH02/SH04) · `reverse` 180° from kitchen side · `highangle` soft top-down over the table (SH04 phone-face-down + food convergence). SH03 CU phone = no env plate.
-- Cultural density + dignity floor + warm-night grade baked (see header). A1 (no device, UI=AE) holds. All pre-v4 derivatives superseded → re-derive from v4.
+## 2. Method (RESET 2026-07-03)
+- **Cardinals (4):** each a from-scratch full-prompt (or reference-upload for the reverse), grade BAKED (warm night 19.00), camera PERPENDICULAR to one wall = symmetric one-point flat-wall. FRONT (kitchen wall) = the MASTER, attachment NONE. BACK (window+doorway wall) = reference-upload the FRONT master render + reverse-camera (edit-in-place under-shoots a full 180°). LEFT / RIGHT = camera square to the respective side wall (reference-upload the master + re-angle; use edit-in-place if a moderate re-angle suffices, reference-upload if it under-shoots).
+- **Per-seat zooms (medium-close):** derived from the relevant cardinal via edit-in-place (the wall behind the seat flat + filling the background, perpendicular walls cropped out). One per chair (4 chairs).
+- Low-entropy dressing + dignity floor + warm-night grade baked (see header). A1 (no device, UI=AE) holds.
+- **Plate-set is scene-shaped:** the finale ladder (SEQ6-SC13 W→M→CU→M→W; SH03 CU phone = NO plate) drives which of the 8 slots are actually generated — confirm the final set with Erik before declaring E06 done (do NOT unilaterally mark done/superseded).
 
 ---
 
 ## 3. Plate matrix
 
-### Cell M — MASTER · establishing WIDE (GRADED warm-night, FULL busy eat-in kitchen) → `E06_ruangmakan_master.png` · ✅ ACCEPTED 2026-07-02 (v4)
-Full-room bible: dining table foreground + stocked kitchen back wall + dressed side walls (sideboard+photos camera-left, fridge+calendar+fan+hooks camera-right). Accepted prompt VERBATIM (Erik-generated, v4, attachment NONE):
+### Cell FRONT (MASTER) — cardinal-1, establishing WIDE (GRADED warm-night, symmetric one-point, kitchen wall flat) → `E06_ruangmakan_master.png` · ✅ ACCEPTED 2026-07-03
+Camera on the central long axis, square to the far kitchen-counter wall (flat/parallel to image plane); side walls recede symmetrically to a central vanishing point; table centred, near short edge parallel to frame bottom; 4 chairs 2-per-long-side; low-entropy dressing (NO frames/calendar/clock/art/drawing). Accepted prompt VERBATIM (Erik-generated, attachment NONE):
 ```json
 {
-  "mood": "warm cinematic evening domestic stillness, a busy lived-in family eat-in kitchen of a comfortable small-business household, a warm amber pendant light pools over the dining table against a cool deep-blue night window, an open-plan domestic kitchen densely stocked behind and lived-in side walls, cinematic warm-cool separation, restrained naturalism, unoccupied and still",
-  "color_grade": "cinematic restrained night-interior grade, warm amber pendant light pooling over the dining table as the key, cool deep-blue night ambient from the curtained window and the room-corner shadows as the counter-anchor, gentle warm-cool separation, neutral off-white plaster preserved, natural oak-effect laminate tones, shaped cinematic contrast, lifted but shaped blacks, soft matte falloff, clean exposure, warm Deakins practical-light midtones, Lubezki-style observational naturalism, no flat even brightness, no global orange wash, no yellow wall cast, no sepia, no teal-orange look",
-  "style": "photorealistic cinematic interior, architectural clarity, ARRI Alexa Mini LF, 24mm prime spherical lens, deep focus front to back, Kodak Portra natural rendering, Roger Deakins-inspired restrained practical-light naturalism, Emmanuel Lubezki-style observational domestic realism",
-  "scene": "family eat-in kitchen in a modern urban middle-class Indonesian family home, a busy lived-in home kitchen of a comfortable small-business family, open-plan dining area joined to a domestic kitchen, well-used but clean and functional, contemporary flat-pack laminate cabinetry densely stocked with everyday cookware and appliances, lived-in side walls with a sideboard and household things, an oak-effect dining table with four chairs in the foreground, matte painted plaster walls, white ceramic splashback, plain desaturated textiles, warm domestic realism",
+  "mood": "warm cinematic evening domestic stillness, a busy lived-in family eat-in kitchen of a comfortable small-business household, a warm amber pendant pooling over the centered dining table against a cool deep-blue night, an open-plan domestic kitchen densely stocked along the far wall, symmetric and orderly, unoccupied and still",
+  "color_grade": "cinematic restrained night-interior grade, warm amber pendant over the dining table as the key, cool deep-blue night ambient in the corners as the counter-anchor, gentle warm-cool separation, neutral off-white plaster preserved, natural oak-effect laminate tones, shaped cinematic contrast, lifted but shaped blacks, soft matte falloff, clean exposure, warm Deakins practical-light midtones, Lubezki observational naturalism, no flat even brightness, no global orange wash, no yellow wall cast, no sepia, no teal-orange look",
+  "style": "photorealistic cinematic interior, architectural clarity, ARRI Alexa Mini LF, 28mm prime spherical lens, deep focus front to back, Kodak Portra natural rendering, Roger Deakins restrained practical-light naturalism, Emmanuel Lubezki observational domestic realism",
+  "scene": "family eat-in kitchen in a modern urban middle-class Indonesian family home, open-plan dining area joined to a domestic kitchen, well-used clean functional, contemporary flat-pack laminate cabinetry densely stocked with everyday cookware, an oak-effect dining table with four chairs foreground centre, matte painted plaster walls, white ceramic splashback, plain desaturated textiles, warm domestic realism",
   "location": "indoor",
   "time_of_day": "evening around 19.00",
-  "atmosphere": "quiet cinematic domestic calm, a warm pendant pool over the set dining table meeting cool deep-blue night beyond the sheer-curtained window, a busy well-stocked family kitchen, still and unoccupied before the meal",
+  "atmosphere": "quiet cinematic domestic calm, a warm pendant pool over the set dining table meeting cool deep-blue night, a busy well-stocked family kitchen, still and unoccupied before the meal",
   "subject_anchor": {
-    "primary_subject": "family dining table, IKEA EKEDALEN oak effect dining table, foreground centre, four matching EKEDALEN dining chairs, two chairs on each long side of the table, none at the short ends, four clean place settings, plain white plates, plain bowls, clear drinking glasses, simple cutlery, plain desaturated table runner, empty serving platter, empty serving bowl, centre",
-    "subject_material": "neutral muted off-white matte painted plaster walls, oak effect laminate cabinetry and furniture, white ceramic splashback tiles, white laminate worktop, plain desaturated woven textiles, clean ceramic-tiled floor with soft warm and cool reflections",
+    "primary_subject": "family dining table, IKEA EKEDALEN oak-effect dining table, foreground centre on the room long axis, four matching EKEDALEN chairs, two chairs on each long side, none at the short ends, symmetric left of the table matching right, four clean place settings, plain white plates, plain bowls, clear glasses, simple cutlery, plain desaturated table runner, empty serving platter centre",
+    "subject_material": "neutral muted off-white matte painted plaster walls, oak-effect laminate cabinetry and furniture, white ceramic splashback tiles, white laminate worktop, plain desaturated woven textiles, clean ceramic-tiled floor of soft warm and cool reflections",
     "supporting_objects": {
-      "kitchen_counter": "modern fitted kitchen counter run along the far back wall, clean white-stained oak-effect lower cabinets, white laminate worktop, white ceramic splashback tiles behind, well-used family kitchen busy with everyday things",
+      "kitchen_counter": "modern fitted kitchen counter along the far back wall, clean white-stained oak-effect lower cabinets, white laminate worktop, white ceramic splashback behind, a well-used family kitchen of everyday things",
       "upper_cabinets": "white-stained oak-effect upper wall cabinets above the counter, closed plain doors",
-      "stove": "built-in four-burner gas hob set into the counter, a used stainless wok resting on it, slim stainless range hood above",
-      "sink": "stainless steel kitchen sink set into the counter, plain mixer tap, dish soap bottle and a sponge at the edge, a dish rack of drying plates and glasses beside it",
+      "stove": "built-in four-burner gas hob in the counter, a used stainless wok on it, a slim stainless range hood above",
+      "sink": "stainless steel sink in the counter, a plain mixer tap, a dish rack of drying plates and glasses beside it",
       "rice_cooker": "an electric rice cooker on the worktop, plain white, lid closed",
-      "water_dispenser": "a tall water dispenser with a nineteen-liter refill gallon bottle on top, standing at the camera-LEFT end of the counter run",
-      "spice_rack": "a wall-mounted spice rack over the counter, rows of small bottles and jars of cooking oil, soy sauce, salt, seasoning",
-      "storage_jars": "a row of clear plastic storage jars and canisters of dry goods and crackers on the worktop",
-      "hanging_utensils": "a stainless hanging rail on the splashback, hung with a wok, a frying pan, a ladle, a slotted spoon, a spatula, everyday cooking utensils",
-      "stacked_pots": "a few stacked stainless steel pots and a plastic basin at the counter end",
-      "gas_cylinder": "a green LPG gas cylinder tucked under the counter beside the hob",
-      "window_wall_sideboard": "a low wood-effect sideboard buffet beneath the camera-LEFT window, its top with a few small framed family photographs, a fruit bowl, a small potted plant, a folded decorative cloth",
-      "refrigerator": "a tall domestic refrigerator against the camera-RIGHT wall beside the doorway, a few magnets and a child's drawing on the door",
-      "wall_calendar": "a wall calendar hanging near the camera-RIGHT doorway",
+      "water_dispenser": "a tall water dispenser of a nineteen-liter refill gallon on top, at the camera-LEFT end of the counter run",
+      "spice_rack": "a wall-mounted spice rack over the counter, rows of small plain bottles and jars",
+      "storage_jars": "a row of clear plastic storage canisters of dry goods on the worktop",
+      "hanging_utensils": "a stainless hanging rail on the splashback of a wok, a frying pan, a ladle, a slotted spoon, a spatula",
+      "stacked_pots": "a few stacked stainless pots and a plastic basin at the counter end",
+      "gas_cylinder": "a green LPG gas cylinder under the counter beside the hob",
+      "sideboard": "a low plain wood-effect sideboard buffet beneath the camera-LEFT window, a plain fruit bowl and a small potted plant on top",
+      "refrigerator": "a tall plain domestic refrigerator against the camera-RIGHT wall beside the doorway, a few plain magnets on the door",
       "floor_fan": "a standing electric floor fan in the camera-RIGHT corner near the doorway",
-      "wall_hook": "a wall hook by the camera-RIGHT doorway holding a tote bag and a light jacket",
+      "wall_hook": "a plain wall hook by the camera-RIGHT doorway of a tote bag and a light jacket",
       "kettle": "an electric kettle on the worktop",
-      "cloth": "a kitchen cloth hanging on the range-hood or cabinet handle",
-      "window_dressing": "one normal-proportioned rectangular window set into the camera-LEFT wall, fitted with IKEA LILL sheer net curtains, drawn, cool deep-blue night beyond",
-      "pendant": "warm-toned pendant lamp, over the dining table centre, switched ON, a warm amber practical glow over the table",
-      "openings": "open doorway, camera-RIGHT wall, light switch plate beside the doorway",
+      "cloth": "a plain kitchen cloth on the cabinet handle",
+      "potted_plant": "a small potted plant on the counter end",
+      "window_dressing": "one normal-proportioned rectangular window in the camera-LEFT wall, IKEA LILL sheer net curtains, drawn, cool deep-blue night beyond",
+      "pendant": "a warm-toned pendant lamp over the dining table centre, switched ON, a warm amber practical glow over the table",
+      "openings": "an open doorway in the camera-RIGHT wall, a plain light-switch plate beside it",
       "floor": "ceramic-tiled floor, open beneath the table",
-      "lighting_fixture": "warm pendant lamp switched ON over the dining table, slim warm under-cabinet strip light over the kitchen counter, plain ceiling otherwise unlit"
+      "lighting_fixture": "a warm pendant lamp switched ON over the dining table, a slim warm under-cabinet strip over the kitchen counter, the plain ceiling otherwise unlit"
     },
     "human_absence_signal": "unoccupied, still, chairs tucked, table set clean, room busy but tidy, empty of people, quiet"
   },
   "shot": {
-    "composition": "full busy eat-in kitchen geography in one frame, EKEDALEN dining table centered in the foreground with four chairs two per long side and clean place settings and an empty serving platter centre, a densely stocked domestic kitchen counter along the far back wall with lower and upper cabinets and a hob with a wok and a range hood and a sink with a dish rack and a rice cooker and jars and a spice rack and a hanging rail of pans and a water dispenser with a gallon bottle at the camera-left counter end, a low sideboard buffet with framed family photographs beneath the LILL-curtained night window on the camera-LEFT wall, a refrigerator and a wall calendar and a standing floor fan and a wall hook with a tote bag by the open doorway on the camera-RIGHT wall, potted plant, LPG gas cylinder under the counter, warm pendant over the dining table, ceramic floor, legible and lived-in",
-    "framing": "WS establishing, floor visible bottom 20%, ceiling line visible top, pendant overhead",
-    "angle": "eye-level slight low angle",
-    "camera_position": "from the end of the room, looking toward the far back kitchen-counter wall, night-window and sideboard wall camera-left, doorway and refrigerator wall camera-right",
-    "camera_direction": "down the room over the dining table toward the stocked kitchen counter on the back wall, window and sideboard camera-left, doorway and refrigerator and fan camera-right",
-    "camera": "24mm prime spherical, deep focus front to back",
-    "lighting": "a warm amber pendant lamp switched ON over the dining table as the key, pooling warm light on the table and place settings and the nearby floor, a soft warm under-cabinet strip glow over the kitchen counter behind, cool deep-blue night ambient through the LILL-curtained camera-left window, cool shadow falloff in the corners and the doorway wall, gentle localized warm-cool separation rather than a global wash; the dining table zone reads warm, the window side and upper corners hold cool blue ambient; shaped cinematic contrast, lifted blacks, no black crush, not flat, not evenly lit, restrained saturation",
+    "composition": "symmetric one-point perspective front cardinal, the kitchen counter back wall parallel to the image plane and filling the background, the EKEDALEN dining table centered on the room long axis in the foreground, the table near short edge parallel to the frame bottom, the two long sides receding symmetrically to a central vanishing point, two chairs camera-LEFT and two chairs camera-RIGHT mirrored across the axis, the far kitchen counter run centered across the back wall, the LILL-curtained window a soft sliver at the camera-LEFT edge, the doorway and refrigerator a soft sliver at the camera-RIGHT edge, all architectural lines horizontal or vertical, balanced and legible and lived-in",
+    "framing": "WS establishing, floor visible bottom 20 percent, ceiling line visible top, pendant overhead centre",
+    "angle": "eye-level straight-on, one-point perspective, camera on the room central long axis perpendicular to the kitchen back wall",
+    "camera_position": "centered on the room long axis at the near end, square to the far kitchen-counter wall, the night window and sideboard camera-LEFT, the doorway and refrigerator camera-RIGHT",
+    "camera_direction": "straight down the room central axis toward the stocked kitchen counter on the far flat back wall",
+    "camera": "28mm prime spherical, deep focus front to back, no lens tilt, level horizon",
+    "lighting": "a warm amber pendant switched ON over the dining table as the key, pooling warm light on the table and place settings and the nearby floor, a soft warm under-cabinet strip glow over the kitchen counter behind, cool deep-blue night ambient at the camera-left window and the upper corners, cool shadow falloff in the corners, gentle localized warm-cool separation of a warm table zone against cool blue edges, shaped cinematic contrast, lifted blacks, no black crush, not flat, not evenly lit, restrained saturation",
     "aspect_ratio": "16:9"
   },
   "layout_continuity": {
-    "do_not_change": "keep the centered EKEDALEN dining table and four chairs two per long side in the foreground, the densely stocked kitchen counter on the far back wall, the sideboard beneath the window on the camera-left wall, the refrigerator and calendar and floor fan and doorway on the camera-right wall, the pendant over the dining table, and the down-the-room framing",
-    "do_not_mirror": "do not mirror or flip the room, preserve handedness: dining table foreground centre, kitchen counter far back wall, window and sideboard camera-left, refrigerator and doorway and fan camera-right"
+    "do_not_change": "keep the centered EKEDALEN dining table and four chairs two per long side symmetric across the axis, the stocked kitchen counter on the far flat back wall, the sideboard beneath the window camera-LEFT, the refrigerator and doorway and floor fan camera-RIGHT, the pendant over the table, the symmetric one-point down-the-room framing",
+    "do_not_mirror": "preserve handedness, the window and sideboard camera-LEFT, the refrigerator and doorway and fan camera-RIGHT, the kitchen counter far back wall, the table foreground centre"
   },
   "negative_prompt": {
+    "perspective_errors": "no two-point perspective, no oblique angle, no diagonal vanishing, no three-quarter view, no receding rotated side wall dominating, no tilted horizon, no dutch angle, the table not rotated off the axis, no asymmetric skew",
     "screen_errors": "no glowing screens, no device, no phone, no lit tablet, no television, all screens absent",
-    "grade_errors": "no flat even catalog brightness, no evenly lit showroom, no single-temperature wash, no global orange wash, no yellow wall cast, no sepia, no exaggerated teal-orange grading, no crushed blacks, no daylight, no bright day window",
-    "layout_errors": "do not mirror the room, no standalone formal dining room, no sparse minimalist empty kitchen, no bare empty side walls, no decorative art print, no Hokusai print, no wall clock, do not add people, do not add food on the plates, do not crop or block the window, no chest freezer, no stainless prep worktable, no frozen-food business equipment, no parcels, no brand logos",
+    "grade_errors": "no flat even catalog brightness, no showroom lighting, no single-temperature wash, no global orange wash, no yellow wall cast, no sepia, no teal-orange grading, no crushed blacks, no daylight, no bright day window",
+    "content_errors": "no framed photographs, no photo frames, no wall calendar, no posters, no text signage, no decorative art print, no Hokusai print, no wall clock, no child drawing, no lettering, no high-detail pictorial content on the walls",
+    "layout_errors": "no standalone formal dining room, no sparse minimalist empty kitchen, no bare empty walls, no people, no food on the plates, no chest freezer, no stainless prep worktable, no frozen-food business equipment, no parcels, no brand logos, do not crop or block the window",
     "dignity_floor": "no grime, no squalor, no dilapidation, no broken fixtures, no mold, no peeling paint, clean and well-maintained though busy and lived-in"
   },
-  "production_designer": "Eugenio Caballero, modern middle-class Indonesian domestic realism, busy lived-in but clean well-maintained dressing",
+  "production_designer": "Eugenio Caballero, modern middle-class Indonesian domestic realism, busy lived-in clean well-maintained dressing",
   "interior_designer": "Ilse Crawford, warm human-centred tactile, unpretentious contemporary materiality"
 }
 ```
-> Render review PASS (v4): FULL-ROOM bible achieved — all walls dressed (kitchen back + window-sideboard-photos camera-left + fridge-calendar-fan-hooks camera-right) · consistent with the reverse dressing · chairs 2 per long side · lived-in density + dignity (menengah-mampu, not kumuh) · NO print/clock/device · handedness as-prompted. ⚠ minor: warm-dominant grade (cool window subtle) — intentional for FINALE warmth, not the flat E03 failure; gas cylinder drifted camera-left (lived-in, accepted). Erik: Approve.
+> Render review PASS: one-point front cardinal (kitchen wall flat, side walls recede symmetrically, no two-point oblique) · NO framed photos/calendar/clock/art/drawing (reset fix achieved) · warm-night warm-dominant with subtle cool window, cinematic separation · handedness as-prompted (window+sideboard camera-LEFT, fridge+doorway+fan camera-RIGHT) · **4 place settings / 4 chairs 2-per-side confirmed by Erik at full-res** (Claude's thumbnail count of ~6 was wrong) · eat-in kitchen domestic, A1 clean. Erik: accepted.
 
-### Cell REVERSE — 180° reverse from the kitchen side → `E06_ruangmakan_reverse.png` · ✅ ACCEPTED 2026-07-02
-Serves the finale shot-reverse-shot (alt SH05 / family from the opposite side). **Method = reference-upload the master v4 render + reverse-camera prompt** (novel view; edit-in-place under-shoots a full 180°). Render PASS: true 180° (window+doorway wall = background, NOT mirror) · handedness flipped (window + sideboard + family photos camera-RIGHT, doorway + refrigerator + wall calendar + floor fan + hooks camera-LEFT, grouped family photos on the plaster wall) · FULLY consistent with v4's dressing (validates the full-room-master approach — no manual re-dress needed) · chairs 2 per long side · warm-night grade held · A1 clean (no device/food/UI, no clock). Accepted prompt VERBATIM (reference-upload `E06_ruangmakan_master.png`):
+### Cell BACK — cardinal-2, reverse 180° (plain end wall flat) → `E06_ruangmakan_back.png` · ✅ ACCEPTED 2026-07-03
+Camera behind the kitchen-counter position on the central long axis, looking back across the table; the kitchen counter is OUT of frame; the flat background = the plain opposite plaster end wall. Handedness FLIPS: window+sideboard+plant camera-RIGHT (receding side sliver), doorway+refrigerator+fan+wall-hook camera-LEFT (receding side sliver). **Method = reference-upload the FRONT master render + reverse-camera prompt.** Accepted prompt VERBATIM (Erik-edited version — this is what produced the accepted render; adds three refinements over Claude's draft, see review note):
 ```text
-Using the attached E06_ruangmakan_master render (v4) as the room-identity reference, generate a TRUE reverse-angle view of the same family eat-in kitchen — a real camera move to the opposite side of the room, not a mirror. Place the camera behind the kitchen counter on the far back wall, looking back lengthwise across the EKEDALEN dining table toward the near wall, so the window-and-doorway wall now forms the background and the kitchen counter is behind the camera, out of frame. Seated adult height, eye-level, 35mm feel, deep focus, 16:9.
-On this reverse the handedness flips relative to the master: the LILL-curtained night window with the low sideboard buffet and framed family photographs beneath it is now on the camera-RIGHT; the open doorway with the refrigerator, the wall calendar, the standing floor fan and the wall hook with the tote bag and jacket is now on the camera-LEFT. Grouped small framed family photographs hang on the plaster wall between them. This must be a genuine 180-degree reverse — a DIFFERENT wall (the window-and-doorway wall) is the background, NOT the kitchen counter. Do not mirror or flip the master image.
-Keep the EKEDALEN dining table centre with four chairs on the two long sides only (two camera-left, two camera-right, none at the short ends), four clean place settings, the runner, the empty serving platter centre, the warm pendant switched ON over the table.
-Keep the same warm-night grade exactly: warm amber pendant pooling over the table as the key, cool deep-blue night ambient now from the camera-right window, gentle warm-cool separation, neutral off-white plaster, lifted but shaped blacks, restrained cinematic contrast, not flat, not evenly lit, no global orange wash, no yellow cast, no sepia. Keep the same lived-in Indonesian family-kitchen dressing and materials as the reference, clean and well-kept. Do not add people, food, phones, screens, UI, a wall clock, or any decorative art print. Keep 16:9.
-```
+Create image
 
-### Cell MEJA — table-end MW (edit-in-place push-in) → `E06_ruangmakan_meja.png` · ✅ ACCEPTED 2026-07-02
-Serves SEQ6-SC13 SH02/SH04 (M Herman at the table + phone). **Method = edit-in-place on the master v4 render.** Render PASS: table-end lengthwise MW toward the kitchen, near place-setting on the runner leading to the stocked kitchen · chairs 2 per long side, none at short ends · all v4 dressing consistent at the edges (window+sideboard+dispenser+gas camera-LEFT, fridge+fan camera-RIGHT) · warm-night grade held · A1 clean. ⚠ minor: only ~2 settings clearly in the tight MW crop (rest up-table) — fine for the M Herman backdrop. Herman at GATE B. Accepted prompt VERBATIM:
-```text
-Edit-in-place (canvas = render E06_ruangmakan_master v4):
-Reframe into a medium-wide table-end view of the same family dining table. Place the camera at seated adult height near one short end of the EKEDALEN dining table, looking lengthwise across the table toward the stocked kitchen counter on the far back wall. Eye-level, 50mm feel, deep focus, 16:9.
-Keep the table as the primary subject: the near foreground anchored by one clean place setting on the runner (plain white bowl and plate, clear glass, simple cutlery), the empty serving platter centered farther up the runner, the runner leading the eye toward the kitchen background.
-Chair continuity: exactly four IKEA EKEDALEN chairs on the two long sides only — two camera-left, two camera-right, none at either short end. The nearest left and right chairs partially visible at the lower frame edges, the farther pair readable along the table.
-Keep the room identity and handedness of the master exactly: stocked kitchen counter along the far back wall (rice cooker, kettle, plant, hob with wok, range hood, spice rack, hanging utensils, sink, dish rack, storage jars, water dispenser at the camera-left counter end); the window and the low sideboard with framed family photographs on the camera-LEFT as a soft edge/sliver; the refrigerator, doorway, wall calendar and floor fan on the camera-RIGHT as partial edge elements. No mirroring.
-Keep the same warm-night grade exactly: warm amber pendant pooling over the table and place settings as the key, soft warm under-cabinet strip glow behind, cool deep-blue night from the camera-left window, gentle warm-cool separation, neutral off-white plaster, lifted but shaped blacks, restrained cinematic contrast, not flat, not evenly lit. Everything else unchanged. Do not add people, food, phones, screens, UI, wall clock, decorative art print, or extra chairs. Keep 16:9.
-```
+Using the attached E06_ruangmakan_master render as the room-identity reference, generate a TRUE 180-degree reverse-angle view of the same family eat-in kitchen. This is a real camera move to the opposite end of the room, NOT a mirror and NOT a flipped copy.
 
-### Cell HIGHANGLE — soft high-angle over the table → `E06_ruangmakan_highangle.png` · ✅ ACCEPTED 2026-07-02
-Serves SEQ6-SC13 SH04 (Herman lays the phone face-down on the table) + the food-convergence finale beat. **Method = edit-in-place on the master v4 render.** Render PASS: soft high-angle ~45° down over the table, all four place settings + serving platter/bowl readable from above · room band at edges keeps the eat-in-kitchen read (kitchen far side, sideboard+dispenser camera-LEFT, fridge+fan camera-RIGHT) · chairs 2 per long side · warm pendant pool from above, warm-night held · A1 clean. As expected, edit-in-place under-shoots a steep top-down → landed a soft high-angle (cf. E02 prayer_high); a true overhead would need reference-upload. Accepted prompt VERBATIM:
-```text
-Edit-in-place (canvas = render E06_ruangmakan_master v4):
-Change the camera to a soft high-angle looking down over the family dining table. Raise the camera above the table and tilt down toward the place settings, so the table surface, the runner, the four clean place settings, and the empty serving platter and bowl in the centre dominate the frame, seen from above at roughly a forty-five degree downward angle. Medium framing on the tabletop, 35mm feel, deep focus, 16:9.
-Keep a readable band of the room around the table edges: a slice of the stocked kitchen counter on the far side, and soft slivers of the side walls, so the location still reads as the same eat-in kitchen. Keep the four EKEDALEN chairs on the two long sides.
-Keep the room identity, dressing and handedness of the master exactly — same table and place settings, same stocked kitchen counter, same window and sideboard camera-LEFT, same refrigerator and doorway camera-RIGHT, no mirroring.
-Keep the same warm-night grade exactly: warm amber pendant pooling over the table and place settings as the key from above, soft warm falloff, cool deep-blue night ambient at the room edges, gentle warm-cool separation, neutral off-white plaster, lifted but shaped blacks, restrained cinematic contrast, not flat, not evenly lit. Do not add people, food, phones, screens, UI, wall clock, or decorative art print. Keep 16:9.
+Place the camera behind the kitchen-counter position, on the room central long axis, looking straight back across the EKEDALEN dining table toward the opposite end wall. The kitchen counter is now behind the camera and fully out of frame. The flat background must be the plain opposite plaster end wall, not the kitchen counter.
+
+Composition: strict symmetric one-point perspective, eye-level, level horizon. The opposite end wall is flat-on and parallel to the image plane. The dining table is centered on the long axis; its near short edge is parallel to the frame bottom; both long sides recede symmetrically toward a central vanishing point. All lines clean horizontal/vertical. No two-point perspective, no oblique angle, no three-quarter view, no diagonal vanishing, no tilted horizon, no table rotation, no exaggerated wide-angle distortion.
+
+Handedness must reverse correctly from the master:
+- camera-RIGHT: LILL-curtained deep-blue night window, low wood-effect sideboard, fruit bowl, potted plant
+- camera-LEFT: open doorway zone, recessed refrigerator, standing floor fan, wall hook with tote bag and light jacket
+
+Important refrigerator correction: the refrigerator must be tucked back into the camera-LEFT doorway zone, close to the wall plane and nearly flush with the doorway alignment. It must not project forward into the dining space, must not become a dominant foreground slab, and should be only partially visible as a secondary side-wall element.
+
+Do not make the side walls meaningless slivers. Keep both side zones visible enough to preserve the kitchen+dining identity, but still secondary to the centered table and plain end wall.
+
+Keep the EKEDALEN dining table centered with exactly four chairs on the long sides only: two camera-left, two camera-right, none at the short ends. Keep exactly four clean place settings, plain white plates and bowls, clear glasses, simple cutlery, plain desaturated runner, and one empty serving platter at center. No extra chairs, no extra place settings, no food.
+
+The opposite end wall must remain plain painted plaster and low-entropy, but not sterile: subtle plaster texture, clear baseboard line, soft pendant-light falloff, gentle warm shadow shaping, natural tonal variation. No framed photos, no photo frames, no posters, no decorative art, no calendar, no wall clock, no lettering, no signage.
+
+Keep the same warm-night grade as E06_ruangmakan_master: warm amber pendant switched ON over the table as key light, cool deep-blue night ambient from the camera-RIGHT window, gentle warm-cool separation, neutral off-white plaster, natural oak laminate tones, shaped cinematic contrast, lifted but shaped blacks, soft matte falloff, restrained saturation, clean exposure. No flat brightness, no global orange wash, no yellow wall cast, no sepia, no teal-orange look, no daylight look.
+
+Preserve the same clean lived-in Indonesian family eat-in kitchen realism, same material language, same table, chairs, sideboard, window treatment, refrigerator, doorway zone, floor fan, wall hook, tiled floor, and pendant character. Unoccupied and still.
+
+Do not add people, phones, screens, TV, tablet, UI, framed content, wall clock, decorative artwork, extra furniture, extra chairs, or extra place settings.
+
+Photorealistic cinematic interior, ARRI Alexa Mini LF, 28mm prime spherical feel, controlled distortion, deep focus front to back, seated adult eye height, 16:9.
 ```
+**Attachment: `E06_ruangmakan_master.png`** (room-identity / reverse-camera source).
+> Render review PASS: true 180° (plain end wall = background, kitchen counter out of frame, NOT mirror) · handedness flipped correctly (window+sideboard camera-RIGHT, doorway+fridge+fan+hook camera-LEFT) · one-point symmetric, no two-point · warm-night warm-dominant held · low-entropy end wall (no frames/calendar/clock/art) · A1 clean · 4 chairs / 4 settings (Erik full-res) · fully consistent with the FRONT master dressing (validates reference-upload-from-master). **Erik prompt refinements (validated, carry forward to other cardinals):** (1) recessed-appliance correction — a fridge/appliance on a side wall in a reverse/cardinal must be tucked flush to the wall plane, secondary, NOT a foreground slab; (2) "do not make the side walls meaningless slivers" — keep both side zones legible enough to preserve identity while secondary to the flat wall + table; (3) low-entropy wall "not sterile" — add subtle plaster texture + baseboard + pendant falloff + tonal variation so a plain wall doesn't read dead-flat. Erik: Approve.
+
+### Cell LEFT — cardinal-3, camera square to the camera-LEFT (window/sideboard) wall → `E06_ruangmakan_left.png` · ✅ ACCEPTED 2026-07-03
+Camera rotated 90° from FRONT to face the window/sideboard wall flat-on (that wall = flat background); the stocked kitchen counter recedes camera-RIGHT (secondary, legible — preserves eat-in-kitchen identity), the plain end wall camera-LEFT; doorway/fridge wall behind camera out of frame. Table broadside (long axis left-right), 2 chairs near (backs to camera) + 2 far. **Method = reference-upload the FRONT master render + 90° re-angle.** Accepted prompt VERBATIM (Erik used Claude's LEFT draft as-is, no edit):
+```text
+Create image
+
+Using the attached E06_ruangmakan_master render as the room-identity reference, generate a NEW cardinal view of the same family eat-in kitchen: a real 90-degree camera move so the camera now faces the WINDOW-and-sideboard wall flat-on. NOT a mirror, NOT a flipped copy.
+
+Place the camera on the room central axis square to the camera-LEFT wall of the master (the wall with the LILL-curtained night window and the low wood-effect sideboard). That window-and-sideboard wall is now directly ahead and flat-on. The doorway/refrigerator wall is behind the camera and fully out of frame.
+
+Composition: strict symmetric one-point perspective, eye-level, level horizon. The window-and-sideboard wall is flat-on and parallel to the image plane, filling the background. The EKEDALEN dining table is now seen broadside, its long axis running left-to-right, its long near edge parallel to the frame bottom, centered. Perpendicular walls recede symmetrically to a central vanishing point. All lines clean horizontal/vertical. No two-point perspective, no oblique angle, no three-quarter view, no diagonal vanishing, no tilted horizon, no table rotation, no exaggerated wide-angle distortion.
+
+Handedness for this cardinal:
+- BACKGROUND (flat wall, ahead): the LILL-curtained deep-blue night window centered high, the low wood-effect sideboard beneath it with a fruit bowl and a potted plant against the wall plane.
+- camera-RIGHT (receding side sliver): the stocked kitchen counter run — lower and upper cabinets, hob with wok and range hood, sink and dish rack, rice cooker, kettle, spice rack, jars, hanging utensil rail, water dispenser with gallon at the end — secondary, legible, not dominant.
+- camera-LEFT (receding side sliver): the plain painted plaster end wall with a clear baseboard line.
+
+Keep appliances and the sideboard tucked flush to their wall planes as secondary side-wall elements; nothing projects forward as a dominant foreground slab. Do not make the side zones meaningless slivers — keep both legible enough to preserve the kitchen+dining identity, but still secondary to the flat window wall and the centered table.
+
+Keep the EKEDALEN dining table centered with exactly four chairs on the two long sides only: two on the near long side with their backs to the camera, two on the far long side toward the window wall, none at the short ends. Keep exactly four clean place settings, plain white plates and bowls, clear glasses, simple cutlery, plain desaturated runner, one empty serving platter at center. No extra chairs, no extra place settings, no food.
+
+The plaster surfaces stay plain and low-entropy but not sterile: subtle plaster texture, baseboard line, soft pendant-light falloff, gentle warm shadow shaping, natural tonal variation. No framed photos, no photo frames, no posters, no decorative art, no calendar, no wall clock, no lettering, no signage.
+
+Keep the same warm-night grade as E06_ruangmakan_master: warm amber pendant switched ON over the table as key light, cool deep-blue night ambient from the window now centered in the background, gentle warm-cool separation, neutral off-white plaster, natural oak laminate tones, shaped cinematic contrast, lifted but shaped blacks, soft matte falloff, restrained saturation, clean exposure. No flat brightness, no global orange wash, no yellow wall cast, no sepia, no teal-orange look, no daylight look.
+
+Preserve the same clean lived-in Indonesian family eat-in kitchen realism, same material language, same table, chairs, sideboard, window treatment, kitchen counter character, tiled floor, and pendant. Unoccupied and still.
+
+Do not add people, phones, screens, TV, tablet, UI, framed content, wall clock, decorative artwork, extra furniture, extra chairs, or extra place settings.
+
+Photorealistic cinematic interior, ARRI Alexa Mini LF, 28mm prime spherical feel, controlled distortion, deep focus front to back, seated adult eye height, 16:9.
+```
+**Attachment: `E06_ruangmakan_master.png`** (room-identity / 90° re-angle source).
+> Render review PASS: window/sideboard wall FLAT/parallel = genuine one-point (window wall lines horizontal, not wedging) · kitchen counter receding camera-RIGHT to the central vanishing point = correct one-point secondary (legible = preserves eat-in-kitchen identity per Erik's keep-side-walls edit) · warm-night warm-dominant held (pendant key + cool blue window background) · low-entropy walls · A1 clean · 4 chairs / 4 settings · consistent with master dressing. Minor (accepted): camera a touch off dead-center → window slightly left, table mild parallax skew — cosmetic, does not break one-point or i2v angle-driving; per-seat medium-close crops perpendicular walls so it does not propagate. **Verdict correction:** Claude's prior "regen for symmetry / shrink counter to sliver" lean was WRONG — it mislabeled correct one-point recession as two-point AND its delta contradicted Erik's own "keep side zones legible" instruction; re-audit confirmed accept. Erik: audit-to-decide (no re-ask).
+
+### Cell RIGHT — cardinal-4, camera square to the camera-RIGHT (doorway/fridge) wall → `E06_ruangmakan_right.png` · ✅ ACCEPTED 2026-07-03
+Camera rotated 90° from FRONT to face the doorway/refrigerator wall flat-on (= flat background: doorway + fridge flush left-of-doorway + floor fan + wall hook right-of-doorway); kitchen counter recedes camera-LEFT (secondary legible), plain end wall camera-RIGHT; window/sideboard wall behind camera out of frame (so no cool window in-frame — warm-dominant, cool accents from the dark doorway + corners). Table broadside, 2 chairs near (backs to camera) + 2 far. **Method = reference-upload the FRONT master render + 90° re-angle.** Accepted prompt VERBATIM (Erik used Claude's RIGHT draft as-is, no edit):
+```text
+Create image
+
+Using the attached E06_ruangmakan_master render as the room-identity reference, generate a NEW cardinal view of the same family eat-in kitchen: a real 90-degree camera move so the camera now faces the DOORWAY-and-refrigerator wall flat-on. NOT a mirror, NOT a flipped copy, and a genuinely different wall from any previous view.
+
+Place the camera on the room central axis square to the camera-RIGHT wall of the master (the wall with the open doorway, the refrigerator, the standing floor fan and the wall hook). That doorway-and-refrigerator wall is now directly ahead and flat-on, filling the background. The window-and-sideboard wall is behind the camera and fully out of frame.
+
+Composition: strict symmetric one-point perspective, eye-level, level horizon, camera centered on and perpendicular to the doorway wall. The doorway-and-refrigerator wall is flat-on and parallel to the image plane. The EKEDALEN dining table is seen broadside, its long axis running left-to-right, its long near edge parallel to the frame bottom, centered. Perpendicular walls recede symmetrically to a central vanishing point. All lines clean horizontal/vertical. No two-point perspective, no oblique angle, no three-quarter view, no diagonal vanishing, no tilted horizon, no table rotation, no exaggerated wide-angle distortion.
+
+Handedness for this cardinal:
+- BACKGROUND (flat wall, ahead): the open doorway with a light-switch plate, a plain domestic refrigerator with a few plain magnets tucked flush to the wall plane, a standing floor fan in the corner, a wall hook with a tote bag and a light jacket. The refrigerator stays proportionate and flush to the wall, not a dominant foreground slab.
+- camera-LEFT (receding side): the stocked kitchen counter run — lower and upper cabinets, hob with wok and range hood, sink and dish rack, rice cooker, kettle, spice rack, jars, hanging utensil rail, water dispenser with gallon at the end — secondary, legible, not dominant.
+- camera-RIGHT (receding side): the plain painted plaster end wall with a clear baseboard line.
+
+Do not make the side zones meaningless slivers — keep both legible enough to preserve the kitchen+dining identity, but still secondary to the flat doorway wall and the centered table.
+
+Keep the EKEDALEN dining table centered with exactly four chairs on the two long sides only: two on the near long side with their backs to the camera, two on the far long side, none at the short ends. Keep exactly four clean place settings, plain white plates and bowls, clear glasses, simple cutlery, plain desaturated runner, one empty serving platter at center. No extra chairs, no extra place settings, no food.
+
+The plaster surfaces stay plain and low-entropy but not sterile: subtle plaster texture, baseboard line, soft pendant-light falloff, gentle warm shadow shaping, natural tonal variation. No framed photos, no photo frames, no posters, no decorative art, no calendar, no wall clock, no lettering, no signage.
+
+Keep the same warm-night grade as E06_ruangmakan_master: warm amber pendant switched ON over the table as key light, cool deep-blue night ambient spilling from the off-frame window behind the camera plus cool shadow falloff in the corners and the dark doorway opening, gentle warm-cool separation, neutral off-white plaster, natural oak laminate tones, shaped cinematic contrast, lifted but shaped blacks, soft matte falloff, restrained saturation, clean exposure. No flat brightness, no global orange wash, no yellow wall cast, no sepia, no teal-orange look, no daylight look.
+
+Preserve the same clean lived-in Indonesian family eat-in kitchen realism, same material language, same table, chairs, refrigerator, doorway zone, floor fan, wall hook, kitchen counter character, tiled floor, and pendant. Unoccupied and still.
+
+Do not add people, phones, screens, TV, tablet, UI, framed content, wall clock, decorative artwork, extra furniture, extra chairs, or extra place settings.
+
+Photorealistic cinematic interior, ARRI Alexa Mini LF, 28mm prime spherical feel, controlled distortion, deep focus front to back, seated adult eye height, 16:9.
+```
+**Attachment: `E06_ruangmakan_master.png`** (room-identity / 90° re-angle source).
+> Render review PASS: doorway/refrigerator wall FLAT/parallel = genuine one-point (wall lines horizontal), a genuinely different wall from LEFT (not a mirror) · fridge flush + proportionate (Erik's recessed-appliance correction held) · kitchen counter receding camera-LEFT = correct one-point secondary, legible · warm-night warm-dominant held (window off-frame by design → cool accents from dark doorway + corners) · low-entropy walls (generic magnets OK) · A1 clean · 4 chairs / 4 settings · consistent with master. Centering cleaner than LEFT. Erik: audit-to-decide (no re-ask).
+
+### Cell MEJA (Herman-M) — per-seat medium-close, far-side chairs facing camera → `E06_ruangmakan_meja.png` · ✅ ACCEPTED 2026-07-03
+Serves SEQ6-SC13 SH02/SH04 (M Herman + phone, family soft around). Medium-close straight-on onto the FAR side of the table: two far-side chairs facing camera (Herman's seat centred + adjacent), the window/sideboard wall soft-flat behind, the empty serving platter large in the foreground. **Method = edit-in-place on the accepted LEFT cardinal render.** (This supersedes the old 2026-07-01 "SH02/SH04 off master" reconcile — the new reset method makes the medium a real angle-plate = Kling i2v angle-driver.) Accepted prompt VERBATIM (Erik-edited from Claude's single-seat draft → richer two-chair framing; this is what produced the accepted render):
+```text
+Create image edit-in-place, canvas = render E06_ruangmakan_left.png:
+
+Reframe into a medium-close, straight-on view centered on the FAR SIDE of the dining table, so TWO far-side dining chairs are now clearly visible facing the camera — the father's chair as the primary centered seat, plus the adjacent far-side chair beside it, both readable and aligned square to the table. The LILL-curtained deep-blue night window wall stays soft behind them. Push in so these two chair backs and the far-side place-setting zone fill the mid-frame, seen straight-on at seated adult eye height, 50mm feel, deep focus, 16:9.
+
+Keep the near foreground anchored by the table setting nearest camera: the empty serving platter reads large in the lower foreground near centre, with the runner continuing through frame. Let the two other place settings at the lower-left and lower-right edges remain only partial and secondary at the frame edges. Keep the father's far-side place setting clearly readable in front of the main centered chair: plain white plate and bowl, clear glass, simple cutlery. The adjacent far-side chair and its setting should also be visible but secondary.
+
+Keep the room identity and handedness of the LEFT cardinal exactly:
+- the window and low sideboard with fruit bowl and potted plant remain soft behind on the flat background wall
+- a sliver of the stocked kitchen counter remains at the far camera-LEFT edge
+- the plain end wall remains at the camera-RIGHT edge
+- no mirroring
+
+Keep the composition square, stable, and frontal:
+- both visible far-side chairs must face the camera directly
+- table edges read level and square
+- background wall remains flat-on
+- no diagonal skew
+- no oblique angle
+- no tilted horizon
+- no exaggerated wide-angle distortion
+
+Keep the same warm-night grade exactly:
+- warm amber pendant pooling over the table and the visible place settings as the key
+- cool deep-blue night from the window soft behind
+- gentle warm-cool separation
+- neutral off-white plaster
+- lifted but shaped blacks
+- restrained cinematic contrast
+- not flat
+- not evenly lit
+
+Everything else unchanged. Do not add people, food, phones, screens, UI, wall clock, framed content, decorative art, or extra furniture. Do not add any extra chairs beyond the real dining set; only reveal one more far-side chair in frame. Keep 16:9.
+```
+**Attachment: `E06_ruangmakan_left.png`** (canvas).
+> Render review PASS: medium-close, window/sideboard wall soft-flat one-point behind, two far-side chairs facing camera (Herman + adjacent), empty serving platter + settings foreground (A1, empty), kitchen sliver camera-LEFT edge, warm-night warm-cool held, low-entropy, consistent with LEFT/master. Serves SH02+SH04. Herman + phone at GATE B. Erik: audit-to-decide (no re-ask).
+> **Other per-seat zooms (Andi/Lisa/Ratna chairs) DEFERRED (YAGNI):** the SEQ6-SC13 ladder gives dedicated MEDIUM only to Herman (SH02/SH04); the other family members appear only in the WIDE (SH01/SH05 = master/back) — no dedicated M plate needed. Erik chose the lean 5-plate set by generating this Herman-M rather than a full 4-seat set. Add the remaining chair-zooms only if a future re-cut needs them.
 
 ---
 
 ## 4. Status manifest
-| Cell | Angle | File | Serves | Status |
+| Cell | Angle | File | Method | Status |
 |---|---|---|---|---|
-| M | establishing WIDE (GRADED warm-night, FULL room) | `E06_ruangmakan_master.png` | SC13-SH01/SH05 | ✅ ACCEPTED 2026-07-02 (v4) · full-room bible (all walls dressed), warm-night, attachment NONE · v1 standalone / v2 too-clean / v3 bare-side-walls → `_rejected/` |
-| REVERSE | 180° from kitchen side | `E06_ruangmakan_reverse.png` | SC13 finale reverse | ✅ ACCEPTED 2026-07-02 — reference-upload master v4 + reverse-camera; true 180°, handedness flipped, FULLY consistent with v4 dressing (validates full-room-master), warm-night held |
-| MEJA | table-end MW | `E06_ruangmakan_meja.png` | SC13-SH02/SH04 | ✅ ACCEPTED 2026-07-02 — edit-in-place table-end from master v4; chair-continuity (2 per side), v4 dressing consistent at edges, warm-night held |
-| HIGHANGLE | soft high-angle over table | `E06_ruangmakan_highangle.png` | SC13-SH04 + food convergence | ✅ ACCEPTED 2026-07-02 — edit-in-place soft high-angle ~45° from master v4; 4 settings readable top-down, room band keeps eat-in-kitchen read, warm-night held |
+| FRONT (MASTER) | cardinal-1, establishing WIDE, kitchen wall flat | `E06_ruangmakan_master.png` | from-scratch, attachment NONE | ✅ ACCEPTED 2026-07-03 · one-point symmetric, no framed content, warm-night, 4 settings/4 chairs (Erik full-res) |
+| BACK | cardinal-2, reverse 180°, plain end wall flat | `E06_ruangmakan_back.png` | reference-upload master + reverse-camera | ✅ ACCEPTED 2026-07-03 · true 180°, handedness flipped, one-point, warm-night, low-entropy, 4 chairs/settings |
+| LEFT | cardinal-3, camera square to window/sideboard wall | `E06_ruangmakan_left.png` | reference-upload master + 90° re-angle | ✅ ACCEPTED 2026-07-03 · window wall flat one-point, counter secondary-legible, warm-night, 4 chairs/settings; minor off-center accepted |
+| RIGHT | cardinal-4, camera square to doorway/fridge wall | `E06_ruangmakan_right.png` | reference-upload master + 90° re-angle | ✅ ACCEPTED 2026-07-03 · doorway/fridge wall flat one-point, fridge flush, counter secondary-legible, warm-night, 4 chairs/settings |
+| MEJA (Herman-M) | per-seat medium-close, far-side chairs facing camera | `E06_ruangmakan_meja.png` | edit-in-place from LEFT cardinal | ✅ ACCEPTED 2026-07-03 · serves SH02/SH04, window wall soft-flat behind, A1, warm-night |
+| ~~seat Andi/Lisa/Ratna~~ | per-chair zoom | — | — | ⬜ DEFERRED (YAGNI — ladder gives dedicated M only to Herman; others in WIDE only) |
 
-**E06 COMPLETE 4/4** (master v4 / reverse / meja / highangle) ACCEPTED graded 2026-07-02. SH03 CU phone = no env plate.
+**E06 RESET COMPLETE — 5/5** (FRONT master · BACK reverse · LEFT · RIGHT cardinals · MEJA Herman-M medium-close). Lean set chosen by Erik (generated Herman-M, not a full 4-seat set). SH03 CU phone = no env plate. Remaining per-chair zooms deferred (YAGNI). SH03 CU phone = no env plate. Final generated set is scene-shaped by the SEQ6-SC13 ladder — confirm with Erik before declaring E06 done.
 
 Storage: `environment-images/E06_ruangmakan/` (+ `_rejected/`). Naming: `E06_ruangmakan_<angle>.png`.
-**Workflow:** master v4 accepted (full-room, attachment NONE) → derivatives edit-in-place from the master render (reverse = reference-upload + reverse-camera). No device in plate; phone + "Mode Syariah" UI + food = GATE B / After Effects.
+**Workflow:** FRONT master accepted (from-scratch, attachment NONE) → BACK reverse (reference-upload) → LEFT/RIGHT cardinals → per-seat medium-close (edit-in-place from parents). No device in plate; phone + "Mode Syariah" UI + food = GATE B / After Effects.
 > **Slug note:** kept `E06_ruangmakan` (still the eating room, now an eat-in kitchen). Rename to `dapurmakan` would cascade — defer unless Erik calls it.
 
 ---
 
-*E06 Ruang Makan / Eat-in Kitchen environment sheet v3.0 (full-room RESET 2026-07-02) · Explainer Video 2 · FINALE SEQ6-SC13 · MULTI-ANGLE (master/reverse/meja/highangle) · master v4 ACCEPTED (full-room bible, dapur-makan menyatu, warm-night warm-dominant for finale warmth) · derivatives PENDING · same house as [[E01-kamar]] / [[E02-ruangkeluarga]] / [[E03-kamarandi]] · domestic family kitchen (NOT E05 frozen-food) · no art-print (family photos OK) · no clock · no device (A1) · scene [[10-gateB-keyframes/SEQ6-SC13]]*
+*E06 Ruang Makan / Eat-in Kitchen environment sheet v4.0 (RESET 2026-07-03: 4 cardinal one-point + per-seat, no high-entropy framed content) · Explainer Video 2 · FINALE SEQ6-SC13 · COMPLETE 5/5 (master/back/left/right/meja) · same house as [[E01-kamar]] / [[E02-ruangkeluarga]] / [[E03-kamarandi]] · domestic family kitchen (NOT E05 frozen-food) · no framed content · no clock · no device (A1) · scene [[10-gateB-keyframes/SEQ6-SC13]]*
